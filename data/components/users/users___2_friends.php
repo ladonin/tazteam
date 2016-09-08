@@ -4,7 +4,7 @@
 <table cellpadding="0" cellspacing="0" width="100%">
     <tbody><tr>
             <td align="left">
-                <a href="http://instorage.org/portfolio/tazteam/users/<?php echo(GeneralGetVars::$var2 . "/friends=1"); ?>" class="lead">Друзья (<?php echo(UsersBase::$count_friends); ?>)</a>
+                <a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo(GeneralGetVars::$var2 . "/friends=1"); ?>" class="lead">Друзья (<?php echo(UsersBase::$count_friends); ?>)</a>
 
             </td>
             <td align="right">
@@ -23,7 +23,7 @@ $cv3 = 0;
 while ($rowfriends = GeneralMYSQL::fetch_array($resfriends)) {
     $cv3++;
     UsersBase::$cur_user_name = UsersMyData::return_name($rowfriends['gen_login_user'], $rowfriends['site_mail_user'], $rowfriends['gen_name_user'], $rowfriends['gen_surname_user'], $rowfriends['site_login_status']);
-    ?><a href="http://instorage.org/portfolio/tazteam/users/<?php echo($rowfriends['id_user']); ?>"><img src="<?php echo(UsersBase::return_url_photo($rowfriends['gen_photo'], $rowfriends['dir_user'] . "/" . $rowfriends['id_user'] . "_2." . $rowfriends['site_photo_format'], $rowfriends['sn_photo_url_from_small'], $rowfriends['sn_photo_url_from_huge'])); ?>"
+    ?><a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo($rowfriends['id_user']); ?>"><img src="<?php echo(UsersBase::return_url_photo($rowfriends['gen_photo'], $rowfriends['dir_user'] . "/" . $rowfriends['id_user'] . "_2." . $rowfriends['site_photo_format'], $rowfriends['sn_photo_url_from_small'], $rowfriends['sn_photo_url_from_huge'])); ?>"
 
                                                                                   width="72" height="72" 
 

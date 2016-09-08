@@ -248,7 +248,7 @@ static public function calculate($MSQLc,$db,$condition1,$condition2,$condition3,
     
     <td class=\"".self::pageslistcssclass."\" valign=\"middle\">
     
-    <div class=\"btn btn btn-primary btn-small\" onclick=\"javascript:location.href='http://instorage.org/portfolio/tazteam/".$url."=1'\" style=\"cursor:pointer;\">1</div>
+    <div class=\"btn btn btn-primary btn-small\" onclick=\"javascript:location.href='http://mapstore.org/my_portfolio/tazteam.net/".$url."=1'\" style=\"cursor:pointer;\">1</div>
     
 
     
@@ -257,7 +257,7 @@ static public function calculate($MSQLc,$db,$condition1,$condition2,$condition3,
     </td>";}	
 	if (self::$N_cur>1) {self::$htmlcode.="<td class=\"".self::pageslistcssclass."\" valign=\"middle\">
     
-    <div class=\"btn btn btn-primary btn-small\" onclick=\"javascript:location.href='http://instorage.org/portfolio/tazteam/".$url."=".(self::$N_cur-1)."'\" style=\"cursor:pointer;\">&#9664</div>
+    <div class=\"btn btn btn-primary btn-small\" onclick=\"javascript:location.href='http://mapstore.org/my_portfolio/tazteam.net/".$url."=".(self::$N_cur-1)."'\" style=\"cursor:pointer;\">&#9664</div>
     
     
     
@@ -277,7 +277,7 @@ static public function calculate($MSQLc,$db,$condition1,$condition2,$condition3,
         
         
         <div  style=\"margin-top:3px;\">
-        <a href=\"http://instorage.org/portfolio/tazteam/".$url."=".$i."\" class=\"link_pagecounter_light\"> ".$i."</a>
+        <a href=\"http://mapstore.org/my_portfolio/tazteam.net/".$url."=".$i."\" class=\"link_pagecounter_light\"> ".$i."</a>
         </div>
         
         
@@ -288,13 +288,13 @@ static public function calculate($MSQLc,$db,$condition1,$condition2,$condition3,
     <td class=\"".self::pageslistcssclass."\" valign=\"middle\">
     
     
-    <div  class=\"btn btn btn-primary btn-small\" onclick=\"javascript:location.href='http://instorage.org/portfolio/tazteam/".$url."=".(self::$N_cur+1)."'\" style=\"cursor:pointer;\">&#9654;</div>
+    <div  class=\"btn btn btn-primary btn-small\" onclick=\"javascript:location.href='http://mapstore.org/my_portfolio/tazteam.net/".$url."=".(self::$N_cur+1)."'\" style=\"cursor:pointer;\">&#9654;</div>
          
     
     </td>";}	
 	if ((self::$N_cur<(self::$N_max-self::$listVar1)&&(self::$N_max>self::maxlist))) {self::$htmlcode.="
     <td class=\"".self::pageslistcssclass."\" valign=\"middle\">
-    <div  class=\"btn btn btn-primary btn-small\" onclick=\"javascript:location.href='http://instorage.org/portfolio/tazteam/".$url."=".self::$N_max."'\" style=\"cursor:pointer;\">".self::$N_max."</div>
+    <div  class=\"btn btn btn-primary btn-small\" onclick=\"javascript:location.href='http://mapstore.org/my_portfolio/tazteam.net/".$url."=".self::$N_max."'\" style=\"cursor:pointer;\">".self::$N_max."</div>
     
    
     </td>";}
@@ -308,7 +308,7 @@ static public function calculate($MSQLc,$db,$condition1,$condition2,$condition3,
 	if (self::$N_max>1) {
         self::$htmlcode.="<td  class=\"".self::finishpagecssclass."\" width=\"1\" valign=\"middle\"><select style=\"height:26px; width:62px; margin:0px;\">";
         for ($i=1; $i<=self::$N_max; $i++){ 
-            self::$htmlcode.="<option onclick=\"javascript:location.href='http://instorage.org/portfolio/tazteam/".$url."=".$i."'\"";
+            self::$htmlcode.="<option onclick=\"javascript:location.href='http://mapstore.org/my_portfolio/tazteam.net/".$url."=".$i."'\"";
             if ($i==self::$N_cur){self::$htmlcode.=" selected ";}
             self::$htmlcode.=">".$i."</option>";
         }
@@ -319,7 +319,7 @@ static public function calculate($MSQLc,$db,$condition1,$condition2,$condition3,
         
     }
     
-	self::$htmlcode.="<td valign=\"middle\">&nbsp;из&nbsp;<a href=\"http://instorage.org/portfolio/tazteam/".$url."=".self::$N_max."\" class=\"".self::finishpageurlcssclass."\">".self::$N_max."</a></td>";
+	self::$htmlcode.="<td valign=\"middle\">&nbsp;из&nbsp;<a href=\"http://mapstore.org/my_portfolio/tazteam.net/".$url."=".self::$N_max."\" class=\"".self::finishpageurlcssclass."\">".self::$N_max."</a></td>";
 
     self::$htmlcode.="</tr></table>";
 	
@@ -331,7 +331,7 @@ static public function calculate($MSQLc,$db,$condition1,$condition2,$condition3,
     <td style=\"padding-right:10px;\">
     
     
-    <div class=\"btn btn btn-primary btn-small\" onclick=\"javascript:location.href='http://instorage.org/portfolio/tazteam/".$url."=".(self::$N_cur-1)."'\" style=\"cursor:pointer;\">&#9664;</div>
+    <div class=\"btn btn btn-primary btn-small\" onclick=\"javascript:location.href='http://mapstore.org/my_portfolio/tazteam.net/".$url."=".(self::$N_cur-1)."'\" style=\"cursor:pointer;\">&#9664;</div>
     
     
     
@@ -359,7 +359,7 @@ static public function calculate($MSQLc,$db,$condition1,$condition2,$condition3,
 	if (self::$N_cur<self::$N_max) {self::$htmlarrows.="<td>
     
     
-    <div class=\"btn btn btn-primary btn-small\" onclick=\"javascript:location.href='http://instorage.org/portfolio/tazteam/".$url."=".(self::$N_cur+1)."'\" style=\"cursor:pointer;\">&#9654;</div>
+    <div class=\"btn btn btn-primary btn-small\" onclick=\"javascript:location.href='http://mapstore.org/my_portfolio/tazteam.net/".$url."=".(self::$N_cur+1)."'\" style=\"cursor:pointer;\">&#9654;</div>
     
     
     	

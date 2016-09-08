@@ -15,7 +15,7 @@ if (ForumForreg::$status_redactmessagepanel==1){//если статус пане
 		</td>
 	<?php } ?>
 	<td width="1" valign="middle"><div class="padding_right_10">
-		<input value="редактировать" class="btn btn-link btn-small" type="button"  onclick="javascript:location.href='http://instorage.org/portfolio/tazteam/<?php echo(GeneralGetVars::$var1);?>/<?php echo(GeneralGetVars::$var2);?>/<?php echo(GeneralGetVars::$var3);?>=<?php echo(GeneralGetVars::$num_page);?>/r=<?php echo($current_var1);?>#redact'">	
+		<input value="редактировать" class="btn btn-link btn-small" type="button"  onclick="javascript:location.href='http://mapstore.org/my_portfolio/tazteam.net/<?php echo(GeneralGetVars::$var1);?>/<?php echo(GeneralGetVars::$var2);?>/<?php echo(GeneralGetVars::$var3);?>=<?php echo(GeneralGetVars::$num_page);?>/r=<?php echo($current_var1);?>#redact'">	
 		<?php //GeneralImagesPreload::input("images/_general/general___redact_submit_text_grey_9_hover.png"); ?></div>
 	</td>
 	<?php }}?>

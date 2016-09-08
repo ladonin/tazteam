@@ -2,12 +2,12 @@
 <html>
 <head>
 <title>Карта сайта</title>
-<link rel="icon" href="http://instorage.org/portfolio/tazteam/favicon.ico" type="image/x-icon">
-<link rel="shortcut icon" href="http://instorage.org/portfolio/tazteam/favicon.ico" type="image/x-icon">
+<link rel="icon" href="http://mapstore.org/my_portfolio/tazteam.net/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="http://mapstore.org/my_portfolio/tazteam.net/favicon.ico" type="image/x-icon">
 <link rel="icon" href="" type="image/x-icon">
 <link rel="shortcut icon" href="" type="image/x-icon">
-<link rel="stylesheet" type="text/css" href="http://instorage.org/portfolio/tazteam/css/_general/carcas.css">
-<link rel="stylesheet" type="text/css" href="http://instorage.org/portfolio/tazteam/css/_general/text.css">
+<link rel="stylesheet" type="text/css" href="http://mapstore.org/my_portfolio/tazteam.net/css/_general/carcas.css">
+<link rel="stylesheet" type="text/css" href="http://mapstore.org/my_portfolio/tazteam.net/css/_general/text.css">
 </head>
 
 <body style="padding:20px;"><?php
@@ -26,11 +26,11 @@ mysql_query('SET NAMES UTF8');//на время
 
 
 ?>
-<a href="http://instorage.org/portfolio/tazteam"><b>Главная</b></a><br>
+<a href="http://mapstore.org/my_portfolio/tazteam.net"><b>Главная</b></a><br>
 <?php
 
 ?>
-<a href="http://instorage.org/portfolio/tazteam/forum"><strong>Форум</strong></a><br>
+<a href="http://mapstore.org/my_portfolio/tazteam.net/forum"><strong>Форум</strong></a><br>
 <?php
 
 
@@ -41,7 +41,7 @@ while ($row=mysql_fetch_array($res))
 	$id_section=$row['id_section'];
 	
 ?>
-<a href="http://instorage.org/portfolio/tazteam/forum/<?php echo($id_section);?>=1"><strong><?php echo($row['name_section']);?></strong></a><br>
+<a href="http://mapstore.org/my_portfolio/tazteam.net/forum/<?php echo($id_section);?>=1"><strong><?php echo($row['name_section']);?></strong></a><br>
 <?php
 
 
@@ -50,7 +50,7 @@ while ($row=mysql_fetch_array($res))
 	while ($row2=mysql_fetch_array($res2)) 
 	{		
 ?>
-<a href="http://instorage.org/portfolio/tazteam/forum/<?php echo($id_section."=".$row2['id_topic']);?>"><?php echo($row2['name_topic']);?></a><br>
+<a href="http://mapstore.org/my_portfolio/tazteam.net/forum/<?php echo($id_section."=".$row2['id_topic']);?>"><?php echo($row2['name_topic']);?></a><br>
 <?php
 
 
@@ -67,7 +67,7 @@ while ($row=mysql_fetch_array($res))
 
 
 ?>
-<a href="http://instorage.org/portfolio/tazteam/photo"><strong>Галерея</strong></a><br>
+<a href="http://mapstore.org/my_portfolio/tazteam.net/photo"><strong>Галерея</strong></a><br>
 <?php
 
 
@@ -78,7 +78,7 @@ while ($row=mysql_fetch_array($res))
 	$id_section=$row['id_section'];
 	
 ?>
-<a href="http://instorage.org/portfolio/tazteam/photo/<?php echo($id_section);?>=1"><strong><?php echo($row['name_section']);?></strong></a><br>
+<a href="http://mapstore.org/my_portfolio/tazteam.net/photo/<?php echo($id_section);?>=1"><strong><?php echo($row['name_section']);?></strong></a><br>
 <?php
 
 
@@ -89,7 +89,7 @@ while ($row=mysql_fetch_array($res))
 	{	
 
 ?>
-<a href="http://instorage.org/portfolio/tazteam/photo/<?php echo($id_section."/".$row2['id_topic']."/allphotos=1");?>"><?php echo($row2['name_topic']);?></a><br>
+<a href="http://mapstore.org/my_portfolio/tazteam.net/photo/<?php echo($id_section."/".$row2['id_topic']."/allphotos=1");?>"><?php echo($row2['name_topic']);?></a><br>
 
 
 <?php
@@ -101,7 +101,7 @@ while ($row=mysql_fetch_array($res))
 	{		
 	if ($row3['page_photo']>0){
 		?>
-		<a href="http://instorage.org/portfolio/tazteam/photo/<?php echo($id_section."/".$row3['id_topic']."=".$row3['page_photo']);?>">раздел <?php echo($id_section);?>, тема <?php echo($row3['id_topic'].", фото ".$row3['page_photo']);?> </a><br>
+		<a href="http://mapstore.org/my_portfolio/tazteam.net/photo/<?php echo($id_section."/".$row3['id_topic']."=".$row3['page_photo']);?>">раздел <?php echo($id_section);?>, тема <?php echo($row3['id_topic'].", фото ".$row3['page_photo']);?> </a><br>
 		<?php	
 	}}*/	
 }
@@ -115,7 +115,7 @@ while ($row=mysql_fetch_array($res))
 
 
 ?>
-<a href="http://instorage.org/portfolio/tazteam/video"><strong>Видео</strong></a><br>
+<a href="http://mapstore.org/my_portfolio/tazteam.net/video"><strong>Видео</strong></a><br>
 <?php
 
 
@@ -123,7 +123,7 @@ $res=mysql_query("SELECT id,themepage,video_name FROM video");
 while ($row=mysql_fetch_array($res)) 
 {	
 ?>
-<a href="http://instorage.org/portfolio/tazteam/video/<?php echo($row['themepage']."/".$row['id']);?>"><strong><?php echo($row['video_name']);?></strong></a><br>
+<a href="http://mapstore.org/my_portfolio/tazteam.net/video/<?php echo($row['themepage']."/".$row['id']);?>"><strong><?php echo($row['video_name']);?></strong></a><br>
 <?php
 }
 
@@ -139,13 +139,13 @@ while ($row=mysql_fetch_array($res))
 
 
 ?>
-<a href="http://instorage.org/portfolio/tazteam/automarket"><strong>Авторынок</strong></a><br>
+<a href="http://mapstore.org/my_portfolio/tazteam.net/automarket"><strong>Авторынок</strong></a><br>
 <?php
 $res=mysql_query("SELECT id,themepage FROM automarket"); 	
 while ($row=mysql_fetch_array($res)) 
 {
 ?>
-<a href="http://instorage.org/portfolio/tazteam/automarket/<?php echo($row['themepage']."/".$row['id']);?>">объявление <?php echo($row['id']);?></a><br>
+<a href="http://mapstore.org/my_portfolio/tazteam.net/automarket/<?php echo($row['themepage']."/".$row['id']);?>">объявление <?php echo($row['id']);?></a><br>
 <?php
 }
 

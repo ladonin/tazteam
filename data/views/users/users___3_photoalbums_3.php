@@ -34,7 +34,7 @@ UsersPhotoalbumsBase::detect_next_num_page_photo($MSQLc,$row['id_photo']);//оп
 <td align="left" width="598" valign="top">
 
 		<div style="width:588px; overflow:hidden; text-align:center;">		
-		<a href="http://instorage.org/portfolio/tazteam/users/<?php echo(GeneralGetVars::$var2."/photoalbums/".$row['id_album']."=".UsersPhotoalbumsBase::$next_num_page_photo);?>"><img style="max-height:588px; max-width:588px; " src="http://140706.selcdn.com/tazteam/_files/images/users/photoalbums/<?php echo($row['dir_album']."/".GeneralGetVars::$var2."/".$row['id_album']."/".$row['id_photo']."_6.".$row['format_photo']);?>" class="refimage">
+		<a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo(GeneralGetVars::$var2."/photoalbums/".$row['id_album']."=".UsersPhotoalbumsBase::$next_num_page_photo);?>"><img style="max-height:588px; max-width:588px; " src="http://140706.selcdn.com/tazteam/_files/images/users/photoalbums/<?php echo($row['dir_album']."/".GeneralGetVars::$var2."/".$row['id_album']."/".$row['id_photo']."_6.".$row['format_photo']);?>" class="refimage">
 		</a></div>	
 
 	<?php if (UsersPhotoalbumsBase::$id_next_photo){?>

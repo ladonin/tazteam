@@ -18,7 +18,7 @@
 	GeneralPagesCounter::$rowspage_name="rowspagegarage1";//копия такой страницы - по присваиванию номеров страниц
 	GeneralPagesCounter::calculate_current($MSQLc,"garage","id>='".GeneralGetVars::$var3."'",0,0,0,0,0);//условия выборки аздаются сортировкой или поиском		
 	?>
-	<b><a href="http://instorage.org/portfolio/tazteam/<?php echo(GeneralGetVars::$var1."=".GeneralPagesCounter::$N_cur_current);?>" class="link_normal">Другие предложения &uarr;</a></b>	
+	<b><a href="http://mapstore.org/my_portfolio/tazteam.net/<?php echo(GeneralGetVars::$var1."=".GeneralPagesCounter::$N_cur_current);?>" class="link_normal">Другие предложения &uarr;</a></b>	
 </td>
 </tr>
 </table>
@@ -54,7 +54,7 @@
 
 
 <td align="left" class="padding_right_10">
-	<a href="http://instorage.org/portfolio/tazteam/garage/<?php echo(GeneralGetVars::$var2);?>=<?php echo($row['id']);?>" class="btn btn-info btn-small">редактировать</a>
+	<a href="http://mapstore.org/my_portfolio/tazteam.net/garage/<?php echo(GeneralGetVars::$var2);?>=<?php echo($row['id']);?>" class="btn btn-info btn-small">редактировать</a>
 </td>
 <td align="left" class="padding_right_10">
 	<form method="post" action="<?php echo(GeneralGetVars::$urltosubmit);?>" onsubmit="return confirm('Удалить объявление?');">

@@ -42,21 +42,21 @@ UsersBase::detect_garage($MSQLc); //определяем автомобили в
                     if ($row['site_mail_user']) {
                         ?>
                         <div style="margin-top:5px;">
-                            <a href="http://instorage.org/portfolio/tazteam/users/<?php echo(GeneralGetVars::$var2 . "/redactpassword"); ?>" class="link_normal" alt="Изменить пароль">Изменить пароль</a>
+                            <a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo(GeneralGetVars::$var2 . "/redactpassword"); ?>" class="link_normal" alt="Изменить пароль">Изменить пароль</a>
                         </div>
                     <?php } ?>
                     <div style="margin-top:5px;">
-                        <a href="http://instorage.org/portfolio/tazteam/users/<?php echo(UsersMyData::$id . "/redactavatar"); ?>" class="link_normal" alt="Изменить фотографию">Изменить фотографию</a>
+                        <a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo(UsersMyData::$id . "/redactavatar"); ?>" class="link_normal" alt="Изменить фотографию">Изменить фотографию</a>
                     </div>
                     <div style="margin-top:5px;">
-                        <a href="http://instorage.org/portfolio/tazteam/users/<?php echo(UsersMyData::$id . "/mythemes"); ?>" class="link_normal" alt="Мои темы">Мои темы</a>
+                        <a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo(UsersMyData::$id . "/mythemes"); ?>" class="link_normal" alt="Мои темы">Мои темы</a>
                     </div>
                     <div style="margin-top:5px;">
-                        <a href="http://instorage.org/portfolio/tazteam/users/<?php echo(UsersMyData::$id . "/mytalks"); ?>" class="link_normal" alt="Мои обсуждения">Мои обсуждения</a>
+                        <a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo(UsersMyData::$id . "/mytalks"); ?>" class="link_normal" alt="Мои обсуждения">Мои обсуждения</a>
                     </div><div style="margin-top:5px;">
-                        <a href="http://instorage.org/portfolio/tazteam/users/<?php echo(UsersMyData::$id . "/signatures"); ?>" class="link_normal" alt="Мои обсуждения">Оповещения</a>
+                        <a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo(UsersMyData::$id . "/signatures"); ?>" class="link_normal" alt="Мои обсуждения">Оповещения</a>
                     </div><div style="margin-top:5px;">
-                        <a href="http://instorage.org/portfolio/tazteam/users/<?php echo(UsersMyData::$id . "/dialogs=1"); ?>" class="link_normal" alt="Мои диалоги">Диалоги</a>
+                        <a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo(UsersMyData::$id . "/dialogs=1"); ?>" class="link_normal" alt="Мои диалоги">Диалоги</a>
                     </div>
                     <?php
                 } else {//если мы просто - зарегистрированный пользователь 
@@ -67,7 +67,7 @@ UsersBase::detect_garage($MSQLc); //определяем автомобили в
                 if (UsersMyData::$identified == 1) {
                     ?>
                     <div style="margin-top:5px;">
-                        <a href="http://instorage.org/portfolio/tazteam/users/<?php echo(GeneralGetVars::$var2); ?>/dialogs" class="small_link_noline">
+                        <a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo(GeneralGetVars::$var2); ?>/dialogs" class="small_link_noline">
                             <?php echo(UsersBase::$array_buttons_to_userslists[1]); ?>
                         </a>
                     </div>
@@ -86,9 +86,9 @@ UsersBase::detect_garage($MSQLc); //определяем автомобили в
             }
             ?>
             <div style="margin-top:5px;">
-                <a href="http://instorage.org/portfolio/tazteam/users/<?php echo(GeneralGetVars::$var2 . "/photoalbums=1"); ?>" class="link_normal" alt="Фотоальбомы">Фотоальбомы</a>
+                <a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo(GeneralGetVars::$var2 . "/photoalbums=1"); ?>" class="link_normal" alt="Фотоальбомы">Фотоальбомы</a>
             </div><div style="margin-top:5px;">
-                <a href="http://instorage.org/portfolio/tazteam/users/<?php echo(GeneralGetVars::$var2 . "/friends=1"); ?>" class="link_normal" alt="друзья">Друзья</a>
+                <a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo(GeneralGetVars::$var2 . "/friends=1"); ?>" class="link_normal" alt="друзья">Друзья</a>
             </div>
         </div>
     </div>
@@ -102,13 +102,13 @@ UsersBase::detect_garage($MSQLc); //определяем автомобили в
                     <table cellpadding="0" cellspacing="0" width="100%">
                         <tr>
                             <td align="left" width="120" valign="top">
-                                <a href="http://instorage.org/portfolio/tazteam/garage/<?php echo($value['themepage']); ?>/<?php echo($value['id']); ?>" alt="<?php echo(GarageBase::return_parameters("mark", $value['mark']) . " " . $value['model']); ?>"
+                                <a href="http://mapstore.org/my_portfolio/tazteam.net/garage/<?php echo($value['themepage']); ?>/<?php echo($value['id']); ?>" alt="<?php echo(GarageBase::return_parameters("mark", $value['mark']) . " " . $value['model']); ?>"
                                    ><img src="http://140706.selcdn.com/tazteam/_files/images/garage/<?php echo($value['id']); ?>/<?php echo($value['img']); ?>" 
                                       width="110"></a>
                             </td>
                             <td align="left" valign="top">
                                 <div style="margin-bottom:0px;">
-                                    <a href="http://instorage.org/portfolio/tazteam/garage/<?php echo($value['themepage']); ?>/<?php echo($value['id']); ?>" 
+                                    <a href="http://mapstore.org/my_portfolio/tazteam.net/garage/<?php echo($value['themepage']); ?>/<?php echo($value['id']); ?>" 
                                        class="lead " alt="<?php
                                        echo(GarageBase::return_parameters("mark", $value['mark']) . " " . $value['model']);
                                        ?>"><?php
@@ -160,7 +160,7 @@ UsersBase::detect_garage($MSQLc); //определяем автомобили в
           GeneralPagesCounter::$rowspage_name="rowspageusers1";//копия такой страницы - по присваиванию номеров страниц
           GeneralPagesCounter::calculate_to_outer($MSQLc, "registrated_users___main_data","id_user>='".GeneralGetVars::$var2."'",0,0,0,0);
           ?>
-          <a href="http://instorage.org/portfolio/tazteam/users=<?php echo(GeneralPagesCounter::$N_cur_to_outer);?>" class="link_normal">наверх</a>
+          <a href="http://mapstore.org/my_portfolio/tazteam.net/users=<?php echo(GeneralPagesCounter::$N_cur_to_outer);?>" class="link_normal">наверх</a>
           <?php */ ?>
 
         <?php
@@ -178,7 +178,7 @@ UsersBase::detect_garage($MSQLc); //определяем автомобили в
                         <li><a href="#userdata_tab1" data-toggle="tab">Анкета</a></li>
                         <li><a href="#userdata_tab2" data-toggle="tab">Редактировать</a></li>
                         <li style="float:right; padding-top:10px;">                      
-                            <img src="http://instorage.org/portfolio/tazteam/images/_general/moneta2.png" width="12" height="16" style="margin-bottom:2px;"> <b style="color:#000000;"><?php echo($row['site_points']); ?></b>
+                            <img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/moneta2.png" width="12" height="16" style="margin-bottom:2px;"> <b style="color:#000000;"><?php echo($row['site_points']); ?></b>
                         </li> 
                     </ul>
                     <div class="v_i_b"></div>
@@ -209,7 +209,7 @@ UsersBase::detect_garage($MSQLc); //определяем автомобили в
 
                         <li class="active"><a href="#userdata_tab2" data-toggle="tab">Заполнить данные о себе</a></li>
                         <li style="float:right; padding-top:10px;">                     
-                            <img src="http://instorage.org/portfolio/tazteam/images/_general/moneta2.png" width="12" height="16" style="margin-bottom:2px;"> <b style="color:#000000;"><?php echo($row['site_points']); ?></b>
+                            <img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/moneta2.png" width="12" height="16" style="margin-bottom:2px;"> <b style="color:#000000;"><?php echo($row['site_points']); ?></b>
                         </li> 
                     </ul>
                     <div class="v_i_b"></div>
@@ -244,7 +244,7 @@ UsersBase::detect_garage($MSQLc); //определяем автомобили в
                         <li class="active"><a href="#userdata_tab3" data-toggle="tab">Персональные данные</a></li>
                         <li><a href="#userdata_tab1" data-toggle="tab">Анкета</a></li>
                         <li style="float:right; padding-top:10px;">                            
-                           <img src="http://instorage.org/portfolio/tazteam/images/_general/moneta2.png" width="12" height="16" style="margin-bottom:2px;"> <b style="color:#000000;"><?php echo($row['site_points']); ?></b>
+                           <img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/moneta2.png" width="12" height="16" style="margin-bottom:2px;"> <b style="color:#000000;"><?php echo($row['site_points']); ?></b>
                         </li> 
 
 

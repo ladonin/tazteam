@@ -52,7 +52,7 @@ static public function display_images_in_message($textimages,$textimagessizes){/
 		if ($value){
 			$value=GeneralImagesCalculate::return_size_to_photo($value, 1, 2);//меняем размер фотки
 			GeneralImagesCalculate::set_size_for_image_in_view($textimagessizesarray[$key],2);
-			echo("<img src=\"http://instorage.org/portfolio/tazteam/".GeneralGlobalVars::pathtofiles."/images/".GeneralGetVars::$var1."/".GeneralGetVars::$var2."/".GeneralGetVars::$var3."/".$value."\" class=\"image_in_forum_message\" width=\"".GeneralImagesCalculate::$view_width."\" height=\"".GeneralImagesCalculate::$view_height."\">");}}}
+			echo("<img src=\"http://mapstore.org/my_portfolio/tazteam.net/".GeneralGlobalVars::pathtofiles."/images/".GeneralGetVars::$var1."/".GeneralGetVars::$var2."/".GeneralGetVars::$var3."/".$value."\" class=\"image_in_forum_message\" width=\"".GeneralImagesCalculate::$view_width."\" height=\"".GeneralImagesCalculate::$view_height."\">");}}}
 
 			
 			

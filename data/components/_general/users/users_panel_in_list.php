@@ -62,7 +62,7 @@ if (UsersMyData::$identified==1){
     <li style="text-align:left; padding:0 20px;">
 
     
-		<form method="post" action="http://instorage.org/portfolio/tazteam/users/<?php echo($rowusers['id_user']);?>/dialogs">		
+		<form method="post" action="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo($rowusers['id_user']);?>/dialogs">		
 		<input type="submit" value="<?php echo(UsersBase::$array_buttons_to_userslists[$cv1]);?>" class="btn btn-link btn-small">
 		</form>
     

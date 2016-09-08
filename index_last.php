@@ -82,35 +82,35 @@ if (UsersMyData::$id==1){
 <meta name='yandex-verification' content='7c2a3a7e1b6dfd6b' />
 <meta name="verify-admitad" content="22fe08fc94" />
 <meta name="4d88a69ce36aad5b651e142429b1f5f9" content="">
-<link rel="icon" href="http://instorage.org/portfolio/tazteam/favicon.ico" type="image/x-icon">
-<link rel="shortcut icon" href="http://instorage.org/portfolio/tazteam/favicon.ico" type="image/x-icon">
+<link rel="icon" href="http://mapstore.org/my_portfolio/tazteam.net/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="http://mapstore.org/my_portfolio/tazteam.net/favicon.ico" type="image/x-icon">
 <link rel="icon" href="" type="image/x-icon">
 <link rel="shortcut icon" href="" type="image/x-icon">
-<link rel="stylesheet" type="text/css" href="http://instorage.org/portfolio/tazteam/css/_general/carcas.css">
-<link rel="stylesheet" type="text/css" href="http://instorage.org/portfolio/tazteam/css/_general/text.css">
-<link rel="stylesheet" type="text/css" href="http://instorage.org/portfolio/tazteam/css/index/carcas.css">
-<link rel="stylesheet" type="text/css" href="http://instorage.org/portfolio/tazteam/css/index/text.css">
+<link rel="stylesheet" type="text/css" href="http://mapstore.org/my_portfolio/tazteam.net/css/_general/carcas.css">
+<link rel="stylesheet" type="text/css" href="http://mapstore.org/my_portfolio/tazteam.net/css/_general/text.css">
+<link rel="stylesheet" type="text/css" href="http://mapstore.org/my_portfolio/tazteam.net/css/index/carcas.css">
+<link rel="stylesheet" type="text/css" href="http://mapstore.org/my_portfolio/tazteam.net/css/index/text.css">
 <?php if (GeneralGetVars::$var1) {?>
-<link rel="stylesheet" type="text/css" href="http://instorage.org/portfolio/tazteam/css/<?php echo(GeneralGetVars::$var1);?>/carcas.css">
-<link rel="stylesheet" type="text/css" href="http://instorage.org/portfolio/tazteam/css/<?php echo(GeneralGetVars::$var1);?>/text.css">
+<link rel="stylesheet" type="text/css" href="http://mapstore.org/my_portfolio/tazteam.net/css/<?php echo(GeneralGetVars::$var1);?>/carcas.css">
+<link rel="stylesheet" type="text/css" href="http://mapstore.org/my_portfolio/tazteam.net/css/<?php echo(GeneralGetVars::$var1);?>/text.css">
 <?php } ?>
-<script type='text/javascript' src='http://instorage.org/portfolio/tazteam/js/functions/_general/jquery/jquery.min.js'></script>
-<script type='text/javascript' src='http://instorage.org/portfolio/tazteam/js/functions/_general/general___images_preload.js'></script>
-<script type='text/javascript' src='http://instorage.org/portfolio/tazteam/js/functions/_general/general___swim.js'></script>
-<script type='text/javascript' src='http://instorage.org/portfolio/tazteam/js/functions/_general/general___scroll.js'></script>
-<script type='text/javascript' src='http://instorage.org/portfolio/tazteam/js/functions/_general/general___ajax.js'></script>
-<script type='text/javascript' src='http://instorage.org/portfolio/tazteam/js/functions/_general/general___textarea.js'></script>
-<script type='text/javascript' src='http://instorage.org/portfolio/tazteam/js/functions/_general/general___send_to_server.js'></script>
-<script type='text/javascript' src='http://instorage.org/portfolio/tazteam/js/functions/_general/general___brousers.js'></script>
-<script type='text/javascript' src='http://instorage.org/portfolio/tazteam/js/functions/_general/jquery/jquery.cookie.js'></script>
+<script type='text/javascript' src='http://mapstore.org/my_portfolio/tazteam.net/js/functions/_general/jquery/jquery.min.js'></script>
+<script type='text/javascript' src='http://mapstore.org/my_portfolio/tazteam.net/js/functions/_general/general___images_preload.js'></script>
+<script type='text/javascript' src='http://mapstore.org/my_portfolio/tazteam.net/js/functions/_general/general___swim.js'></script>
+<script type='text/javascript' src='http://mapstore.org/my_portfolio/tazteam.net/js/functions/_general/general___scroll.js'></script>
+<script type='text/javascript' src='http://mapstore.org/my_portfolio/tazteam.net/js/functions/_general/general___ajax.js'></script>
+<script type='text/javascript' src='http://mapstore.org/my_portfolio/tazteam.net/js/functions/_general/general___textarea.js'></script>
+<script type='text/javascript' src='http://mapstore.org/my_portfolio/tazteam.net/js/functions/_general/general___send_to_server.js'></script>
+<script type='text/javascript' src='http://mapstore.org/my_portfolio/tazteam.net/js/functions/_general/general___brousers.js'></script>
+<script type='text/javascript' src='http://mapstore.org/my_portfolio/tazteam.net/js/functions/_general/jquery/jquery.cookie.js'></script>
 <?php if (UsersMyData::$identified==1){ ?>
-<script type='text/javascript' src='http://instorage.org/portfolio/tazteam/js/functions/_general/general___signature.js'></script>
+<script type='text/javascript' src='http://mapstore.org/my_portfolio/tazteam.net/js/functions/_general/general___signature.js'></script>
 <?php } 
 include("data/lists/".GeneralPageTree::$url."_js.txt"); //подгрузка списка подключаемых  js файлов ?>
 <link type="text/css" rel="stylesheet" href="http://is.mixmarket.biz/css/uni/partner.css">
 </head>
 
-<body onLoad="" style="background-image: url(http://instorage.org/portfolio/tazteam/images/index/background.png);
+<body onLoad="" style="background-image: url(http://mapstore.org/my_portfolio/tazteam.net/images/index/background.png);
 background-repeat:repeat;">
 <?php
 GeneralPageBasic::$general_width_blocks_in_list="50%";
@@ -134,7 +134,7 @@ timeserver=<?php echo(GeneralGlobalVars::$timeunix);?>;
 
 
 
-	<table cellpadding="0" cellspacing="0" width="100%" border="0" style="background-image: url(http://instorage.org/portfolio/tazteam/images/index/background.png); background-repeat:repeat;">
+	<table cellpadding="0" cellspacing="0" width="100%" border="0" style="background-image: url(http://mapstore.org/my_portfolio/tazteam.net/images/index/background.png); background-repeat:repeat;">
 	<tr>
 	<td width="40%" height="0"> 
 	</td>
@@ -157,46 +157,46 @@ timeserver=<?php echo(GeneralGlobalVars::$timeunix);?>;
 
 <td align="center" width="928">
 
-		<table cellpadding="0" cellspacing="0" width="100%" style="background-image:url(http://instorage.org/portfolio/tazteam/images/index/index___top_fon.png); background-repeat:repeat;">
+		<table cellpadding="0" cellspacing="0" width="100%" style="background-image:url(http://mapstore.org/my_portfolio/tazteam.net/images/index/index___top_fon.png); background-repeat:repeat;">
 		<tr>
 		<td align="left" valign="top" width="190">
-			<a href="http://instorage.org/portfolio/tazteam" class="logotext"><img src="http://instorage.org/portfolio/tazteam/images/index/index___logotype.png" width="190" height="33"></a>
+			<a href="http://mapstore.org/my_portfolio/tazteam.net" class="logotext"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/index/index___logotype.png" width="190" height="33"></a>
 		</td>
 		<td valign="middle" align="right">
 		<div class="padding_right_20">
 
 			<div class="padding_left_10" style="float:right;">
-				<a href="http://instorage.org/portfolio/tazteam/calculator" class="link_normal_white">Калькулятор</a>
+				<a href="http://mapstore.org/my_portfolio/tazteam.net/calculator" class="link_normal_white">Калькулятор</a>
 			</div>
 			<div class="padding_left_10" style="float:right;">
-				<a href="http://instorage.org/portfolio/tazteam/users" class="link_normal_white">Участники</a>
+				<a href="http://mapstore.org/my_portfolio/tazteam.net/users" class="link_normal_white">Участники</a>
 			</div>				
 			<div class="padding_left_10" style="float:right;">
-				<a href="http://instorage.org/portfolio/tazteam/forum" class="link_normal_white">Форум</a>
+				<a href="http://mapstore.org/my_portfolio/tazteam.net/forum" class="link_normal_white">Форум</a>
 			</div>			
 			<div class="padding_left_10" style="float:right;">
-				<a href="http://instorage.org/portfolio/tazteam/photo" class="link_normal_white">Галерея</a>
+				<a href="http://mapstore.org/my_portfolio/tazteam.net/photo" class="link_normal_white">Галерея</a>
 			</div>				
 			<div class="padding_left_10" style="float:right;">
-				<a href="http://instorage.org/portfolio/tazteam/photo/1=1" class="link_normal_white">ТОП</a>
+				<a href="http://mapstore.org/my_portfolio/tazteam.net/photo/1=1" class="link_normal_white">ТОП</a>
 			</div>
 			<div class="padding_left_10" style="float:right;">
-				<a href="http://instorage.org/portfolio/tazteam/articles" class="link_normal_white">Статьи</a>
+				<a href="http://mapstore.org/my_portfolio/tazteam.net/articles" class="link_normal_white">Статьи</a>
 			</div>
 			<div class="padding_left_10" style="float:right;">
-				<a href="http://instorage.org/portfolio/tazteam/news" class="link_normal_white">Новости</a>
+				<a href="http://mapstore.org/my_portfolio/tazteam.net/news" class="link_normal_white">Новости</a>
 			</div>
 			<div class="padding_left_10" style="float:right;">
-				<a href="http://instorage.org/portfolio/tazteam/automarket" class="link_normal_white">Авторынок</a>
+				<a href="http://mapstore.org/my_portfolio/tazteam.net/automarket" class="link_normal_white">Авторынок</a>
 			</div>
 			<div class="padding_left_10" style="float:right;">
-				<a href="http://instorage.org/portfolio/tazteam/video" class="link_normal_white">Видео</a>
+				<a href="http://mapstore.org/my_portfolio/tazteam.net/video" class="link_normal_white">Видео</a>
 			</div>
 			<div class="padding_left_10" style="float:right;">
-				<a href="http://instorage.org/portfolio/tazteam/shop" class="link_normal_white">Автозвук</a>
+				<a href="http://mapstore.org/my_portfolio/tazteam.net/shop" class="link_normal_white">Автозвук</a>
 			</div>
 			<div class="padding_left_10" style="float:right;">
-				<a href="http://instorage.org/portfolio/tazteam" class="link_normal_white">Главная</a>	
+				<a href="http://mapstore.org/my_portfolio/tazteam.net" class="link_normal_white">Главная</a>	
 			</div>
 			<div style="clear:both;"> </div>	
 		</div>
@@ -267,25 +267,25 @@ timeserver=<?php echo(GeneralGlobalVars::$timeunix);?>;
 
 
 			<div class="padding_left_20" style="float:left;">
-				<a href="http://instorage.org/portfolio/tazteam/users/155" class="link_normal">Администрация</a>
+				<a href="http://mapstore.org/my_portfolio/tazteam.net/users/155" class="link_normal">Администрация</a>
 			</div>
 			<div class="padding_left_10" style="float:left;">
-				<a href="http://instorage.org/portfolio/tazteam/users/1" class="link_normal">Разработка сайта</a>
+				<a href="http://mapstore.org/my_portfolio/tazteam.net/users/1" class="link_normal">Разработка сайта</a>
 			</div>
 			<div class="padding_left_10" style="float:left;">
-				<a href="http://instorage.org/portfolio/tazteam/users/1" class="link_normal">Рекламодателям</a>
+				<a href="http://mapstore.org/my_portfolio/tazteam.net/users/1" class="link_normal">Рекламодателям</a>
 			</div>
 			
 			
 			
 			<div class="padding_right_20" style="float:right;">
-				<a href="http://instorage.org/portfolio/tazteam/map" class="link_normal">Карта сайта</a>
+				<a href="http://mapstore.org/my_portfolio/tazteam.net/map" class="link_normal">Карта сайта</a>
 			</div>			
 			<div class="padding_right_10" style="float:right;">
-				<a href="http://instorage.org/portfolio/tazteam/mapnews" class="link_normal">Новости</a>
+				<a href="http://mapstore.org/my_portfolio/tazteam.net/mapnews" class="link_normal">Новости</a>
 			</div>			
 			<div class="padding_right_10" style="float:right;">
-				<a href="http://instorage.org/portfolio/tazteam/maparticles" class="link_normal">Статьи</a>
+				<a href="http://mapstore.org/my_portfolio/tazteam.net/maparticles" class="link_normal">Статьи</a>
 			</div>
 			
 			<div class="padding_right_10" style="float:right;">

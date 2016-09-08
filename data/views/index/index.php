@@ -16,7 +16,7 @@
      >
     <div style="float: left; padding:10px 0;">
     
-     <p class="lead"><a href="http://instorage.org/portfolio/tazteam/users" title="Топ участников">Топ участников</a></p>
+     <p class="lead"><a href="http://mapstore.org/my_portfolio/tazteam.net/users" title="Топ участников">Топ участников</a></p>
 
         <div style="float: left; padding-top:1px;">
             <?php
@@ -34,7 +34,7 @@
      class="boxShadow3"
      >
     <div style="float: left; padding:10px 0;">
-    <p class="lead"><a href="http://instorage.org/portfolio/tazteam/photo/2=1" title="Лучшие фото">Лучшие фото</a></p>
+    <p class="lead"><a href="http://mapstore.org/my_portfolio/tazteam.net/photo/2=1" title="Лучшие фото">Лучшие фото</a></p>
         <?php
         $current_var1 = "rank DESC, RAND()";
         $current_var2 = 6;
@@ -77,11 +77,11 @@
 
      >
     <div style="float: left; overflow:hidden; width:300px; height:685px; padding-top:10px;">
-        <p class="lead"><a href="http://instorage.org/portfolio/tazteam/articles" title="статьи">Статьи</a>
+        <p class="lead"><a href="http://mapstore.org/my_portfolio/tazteam.net/articles" title="статьи">Статьи</a>
 
             <a>/</a>
 
-            <a href="http://instorage.org/portfolio/tazteam/news" title="новости">Новости</a>
+            <a href="http://mapstore.org/my_portfolio/tazteam.net/news" title="новости">Новости</a>
 
 
         </p>
@@ -100,7 +100,7 @@
 <div style="float: left; overflow:hidden; width:282px; margin-top:20px;  height:705px;"
      class="boxShadow3"
      ><div style="float: left; padding-top:10px;">
-        <p class="lead"><a href="http://instorage.org/portfolio/tazteam/automarket" title="авторынок">Авторынок</a></p>
+        <p class="lead"><a href="http://mapstore.org/my_portfolio/tazteam.net/automarket" title="авторынок">Авторынок</a></p>
         <?php
         $current_var1 = 1;
         //$current_var2=" WHERE themepage='".$current_var1."' AND mark='157' AND photo='1' ";
@@ -170,7 +170,7 @@
      class="boxShadow3"
      >
     <div style="float: left; overflow:hidden; width:282px;  padding:10px 0;   height: 550px;">
-        <p class="lead"><a href="http://instorage.org/portfolio/tazteam/forum" title="форум">Форум</a></p>
+        <p class="lead"><a href="http://mapstore.org/my_portfolio/tazteam.net/forum" title="форум">Форум</a></p>
         <?php
         $current_var1 = 12;
         include("data/components/index/index___forum_1.php");

@@ -6,7 +6,7 @@ if (UsersBase::detect_its_mypage(1)==true){//определяем - наша с�
 	$row=GeneralMYSQL::fetch_array($res);
 	GeneralMYSQL::free($res);	
 	?>
-	<a href="http://instorage.org/portfolio/tazteam/users/<?php echo(GeneralGetVars::$var2);?>" class="btn btn-primary btn-small">к моей странице</a>
+	<a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo(GeneralGetVars::$var2);?>" class="btn btn-primary btn-small">к моей странице</a>
 	<div class="v_i_b"></div>
 	<?php
 	if (UsersMyData::$id==GeneralGetVars::$var2){

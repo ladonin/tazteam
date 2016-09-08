@@ -9,19 +9,19 @@ static public $params_auth_sn = array(
     'vk' => array(
         'client_id'     => '4062434',// ID приложения
         'client_secret' => 'Y6lCDsLdq4k1OtWv3H3l',// Защищённый ключ
-        'redirect_uri_enter'  => 'http://instorage.org/portfolio/tazteam/performing/enter_across_vk.php',// Адрес сайта
+        'redirect_uri_enter'  => 'http://mapstore.org/my_portfolio/tazteam.net/performing/enter_across_vk.php',// Адрес сайта
 		
-        'redirect_uri_registration'  => 'http://instorage.org/portfolio/tazteam/performing/registration_across_vk.php',// Адрес сайта		
-		
-		
+        'redirect_uri_registration'  => 'http://mapstore.org/my_portfolio/tazteam.net/performing/registration_across_vk.php',// Адрес сайта		
 		
 		
 		
 		
 		
 		
-        'redirect_uri_import_main_data'  => 'http://instorage.org/portfolio/tazteam/performing/import_main_data_across_vk.php',// Адрес сайта
-        'redirect_uri_fasten_account'  => 'http://instorage.org/portfolio/tazteam/performing/fasten_account_to_vk.php'// Адрес сайта
+		
+		
+        'redirect_uri_import_main_data'  => 'http://mapstore.org/my_portfolio/tazteam.net/performing/import_main_data_across_vk.php',// Адрес сайта
+        'redirect_uri_fasten_account'  => 'http://mapstore.org/my_portfolio/tazteam.net/performing/fasten_account_to_vk.php'// Адрес сайта
     ),
     'odnoklassniki' => array(
         'client_id'     => '168635560',/////

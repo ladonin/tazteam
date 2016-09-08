@@ -10,17 +10,17 @@ const maxusersincatalog=1000;//сколько всего может быть п�
 const maxusersdataindbtable=5000;//от скольких пользователей информация хранится в одной таблице
 
 
-const url="http://instorage.org/portfolio/tazteam";
+const url="http://mapstore.org/my_portfolio/tazteam.net";
 const pathtoreception="_reception";
 const pathtofiles="_files";
 
 const count_tests=60;//сколько у нас тестов (тесты - раздел сайта))
 
 
-const url_enter_across_vk="https://oauth.vk.com/authorize?client_id=4062434&redirect_uri=http://instorage.org/portfolio/tazteam/performing/enter_across_vk.php";
-const url_registration_across_vk="https://oauth.vk.com/authorize?client_id=4062434&redirect_uri=http://instorage.org/portfolio/tazteam/performing/registration_across_vk.php";
-const url_import_main_data_across_vk="https://oauth.vk.com/authorize?client_id=4062434&redirect_uri=http://instorage.org/portfolio/tazteam/performing/import_main_data_across_vk.php";
-const url_fasten_account_to_vk="https://oauth.vk.com/authorize?client_id=4062434&redirect_uri=http://instorage.org/portfolio/tazteam/performing/fasten_account_to_vk.php";
+const url_enter_across_vk="https://oauth.vk.com/authorize?client_id=4062434&redirect_uri=http://mapstore.org/my_portfolio/tazteam.net/performing/enter_across_vk.php";
+const url_registration_across_vk="https://oauth.vk.com/authorize?client_id=4062434&redirect_uri=http://mapstore.org/my_portfolio/tazteam.net/performing/registration_across_vk.php";
+const url_import_main_data_across_vk="https://oauth.vk.com/authorize?client_id=4062434&redirect_uri=http://mapstore.org/my_portfolio/tazteam.net/performing/import_main_data_across_vk.php";
+const url_fasten_account_to_vk="https://oauth.vk.com/authorize?client_id=4062434&redirect_uri=http://mapstore.org/my_portfolio/tazteam.net/performing/fasten_account_to_vk.php";
 
 static public $minheightuploadimage=100;//минимальная высота загружаемого изображения
 static public $minwidthuploadimage=100;//минимальная ширина загружаемого изображения

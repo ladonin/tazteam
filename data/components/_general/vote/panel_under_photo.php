@@ -23,7 +23,7 @@ vote_rank=<?php echo(GeneralVote::$rank);?>;
 </td>
 <td align="right" valign="middle" class="padding_left_10">
 	<?php GeneralPageBasic::set_code_page(GeneralVote::$abrev_page,GeneralVote::$getvar1,GeneralVote::$getvar2,GeneralVote::$getvar3,GeneralVote::$getvar4,GeneralVote::$num_page,GeneralVote::$id_photo); ?>
-	<a href="http://instorage.org/portfolio/tazteam/vote/<?php echo(GeneralPageBasic::$text_code_page);?>=1" class="link_lead_small " id="vote_rank"><?php echo(GeneralVote::$rank); ?></a>
+	<a href="http://mapstore.org/my_portfolio/tazteam.net/vote/<?php echo(GeneralPageBasic::$text_code_page);?>=1" class="link_lead_small " id="vote_rank"><?php echo(GeneralVote::$rank); ?></a>
 </td>
 </tr>
 </table>
@@ -38,7 +38,7 @@ else if (UsersMyData::$identified==0){ ?>
 </td>
 <td align="right" valign="middle" class="padding_left_10">
 	<?php GeneralPageBasic::set_code_page(GeneralVote::$abrev_page,GeneralVote::$getvar1,GeneralVote::$getvar2,GeneralVote::$getvar3,GeneralVote::$getvar4,GeneralVote::$num_page,GeneralVote::$id_photo); ?>
-	<a href="http://instorage.org/portfolio/tazteam/vote/<?php echo(GeneralPageBasic::$text_code_page);?>=1" class="link_topic"><?php echo(GeneralVote::$rank); ?></a>
+	<a href="http://mapstore.org/my_portfolio/tazteam.net/vote/<?php echo(GeneralPageBasic::$text_code_page);?>=1" class="link_topic"><?php echo(GeneralVote::$rank); ?></a>
 </td>
 </tr>
 </table>

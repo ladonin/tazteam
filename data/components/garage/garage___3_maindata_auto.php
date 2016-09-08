@@ -1,7 +1,7 @@
 <div class="lead">
 
 
-<a href="http://instorage.org/portfolio/tazteam/<?php echo(GeneralGetVars::$var1."=".GeneralPagesCounter::$N_cur_current);?>" class="btn btn-primary btn-mini" style="margin-bottom:5px; margin-right:5px;" title="наверх">▲</a>
+<a href="http://mapstore.org/my_portfolio/tazteam.net/<?php echo(GeneralGetVars::$var1."=".GeneralPagesCounter::$N_cur_current);?>" class="btn btn-primary btn-mini" style="margin-bottom:5px; margin-right:5px;" title="наверх">▲</a>
 
 
 

@@ -20,7 +20,7 @@ static public function show()
 	case 9 :self::$code="P77CM"; break;
 	case 10 :self::$code="CY5H7"; break;
 	}
-	return "<img src=\"http://instorage.org/portfolio/tazteam/images/_general/antibot/".self::$number.".png\" width=\"80\" height=\"20\">";
+	return "<img src=\"http://mapstore.org/my_portfolio/tazteam.net/images/_general/antibot/".self::$number.".png\" width=\"80\" height=\"20\">";
 }
 }
 ?>

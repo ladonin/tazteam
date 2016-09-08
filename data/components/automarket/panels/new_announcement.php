@@ -2,7 +2,7 @@
             <div id="new_announcement" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="new_announcementLabel" aria-hidden="true">
             
 <form method="post" 
-		action="http://instorage.org/portfolio/tazteam/submit.php?get_var1=automarket" 
+		action="http://mapstore.org/my_portfolio/tazteam.net/submit.php?get_var1=automarket" 
 		enctype="multipart/form-data">
             
                 <div class="modal-header">

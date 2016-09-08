@@ -1,5 +1,5 @@
-<link rel="stylesheet" type="text/css" href="http://instorage.org/portfolio/tazteam/css/_general/carcas.css">
-<link rel="stylesheet" type="text/css" href="http://instorage.org/portfolio/tazteam/css/_general/text.css">
+<link rel="stylesheet" type="text/css" href="http://mapstore.org/my_portfolio/tazteam.net/css/_general/carcas.css">
+<link rel="stylesheet" type="text/css" href="http://mapstore.org/my_portfolio/tazteam.net/css/_general/text.css">
 <STYLE>
 BODY{PADDING:10PX;}
 </STYLE>

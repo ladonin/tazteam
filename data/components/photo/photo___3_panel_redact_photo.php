@@ -17,7 +17,7 @@
 				<?php } ?>	
 				<div class="photo3_8" id="photo3_id_photo_list_<?php echo($current_var3);?>">
 					<script type="text/javascript">
-						general___photos_show_visible_photo("<?php echo("http://140706.selcdn.com/tazteam/_files/images/photo/".GeneralGetVars::$var2."/".$row2['id_topic']."/".$row2['id_photo']."_2.".$row2['format_photo']);?>","photo3_id_photo_list_<?php echo($current_var3);?>","<?php echo(GeneralImagesCalculate::$view_width);?>","<?php echo(GeneralImagesCalculate::$view_height);?>","<?php if((GeneralGetVars::$var3==$row2['id_topic'])&&(PhotoBase::$id_photo_page==$row2['id_photo'])) {echo("refimage_border");} else {echo("refimage");}?>","http://instorage.org/portfolio/tazteam/photo/<?php echo(GeneralGetVars::$var2."/".$row2['id_topic']."=".PhotoBase::$current_num_page_photo);?>");
+						general___photos_show_visible_photo("<?php echo("http://140706.selcdn.com/tazteam/_files/images/photo/".GeneralGetVars::$var2."/".$row2['id_topic']."/".$row2['id_photo']."_2.".$row2['format_photo']);?>","photo3_id_photo_list_<?php echo($current_var3);?>","<?php echo(GeneralImagesCalculate::$view_width);?>","<?php echo(GeneralImagesCalculate::$view_height);?>","<?php if((GeneralGetVars::$var3==$row2['id_topic'])&&(PhotoBase::$id_photo_page==$row2['id_photo'])) {echo("refimage_border");} else {echo("refimage");}?>","http://mapstore.org/my_portfolio/tazteam.net/photo/<?php echo(GeneralGetVars::$var2."/".$row2['id_topic']."=".PhotoBase::$current_num_page_photo);?>");
 					</script>					
 				</div>
 				<?php }
@@ -30,7 +30,7 @@
 			<div class="v_i_b"></div>
 			<span class="explanation"><?php echo($row['name_photo']);?></span>
 			<div class="v_i_b"></div>
-			<span class="explanation">Автор: </span><a href="http://instorage.org/portfolio/tazteam/users/<?php echo($row['t_id_user']);?>" class="small_dark_link"><?php echo(GeneralUserName::show($row['t_login_user'],$row['t_mail_user'],$row['t_name_user'],$row['t_surname_user'],$row['t_login_status']));?></a>
+			<span class="explanation">Автор: </span><a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo($row['t_id_user']);?>" class="small_dark_link"><?php echo(GeneralUserName::show($row['t_login_user'],$row['t_mail_user'],$row['t_name_user'],$row['t_surname_user'],$row['t_login_status']));?></a>
 			<div class="v_i_b"></div>
 			<span class="explanation">Просмотров: <?php echo($row['number_views']);?></span>
 			<div class="v_i_b"></div>

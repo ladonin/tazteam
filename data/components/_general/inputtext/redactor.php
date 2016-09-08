@@ -8,49 +8,49 @@
 
 
 <td width="35" height="35" style="background-color:#ffffff; cursor:pointer;">
-	<img src="http://instorage.org/portfolio/tazteam/images/_general/inputtext/redactor/superscript.gif" onclick="general___inputtextincludetag('inputtexttextarea<?php echo(GeneralInputText::$id);?>', 'sup','text');" title="над текстом">
+	<img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/redactor/superscript.gif" onclick="general___inputtextincludetag('inputtexttextarea<?php echo(GeneralInputText::$id);?>', 'sup','text');" title="над текстом">
 </td>
 <td width="35" height="35" style="background-color:#ffffff; cursor:pointer;">
-	<img src="http://instorage.org/portfolio/tazteam/images/_general/inputtext/redactor/justify.gif" onclick="general___inputtextincludetag('inputtexttextarea<?php echo(GeneralInputText::$id);?>', 'justify','text');" title="растягивание по ширине">
+	<img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/redactor/justify.gif" onclick="general___inputtextincludetag('inputtexttextarea<?php echo(GeneralInputText::$id);?>', 'justify','text');" title="растягивание по ширине">
 </td>
 <td width="35" height="35" style="background-color:#ffffff; cursor:pointer;">
-	<img src="http://instorage.org/portfolio/tazteam/images/_general/inputtext/redactor/left.gif" onclick="general___inputtextincludetag('inputtexttextarea<?php echo(GeneralInputText::$id);?>', 'left','text');"  title="выравнивание слева">
+	<img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/redactor/left.gif" onclick="general___inputtextincludetag('inputtexttextarea<?php echo(GeneralInputText::$id);?>', 'left','text');"  title="выравнивание слева">
 </td>
 <td width="35" height="35" style="background-color:#ffffff; cursor:pointer;">
-	<img src="http://instorage.org/portfolio/tazteam/images/_general/inputtext/redactor/center.gif" onclick="general___inputtextincludetag('inputtexttextarea<?php echo(GeneralInputText::$id);?>', 'center','text');"  title="выравнивание по центру">
+	<img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/redactor/center.gif" onclick="general___inputtextincludetag('inputtexttextarea<?php echo(GeneralInputText::$id);?>', 'center','text');"  title="выравнивание по центру">
 </td>
 <td width="35" height="35" style="background-color:#ffffff; cursor:pointer;">
-	<img src="http://instorage.org/portfolio/tazteam/images/_general/inputtext/redactor/right.gif" onclick="general___inputtextincludetag('inputtexttextarea<?php echo(GeneralInputText::$id);?>', 'right','text');"  title="выравнивание справа">
-</td>
-
-
-
-
-<td width="35" height="35" style="background-color:#ffffff; cursor:pointer;">
-	<img src="http://instorage.org/portfolio/tazteam/images/_general/inputtext/redactor/bold.gif" onclick="general___inputtextincludetag('inputtexttextarea<?php echo(GeneralInputText::$id);?>', 'b','text');" title="жирный текст">
-</td>
-<td width="35" height="35" style="background-color:#ffffff; cursor:pointer;">
-	<img src="http://instorage.org/portfolio/tazteam/images/_general/inputtext/redactor/italics.gif" onclick="general___inputtextincludetag('inputtexttextarea<?php echo(GeneralInputText::$id);?>', 'i','text');" title="курсив">
-</td>
-<td width="35" height="35" style="background-color:#ffffff; cursor:pointer;">
-	<img src="http://instorage.org/portfolio/tazteam/images/_general/inputtext/redactor/underline.gif" onclick="general___inputtextincludetag('inputtexttextarea<?php echo(GeneralInputText::$id);?>', 'u','text');" title="подчеркнутый текст">
-</td>
-<td width="35" height="35" style="background-color:#ffffff; cursor:pointer;">
-	<img src="http://instorage.org/portfolio/tazteam/images/_general/inputtext/redactor/strikethrough.gif" onclick="general___inputtextincludetag('inputtexttextarea<?php echo(GeneralInputText::$id);?>', 's','text');" title="зачеркнутый текст">
-</td>
-<td width="35" height="35" style="background-color:#ffffff; cursor:pointer;">
-	<img src="http://instorage.org/portfolio/tazteam/images/_general/inputtext/redactor/subscript.gif" onclick="general___inputtextincludetag('inputtexttextarea<?php echo(GeneralInputText::$id);?>', 'sub','text');" title="под текстом">
+	<img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/redactor/right.gif" onclick="general___inputtextincludetag('inputtexttextarea<?php echo(GeneralInputText::$id);?>', 'right','text');"  title="выравнивание справа">
 </td>
 
 
+
+
 <td width="35" height="35" style="background-color:#ffffff; cursor:pointer;">
-	<img src="http://instorage.org/portfolio/tazteam/images/_general/inputtext/redactor/ref_list_ordered.gif" onclick="general___inputtextincludetag('inputtexttextarea<?php echo(GeneralInputText::$id);?>', 'list=ol','text');" title="пронумерованный список">
+	<img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/redactor/bold.gif" onclick="general___inputtextincludetag('inputtexttextarea<?php echo(GeneralInputText::$id);?>', 'b','text');" title="жирный текст">
 </td>
 <td width="35" height="35" style="background-color:#ffffff; cursor:pointer;">
-	<img src="http://instorage.org/portfolio/tazteam/images/_general/inputtext/redactor/ref_list_unordered.gif" onclick="general___inputtextincludetag('inputtexttextarea<?php echo(GeneralInputText::$id);?>', 'list=ul','text');" title="непронумерованный список">
+	<img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/redactor/italics.gif" onclick="general___inputtextincludetag('inputtexttextarea<?php echo(GeneralInputText::$id);?>', 'i','text');" title="курсив">
 </td>
 <td width="35" height="35" style="background-color:#ffffff; cursor:pointer;">
-	<img src="http://instorage.org/portfolio/tazteam/images/_general/inputtext/redactor/ref_li.gif" onclick="general___inputtextincludetag('inputtexttextarea<?php echo(GeneralInputText::$id);?>', '*','text');" title="элемент списка">
+	<img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/redactor/underline.gif" onclick="general___inputtextincludetag('inputtexttextarea<?php echo(GeneralInputText::$id);?>', 'u','text');" title="подчеркнутый текст">
+</td>
+<td width="35" height="35" style="background-color:#ffffff; cursor:pointer;">
+	<img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/redactor/strikethrough.gif" onclick="general___inputtextincludetag('inputtexttextarea<?php echo(GeneralInputText::$id);?>', 's','text');" title="зачеркнутый текст">
+</td>
+<td width="35" height="35" style="background-color:#ffffff; cursor:pointer;">
+	<img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/redactor/subscript.gif" onclick="general___inputtextincludetag('inputtexttextarea<?php echo(GeneralInputText::$id);?>', 'sub','text');" title="под текстом">
+</td>
+
+
+<td width="35" height="35" style="background-color:#ffffff; cursor:pointer;">
+	<img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/redactor/ref_list_ordered.gif" onclick="general___inputtextincludetag('inputtexttextarea<?php echo(GeneralInputText::$id);?>', 'list=ol','text');" title="пронумерованный список">
+</td>
+<td width="35" height="35" style="background-color:#ffffff; cursor:pointer;">
+	<img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/redactor/ref_list_unordered.gif" onclick="general___inputtextincludetag('inputtexttextarea<?php echo(GeneralInputText::$id);?>', 'list=ul','text');" title="непронумерованный список">
+</td>
+<td width="35" height="35" style="background-color:#ffffff; cursor:pointer;">
+	<img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/redactor/ref_li.gif" onclick="general___inputtextincludetag('inputtexttextarea<?php echo(GeneralInputText::$id);?>', '*','text');" title="элемент списка">
 </td>
 <td width="35" height="35" style="background-color:#ffffff;">
 </td>

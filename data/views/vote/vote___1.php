@@ -14,7 +14,7 @@ if (GeneralPageBasic::$code_sign=="ga"){
 	<table cellpadding="0" cellspacing="0" style="width:100%; padding-bottom:10px;">
 	<tr>
 	<td valign="top" align="left" width="200">
-<a href="http://instorage.org/portfolio/tazteam/photo/<?php echo(VoteBase::$id_section."/".VoteBase::$id_topic."=".PhotoBase::$current_num_page_photo);?>" alt="<?php echo(VoteBase::$name_photo);?>"><img src="http://140706.selcdn.com/tazteam/_files/images/photo/<?php echo(VoteBase::$id_section."/".VoteBase::$id_topic."/".VoteBase::$id_photo."_5.".VoteBase::$format_photo);?>" width="200" height="200" class="refimage" title="<?php echo(VoteBase::$name_photo);?>"></a>
+<a href="http://mapstore.org/my_portfolio/tazteam.net/photo/<?php echo(VoteBase::$id_section."/".VoteBase::$id_topic."=".PhotoBase::$current_num_page_photo);?>" alt="<?php echo(VoteBase::$name_photo);?>"><img src="http://140706.selcdn.com/tazteam/_files/images/photo/<?php echo(VoteBase::$id_section."/".VoteBase::$id_topic."/".VoteBase::$id_photo."_5.".VoteBase::$format_photo);?>" width="200" height="200" class="refimage" title="<?php echo(VoteBase::$name_photo);?>"></a>
 	</td>
 	<td align="left" valign="top" class="padding_left_10">
 		<span class="lead"><?php echo(VoteBase::$name_album);?></span><div></div>
@@ -23,7 +23,7 @@ if (GeneralPageBasic::$code_sign=="ga"){
 		Дата размещения: <span id="photo_3_date_photo"></span>
 		<script type="text/javascript">general___date_DMYvHM_show(<?php echo(VoteBase::$dateloading);?>,'photo_3_date_photo');</script>
 		<div></div>			
-		Автор: <a href="http://instorage.org/portfolio/tazteam/users/<?php echo(VoteBase::$id_autor);?>" class="link_lead"><?php echo(VoteBase::$name_autor);?></a>
+		Автор: <a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo(VoteBase::$id_autor);?>" class="link_lead"><?php echo(VoteBase::$name_autor);?></a>
 	</td>	
 	</tr>
 	</table>
@@ -36,7 +36,7 @@ else if (GeneralPageBasic::$code_sign=="sf"){
 	UsersPhotoalbumsBase::detect_current_num_page_photo($MSQLc,VoteBase::$page_photo,VoteBase::$id_photo,VoteBase::$id_topic,VoteBase::$id_section);
 	?>
 	<table cellpadding="0" cellspacing="0" style="width:100%; padding-bottom:10px;">
-	<tr><td valign="top" width="200"><a href="http://instorage.org/portfolio/tazteam/users/<?php echo(VoteBase::$id_section."/photoalbums/".VoteBase::$id_topic."=".UsersPhotoalbumsBase::$current_num_page_photo);?>" alt="<?php echo(VoteBase::$name_photo);?>"><img src="http://140706.selcdn.com/tazteam/_files/images/users/photoalbums/<?php echo(VoteBase::$dir_album."/".VoteBase::$id_section."/".VoteBase::$id_topic."/".VoteBase::$id_photo."_5.".VoteBase::$format_photo);?>" width="200" height="200" class="refimage" title="<?php echo(VoteBase::$name_photo);?>"></a></td>
+	<tr><td valign="top" width="200"><a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo(VoteBase::$id_section."/photoalbums/".VoteBase::$id_topic."=".UsersPhotoalbumsBase::$current_num_page_photo);?>" alt="<?php echo(VoteBase::$name_photo);?>"><img src="http://140706.selcdn.com/tazteam/_files/images/users/photoalbums/<?php echo(VoteBase::$dir_album."/".VoteBase::$id_section."/".VoteBase::$id_topic."/".VoteBase::$id_photo."_5.".VoteBase::$format_photo);?>" width="200" height="200" class="refimage" title="<?php echo(VoteBase::$name_photo);?>"></a></td>
 	<td align="left" valign="top" class="padding_left_10">
 	<span class="lead"><?php echo(VoteBase::$name_album);?></span><div></div>	
 	<?php if (!VoteBase::$name_photo) { echo("без названия");} else {echo(VoteBase::$name_photo);}?>
@@ -44,7 +44,7 @@ else if (GeneralPageBasic::$code_sign=="sf"){
 	Дата размещения: <span id="photo_3_date_photo"></span>
 	<script type="text/javascript">general___date_DMYvHM_show(<?php echo(VoteBase::$dateloading);?>,'photo_3_date_photo');</script>
 	<div></div>			
-	Автор: <a href="http://instorage.org/portfolio/tazteam/users/<?php echo(VoteBase::$id_autor);?>" class="link_lead "><?php echo(VoteBase::$name_autor);?></a>
+	Автор: <a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo(VoteBase::$id_autor);?>" class="link_lead "><?php echo(VoteBase::$name_autor);?></a>
 </td>	
 </tr>
 </table>

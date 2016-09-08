@@ -14,10 +14,10 @@ GeneralPagesCounter::calculate_to_outer($MSQLc, "registrated_users___photoalbums
 <table cellpadding="0" cellspacing="0">
 <tr>
 <td align="left">
-	<div class="padding_right_10"><a href="http://instorage.org/portfolio/tazteam/users/<?php echo(GeneralGetVars::$var2."/photoalbums=".GeneralPagesCounter::$N_cur_to_outer);?>" class="btn btn-primary btn-small">&#9650;</a></div>
+	<div class="padding_right_10"><a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo(GeneralGetVars::$var2."/photoalbums=".GeneralPagesCounter::$N_cur_to_outer);?>" class="btn btn-primary btn-small">&#9650;</a></div>
 </td>
 <td align="left">
-<a href="http://instorage.org/portfolio/tazteam/users/<?php echo(GeneralGetVars::$var2."/allphotosinalbum/".GeneralGetVars::$var4."=1");?>" class="btn btn-primary btn-small">все&nbsp;фото</a>	
+<a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo(GeneralGetVars::$var2."/allphotosinalbum/".GeneralGetVars::$var4."=1");?>" class="btn btn-primary btn-small">все&nbsp;фото</a>	
 </td>
 </tr>
 </table>	

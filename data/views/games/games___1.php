@@ -3,22 +3,22 @@
 function bonesplaybut(what) {
 if (what=='down')
 {
-document.getElementById('bonesplay').style.backgroundImage="url('http://instorage.org/portfolio/tazteam/images/games/bones/button3.png')";
+document.getElementById('bonesplay').style.backgroundImage="url('http://mapstore.org/my_portfolio/tazteam.net/images/games/bones/button3.png')";
 }
 else if (what=='up') {
-document.getElementById('bonesplay').style.backgroundImage="url('http://instorage.org/portfolio/tazteam/images/games/bones/button2.png')";
+document.getElementById('bonesplay').style.backgroundImage="url('http://mapstore.org/my_portfolio/tazteam.net/images/games/bones/button2.png')";
 }
 else if (what=='out') {
-document.getElementById('bonesplay').style.backgroundImage="url('http://instorage.org/portfolio/tazteam/images/games/bones/button.png')";
+document.getElementById('bonesplay').style.backgroundImage="url('http://mapstore.org/my_portfolio/tazteam.net/images/games/bones/button.png')";
 }
 else if (what=='over') {
-document.getElementById('bonesplay').style.backgroundImage="url('http://instorage.org/portfolio/tazteam/images/games/bones/button2.png')";
+document.getElementById('bonesplay').style.backgroundImage="url('http://mapstore.org/my_portfolio/tazteam.net/images/games/bones/button2.png')";
 }
 }
 
 
-general___preload_one_image('http://instorage.org/portfolio/tazteam/images/games/bones/button3.png');
-general___preload_one_image('http://instorage.org/portfolio/tazteam/images/games/bones/button2.png');
+general___preload_one_image('http://mapstore.org/my_portfolio/tazteam.net/images/games/bones/button3.png');
+general___preload_one_image('http://mapstore.org/my_portfolio/tazteam.net/images/games/bones/button2.png');
 
 
 
@@ -238,10 +238,10 @@ $pointsatuser=$rowuser['site_points'];
 	
 	<tr>
 	<td width="15%" align="right" style="padding-right:10px;">
-		<img src="http://instorage.org/portfolio/tazteam/images/games/bones/bones<?php echo($regantibot1_1); if ($win=="comp") {echo("loose");} ?>.png" width="130" height="130">	
+		<img src="http://mapstore.org/my_portfolio/tazteam.net/images/games/bones/bones<?php echo($regantibot1_1); if ($win=="comp") {echo("loose");} ?>.png" width="130" height="130">	
 	</td>
 	<td width="15%" align="left" style="padding-left:10px;">
-		<img src="http://instorage.org/portfolio/tazteam/images/games/bones/bones<?php echo($regantibot1_2); if ($win=="comp") {echo("loose");}  ?>.png" width="130" height="130">	
+		<img src="http://mapstore.org/my_portfolio/tazteam.net/images/games/bones/bones<?php echo($regantibot1_2); if ($win=="comp") {echo("loose");}  ?>.png" width="130" height="130">	
 	</td>
 	
 	<td width="15%" align="center" valign="middle">
@@ -255,7 +255,7 @@ $pointsatuser=$rowuser['site_points'];
 
 		$rowusers=mysql_fetch_array(mysql_query("SELECT * FROM registrated_users___main_data WHERE id_user='".UsersMyData::$id."' LIMIT 1"));
 		?>
-		<a href="http://instorage.org/portfolio/tazteam/cabinet/<?php if (UsersMyData::$id) {echo(UsersMyData::$id);} else {echo("index");} ?>"><?php 
+		<a href="http://mapstore.org/my_portfolio/tazteam.net/cabinet/<?php if (UsersMyData::$id) {echo(UsersMyData::$id);} else {echo("index");} ?>"><?php 
         
        
         
@@ -270,17 +270,17 @@ $pointsatuser=$rowuser['site_points'];
 		<big><b style="color:#ffffff;">vs</b></big>
 	</td>	
 	<td width="15%" align="center" valign="middle">
-		<img src="http://instorage.org/portfolio/tazteam/images/comp.png" width="75" height="75" style="border:0px solid #ffffff;">
+		<img src="http://mapstore.org/my_portfolio/tazteam.net/images/comp.png" width="75" height="75" style="border:0px solid #ffffff;">
 	</td>
 
 	
 	
 	<td width="15%" align="right" style="padding-right:10px;">
-		<img src="http://instorage.org/portfolio/tazteam/images/games/bones/bones<?php echo($regantibot2_1); if ($win=="user") {echo("loose");} ?>.png" width="130" height="130">	
+		<img src="http://mapstore.org/my_portfolio/tazteam.net/images/games/bones/bones<?php echo($regantibot2_1); if ($win=="user") {echo("loose");} ?>.png" width="130" height="130">	
 	</td>
 	
 	<td width="15%" align="left" style="padding-left:10px;">
-		<img src="http://instorage.org/portfolio/tazteam/images/games/bones/bones<?php echo($regantibot2_2); if ($win=="user") {echo("loose");}?>.png" width="130" height="130">	
+		<img src="http://mapstore.org/my_portfolio/tazteam.net/images/games/bones/bones<?php echo($regantibot2_2); if ($win=="user") {echo("loose");}?>.png" width="130" height="130">	
 	</td>
 	</tr>
 	
@@ -331,7 +331,7 @@ $pointsatuser=$rowuser['site_points'];
     
     <div class="v_i_b"></div>
     
-<img id="chipsatuser" src="http://instorage.org/portfolio/tazteam/images/games/chipsnone.png" width="260" height="130"><!--171-->
+<img id="chipsatuser" src="http://mapstore.org/my_portfolio/tazteam.net/images/games/chipsnone.png" width="260" height="130"><!--171-->
 	<br>
 	Баллов на счету: <b><?php	if ($pointsatuser) {echo($pointsatuser);} else {echo("0");}?></b>
 	<br>
@@ -340,13 +340,13 @@ $pointsatuser=$rowuser['site_points'];
 	
 	<td width="40%" align="center" colspan="3" valign="top" height="270">
     <div class="v_i_b"></div>
-<img id="chips" src="http://instorage.org/portfolio/tazteam/images/games/chipsnone.png" width="260" height="130">		
+<img id="chips" src="http://mapstore.org/my_portfolio/tazteam.net/images/games/chipsnone.png" width="260" height="130">		
 	</td>
 	
 	
 	<td  colspan="2" width="30%" align="center" valign="top" height="270">
     <div class="v_i_b"></div>
-<img src="http://instorage.org/portfolio/tazteam/images/games/chipscomp.png" width="260" height="130">	
+<img src="http://mapstore.org/my_portfolio/tazteam.net/images/games/chipscomp.png" width="260" height="130">	
 	</td>
 	</tr>	
 	

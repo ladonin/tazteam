@@ -23,7 +23,7 @@ if (UsersMyData::$identified==1){ ?>
 		<table width="100%" cellpadding="0" cellspacing="0">
 		<tr>
 		<td align="left">
-		<p class="lead"><a href="http://instorage.org/portfolio/tazteam/users/<?php echo(UsersDialogs::$who);?>"><?php echo(GeneralDialogWindows::$namedialog);?></a></p>
+		<p class="lead"><a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo(UsersDialogs::$who);?>"><?php echo(GeneralDialogWindows::$namedialog);?></a></p>
 		</td>
 		<td align="right">
 			<p class="lead"><div id="dw1_divchat_count_messages"><?php echo($dialog_windows_1_row['count']);?></div></p>

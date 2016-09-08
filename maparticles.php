@@ -2,12 +2,12 @@
 <html>
 <head>
 <title>Карта сайта</title>
-<link rel="icon" href="http://instorage.org/portfolio/tazteam/favicon.ico" type="image/x-icon">
-<link rel="shortcut icon" href="http://instorage.org/portfolio/tazteam/favicon.ico" type="image/x-icon">
+<link rel="icon" href="http://mapstore.org/my_portfolio/tazteam.net/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="http://mapstore.org/my_portfolio/tazteam.net/favicon.ico" type="image/x-icon">
 <link rel="icon" href="" type="image/x-icon">
 <link rel="shortcut icon" href="" type="image/x-icon">
-<link rel="stylesheet" type="text/css" href="http://instorage.org/portfolio/tazteam/css/_general/carcas.css">
-<link rel="stylesheet" type="text/css" href="http://instorage.org/portfolio/tazteam/css/_general/text.css">
+<link rel="stylesheet" type="text/css" href="http://mapstore.org/my_portfolio/tazteam.net/css/_general/carcas.css">
+<link rel="stylesheet" type="text/css" href="http://mapstore.org/my_portfolio/tazteam.net/css/_general/text.css">
 </head>
 
 <body style="padding:20px;"><?php
@@ -26,12 +26,12 @@ mysql_query('SET NAMES UTF8');//на время
 
 
 ?>
-<a href="http://instorage.org/portfolio/tazteam"><b>Главная</b></a><br>
+<a href="http://mapstore.org/my_portfolio/tazteam.net"><b>Главная</b></a><br>
 
 
 
 
-<a href="http://instorage.org/portfolio/tazteam/articles"><strong>Статьи</strong></a><br>
+<a href="http://mapstore.org/my_portfolio/tazteam.net/articles"><strong>Статьи</strong></a><br>
 <?php
 
 
@@ -39,7 +39,7 @@ $res=mysql_query("SELECT id,name FROM news where themepage='2' order by id DESC 
 while ($row=mysql_fetch_array($res)) 
 {
 ?>
-<a href="http://instorage.org/portfolio/tazteam/articles/<?php echo($row['id']);?>"><?php echo($row['name']);?></a><br>
+<a href="http://mapstore.org/my_portfolio/tazteam.net/articles/<?php echo($row['id']);?>"><?php echo($row['name']);?></a><br>
 <?php
 
 }

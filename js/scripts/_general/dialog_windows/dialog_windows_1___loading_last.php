@@ -7,7 +7,7 @@ var dwLL1_adress_<?php echo(GeneralDialogWindows::$id_dialog);?>=new String();//
 
 dwLL1_max_<?php echo(GeneralDialogWindows::$id_dialog);?>=<?php echo(GeneralDialogWindows::max_count_loading_messages); ?>;//>>>>>>>>>>>>>>>>>>>>     СКОЛЬКО ПОДГРУЖАЕМ         <<<<<<<<<<<<<<<<<<<<<<<<<
 dwLL1_N_current_<?php echo(GeneralDialogWindows::$id_dialog);?>="<?php echo(GeneralDialogWindows::$id_message_start); ?>";//последний подгруженный idkey до аякса записываем в ячейку счетчика
-dwLL1_adress_<?php echo(GeneralDialogWindows::$id_dialog);?>="http://instorage.org/portfolio/tazteam/data/components/_general/dialog_windows/dialog_windows_1_loading_last_ajax.php";//исполняемый файл
+dwLL1_adress_<?php echo(GeneralDialogWindows::$id_dialog);?>="http://mapstore.org/my_portfolio/tazteam.net/data/components/_general/dialog_windows/dialog_windows_1_loading_last_ajax.php";//исполняемый файл
 
 var dwLL1_scroll_divchat_<?php echo(GeneralDialogWindows::$id_dialog);?>;//прокрутка от верха окна
 var dwLL1_height_bodychat_<?php echo(GeneralDialogWindows::$id_dialog);?>;//высота тела чата

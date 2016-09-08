@@ -7,7 +7,7 @@
 		<div class="padding_right_10"><?php echo(GeneralPagesCounter::$htmlarrows); ?></div>
 	</td>
 	<td>
-    	<a href="http://instorage.org/portfolio/tazteam/<?php echo(GeneralGetVars::$var1."/".GeneralGetVars::$var2);?>" class="btn btn-primary btn-small">▲</a>
+    	<a href="http://mapstore.org/my_portfolio/tazteam.net/<?php echo(GeneralGetVars::$var1."/".GeneralGetVars::$var2);?>" class="btn btn-primary btn-small">▲</a>
 	</td>	
 	</tr>
 	</table>

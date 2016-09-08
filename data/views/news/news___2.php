@@ -2,7 +2,7 @@
 class="boxShadow3"
 >
    <?php include("data/components/_general/breadcrumbs.php"); ?>
-<a href="http://instorage.org/portfolio/tazteam/<?php echo(GeneralGetVars::$var1);?><?php if (GeneralGetVars::$num_page) {echo("/".GeneralGetVars::$num_page);}?>" class="link_normal">отменить</a>
+<a href="http://mapstore.org/my_portfolio/tazteam.net/<?php echo(GeneralGetVars::$var1);?><?php if (GeneralGetVars::$num_page) {echo("/".GeneralGetVars::$num_page);}?>" class="link_normal">отменить</a>
 
 <div class="v_i_b"></div>
 <div class="grey_line_1"></div>

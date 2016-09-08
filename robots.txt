@@ -3,4 +3,4 @@ Disallow: /cgi-bin/
 Disallow: /away.php
 
 Host: instorage.org/portfolio/tazteam
-Sitemap: http://instorage.org/portfolio/tazteam/sitemap.xml
+Sitemap: http://mapstore.org/my_portfolio/tazteam.net/sitemap.xml

@@ -34,7 +34,7 @@ while ($row = GeneralMYSQL::fetch_array($res)) {
     ?>
 
 
-    <a href="http://instorage.org/portfolio/tazteam/forum/<?php echo($row['id_section'] . "/" . $row['id_topic'] . "=1"); ?>" class="link_lead_topic"><?php echo($row['name_topic']); ?></a>
+    <a href="http://mapstore.org/my_portfolio/tazteam.net/forum/<?php echo($row['id_section'] . "/" . $row['id_topic'] . "=1"); ?>" class="link_lead_topic"><?php echo($row['name_topic']); ?></a>
 
     <div>
         <span class="link_lead_topic">&nbsp;</span>

@@ -64,16 +64,16 @@ while ($row=GeneralMYSQL::fetch_array($res)){
 <tr>
 <td class="photo2_3">
 	<div class="photo2_4">
-		<a href="http://instorage.org/portfolio/tazteam/photo/<?php echo(GeneralGetVars::$var2."/".$row['id_topic']."=".PhotoBase::$current_num_page_photo);?>" class="big_link_h1"><?php echo($row['name_topic']);?></a>
+		<a href="http://mapstore.org/my_portfolio/tazteam.net/photo/<?php echo(GeneralGetVars::$var2."/".$row['id_topic']."=".PhotoBase::$current_num_page_photo);?>" class="big_link_h1"><?php echo($row['name_topic']);?></a>
 		<?php if (GeneralGetVars::$var2!=1){/*привязка 1 от галереи*/?>
 		<div class="v_i_b_h1"></div>
-		<span class="explanation">Автор: </span> <a href="http://instorage.org/portfolio/tazteam/users/<?php echo($row['id_autor_topic']);?>" class="small_dark_link"><?php echo(UsersMyData::return_name($row['t_login_user'],$row['t_mail_user'],$row['t_name_user'],$row['t_surname_user'],$row['t_login_status']));?></a>
+		<span class="explanation">Автор: </span> <a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo($row['id_autor_topic']);?>" class="small_dark_link"><?php echo(UsersMyData::return_name($row['t_login_user'],$row['t_mail_user'],$row['t_name_user'],$row['t_surname_user'],$row['t_login_status']));?></a>
 		<?php } ?>
 	</div>
 </td>
 </tr>
 <tr>
-<td onclick="javascript:location.href='http://instorage.org/portfolio/tazteam/photo/<?php echo(GeneralGetVars::$var2."/".$row['id_topic']."=".PhotoBase::$current_num_page_photo);?>'" 
+<td onclick="javascript:location.href='http://mapstore.org/my_portfolio/tazteam.net/photo/<?php echo(GeneralGetVars::$var2."/".$row['id_topic']."=".PhotoBase::$current_num_page_photo);?>'" 
 style="cursor:pointer; background-image: url(http://140706.selcdn.com/tazteam/_files/images/photo/<?php echo(GeneralGetVars::$var2."/".$row['id_topic']."/".$row['id_photo']."_5.".$row['format_photo']);?>); background-repeat:no-repeat;"> </td>
 </tr>
 </table>
@@ -86,9 +86,9 @@ style="cursor:pointer; background-image: url(http://140706.selcdn.com/tazteam/_f
 <tr>
 <td class="photo2_3">
 	<div class="photo2_9">
-		<a href="http://instorage.org/portfolio/tazteam/photo/<?php echo(GeneralGetVars::$var2."/".$row['id_topic']);?>=1" class="big_link_h1"><?php echo($row['name_topic']);?></a>
+		<a href="http://mapstore.org/my_portfolio/tazteam.net/photo/<?php echo(GeneralGetVars::$var2."/".$row['id_topic']);?>=1" class="big_link_h1"><?php echo($row['name_topic']);?></a>
 		<div class="v_i_b_h1"></div>
-		<span class="explanation">Автор: </span> <a href="http://instorage.org/portfolio/tazteam/users/<?php echo($row['id_autor_topic']);?>" class="small_dark_link"><?php echo(UsersMyData::return_name($row['t_login_user'],$row['t_mail_user'],$row['t_name_user'],$row['t_surname_user'],$row['t_login_status']));?></a>
+		<span class="explanation">Автор: </span> <a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo($row['id_autor_topic']);?>" class="small_dark_link"><?php echo(UsersMyData::return_name($row['t_login_user'],$row['t_mail_user'],$row['t_name_user'],$row['t_surname_user'],$row['t_login_status']));?></a>
 	</div>
 </td>
 </tr>
@@ -102,9 +102,9 @@ style="cursor:pointer; background-image: url(http://140706.selcdn.com/tazteam/_f
 <tr>
 <td class="photo2_3">
 	<div class="photo2_9">
-		<a href="http://instorage.org/portfolio/tazteam/photo/<?php echo(GeneralGetVars::$var2."/".$row['id_topic']);?>=1" class="big_link_h1"><?php echo($row['name_topic']);?></a>
+		<a href="http://mapstore.org/my_portfolio/tazteam.net/photo/<?php echo(GeneralGetVars::$var2."/".$row['id_topic']);?>=1" class="big_link_h1"><?php echo($row['name_topic']);?></a>
 		<div class="v_i_b_h1"></div>
-		<span class="explanation">Автор: </span> <a href="http://instorage.org/portfolio/tazteam/users/<?php echo($row['id_autor_topic']);?>" class="small_dark_link"><?php echo(UsersMyData::return_name($row['t_login_user'],$row['t_mail_user'],$row['t_name_user'],$row['t_surname_user'],$row['t_login_status']));?></a>
+		<span class="explanation">Автор: </span> <a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo($row['id_autor_topic']);?>" class="small_dark_link"><?php echo(UsersMyData::return_name($row['t_login_user'],$row['t_mail_user'],$row['t_name_user'],$row['t_surname_user'],$row['t_login_status']));?></a>
 	</div>
 </td>
 </tr>

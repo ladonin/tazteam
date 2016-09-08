@@ -300,7 +300,7 @@ window_site_body_width=window_width;
 	$res=GeneralMYSQL::query($MSQLc,$query);
 
 	while ($row=GeneralMYSQL::fetch_array($res)){
-		UsersBase::$cur_user_name=UsersMyData::return_name($row['gen_login_user'],$row['site_mail_user'],$row['gen_name_user'],$row['gen_surname_user'],$row['site_login_status']);	?><a href="http://instorage.org/portfolio/tazteam/users/<?php echo($row['id_user']);?>" style="white-space:nowrap;"><img src="<?php echo(UsersBase::return_url_photo($row['gen_photo'],$row['dir_user']."/".$row['id_user']."_2.".$row['site_photo_format'],$row['sn_photo_url_from_small'],$row['sn_photo_url_from_huge']));?>" width="79" height="79" alt="<?php echo(UsersBase::$cur_user_name);?>" title="<?php echo(UsersBase::$cur_user_name);?>" class="img-rounded" style="margin-right:0px; border-right:1px solid #ffffff;"></a><?php }
+		UsersBase::$cur_user_name=UsersMyData::return_name($row['gen_login_user'],$row['site_mail_user'],$row['gen_name_user'],$row['gen_surname_user'],$row['site_login_status']);	?><a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo($row['id_user']);?>" style="white-space:nowrap;"><img src="<?php echo(UsersBase::return_url_photo($row['gen_photo'],$row['dir_user']."/".$row['id_user']."_2.".$row['site_photo_format'],$row['sn_photo_url_from_small'],$row['sn_photo_url_from_huge']));?>" width="79" height="79" alt="<?php echo(UsersBase::$cur_user_name);?>" title="<?php echo(UsersBase::$cur_user_name);?>" class="img-rounded" style="margin-right:0px; border-right:1px solid #ffffff;"></a><?php }
 	?></nobr>
 	</div>
     

@@ -12,7 +12,7 @@
     <?php } ?>
     
 	<td width="1%" class="padding_right_10">
-		 <a href="http://instorage.org/portfolio/tazteam/forum" class="btn btn-primary btn-small" title="наверх">▲</a>
+		 <a href="http://mapstore.org/my_portfolio/tazteam.net/forum" class="btn btn-primary btn-small" title="наверх">▲</a>
 	</td>    
 	<td align="left" width="98%"><?php		
 		if (UsersMyData::$identified==1) {//для зарегистрированных пользователей ?>	

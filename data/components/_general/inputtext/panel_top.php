@@ -34,18 +34,18 @@
         
         
         
-<img src="http://instorage.org/portfolio/tazteam/images/_general/general___inputtext_quote_img_main.gif"
+<img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/general___inputtext_quote_img_main.gif"
   onclick="general___inputtextincludetag('inputtexttextarea<?php echo(GeneralInputText::$id);?>', 'quote','text');" title="цитата"
   width="20" height="20">
         
         
-<img src="http://instorage.org/portfolio/tazteam/images/_general/general___inputtext_video_img_main.gif"
+<img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/general___inputtext_video_img_main.gif"
   onclick="general___inputtextincludetag('inputtexttextarea<?php echo(GeneralInputText::$id);?>', 'video','text');" title="видео"
   width="20" height="20">    
  
  
  
-<img src="http://instorage.org/portfolio/tazteam/images/_general/general___inputtext_url_img_main.gif"
+<img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/general___inputtext_url_img_main.gif"
   onclick="general___inputtextincludetag('inputtexttextarea<?php echo(GeneralInputText::$id);?>', 'link','text');" title="ссылка"
   width="20" height="20">  
   
@@ -58,7 +58,7 @@
  
 	        <?php
             if ((GeneralGetVars::$var1==="news")||(GeneralGetVars::$var1==="articles")) {?>  
-<img src="http://instorage.org/portfolio/tazteam/images/_general/general___inputtext_url_img_main.gif"
+<img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/general___inputtext_url_img_main.gif"
   onclick="general___inputtextincludetag('inputtexttextarea<?php echo(GeneralInputText::$id);?>', 'url','text');" title="ссылка"
   width="20" height="20">      
   <?php } ?></div> 

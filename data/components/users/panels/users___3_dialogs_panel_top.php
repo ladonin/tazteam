@@ -5,7 +5,7 @@
 	<tr>
 	<td>
 		<?php if (!GeneralGetVars::$var4){?>
-			<a href="http://instorage.org/portfolio/tazteam/<?php echo(GeneralGetVars::$var1."/".GeneralGetVars::$var2);?>" class="btn btn-primary btn-small">к&nbsp;странице&nbsp;пользователя</a>
+			<a href="http://mapstore.org/my_portfolio/tazteam.net/<?php echo(GeneralGetVars::$var1."/".GeneralGetVars::$var2);?>" class="btn btn-primary btn-small">к&nbsp;странице&nbsp;пользователя</a>
 		<?php }
 		else {
 			UsersDialogs::set_sort();
@@ -13,7 +13,7 @@
 			GeneralPagesCounter::$rowspage_name="rowspageusersdialogs";//копия такой страницы - по присваиванию номеров страниц
 			GeneralPagesCounter::calculate_current($MSQLc,"registrated_users___correspondence_table","date_lastupdate>='".UsersDialogs::$date_lastupdate."'",0,0,0,0,0);//условия выборки аздаются сортировкой или поиском		
 			?>
-			<a href="http://instorage.org/portfolio/tazteam/<?php echo(GeneralGetVars::$var1."/".GeneralGetVars::$var2."/dialogs=".GeneralPagesCounter::$N_cur_current);?>" class="btn btn-primary btn-small">к&nbsp;диалогам</a>		
+			<a href="http://mapstore.org/my_portfolio/tazteam.net/<?php echo(GeneralGetVars::$var1."/".GeneralGetVars::$var2."/dialogs=".GeneralPagesCounter::$N_cur_current);?>" class="btn btn-primary btn-small">к&nbsp;диалогам</a>		
 		<?php } ?>
 	</td>	
 	<td align="left" width="99%">	

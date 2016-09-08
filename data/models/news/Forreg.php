@@ -141,7 +141,7 @@ static public function display_images_in_redact_message(){//определяем
 	foreach(self::$array_redact_message_attached_photos as $key=>$value){//перебираем приложенные фотки
 		echo("		
 
-<img src=\"http://instorage.org/portfolio/tazteam/".GeneralGlobalVars::pathtofiles."/images/".GeneralGetVars::$var1."/".GeneralGetVars::$var2."/".GeneralGetVars::$var3."/".$value."\" class=\"for3_25\">
+<img src=\"http://mapstore.org/my_portfolio/tazteam.net/".GeneralGlobalVars::pathtofiles."/images/".GeneralGetVars::$var1."/".GeneralGetVars::$var2."/".GeneralGetVars::$var3."/".$value."\" class=\"for3_25\">
 <table cellpadding=\"0\" cellspacing=\"0\" class=\"for3_27\">
 <tr id=\"imgupdate".$key."\">
 <td align=\"left\" valign=\"middle\" class=\"for3_28\">Обновить:</td>
@@ -268,7 +268,7 @@ static public function display_images_in_redact_news(){//определяем ф
 echo("<span class=\"red\">* - главное фото</span><div class=\"v_i_b\"></div>");
 	foreach(self::$array_redact_news_attached_photos as $key=>$value){//перебираем приложенные фотки
 		echo("
-<img src=\"http://instorage.org/portfolio/tazteam/".GeneralGlobalVars::pathtofiles."/images/".GeneralGetVars::$var1."/".GeneralGetVars::$num_page."/".$value."\" style=\"width:260px; margin-bottom:10px;\">
+<img src=\"http://mapstore.org/my_portfolio/tazteam.net/".GeneralGlobalVars::pathtofiles."/images/".GeneralGetVars::$var1."/".GeneralGetVars::$num_page."/".$value."\" style=\"width:260px; margin-bottom:10px;\">
 <table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">
 <tr id=\"imgupdate".$key."\">
 <td align=\"left\" width=\"70\"><div class=\"v_i_s\"></div>");

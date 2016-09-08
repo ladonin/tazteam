@@ -3,7 +3,7 @@
      >
 
     <?php include("data/components/_general/breadcrumbs.php"); ?>
-    <a href="http://instorage.org/portfolio/tazteam/automarket<?php if (GeneralGetVars::$num_page) {
+    <a href="http://mapstore.org/my_portfolio/tazteam.net/automarket<?php if (GeneralGetVars::$num_page) {
         echo("/" . GeneralGetVars::$var2 . "/" . GeneralGetVars::$num_page);
     } ?>" class="btn btn-warning btn-small">отменить</a>
     <div class="v_i_b"></div>

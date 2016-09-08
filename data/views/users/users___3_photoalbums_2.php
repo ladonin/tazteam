@@ -33,7 +33,7 @@ while($row=GeneralMYSQL::fetch_array($res)) {
 	<tr>
 	<td valign="top" align="center">
 
-            <a href="http://instorage.org/portfolio/tazteam/users/<?php echo($row['id_user']."/photoalbums/".$row['id_album']);?>=1"><img src="http://140706.selcdn.com/tazteam/_files/images/users/photoalbums/<?php echo($row['dir_album']."/".$row['id_user']."/".$row['id_album']."/".$row['id_photo']."_5.".$row['format_photo']);?>" width="210" height="210"/></a>
+            <a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo($row['id_user']."/photoalbums/".$row['id_album']);?>=1"><img src="http://140706.selcdn.com/tazteam/_files/images/users/photoalbums/<?php echo($row['dir_album']."/".$row['id_user']."/".$row['id_album']."/".$row['id_photo']."_5.".$row['format_photo']);?>" width="210" height="210"/></a>
         </td>
 		</tr> 
 		<tr>
@@ -41,10 +41,10 @@ while($row=GeneralMYSQL::fetch_array($res)) {
 		<div style="padding:5px 0 0 0;">
 		<?php if (UsersPhotoalbumsBase::$sort_by!=1){?>
 		
-		<span class="link-carcas ">Автор: </span> <a href="http://instorage.org/portfolio/tazteam/users/<?php echo($row['id_user']);?>" class="link_lead_small black"><?php echo(UsersMyData::return_name($row['t_login_user'],$row['t_mail_user'],$row['t_name_user'],$row['t_surname_user'],$row['t_login_status']));?></a>
+		<span class="link-carcas ">Автор: </span> <a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo($row['id_user']);?>" class="link_lead_small black"><?php echo(UsersMyData::return_name($row['t_login_user'],$row['t_mail_user'],$row['t_name_user'],$row['t_surname_user'],$row['t_login_status']));?></a>
 		<div></div><?php } ?>
-				<a href="http://instorage.org/portfolio/tazteam/users/<?php echo($row['id_user']."/photoalbums/".$row['id_album']);?>=1" class="link_lead_small"><?php echo($row['name_album']);?></a>
-<?php /*http://instorage.org/portfolio/tazteam/users/<?php echo($row['id_user']."/allphotosinalbum/".$row['id_album']);?>=1*/ ?>
+				<a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo($row['id_user']."/photoalbums/".$row['id_album']);?>=1" class="link_lead_small"><?php echo($row['name_album']);?></a>
+<?php /*http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo($row['id_user']."/allphotosinalbum/".$row['id_album']);?>=1*/ ?>
 		</div>
 		</td>
 		</tr>

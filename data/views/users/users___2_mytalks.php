@@ -2,7 +2,7 @@
 class="boxShadow3"
 >
 <?php include("data/components/_general/breadcrumbs.php"); ?>
-<a href="http://instorage.org/portfolio/tazteam/<?php echo(GeneralGetVars::$var1."/".GeneralGetVars::$var2);?>" class="btn btn-primary btn-small">к&nbsp;моей странице</a>
+<a href="http://mapstore.org/my_portfolio/tazteam.net/<?php echo(GeneralGetVars::$var1."/".GeneralGetVars::$var2);?>" class="btn btn-primary btn-small">к&nbsp;моей странице</a>
 
 <div class="v_i_b"></div>
 <div class="lead">Мои обсуждения</div>	
@@ -51,7 +51,7 @@ if (UsersBase::detect_its_mypage(2)==true){//определяем - наша с�
 		GeneralPageBasic::uncode_page($value);
 		GeneralPageBasic::$current_name_topic=GeneralPageBasic::return_name_forum3($MSQLc,GeneralPageBasic::$code_section,GeneralPageBasic::$code_topic);		
 		if (GeneralPageBasic::$current_name_topic) { ?>
-		<a href="http://instorage.org/portfolio/tazteam/forum/<?php echo(GeneralPageBasic::$code_section);?>/<?php echo(GeneralPageBasic::$code_topic);?>=1" class="link_normal"><?php echo(GeneralPageBasic::$current_name_topic);?></a>
+		<a href="http://mapstore.org/my_portfolio/tazteam.net/forum/<?php echo(GeneralPageBasic::$code_section);?>/<?php echo(GeneralPageBasic::$code_topic);?>=1" class="link_normal"><?php echo(GeneralPageBasic::$current_name_topic);?></a>
 		<div class="v_i_b"></div>
 		<?php
 		$cv=1;}}}
@@ -82,7 +82,7 @@ if (UsersBase::detect_its_mypage(2)==true){//определяем - наша с�
 		GeneralPageBasic::uncode_page($value);
 		GeneralPageBasic::$current_name_topic=GeneralPageBasic::return_name_forum2($MSQLc,GeneralPageBasic::$code_section);
 		if (GeneralPageBasic::$current_name_topic) { ?>
-		<a href="http://instorage.org/portfolio/tazteam/forum/<?php echo(GeneralPageBasic::$code_section);?>" class="link_lead_topic "><?php echo(GeneralPageBasic::$current_name_topic);?></a>
+		<a href="http://mapstore.org/my_portfolio/tazteam.net/forum/<?php echo(GeneralPageBasic::$code_section);?>" class="link_lead_topic "><?php echo(GeneralPageBasic::$current_name_topic);?></a>
 		<div class="v_i_b"></div>
 		<?php
 		$cv=1;}}}
@@ -109,7 +109,7 @@ if (UsersBase::detect_its_mypage(2)==true){//определяем - наша с�
 		GeneralPagesCounter::$rowspage_name="rowspagephoto3";//копия такой страницы - по присваиванию номеров страниц
 		GeneralPagesCounter::calculate_current($MSQLc, "photo___photos_".GeneralPageBasic::$code_section,"id_topic='".GeneralPageBasic::$code_topic."'","id_photo<='".GeneralPageBasic::$code_idphoto."'",0,0,0);
 		?>
-		<a href="http://instorage.org/portfolio/tazteam/photo/<?php echo(GeneralPageBasic::$code_section);?>/<?php echo(GeneralPageBasic::$code_topic);?>=<?php echo(GeneralPagesCounter::$N_cur_current);?>" class="link_lead_topic "><?php echo(GeneralPageBasic::$current_name_topic);?> (фото №<?php echo(GeneralPagesCounter::$N_cur_current);?>)</a>
+		<a href="http://mapstore.org/my_portfolio/tazteam.net/photo/<?php echo(GeneralPageBasic::$code_section);?>/<?php echo(GeneralPageBasic::$code_topic);?>=<?php echo(GeneralPagesCounter::$N_cur_current);?>" class="link_lead_topic "><?php echo(GeneralPageBasic::$current_name_topic);?> (фото №<?php echo(GeneralPagesCounter::$N_cur_current);?>)</a>
 		<div class="v_i_b"></div>
 		<?php
 		$cv=1;}}}
@@ -138,7 +138,7 @@ if (UsersBase::detect_its_mypage(2)==true){//определяем - наша с�
 		GeneralPagesCounter::$rowspage_name="rowspagephoto3";//копия такой страницы - по присваиванию номеров страниц
 		GeneralPagesCounter::calculate_current($MSQLc, "registrated_users___photoalbums_photos","id_user='".GeneralPageBasic::$code_section."'","id_album='".GeneralPageBasic::$code_topic."'","id_photo<='".GeneralPageBasic::$code_idphoto."'",0,0);
 		?>
-		<a href="http://instorage.org/portfolio/tazteam/users/<?php echo(GeneralPageBasic::$code_section);?>/photoalbums/<?php echo(GeneralPageBasic::$code_topic);?>=<?php echo(GeneralPagesCounter::$N_cur_current);?>" class="link_lead_topic "><?php echo(GeneralPageBasic::$current_name_topic);?> (фото №<?php echo(GeneralPagesCounter::$N_cur_current);?>)</a>
+		<a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo(GeneralPageBasic::$code_section);?>/photoalbums/<?php echo(GeneralPageBasic::$code_topic);?>=<?php echo(GeneralPagesCounter::$N_cur_current);?>" class="link_lead_topic "><?php echo(GeneralPageBasic::$current_name_topic);?> (фото №<?php echo(GeneralPagesCounter::$N_cur_current);?>)</a>
 		<div class="v_i_b"></div>
 		<?php
 		$cv=1;}}}
@@ -160,7 +160,7 @@ if (UsersBase::detect_its_mypage(2)==true){//определяем - наша с�
 		GeneralPageBasic::uncode_page($value);
 		GeneralPageBasic::$current_name_topic=GeneralPageBasic::return_name_news3($MSQLc,GeneralPageBasic::$code_topic);
 		if (GeneralPageBasic::$current_name_topic) { ?>
-		<a href="http://instorage.org/portfolio/tazteam/news/<?php echo(GeneralPageBasic::$code_topic);?>" class="link_lead_topic "><?php echo(GeneralPageBasic::$current_name_topic);?></a>
+		<a href="http://mapstore.org/my_portfolio/tazteam.net/news/<?php echo(GeneralPageBasic::$code_topic);?>" class="link_lead_topic "><?php echo(GeneralPageBasic::$current_name_topic);?></a>
 		<div class="v_i_b"></div>
 		<?php
 		$cv=1;}}}
@@ -188,7 +188,7 @@ if (UsersBase::detect_its_mypage(2)==true){//определяем - наша с�
 		GeneralPageBasic::uncode_page($value);
 		GeneralPageBasic::$current_name_topic=GeneralPageBasic::return_name_articles3($MSQLc,GeneralPageBasic::$code_topic);
 		if (GeneralPageBasic::$current_name_topic) { ?>
-		<a href="http://instorage.org/portfolio/tazteam/news/<?php echo(GeneralPageBasic::$code_topic);?>" class="link_lead_topic "><?php echo(GeneralPageBasic::$current_name_topic);?></a>
+		<a href="http://mapstore.org/my_portfolio/tazteam.net/news/<?php echo(GeneralPageBasic::$code_topic);?>" class="link_lead_topic "><?php echo(GeneralPageBasic::$current_name_topic);?></a>
 		<div class="v_i_b"></div>
 		<?php
 		$cv=1;}}}
@@ -216,7 +216,7 @@ if (UsersBase::detect_its_mypage(2)==true){//определяем - наша с�
 		GeneralPageBasic::uncode_page($value);
 		GeneralPageBasic::$current_name_topic=GeneralPageBasic::return_name_automarket3($MSQLc,GeneralPageBasic::$code_topic);
 		if (GeneralPageBasic::$current_name_topic) { ?>
-		<a href="http://instorage.org/portfolio/tazteam/automarket/<?php echo(GeneralPageBasic::$code_section);?>/<?php echo(GeneralPageBasic::$code_topic);?>" class="link_lead_topic "><?php echo(GeneralPageBasic::$current_name_topic);?></a>
+		<a href="http://mapstore.org/my_portfolio/tazteam.net/automarket/<?php echo(GeneralPageBasic::$code_section);?>/<?php echo(GeneralPageBasic::$code_topic);?>" class="link_lead_topic "><?php echo(GeneralPageBasic::$current_name_topic);?></a>
 		<div class="v_i_b"></div>
 		<?php
 		$cv=1;}}}
@@ -240,7 +240,7 @@ if (UsersBase::detect_its_mypage(2)==true){//определяем - наша с�
 		GeneralPageBasic::uncode_page($value);
 		GeneralPageBasic::$current_name_topic=GeneralPageBasic::return_name_video3($MSQLc,GeneralPageBasic::$code_topic);
 		if (GeneralPageBasic::$current_name_topic) { ?>
-		<a href="http://instorage.org/portfolio/tazteam/video/<?php echo(GeneralPageBasic::$code_section);?>/<?php echo(GeneralPageBasic::$code_topic);?>" class="link_lead_topic "><?php echo(GeneralPageBasic::$current_name_topic);?></a>
+		<a href="http://mapstore.org/my_portfolio/tazteam.net/video/<?php echo(GeneralPageBasic::$code_section);?>/<?php echo(GeneralPageBasic::$code_topic);?>" class="link_lead_topic "><?php echo(GeneralPageBasic::$current_name_topic);?></a>
 		<div class="v_i_b"></div>
 		<?php
 		$cv=1;}}}
@@ -269,7 +269,7 @@ if (UsersBase::detect_its_mypage(2)==true){//определяем - наша с�
 		GeneralPageBasic::uncode_page($value);
 		GeneralPageBasic::$current_name_topic=GeneralPageBasic::return_name_walls($MSQLc,GeneralPageBasic::$code_section);
 		if (GeneralPageBasic::$current_name_topic) { ?>
-		<a href="http://instorage.org/portfolio/tazteam/users/<?php echo(GeneralPageBasic::$code_section);?>" class="link_lead_topic "><?php echo(GeneralPageBasic::$current_name_topic);?></a>
+		<a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo(GeneralPageBasic::$code_section);?>" class="link_lead_topic "><?php echo(GeneralPageBasic::$current_name_topic);?></a>
 		<div class="v_i_b"></div>
 		<?php
 		$cv=1;}}}
@@ -284,13 +284,13 @@ if (UsersBase::detect_its_mypage(2)==true){//определяем - наша с�
 
 	if ($row['indexchat1']){ ?>
 		<div class="v_i_b"></div>
-		<a href="http://instorage.org/portfolio/tazteam" class="link_lead black">Главная страница - чат</a>
+		<a href="http://mapstore.org/my_portfolio/tazteam.net" class="link_lead black">Главная страница - чат</a>
 		<div class="v_i_b"></div>	
 	<?php }
 
 	if ($row['shopchat1']){ ?>
 		<div class="v_i_b"></div>
-		<a href="http://instorage.org/portfolio/tazteam/shop" class="link_lead black">Автозвук - чат</a>
+		<a href="http://mapstore.org/my_portfolio/tazteam.net/shop" class="link_lead black">Автозвук - чат</a>
 		<div class="v_i_b"></div>	
 	<?php }	
 	
@@ -302,7 +302,7 @@ if (UsersBase::detect_its_mypage(2)==true){//определяем - наша с�
 	$cv=0;
 	include("data/components/".GeneralGetVars::$var1."/".GeneralGetVars::$var1."___2_mythemes_query_photo_1.php");
 	while($row=GeneralMYSQL::fetch_array($res)) {
-		?><a href="http://instorage.org/portfolio/tazteam/photo/<?php echo($row['id_section']);?>/<?php echo($row['id_topic']);?>/allphotos=1" class="link_normal"><?php echo($row['name_topic']);?></a>
+		?><a href="http://mapstore.org/my_portfolio/tazteam.net/photo/<?php echo($row['id_section']);?>/<?php echo($row['id_topic']);?>/allphotos=1" class="link_normal"><?php echo($row['name_topic']);?></a>
 		<div class="v_i_b"></div>
 		<?php	
 		$cv=1;}
@@ -321,7 +321,7 @@ if (UsersBase::detect_its_mypage(2)==true){//определяем - наша с�
 	$cv=0;
 	include("data/components/".GeneralGetVars::$var1."/".GeneralGetVars::$var1."___2_mythemes_query_automarket_1.php");
 	while($row=GeneralMYSQL::fetch_array($res)) { ?>
-	<a href="http://instorage.org/portfolio/tazteam/automarket/<?php echo($row['themepage']);?>/<?php echo($row['id']);?>" class="link_normal">
+	<a href="http://mapstore.org/my_portfolio/tazteam.net/automarket/<?php echo($row['themepage']);?>/<?php echo($row['id']);?>" class="link_normal">
 	<?php if ($row['themepage']==1){ ?>
 		<span style="color:#38474e;">продам</span> <?php echo(AutomarketBase::return_parameters("mark", $row['mark'])." "); echo($row['model']);?>
 	<?php } 

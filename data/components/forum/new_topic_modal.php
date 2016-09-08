@@ -8,7 +8,7 @@
     
 		GeneralInputText::$id="submit_1";
 		?><form method="post" 
-		action="http://instorage.org/portfolio/tazteam/submit.php?get_var1=forum" 
+		action="http://mapstore.org/my_portfolio/tazteam.net/submit.php?get_var1=forum" 
 		enctype="multipart/form-data" 
 		onsubmit="return general___send_topic_forum('inputtexttextarea<?php echo(GeneralInputText::$id);?>','inputtexthtml<?php echo(GeneralInputText::$id);?>','inputtextnacked<?php echo(GeneralInputText::$id);?>','ForumCitateId<?php echo(GeneralInputText::$id);?>','inputnametopictextarea<?php echo(GeneralInputText::$id);?>');">
             

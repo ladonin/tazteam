@@ -9,7 +9,7 @@
  
     <?php	
     if ($dialog_windows_1_row['m_id_user']>0) { ?>
-	<a href="http://instorage.org/portfolio/tazteam/users/<?php echo($dialog_windows_1_row['m_id_user']);?>" class="refimage"><img src="<?php 
+	<a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo($dialog_windows_1_row['m_id_user']);?>" class="refimage"><img src="<?php 
     echo(UsersBase::return_url_photo($dialog_windows_1_row['m_photo'],$dialog_windows_1_row['m_dir_user']."/".$dialog_windows_1_row['m_id_user']."_2.".$dialog_windows_1_row['m_photo_format'],$dialog_windows_1_row['m_photo_url_from_small'],$dialog_windows_1_row['m_photo_url_from_huge']));?>" width="60" height="60" class="img-var"
     style="border-right:3px solid <?php if (UsersBase::return_online($dialog_windows_1_row['m_timecoming'])){?>#f09007<?php }
     else { ?>#e0e0e0<?php } ?>">
@@ -28,7 +28,7 @@
     
         <?php        
          if ($dialog_windows_1_row['m_id_user']>0) { ?>
-    		<a href="http://instorage.org/portfolio/tazteam/users/<?php echo($dialog_windows_1_row['m_id_user']);?>" class="link_lead_small"><?php
+    		<a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo($dialog_windows_1_row['m_id_user']);?>" class="link_lead_small"><?php
     		UsersBase::$cur_user_name=UsersMyData::return_name($dialog_windows_1_row['m_login_user'],$dialog_windows_1_row['m_mail_user'],$dialog_windows_1_row['m_name_user'],$dialog_windows_1_row['m_surname_user'],$dialog_windows_1_row['m_login_status']);
     		echo(UsersBase::$cur_user_name);
     		?></a><?php	

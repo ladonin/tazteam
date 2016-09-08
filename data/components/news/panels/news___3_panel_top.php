@@ -8,7 +8,7 @@ GeneralPagesCounter::calculate_to_outer($MSQLc, "news","id>='".GeneralGetVars::$
 <table cellpadding="0" cellspacing="0">
 <tr>
 <td align="left" style="width:10px; padding:0px 10px 0px 10px;">
-	<a href="http://instorage.org/portfolio/tazteam/<?php echo(GeneralGetVars::$var1);?>=<?php echo(GeneralPagesCounter::$N_cur_to_outer);?>" class="big_link">наверх</a>
+	<a href="http://mapstore.org/my_portfolio/tazteam.net/<?php echo(GeneralGetVars::$var1);?>=<?php echo(GeneralPagesCounter::$N_cur_to_outer);?>" class="big_link">наверх</a>
 </td>
 </tr>
 </table>
@@ -37,7 +37,7 @@ GeneralPagesCounter::calculate_to_outer($MSQLc, "news","id>='".GeneralGetVars::$
 	<?php GeneralImagesPreload::input("images/_general/general___new_announcement_submit_hover.png"); ?>
 </td>
 <td align="left" class="padding_left_10">
-	<a href="http://instorage.org/portfolio/tazteam/<?php echo(GeneralGetVars::$var1);?>/redact=<?php echo($row['id']);?>" class="small_dark_link">редактировать</a>
+	<a href="http://mapstore.org/my_portfolio/tazteam.net/<?php echo(GeneralGetVars::$var1);?>/redact=<?php echo($row['id']);?>" class="small_dark_link">редактировать</a>
 </td>
 <td align="left" class="small_dark_link padding_left_10">
 	<form method="post" action="<?php echo(GeneralGetVars::$urltosubmit);?>" onsubmit="return confirm('Удалить новость?');">

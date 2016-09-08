@@ -66,7 +66,7 @@ if ((GeneralGetVars::$var2!=1)||(GeneralSecurity::detect_administrator()==true))
 
 </div>
 <?php /*
-	<a href="http://instorage.org/portfolio/tazteam/photo" class="link_normal">наверх</a>
+	<a href="http://mapstore.org/my_portfolio/tazteam.net/photo" class="link_normal">наверх</a>
 <div class="v_i_t"></div>*/?>
 
 
@@ -88,7 +88,7 @@ while ($row=GeneralMYSQL::fetch_array($res)){
 	<tr>
 	<td valign="top" align="center">
 
-            <a href="http://instorage.org/portfolio/tazteam/photo/<?php echo(GeneralGetVars::$var2."/".$row['id_topic']."=1"/*.PhotoBase::$current_num_page_photo*/);?>"><img src="http://140706.selcdn.com/tazteam/_files/images/photo/<?php echo(GeneralGetVars::$var2."/".$row['id_topic']."/".$row['id_photo']."_5.".$row['format_photo']);?>" width="210" height="210"/></a>
+            <a href="http://mapstore.org/my_portfolio/tazteam.net/photo/<?php echo(GeneralGetVars::$var2."/".$row['id_topic']."=1"/*.PhotoBase::$current_num_page_photo*/);?>"><img src="http://140706.selcdn.com/tazteam/_files/images/photo/<?php echo(GeneralGetVars::$var2."/".$row['id_topic']."/".$row['id_photo']."_5.".$row['format_photo']);?>" width="210" height="210"/></a>
         <?php /*echo(GeneralGetVars::$var2."/".$row['id_topic']."/allphotos=1*/?>
         
         </td>
@@ -96,10 +96,10 @@ while ($row=GeneralMYSQL::fetch_array($res)){
 		<tr>
 		<td align="center">
 		<div style="padding:5px 0 0 0;">
-				<a href="http://instorage.org/portfolio/tazteam/photo/<?php echo(GeneralGetVars::$var2."/".$row['id_topic']."=1"/*.PhotoBase::$current_num_page_photo*/);?>" class="link_lead_small"><?php echo($row['name_topic']);?></a>
+				<a href="http://mapstore.org/my_portfolio/tazteam.net/photo/<?php echo(GeneralGetVars::$var2."/".$row['id_topic']."=1"/*.PhotoBase::$current_num_page_photo*/);?>" class="link_lead_small"><?php echo($row['name_topic']);?></a>
 				<?php /*if (GeneralGetVars::$var2!=1){//привязка 1 от галереи?>
 				<?php <div class="v_i_s"></div>
-				<span class="link_lead_topic">Автор: </span> <a href="http://instorage.org/portfolio/tazteam/users/<?php echo($row['id_autor_topic']);?>" class="link_normal"><?php echo(UsersMyData::return_name($row['t_login_user'],$row['t_mail_user'],$row['t_name_user'],$row['t_surname_user'],$row['t_login_status']));?></a>
+				<span class="link_lead_topic">Автор: </span> <a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo($row['id_autor_topic']);?>" class="link_normal"><?php echo(UsersMyData::return_name($row['t_login_user'],$row['t_mail_user'],$row['t_name_user'],$row['t_surname_user'],$row['t_login_status']));?></a>
 				<?php } */?>
 		</div>
 		</td>

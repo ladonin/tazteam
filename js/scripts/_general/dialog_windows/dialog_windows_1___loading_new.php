@@ -9,7 +9,7 @@ var dwLN1_adress_<?php echo(GeneralDialogWindows::$id_dialog);?>=new String();//
 var dwLN1_content_<?php echo(GeneralDialogWindows::$id_dialog);?>=new String();
 
 dwLN1_newmess_<?php echo(GeneralDialogWindows::$id_dialog);?>=<?php echo(GeneralDialogWindows::$id_message_current); ?>;//с чего начинать
-dwLN1_adress_<?php echo(GeneralDialogWindows::$id_dialog);?>="http://instorage.org/portfolio/tazteam/data/components/_general/dialog_windows/dialog_windows_1_loading_new_ajax.php";//исполняемый файл
+dwLN1_adress_<?php echo(GeneralDialogWindows::$id_dialog);?>="http://mapstore.org/my_portfolio/tazteam.net/data/components/_general/dialog_windows/dialog_windows_1_loading_new_ajax.php";//исполняемый файл
 
 document.getElementById('dw1_divchat_<?php echo(GeneralDialogWindows::$id_dialog);?>').onmouseover = function() { dialog_windows_1_mouseover_<?php echo(GeneralDialogWindows::$id_dialog);?>=true;}
 document.getElementById('dw1_divchat_<?php echo(GeneralDialogWindows::$id_dialog);?>').onmouseout = function() { dialog_windows_1_mouseover_<?php echo(GeneralDialogWindows::$id_dialog);?>=false;}

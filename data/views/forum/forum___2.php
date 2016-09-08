@@ -40,7 +40,7 @@ while ($row=GeneralMYSQL::fetch_array($res)) { ?>
 <div class="v_i_b"></div>
 <table cellpadding="0" cellspacing="0" width="100%">
 <tr>
-<td align="left" valign="top">	<a target="_blank" href="http://instorage.org/portfolio/tazteam/forum/<?php echo($row['id_section']."/".$row['id_topic']);?>=1" class="link_lead"><?php echo($row['name_topic']);?></a>
+<td align="left" valign="top">	<a target="_blank" href="http://mapstore.org/my_portfolio/tazteam.net/forum/<?php echo($row['id_section']."/".$row['id_topic']);?>=1" class="link_lead"><?php echo($row['name_topic']);?></a>
 </td>
 <td align="center" width="120" valign="middle"><span class="link-carcas"><?php echo($row['number_messages']);?></span></td>
 <td align="right" width="120" valign="middle"><span class="link-carcas"><?php echo($row['number_views']);?></span></td>
@@ -170,14 +170,14 @@ while ($row=GeneralMYSQL::fetch_array($res)) { ?>
 <div class="v_i_b"></div>
 <table cellpadding="0" cellspacing="0" width="100%">
 <tr>
-<td align="left" valign="top">	<a href="http://instorage.org/portfolio/tazteam/forum/<?php echo(GeneralGetVars::$var2."/".$row['id_topic']);?>=1" class="link_lead"><?php echo($row['name_topic']);?></a>
+<td align="left" valign="top">	<a href="http://mapstore.org/my_portfolio/tazteam.net/forum/<?php echo(GeneralGetVars::$var2."/".$row['id_topic']);?>=1" class="link_lead"><?php echo($row['name_topic']);?></a>
 	<div class="v_i_b"></div>
-	<span class="link-carcas grey">Автор: </span> <a href="http://instorage.org/portfolio/tazteam/users/<?php echo($row['id_autor_topic']);?>" class="link-carcas black"><?php echo(UsersMyData::return_name($row['t_login_user'],$row['t_mail_user'],$row['t_name_user'],$row['t_surname_user'],$row['t_login_status']));?></a>
+	<span class="link-carcas grey">Автор: </span> <a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo($row['id_autor_topic']);?>" class="link-carcas black"><?php echo(UsersMyData::return_name($row['t_login_user'],$row['t_mail_user'],$row['t_name_user'],$row['t_surname_user'],$row['t_login_status']));?></a>
 </td>
 <td align="center" width="120" valign="middle"><span class="link-carcas"><?php echo($row['number_messages']);?></span></td>
 <td align="center" width="120" valign="middle"><span class="link-carcas"><?php echo($row['number_views']);?></span></td>
 <td align="right" width="190" valign="top">
-	<a href="http://instorage.org/portfolio/tazteam/users/<?php echo($row['id_autor_last_message']);?>" class="link_normal black"><?php echo(UsersMyData::return_name($row['lm_login_user'],$row['lm_mail_user'],$row['lm_name_user'],$row['lm_surname_user'],$row['lm_login_status']));?></a>
+	<a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo($row['id_autor_last_message']);?>" class="link_normal black"><?php echo(UsersMyData::return_name($row['lm_login_user'],$row['lm_mail_user'],$row['lm_name_user'],$row['lm_surname_user'],$row['lm_login_status']));?></a>
 	<div class="v_i_b"></div>
 	<span class="grey" id="forum_2_<?php echo($row['id_topic']);?>"></span>
 	<script type="text/javascript">general___date_DMYvHM_show(<?php echo($row['date_last_message']);?>,'forum_2_<?php echo($row['id_topic']);?>');</script>

@@ -22,7 +22,7 @@ $sitemap = new Sitemap();
 
 // Добавим страничку
 $sitemap->addItem(new SitemapItem(
-  'http://instorage.org/portfolio/tazteam', // URL.
+  'http://mapstore.org/my_portfolio/tazteam.net', // URL.
   time(), // Время в формате timestamp.
   SitemapItem::weekly, //Частота обновления (константы класса SitemapItem).
   0.9 // Приоритет страницы.
@@ -33,7 +33,7 @@ $sitemap->addItem(new SitemapItem(
 
 
 $sitemap->addItem(new SitemapItem(
-'http://instorage.org/portfolio/tazteam/map',
+'http://mapstore.org/my_portfolio/tazteam.net/map',
 'updated_on',
 SitemapItem::daily,
 0.3 // Приоритет страницы.
@@ -41,21 +41,21 @@ SitemapItem::daily,
 
 
 $sitemap->addItem(new SitemapItem(
-'http://instorage.org/portfolio/tazteam/maparticles',
+'http://mapstore.org/my_portfolio/tazteam.net/maparticles',
 'updated_on',
 SitemapItem::daily,
 0.8 // Приоритет страницы.
 ));
 
 $sitemap->addItem(new SitemapItem(
-'http://instorage.org/portfolio/tazteam/mapnews',
+'http://mapstore.org/my_portfolio/tazteam.net/mapnews',
 'updated_on',
 SitemapItem::daily,
 0.8 // Приоритет страницы.
 ));
 
 $sitemap->addItem(new SitemapItem(
-'http://instorage.org/portfolio/tazteam/articles',
+'http://mapstore.org/my_portfolio/tazteam.net/articles',
 'updated_on',
 SitemapItem::daily,
 0.8 // Приоритет страницы.
@@ -65,7 +65,7 @@ $res=mysql_query("SELECT id FROM news where themepage='2' order by id DESC");
 while ($row=mysql_fetch_array($res)) 
 {
 	$sitemap->addItem(new SitemapItem(
-    'http://instorage.org/portfolio/tazteam/articles/'.$row['id'],
+    'http://mapstore.org/my_portfolio/tazteam.net/articles/'.$row['id'],
    'updated_on',
     SitemapItem::daily
 	));
@@ -75,7 +75,7 @@ while ($row=mysql_fetch_array($res))
 
 
 $sitemap->addItem(new SitemapItem(
-'http://instorage.org/portfolio/tazteam/news',
+'http://mapstore.org/my_portfolio/tazteam.net/news',
 'updated_on',
 SitemapItem::daily,
 0.8 // Приоритет страницы.
@@ -85,7 +85,7 @@ $res=mysql_query("SELECT id FROM news where themepage='1' order by id DESC");
 while ($row=mysql_fetch_array($res)) 
 {
 	$sitemap->addItem(new SitemapItem(
-    'http://instorage.org/portfolio/tazteam/news/'.$row['id'],
+    'http://mapstore.org/my_portfolio/tazteam.net/news/'.$row['id'],
    'updated_on',
     SitemapItem::daily
 	));
@@ -99,7 +99,7 @@ while ($row=mysql_fetch_array($res))
 
 
 $sitemap->addItem(new SitemapItem(
-'http://instorage.org/portfolio/tazteam/forum',
+'http://mapstore.org/my_portfolio/tazteam.net/forum',
 'updated_on',
 SitemapItem::daily,
 0.7 // Приоритет страницы.
@@ -112,7 +112,7 @@ while ($row=mysql_fetch_array($res))
 	
 
 	$sitemap->addItem(new SitemapItem(
-    'http://instorage.org/portfolio/tazteam/forum/'.$id_section.'=1',
+    'http://mapstore.org/my_portfolio/tazteam.net/forum/'.$id_section.'=1',
    'updated_on',
     SitemapItem::daily
 	));
@@ -123,7 +123,7 @@ while ($row=mysql_fetch_array($res))
 	{		
 
 	$sitemap->addItem(new SitemapItem(
-    'http://instorage.org/portfolio/tazteam/forum/'.$id_section.'/'.$row2['id_topic'].'=1',
+    'http://mapstore.org/my_portfolio/tazteam.net/forum/'.$id_section.'/'.$row2['id_topic'].'=1',
     'updated_on',
     SitemapItem::daily
 	));
@@ -143,7 +143,7 @@ while ($row=mysql_fetch_array($res))
 
 
 $sitemap->addItem(new SitemapItem(
-'http://instorage.org/portfolio/tazteam/photo',
+'http://mapstore.org/my_portfolio/tazteam.net/photo',
 'updated_on',
 SitemapItem::daily,
 0.7 // Приоритет страницы.
@@ -156,7 +156,7 @@ while ($row=mysql_fetch_array($res))
 	
 
 	$sitemap->addItem(new SitemapItem(
-    'http://instorage.org/portfolio/tazteam/photo/'.$id_section.'=1',
+    'http://mapstore.org/my_portfolio/tazteam.net/photo/'.$id_section.'=1',
    'updated_on',
     SitemapItem::daily
 	));
@@ -167,12 +167,12 @@ while ($row=mysql_fetch_array($res))
 	{		
 
 	$sitemap->addItem(new SitemapItem(
-    'http://instorage.org/portfolio/tazteam/photo/'.$id_section.'/'.$row2['id_topic'].'/allphotos=1',
+    'http://mapstore.org/my_portfolio/tazteam.net/photo/'.$id_section.'/'.$row2['id_topic'].'/allphotos=1',
     'updated_on',
     SitemapItem::daily
 	));
 	$sitemap->addItem(new SitemapItem(
-    'http://instorage.org/portfolio/tazteam/photo/'.$id_section.'/'.$row2['id_topic'].'=1',
+    'http://mapstore.org/my_portfolio/tazteam.net/photo/'.$id_section.'/'.$row2['id_topic'].'=1',
     'updated_on',
     SitemapItem::daily
 	));
@@ -187,7 +187,7 @@ while ($row=mysql_fetch_array($res))
 	{		
 	if ($row2['page_photo']>0){
 	$sitemap->addItem(new SitemapItem(
-    'http://instorage.org/portfolio/tazteam/photo/'.$id_section.'/'.$row2['id_topic'].'='.$row2['page_photo'],
+    'http://mapstore.org/my_portfolio/tazteam.net/photo/'.$id_section.'/'.$row2['id_topic'].'='.$row2['page_photo'],
     'updated_on',
     SitemapItem::daily
 	));}}	
@@ -213,7 +213,7 @@ while ($row=mysql_fetch_array($res))
 
 
 $sitemap->addItem(new SitemapItem(
-'http://instorage.org/portfolio/tazteam/video',
+'http://mapstore.org/my_portfolio/tazteam.net/video',
 'updated_on',
 SitemapItem::daily,
 0.7 // Приоритет страницы.
@@ -223,7 +223,7 @@ $res=mysql_query("SELECT id,themepage FROM video");
 while ($row=mysql_fetch_array($res)) 
 {	
 	$sitemap->addItem(new SitemapItem(
-    'http://instorage.org/portfolio/tazteam/video/'.$row['themepage'].'/'.$row['id'],
+    'http://mapstore.org/my_portfolio/tazteam.net/video/'.$row['themepage'].'/'.$row['id'],
    'updated_on',
     SitemapItem::daily
 	));
@@ -244,7 +244,7 @@ while ($row=mysql_fetch_array($res))
 
 
 $sitemap->addItem(new SitemapItem(
-'http://instorage.org/portfolio/tazteam/automarket',
+'http://mapstore.org/my_portfolio/tazteam.net/automarket',
 'updated_on',
 SitemapItem::daily,
 0.7 // Приоритет страницы.
@@ -254,7 +254,7 @@ $res=mysql_query("SELECT id,themepage FROM automarket");
 while ($row=mysql_fetch_array($res)) 
 {
 	$sitemap->addItem(new SitemapItem(
-    'http://instorage.org/portfolio/tazteam/automarket/'.$row['themepage'].'/'.$row['id'],
+    'http://mapstore.org/my_portfolio/tazteam.net/automarket/'.$row['themepage'].'/'.$row['id'],
    'updated_on',
     SitemapItem::daily
 	));
@@ -276,7 +276,7 @@ while ($row=mysql_fetch_array($res))
 
 
 $sitemap->addItem(new SitemapItem(
-'http://instorage.org/portfolio/tazteam/users',
+'http://mapstore.org/my_portfolio/tazteam.net/users',
 'updated_on',
 SitemapItem::daily,
 0.7 // Приоритет страницы.
@@ -286,7 +286,7 @@ $res=mysql_query("SELECT id_user FROM registrated_users___main_data order by id_
 while ($row=mysql_fetch_array($res)) 
 {
 	$sitemap->addItem(new SitemapItem(
-    'http://instorage.org/portfolio/tazteam/users/'.$row['id_user'],
+    'http://mapstore.org/my_portfolio/tazteam.net/users/'.$row['id_user'],
    'updated_on',
     SitemapItem::daily
 	));
@@ -304,7 +304,7 @@ $res=mysql_query("SELECT id_user,id_album,page_photo FROM registrated_users___ph
 while ($row=mysql_fetch_array($res)) {
 	if ($row['page_photo']>0){
 		$sitemap->addItem(new SitemapItem(
-		'http://instorage.org/portfolio/tazteam/users/'.$row['id_user'].'/photoalbums/'.$row['id_album'].'='.$row['page_photo'],
+		'http://mapstore.org/my_portfolio/tazteam.net/users/'.$row['id_user'].'/photoalbums/'.$row['id_album'].'='.$row['page_photo'],
 	   'updated_on',
 		SitemapItem::daily
 		));

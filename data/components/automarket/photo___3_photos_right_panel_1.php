@@ -4,7 +4,7 @@
 	</script>
 	<?php 
 	if (PhotoBase::detect_belong_topic_to_user()==true){?>
-		<img src="http://instorage.org/portfolio/tazteam/images/_general/general___new_photo_photo_button.png" width="122" height="47"  class="refimage" onclick="general___swim_show_hide('new_photo_in_album_1'); general___swim_hide('redact_photo_in_album_1');">
+		<img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/general___new_photo_photo_button.png" width="122" height="47"  class="refimage" onclick="general___swim_show_hide('new_photo_in_album_1'); general___swim_hide('redact_photo_in_album_1');">
 		<?php
 		$current_var4="_2";
 		$current_var1="
@@ -43,7 +43,7 @@
 				<?php } ?>	
 				<div class="photo3_8" id="photo3_id_photo_list_<?php echo($current_var3);?>">
 					<script type="text/javascript">
-						general___photos_show_visible_photo("<?php echo("http://140706.selcdn.com/tazteam/_files/images/photo/".GeneralGetVars::$var2."/".$row2['id_topic']."/".$row2['id_photo']."_2.".$row2['format_photo']);?>","photo3_id_photo_list_<?php echo($current_var3);?>","50<?php //echo(GeneralImagesCalculate::$view_width);?>","50<?php //echo(GeneralImagesCalculate::$view_height);?>","<?php if((GeneralGetVars::$var3==$row2['id_topic'])&&(PhotoBase::$id_photo_page==$row2['id_photo'])) {echo("refimage_border");} else {echo("refimage");}?>","http://instorage.org/portfolio/tazteam/photo/<?php echo(GeneralGetVars::$var2."/".$row2['id_topic']."=".PhotoBase::$current_num_page_photo);?>");
+						general___photos_show_visible_photo("<?php echo("http://140706.selcdn.com/tazteam/_files/images/photo/".GeneralGetVars::$var2."/".$row2['id_topic']."/".$row2['id_photo']."_2.".$row2['format_photo']);?>","photo3_id_photo_list_<?php echo($current_var3);?>","50<?php //echo(GeneralImagesCalculate::$view_width);?>","50<?php //echo(GeneralImagesCalculate::$view_height);?>","<?php if((GeneralGetVars::$var3==$row2['id_topic'])&&(PhotoBase::$id_photo_page==$row2['id_photo'])) {echo("refimage_border");} else {echo("refimage");}?>","http://mapstore.org/my_portfolio/tazteam.net/photo/<?php echo(GeneralGetVars::$var2."/".$row2['id_topic']."=".PhotoBase::$current_num_page_photo);?>");
 					</script>					
 				</div>
 				<?php }
@@ -60,7 +60,7 @@
 		<span class="explanation">Дата размещения: </span><span class="explanation" id="photo_3_date_photo"></span>
 		<script type="text/javascript">general___date_DMYvHM_show(<?php echo($row['date']);?>,'photo_3_date_photo');</script>
 		<div class="v_i_b"></div>			
-		<span class="explanation">Автор: </span><a href="http://instorage.org/portfolio/tazteam/users/<?php echo($row['t_id_user']);?>" class="small_dark_link"><?php echo(GeneralUserName::show($row['t_login_user'],$row['t_mail_user'],$row['t_name_user'],$row['t_surname_user'],$row['t_login_status']));?></a>
+		<span class="explanation">Автор: </span><a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo($row['t_id_user']);?>" class="small_dark_link"><?php echo(GeneralUserName::show($row['t_login_user'],$row['t_mail_user'],$row['t_name_user'],$row['t_surname_user'],$row['t_login_status']));?></a>
 		<div class="v_i_b"></div>
 		<span class="explanation">Просмотров: <?php echo($row['number_views']);?></span>
 		<div class="v_i_b"></div>

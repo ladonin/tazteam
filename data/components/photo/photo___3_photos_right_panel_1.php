@@ -65,7 +65,7 @@
 include("data/components/".GeneralGetVars::$var1."/".GeneralGetVars::$var1."___3_query_2.php");
 while ($row2=GeneralMYSQL::fetch_array($res2))
 {
-PhotoBase::detect_current_num_page_photo($MSQLc,$row2['page_photo'],$row2['id_photo'],$row2['id_topic'],GeneralGetVars::$var2);?><a href="http://instorage.org/portfolio/tazteam/photo/<?php echo(GeneralGetVars::$var2."/".$row2['id_topic']."=".PhotoBase::$current_num_page_photo);?>" class="refimage"><img src="http://140706.selcdn.com/tazteam/_files/images/photo/<?php echo(GeneralGetVars::$var2."/".$row2['id_topic']."/".$row2['id_photo']."_3.".$row2['format_photo']);?>" width="69" height="69" style="border-right:1px solid #ffffff; border-bottom:1px solid #ffffff;"></a><?php 
+PhotoBase::detect_current_num_page_photo($MSQLc,$row2['page_photo'],$row2['id_photo'],$row2['id_topic'],GeneralGetVars::$var2);?><a href="http://mapstore.org/my_portfolio/tazteam.net/photo/<?php echo(GeneralGetVars::$var2."/".$row2['id_topic']."=".PhotoBase::$current_num_page_photo);?>" class="refimage"><img src="http://140706.selcdn.com/tazteam/_files/images/photo/<?php echo(GeneralGetVars::$var2."/".$row2['id_topic']."/".$row2['id_photo']."_3.".$row2['format_photo']);?>" width="69" height="69" style="border-right:1px solid #ffffff; border-bottom:1px solid #ffffff;"></a><?php 
 }
 GeneralMYSQL::free($res2);
 
@@ -81,7 +81,7 @@ GeneralMYSQL::free($res2);
 
 <div class="v_i_b"></div>		
 
-<div>Альбом: <a href="http://instorage.org/portfolio/tazteam/photo/<?php echo(GeneralGetVars::$var2."/".GeneralGetVars::$var3."/allphotos=1");?>" class="link_lead_small"><?php echo(GeneralPagetree::$name3);?></a></div>
+<div>Альбом: <a href="http://mapstore.org/my_portfolio/tazteam.net/photo/<?php echo(GeneralGetVars::$var2."/".GeneralGetVars::$var3."/allphotos=1");?>" class="link_lead_small"><?php echo(GeneralPagetree::$name3);?></a></div>
 <div class="v_i_s"></div>
 <?php if (!$row['name_photo']) { echo("без названия");} else {echo($row['name_photo']);}?>
 <div class="v_i_b"></div>
@@ -116,7 +116,7 @@ include("data/components/_general/vote/panel_under_photo.php");	?>
 <script type="text/javascript">general___date_DMYvHM_show(<?php echo($row['date_photo']);?>,'photo_3_date_photo');</script>
 <?php if (GeneralGetVars::$var2!=1){/*привязка 1 от галереи*/?>
 	<div></div>			
-	Автор: <a href="http://instorage.org/portfolio/tazteam/users/<?php echo($row['t_id_user']);?>" class="link_lead_small black"><?php echo(UsersMyData::return_name($row['t_login_user'],$row['t_mail_user'],$row['t_name_user'],$row['t_surname_user'],$row['t_login_status']));?></a>
+	Автор: <a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo($row['t_id_user']);?>" class="link_lead_small black"><?php echo(UsersMyData::return_name($row['t_login_user'],$row['t_mail_user'],$row['t_name_user'],$row['t_surname_user'],$row['t_login_status']));?></a>
 	<?php } ?>
 <div></div>
 

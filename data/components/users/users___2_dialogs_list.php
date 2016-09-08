@@ -31,14 +31,14 @@ foreach (UsersDialogs::$array_my_dialogs_lastmessage as $time=>$array){
 <table cellpadding="0" cellspacing="0" style="width:50%; float:left; margin-bottom:10px;">
 <tr>
 <td valign="top" width="115" rowspan="2" align="left">	
-	<a href="http://instorage.org/portfolio/tazteam/users/<?php echo(UsersMyData::$id);?>/dialogs/<?php echo(UsersDialogs::$array_my_dialogs_lastmessage[$time][$key]['id_correspondence']);?>"><img src="<?php echo(UsersDialogs::$array_my_dialogs_lastmessage[$time][$key]['who_photo']);?>" width="100" height="100" class="refimage" <?php if ((UsersBase::$cur_user_online==true)&&($cv3==1)){?>style="border-right:5px solid #f09007;"<?php } ?>></a>
+	<a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo(UsersMyData::$id);?>/dialogs/<?php echo(UsersDialogs::$array_my_dialogs_lastmessage[$time][$key]['id_correspondence']);?>"><img src="<?php echo(UsersDialogs::$array_my_dialogs_lastmessage[$time][$key]['who_photo']);?>" width="100" height="100" class="refimage" <?php if ((UsersBase::$cur_user_online==true)&&($cv3==1)){?>style="border-right:5px solid #f09007;"<?php } ?>></a>
 </td>
 <td valign="top" align="left">
 	<div style="padding: 5px 10px 5px 0px;">
 	<div style="width:305px; height:70px; margin:0px; overflow:hidden;">
-		<div style="margin:0px; max-height:50px; overflow:hidden;"><a href="http://instorage.org/portfolio/tazteam/users/<?php echo(UsersMyData::$id);?>/dialogs/<?php echo(UsersDialogs::$array_my_dialogs_lastmessage[$time][$key]['id_correspondence']);?>" class="link_lead"><?php echo(UsersDialogs::$array_my_dialogs_lastmessage[$time][$key]['who_name']);?></a></div>
+		<div style="margin:0px; max-height:50px; overflow:hidden;"><a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo(UsersMyData::$id);?>/dialogs/<?php echo(UsersDialogs::$array_my_dialogs_lastmessage[$time][$key]['id_correspondence']);?>" class="link_lead"><?php echo(UsersDialogs::$array_my_dialogs_lastmessage[$time][$key]['who_name']);?></a></div>
 		<div class="v_i_s"></div>
-<a href="http://instorage.org/portfolio/tazteam/users/<?php echo(UsersMyData::$id);?>/dialogs/<?php echo(UsersDialogs::$array_my_dialogs_lastmessage[$time][$key]['id_correspondence']);?>" style="text-decoration:none;" class="grey">		
+<a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo(UsersMyData::$id);?>/dialogs/<?php echo(UsersDialogs::$array_my_dialogs_lastmessage[$time][$key]['id_correspondence']);?>" style="text-decoration:none;" class="grey">		
 		<?php if ($cv3==1){?>
 		<div style="float:left; margin:0 5px 25px 0;"><img src="<?php echo(UsersDialogs::$array_my_dialogs_lastmessage[$time][$key]['photo_autor_last_message']);?>" width="30" height="30" class="refimage"></div>
 

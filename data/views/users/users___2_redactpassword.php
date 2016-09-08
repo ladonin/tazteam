@@ -3,7 +3,7 @@ class="boxShadow3"
 ><?php include("data/components/_general/breadcrumbs.php"); ?><?php 
 if (UsersBase::detect_its_mypage(2)==true){//определяем - наша страница или нет
 	?>
-	<a href="http://instorage.org/portfolio/tazteam/users/<?php echo(GeneralGetVars::$var2);?>" class="btn btn-primary btn-small">к&nbsp;странице&nbsp;пользователя</a>
+	<a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo(GeneralGetVars::$var2);?>" class="btn btn-primary btn-small">к&nbsp;странице&nbsp;пользователя</a>
 	<div class="v_i_b"></div>
 	<div class="lead">Новый пароль:</div>
 
