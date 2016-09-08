@@ -1,4 +1,4 @@
-<?php   
+<?php
 class UsersMyData{
 
 static public $identified=0;//идентифицирован я программой или нет
@@ -52,7 +52,7 @@ else if ($public==3){
 	else if ($sex==2){return "помолвлен";}}
 else if ($public==4){
 	if ($sex==1){return "замужем";}
-	else if ($sex==2){return "женат";}}	
+	else if ($sex==2){return "женат";}}
 else if ($public==5){
 	if ($sex==1){return "всё сложно";}
 	else if ($sex==2){return "всё сложно";}}
@@ -61,48 +61,48 @@ else if ($public==6){
 	else if ($sex==2){return "в активном поиске";}}
 else if ($public==7){
 	if ($sex==1){return "влюблена";}
-	else if ($sex==2){return "влюблён";}}}	
-	
-	
-	
+	else if ($sex==2){return "влюблён";}}}
+
+
+
 static public function return_id_by_sn($MSQLc,$sn,$id){//определяем id_user по идентификатору из соцсети
 	$query="SELECT id_user FROM registrated_users___main_data WHERE sn_id_user_".$sn."='".$id."' LIMIT 1";
-	$res=GeneralMYSQL::query($MSQLc,$query);		
+	$res=GeneralMYSQL::query($MSQLc,$query);
 	$row=GeneralMYSQL::fetch_array($res);
 	GeneralMYSQL::free($res);
 	if ($row['id_user']>0){return $row['id_user'];}
 	return false;}
-	
+
 static public function return_sn_by_id_user($MSQLc,$id){//ИЩЕМ соцсеть, к которой возможно привязан пользователь
 	$query="SELECT site_my_sn FROM registrated_users___main_data WHERE id_user='".$id."' LIMIT 1";
-	$res=GeneralMYSQL::query($MSQLc,$query);		
+	$res=GeneralMYSQL::query($MSQLc,$query);
 	$row=GeneralMYSQL::fetch_array($res);
 	GeneralMYSQL::free($res);
 	if ($row['site_my_sn']){return $row['site_my_sn'];}
-	return false;}	
-	
+	return false;}
+
 static public function return_sn_by_id($MSQLc,$sn,$id){//ИЩЕМ идентификатор из соцсети по id_user
 	$query="SELECT sn_id_user_".$sn." FROM registrated_users___main_data WHERE id_user='".$id."' LIMIT 1";
-	$res=GeneralMYSQL::query($MSQLc,$query);		
+	$res=GeneralMYSQL::query($MSQLc,$query);
 	$row=GeneralMYSQL::fetch_array($res);
 	GeneralMYSQL::free($res);
 	if ($row['sn_id_user_'.$sn]>0){return $row['sn_id_user_'.$sn];}
-	return false;}	
+	return false;}
 
 
 static public function return_name($login,$mail,$name,$surname,$login_status){//показывем имя пользователя
 	if (($login)&&($login_status)){//на первое место логин, если есть у него статус
 		return $login;}
 	else if (($name)&&($surname)){
-		return $name." ".$surname;}		
+		return $name." ".$surname;}
 	else if ($name)	{
 		return $name;}
 	else if ($login){
-		return $login;}		
-	else if ($mail){                
-		return $mail;}                
-	else {                
-		return 'без имени';}              
+		return $login;}
+	else if ($mail){
+		return $mail;}
+	else {
+		return 'без имени';}
     }
 
 
@@ -124,19 +124,19 @@ static protected function clearvars(){//очищение внутренних п
 
 static protected function clearcookies(){//очистить куки
 	GeneralCookies::setglobal("UsersMyDataId",0);
-	GeneralCookies::setglobal("UsersMyDataPassword",0);	
+	GeneralCookies::setglobal("UsersMyDataPassword",0);
 	GeneralCookies::setglobal("UsersMyDataName",0);
 	GeneralCookies::setglobal("UsersMyDataName2",0);
 	GeneralCookies::setglobal("UsersMyDataSurname2",0);}
-	
+
 static protected function revisioncookies(){//проверка куков пользователя
 	if ((!empty($_COOKIE['UsersMyDataId']))&&(!empty($_COOKIE['UsersMyDataPassword']))&&(!empty($_COOKIE['UsersMyDataName']))){
-		GeneralCookies::setglobal("UsersMyDataId",GeneralSecurity::tonumber($_COOKIE['UsersMyDataId']));//потому что мы их суем в SQL - запрос	
+		GeneralCookies::setglobal("UsersMyDataId",GeneralSecurity::tonumber($_COOKIE['UsersMyDataId']));//потому что мы их суем в SQL - запрос
 		return true;}
 	else {self::clearcookies();}
 	return false;}
-	
-	
+
+
 static protected function revision_reg_data_status(){//работа со статусом регистрации данных
 	if(isset($_COOKIE['UsersRegDataStatus'])){
 		if ($_COOKIE['UsersRegDataStatus']==4){
@@ -147,12 +147,12 @@ static protected function revision_reg_data_status(){//работа со ста�
 			self::$reg_status=3;}
 		if ($_COOKIE['UsersRegDataStatus']==2){
 			GeneralCookies::setglobal("UsersRegDataStatus",0);
-			self::$reg_status=2;}		
+			self::$reg_status=2;}
 		if ($_COOKIE['UsersRegDataStatus']==1){
 			GeneralCookies::setglobal("UsersRegDataStatus",0);
 			self::$reg_status=1;}}}
-	
-	
+
+
 static protected function revision_fasten_sn_status(){//работа со статусом привязки аккаунта к соцсети
 	if(isset($_COOKIE['UsersFastenSnStatus'])){
 		if ($_COOKIE['UsersFastenSnStatus']==3){
@@ -160,11 +160,11 @@ static protected function revision_fasten_sn_status(){//работа со ста
 			self::$fasten_sn_status=3;}
 		if ($_COOKIE['UsersFastenSnStatus']==2){
 			GeneralCookies::setglobal("UsersFastenSnStatus",0);
-			self::$fasten_sn_status=2;}		
+			self::$fasten_sn_status=2;}
 		if ($_COOKIE['UsersFastenSnStatus']==1){
 			GeneralCookies::setglobal("UsersFastenSnStatus",0);
-			self::$fasten_sn_status=1;}}}	
-	
+			self::$fasten_sn_status=1;}}}
+
 
 
 
@@ -182,79 +182,79 @@ static protected function revision_send_mail_for_repassword_status(){//рабо�
 
 
 
-	
-	
+
+
 static protected function revision_changepassword(){//работа со статусом смены пароля
 	if(isset($_COOKIE['UsersChangePasswordStatus'])){
 		if ($_COOKIE['UsersChangePasswordStatus']==1){
 			GeneralCookies::setglobal("UsersChangePasswordStatus",0);
 			self::$changepassword_status=1;}}}
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
+
 static protected function revision_enter_status(){//работа со статусом входа на сайт
 	if(isset($_COOKIE['UsersEnterStatus'])){
 		if ($_COOKIE['UsersEnterStatus']==3){
 			GeneralCookies::setglobal("UsersEnterStatus",0);
-			self::$enter_status=3;}	
+			self::$enter_status=3;}
 		if ($_COOKIE['UsersEnterStatus']==2){
 			GeneralCookies::setglobal("UsersEnterStatus",0);
-			self::$enter_status=2;}		
+			self::$enter_status=2;}
 		if ($_COOKIE['UsersEnterStatus']==1){
 			GeneralCookies::setglobal("UsersEnterStatus",0);
-			self::$enter_status=1;}}}	
-	
-	
-	
-	
+			self::$enter_status=1;}}}
+
+
+
+
 static public function setcookies_name($name,$surname,$login,$mail,$login_status){//установить в куки имя идентифицированного пльзователя
 	GeneralCookies::setglobal("UsersMyDataName",self::return_name($login,$mail,$name,$surname,$login_status));
 	//дополнительно имя и фамилия, если они есть, для отображения на разных строчках с левой стороны экрана
 	if (!$name) {$name=0;}
 	GeneralCookies::setglobal("UsersMyDataName2",$name);
-	if (!$surname) {$surname=0;}	
-	GeneralCookies::setglobal("UsersMyDataSurname2",$surname);}	
-	
-	
-	
-	
+	if (!$surname) {$surname=0;}
+	GeneralCookies::setglobal("UsersMyDataSurname2",$surname);}
+
+
+
+
 static public function autonomic___set_name_user_cookies($MSQLc,$id_user,$id,$sn){//автономное (не привязана к другим методам) данных пользователя по id_user, или sn_id
 	$query="
-	SELECT gen_name_user,gen_surname_user,gen_login_user,site_mail_user,site_login_status 
-	FROM registrated_users___main_data 
+	SELECT gen_name_user,gen_surname_user,gen_login_user,site_mail_user,site_login_status
+	FROM registrated_users___main_data
 	WHERE ";
 	if ($sn)	{$query.="sn_id_user_".$sn."='".$id."'";}
 	else 		{$query.="id_user='".$id_user."'";}
 	$query.=" LIMIT 1";
-	$res=GeneralMYSQL::query($MSQLc,$query);		
+	$res=GeneralMYSQL::query($MSQLc,$query);
 	$row=GeneralMYSQL::fetch_array($res);
 	GeneralMYSQL::free($res);
-	self::setcookies_name($row['gen_name_user'],$row['gen_surname_user'],$row['gen_login_user'],$row['site_mail_user'],$row['site_login_status']);}		
-	
-	
-	
-	
-	
-	
+	self::setcookies_name($row['gen_name_user'],$row['gen_surname_user'],$row['gen_login_user'],$row['site_mail_user'],$row['site_login_status']);}
+
+
+
+
+
+
 static public function setcookies_id_passwords($id,$password){//установить в куки Id и Password идентифицированного пльзователя
 	GeneralCookies::setglobal("UsersMyDataId",$id);
-	GeneralCookies::setglobal("UsersMyDataPassword",$password);}	
-	
-	
-	
+	GeneralCookies::setglobal("UsersMyDataPassword",$password);}
+
+
+
 static public function setcookies($id,$password,$name,$surname,$login,$mail,$login_status){//установить в куки Id, Password и имя идентифицированного пльзователя
 	self::setcookies_id_passwords($id,$password);
 	self::setcookies_name($name,$surname,$login,$mail,$login_status);}
 
 static protected function updatecookiestime(){//обновить время жизни куков
 	GeneralCookies::setglobal("UsersMyDataId",$_COOKIE['UsersMyDataId']);
-	GeneralCookies::setglobal("UsersMyDataPassword",$_COOKIE['UsersMyDataPassword']);	
+	GeneralCookies::setglobal("UsersMyDataPassword",$_COOKIE['UsersMyDataPassword']);
 	GeneralCookies::setglobal("UsersMyDataName",$_COOKIE['UsersMyDataName']);
 	GeneralCookies::setglobal("UsersMyDataName2",$_COOKIE['UsersMyDataName2']);
 	GeneralCookies::setglobal("UsersMyDataSurname2",$_COOKIE['UsersMyDataSurname2']);}
@@ -283,13 +283,13 @@ static protected function online($MSQLc,$id,$what){//установка онла
 
 static protected function find_saltedpassword($MSQLc,$id){//поиск соленого пароля
 	$query="SELECT password FROM registrated_users___secure_passwords WHERE id_user='".$id."' LIMIT 1";
-	$res=GeneralMYSQL::query($MSQLc,$query);		
+	$res=GeneralMYSQL::query($MSQLc,$query);
 	$row=GeneralMYSQL::fetch_array($res);
 	GeneralMYSQL::free($res);
 	return $row['password'];}
-	
-static protected function revisioncookiepassword($MSQLc){//проверка правильности пароля из куков	
-	if (self::find_saltedpassword($MSQLc,$_COOKIE['UsersMyDataId'])==$_COOKIE['UsersMyDataPassword'])	{return true;}	return false;}	
+
+static protected function revisioncookiepassword($MSQLc){//проверка правильности пароля из куков
+	if (self::find_saltedpassword($MSQLc,$_COOKIE['UsersMyDataId'])==$_COOKIE['UsersMyDataPassword'])	{return true;}	return false;}
 
 static protected function revisioninputpassword($MSQLc,$id,$password){//проверка пароля пользователя
 	//поиск "соленого пароля" И "соли" в registrated_users___secure_passwords и registrated_users___secure_salt по полученному id
@@ -298,9 +298,9 @@ static protected function revisioninputpassword($MSQLc,$id,$password){//пров
 	FROM (SELECT * FROM registrated_users___secure_passwords WHERE id_user='".$id."' LIMIT 1) as registrated_users___secure_passwords
 	JOIN registrated_users___secure_salt
 	USING(id_user)
-	LIMIT 1		
+	LIMIT 1
 	";
-	$res=GeneralMYSQL::query($MSQLc,$query);		
+	$res=GeneralMYSQL::query($MSQLc,$query);
 	$row=GeneralMYSQL::fetch_array($res);
 	GeneralMYSQL::free($res);
 	$DBpassword=$row['password'];//берем "соленый пароль" из БД
@@ -330,20 +330,20 @@ static public function quit($MSQLc,$id){//выход пользователя
 	//стираем его данные из браузера
 	self::clearcookies();
 	self::clearvars();}
-	
-	
-	
-	
-	
 
-	
-	
-	
+
+
+
+
+
+
+
+
 static public function enter($MSQLc){//вход пользователя по логину(или почте) и паролю
 	if (($_POST['UsersMyDataEnter_login'])&&($_POST['UsersMyDataEnter_password'])){
 		//поиск id в registrated_users___main_data по введенному логину или почте
 		$query="SELECT id_user,gen_name_user,gen_surname_user,gen_login_user,site_mail_user,site_login_status FROM registrated_users___main_data WHERE gen_login_user='".$_POST['UsersMyDataEnter_login']."' OR site_mail_user='".$_POST['UsersMyDataEnter_login']."' LIMIT 1";
-		$res=GeneralMYSQL::query($MSQLc,$query);		
+		$res=GeneralMYSQL::query($MSQLc,$query);
 		$row=GeneralMYSQL::fetch_array($res);
 		GeneralMYSQL::free($res);
 		$id=$row['id_user'];
@@ -354,12 +354,12 @@ static public function enter($MSQLc){//вход пользователя по л
 			$surname=$row['gen_surname_user'];
 			$login=$row['gen_login_user'];
 			$mail=$row['site_mail_user'];
-			$login_status=$row['site_login_status'];		
+			$login_status=$row['site_login_status'];
 			//проверяем наш пароль
 			if (self::revisioninputpassword($MSQLc,$id,$_POST['UsersMyDataEnter_password'])==true){
 				//устанавливаем в куки $_COOKIE['UsersMyDataId']="id в registrated_users___main_data", в $_COOKIE['UsersMyDataPassword']="полученный соленый пароль" и возвращаем true
 				self::setcookies($id,self::$saltedpassword,$name,$surname,$login,$mail,$login_status);
-				self::recognize($MSQLc);			
+				self::recognize($MSQLc);
 				return true;}}}
 	//если не равны, возвращаем false
 	GeneralCookies::setglobal("UsersEnterStatus",3);
@@ -371,7 +371,7 @@ static public function enter($MSQLc){//вход пользователя по л
 
 static public function detectscore($MSQLc){
 		$query="SELECT site_points FROM registrated_users___main_data WHERE id_user='".self::$id."' LIMIT 1";
-		$res=GeneralMYSQL::query($MSQLc,$query);		
+		$res=GeneralMYSQL::query($MSQLc,$query);
 		$row=GeneralMYSQL::fetch_array($res);
 		GeneralMYSQL::free($res);
 		return $row['site_points'];}
@@ -386,10 +386,10 @@ static public function identification($MSQLc){//идентификация по�
 		if ((self::revisioncookies()==true)&&((self::$reg_status==0)||(self::$reg_status==3)||(self::$reg_status==4)))	{//если наши куки установлены и регистрации нет или она завершена
 		if (self::revisioncookiepassword($MSQLc)==true) {//если пароль в куках эквивалентен паролю в registrated_users___secure_passwords
 			self::recognize($MSQLc);
-            
-            
+
+
             self::$score=self::detectscore($MSQLc);
-            
+
 			self::revision_fasten_sn_status();//проверка привязки только для авторизированного пользователя
 			self::revision_changepassword();//работа со статусом смены пароля
 			return true;}}
@@ -397,30 +397,30 @@ static public function identification($MSQLc){//идентификация по�
 	self::clearcookies();
 	self::clearvars();}
 
-		
-			
-	
 
-		
+
+
+
+
 static public function return_salting_password($salt,$password){//солим пароль и возвращаем
-	return md5(md5($password).$salt);}		
+	return md5(md5($password).$salt);}
 
 static public function return_composed_password(){//придумываем пароль
-	return chr(rand(97, 122)).chr(rand(97, 122)).chr(rand(97, 122)).chr(rand(97, 122)).chr(rand(97, 122)).chr(rand(97, 122)).chr(rand(97, 122)).chr(rand(97, 122)).chr(rand(97, 122)).chr(rand(97, 122)).chr(rand(97, 122));}		
+	return chr(rand(97, 122)).chr(rand(97, 122)).chr(rand(97, 122)).chr(rand(97, 122)).chr(rand(97, 122)).chr(rand(97, 122)).chr(rand(97, 122)).chr(rand(97, 122)).chr(rand(97, 122)).chr(rand(97, 122)).chr(rand(97, 122));}
 
 static public function return_composed_salt(){//придумываем соль
 	return chr(rand(97, 122)).chr(rand(97, 122)).chr(rand(97, 122)).chr(rand(97, 122));}
 
-		
-		
-	
+
+
+
 
 
 
 
 static public function return_password_by_id_user($MSQLc,$id_user){//определяем пароль по идентификатору
 	$query="SELECT password FROM registrated_users___secure_passwords WHERE id_user='".$id_user."' LIMIT 1";
-	$res=GeneralMYSQL::query($MSQLc,$query);		
+	$res=GeneralMYSQL::query($MSQLc,$query);
 	$row=GeneralMYSQL::fetch_array($res);
 	GeneralMYSQL::free($res);
 	return $row['password'];}
@@ -438,44 +438,44 @@ static public function tiny_identification(){// кратко идентифиц�
 		self::$name=$_COOKIE['UsersMyDataName'];}}}
 
 
-	
-		
-		 
-		
-		
-		
+
+
+
+
+
+
 static protected function detect_id_by_temporary_data($MSQLc,$mail){//определяем временный id пользователя
 	$query="SELECT id FROM registrated_users___temporary___main_data WHERE mail_user='".$mail."' ORDER by id DESC LIMIT 1";
-	$res=GeneralMYSQL::query($MSQLc,$query);		
+	$res=GeneralMYSQL::query($MSQLc,$query);
 	$row=GeneralMYSQL::fetch_array($res);
 	GeneralMYSQL::free($res);
 	self::$id_temporary=$row['id'];
-	return self::$id_temporary;}		
+	return self::$id_temporary;}
 
-	
-	
+
+
 static protected function return_mail_yet_disable($MSQLc,$mail)	{//проверяем есть ли такой mail у других пользователей
 	$query="SELECT id_user FROM registrated_users___main_data WHERE site_mail_user='".$mail."' LIMIT 1";
-	$res=GeneralMYSQL::query($MSQLc,$query);		
+	$res=GeneralMYSQL::query($MSQLc,$query);
 	$row=GeneralMYSQL::fetch_array($res);
 	GeneralMYSQL::free($res);
 	if ($row['id_user']>0){return false;}
 	$query="SELECT id FROM registrated_users___temporary___main_data WHERE mail_user='".$mail."' LIMIT 1";
-	$res=GeneralMYSQL::query($MSQLc,$query);		
+	$res=GeneralMYSQL::query($MSQLc,$query);
 	$row=GeneralMYSQL::fetch_array($res);
 	GeneralMYSQL::free($res);
 	if ($row['id']>0){return false;}
 	return true;}
-	
-	
+
+
 static public function registration($MSQLc){//начальная регистрация пользователя по почте и паролю
 	if (($_POST['UsersMyDataRegistration_mail'])&&($_POST['UsersMyDataRegistration_password'])&&($_POST['UsersMyDataRegistration_antibot'])&&($_POST['oves'])){
-	
+
 	//придумываем соль
 	$salt=self::return_composed_salt();
 
 	//делаем соленый пароль
-	$password=self::return_salting_password($salt,$_POST['UsersMyDataRegistration_password']);	
+	$password=self::return_salting_password($salt,$_POST['UsersMyDataRegistration_password']);
 
 	//проверяем есть ли такой mail у других пользователей
 	if (self::return_mail_yet_disable($MSQLc,$_POST['UsersMyDataRegistration_mail'])==true){
@@ -484,21 +484,21 @@ static public function registration($MSQLc){//начальная регистр�
 		$query="INSERT INTO registrated_users___temporary___main_data (id,mail_user) VALUES('','".$_POST['UsersMyDataRegistration_mail']."')";
 		GeneralMYSQL::query_insert($MSQLc,$query);
 
-		//находим id	
-		self::detect_id_by_temporary_data($MSQLc,$_POST['UsersMyDataRegistration_mail']);		
-		
+		//находим id
+		self::detect_id_by_temporary_data($MSQLc,$_POST['UsersMyDataRegistration_mail']);
+
 		//записываем соленый пароль во временную таблицу
 		$query="INSERT INTO registrated_users___temporary___secure_passwords (id,password) VALUES('".self::$id_temporary."','".$password."')";
-		GeneralMYSQL::query_insert($MSQLc,$query);	
-		
-		//записываем соль во временную таблицу 
+		GeneralMYSQL::query_insert($MSQLc,$query);
+
+		//записываем соль во временную таблицу
 		$query="INSERT INTO registrated_users___temporary___secure_salt (id,salt) VALUES('".self::$id_temporary."','".$salt."')";
 		GeneralMYSQL::query_insert($MSQLc,$query);
 
-		UsersMail::$to=$_POST['UsersMyDataRegistration_mail'];	
-		UsersMail::$subject="Регистрация на сайте instorage.org/portfolio/tazteam";
-		UsersMail::$header.="From: instorage.org/portfolio/tazteam <administration@instorage.org/portfolio/tazteam>";
-		UsersMail::$header.="\nContent-type: text/html; charset=\"UTF-8\""; 
+		UsersMail::$to=$_POST['UsersMyDataRegistration_mail'];
+		UsersMail::$subject="Регистрация на сайте mapstore.org/my_portfolio/tazteam.net";
+		UsersMail::$header.="From: mapstore.org/my_portfolio/tazteam.net <administration@mapstore.org/my_portfolio/tazteam.net>";
+		UsersMail::$header.="\nContent-type: text/html; charset=\"UTF-8\"";
 		UsersMail::$text="<HTML>\r\n
 		<HEAD>\r\n
 		<META http-equiv=Content-Type content='text/html; charset=UTF-8'>\r\n
@@ -511,44 +511,44 @@ static public function registration($MSQLc){//начальная регистр�
 		<td height='25' align='left' style='background-color:#006bbc; padding-left:5px; border-left:1px solid #8194b2; border-top:1px solid #8194b2; border-bottom:1px solid #385194;'>
 			<b style='font-size:13px; color:#ffffff;'>Добро пожаловать на наш сайт!</b>
 		</td>
-		<td height='25' align='left' width='110' valign='middle' style='background-color:#006bbc; padding-right:5px; border-right:1px solid #8194b2; border-top:1px solid #8194b2; border-bottom:1px solid #385194;'><a href='http://mapstore.org/my_portfolio/tazteam.net' title='instorage.org/portfolio/tazteam - главная страница'><img src='http://mapstore.org/my_portfolio/tazteam.net/images/MAILlogoTAZ.png' width='115' height='16'></a></td>
+		<td height='25' align='left' width='110' valign='middle' style='background-color:#006bbc; padding-right:5px; border-right:1px solid #8194b2; border-top:1px solid #8194b2; border-bottom:1px solid #385194;'><a href='http://mapstore.org/my_portfolio/tazteam.net' title='mapstore.org/my_portfolio/tazteam.net - главная страница'><img src='http://mapstore.org/my_portfolio/tazteam.net/images/MAILlogoTAZ.png' width='115' height='16'></a></td>
 		</tr>
 		</table>
 		<table cellpadding='5' cellspacing='0' width='400' style='border:1px solid #b6c3e5; background-color:#dce1ed; text-align: justify; word-spacing: 0.2ex;'>
 		<tr>
 		<td align='left'>
 			<font style='font-size:12px;'>Ваш пароль:&nbsp;<b>".$_POST['UsersMyDataRegistration_password']."</b></font>
-			<br><br>		
+			<br><br>
 			<a href='http://mapstore.org/my_portfolio/tazteam.net/performing/registration_final_from_mail.php/".$_POST['UsersMyDataRegistration_mail']."/".$password."' style='font-size:12px;'>Закончить регистрацию и войти в личный кабинет</a>
 		</td>
 		</tr>
 		</table>
 		<table cellpadding='0' cellspacing='0' width='100%'><tr><td height='10' align='left'></td></tr></table>
-		<font style='font-size:12px;'>С уважением, администрация <a href='http://mapstore.org/my_portfolio/tazteam.net/users/155'>instorage.org/portfolio/tazteam</a></font>
+		<font style='font-size:12px;'>С уважением, администрация <a href='http://mapstore.org/my_portfolio/tazteam.net/users/155'>mapstore.org/my_portfolio/tazteam.net</a></font>
 		<table cellpadding='0' cellspacing='0' width='100%'><tr><td height='10' align='left'></td></tr></table>
 		<font style='font-size:12px;'><a href='http://mapstore.org/my_portfolio/tazteam.net/users/1'>Разработка сайта</a></font>
 		</BODY>\r\n
-		</HTML>";	
+		</HTML>";
 
 		UsersMail::send();
-		
+
 		GeneralCookies::setglobal("UsersRegDataStatus",1);}
 	else {
 		GeneralCookies::setglobal("UsersRegDataStatus",2);}}}//передадим сообщение на страницу view
 
-		
-		
-		
-				
-		
+
+
+
+
+
 static protected function return_mail_password_coincidence_in_db($MSQLc,$mail,$password) {//проверяем совпадают ли эти данные с данными в таблице временных данных
 	$query="SELECT id FROM registrated_users___temporary___main_data WHERE mail_user='".$mail."' LIMIT 1";
-	$res=GeneralMYSQL::query($MSQLc,$query);		
+	$res=GeneralMYSQL::query($MSQLc,$query);
 	$row1=GeneralMYSQL::fetch_array($res);
 	GeneralMYSQL::free($res);
 
 	$query="SELECT id FROM registrated_users___temporary___secure_passwords WHERE password='".$password."' LIMIT 1";
-	$res=GeneralMYSQL::query($MSQLc,$query);		
+	$res=GeneralMYSQL::query($MSQLc,$query);
 	$row2=GeneralMYSQL::fetch_array($res);
 	GeneralMYSQL::free($res);
 
@@ -559,7 +559,7 @@ static protected function return_mail_password_coincidence_in_db($MSQLc,$mail,$p
 
 static protected function return_id_user_by_mail($MSQLc,$mail){//определяем идентификатор по почте
 	$query="SELECT id_user FROM registrated_users___main_data WHERE site_mail_user='".$mail."' ORDER by id_user DESC LIMIT 1";
-	$res=GeneralMYSQL::query($MSQLc,$query);		
+	$res=GeneralMYSQL::query($MSQLc,$query);
 	$row=GeneralMYSQL::fetch_array($res);
 	GeneralMYSQL::free($res);
 	return $row['id_user'];}
@@ -567,54 +567,54 @@ static protected function return_id_user_by_mail($MSQLc,$mail){//определ�
 
 static protected function return_id_temporary_user_by_mail($MSQLc,$mail){//определяем идентификатор временный по почте
 	$query="SELECT id FROM registrated_users___temporary___main_data WHERE mail_user='".$mail."' LIMIT 1";
-	$res=GeneralMYSQL::query($MSQLc,$query);		
+	$res=GeneralMYSQL::query($MSQLc,$query);
 	$row=GeneralMYSQL::fetch_array($res);
 	GeneralMYSQL::free($res);
-	return $row['id'];}	
-	
-	
+	return $row['id'];}
+
+
 static protected function return_salt_by_id_user($MSQLc,$id_user){//определяем соль по id_user
 	$query="SELECT salt FROM registrated_users___temporary___secure_salt WHERE id='".$id_user."' LIMIT 1";
-	$res=GeneralMYSQL::query($MSQLc,$query);		
+	$res=GeneralMYSQL::query($MSQLc,$query);
 	$row=GeneralMYSQL::fetch_array($res);
 	GeneralMYSQL::free($res);
-	return $row['salt'];}	
-	
-	
-	
+	return $row['salt'];}
 
-	
-	
-	
-static public function action_after_registration($MSQLc,$id_user){	
+
+
+
+
+
+
+static public function action_after_registration($MSQLc,$id_user){
 	$query="INSERT INTO registrated_users___added_data (id_user) VALUES('".$id_user."')";
 	GeneralMYSQL::query_insert($MSQLc,$query);
-	
+
 	$query="INSERT INTO registrated_users___correspondence (id_user) VALUES('".$id_user."')";
-	GeneralMYSQL::query_insert($MSQLc,$query);	
-	
+	GeneralMYSQL::query_insert($MSQLc,$query);
+
 	$query="INSERT INTO registrated_users___friendship (id_user) VALUES('".$id_user."')";
-	GeneralMYSQL::query_insert($MSQLc,$query);		
-	
+	GeneralMYSQL::query_insert($MSQLc,$query);
+
 	$query="INSERT INTO registrated_users___making_by (id_user) VALUES('".$id_user."')";
-	GeneralMYSQL::query_insert($MSQLc,$query);		
-	
+	GeneralMYSQL::query_insert($MSQLc,$query);
+
 	$query="INSERT INTO registrated_users___my_messages (id_user) VALUES('".$id_user."')";
-	GeneralMYSQL::query_insert($MSQLc,$query);		
-	
+	GeneralMYSQL::query_insert($MSQLc,$query);
+
 	$query="INSERT INTO registrated_users___signaturing (id_user) VALUES('".$id_user."')";
 	GeneralMYSQL::query_insert($MSQLc,$query);
-	
+
 	GeneralRobot::$id_user=$id_user;
 	GeneralRobot::reaction_on_events($MSQLc,"new_user");}
-	
-	
-	
-	
-	
-	
 
-	
+
+
+
+
+
+
+
 static public function registration_final_from_mail($MSQLc,$mail,$password){//регистрация пользователя финальная по паролю С почтЫ
 	if (($mail)&&($password)){
 
@@ -629,35 +629,35 @@ static public function registration_final_from_mail($MSQLc,$mail,$password){//р
 
 			//находим id_user
 			$id_user=self::return_id_user_by_mail($MSQLc,$mail);
-		
-			
+
+
 			//вставляем директорию пользователя
 			$query="
-			UPDATE 	registrated_users___main_data 
+			UPDATE 	registrated_users___main_data
 			SET 	dir_user='".UsersBase::return_dir_catalog($id_user)."'
-			WHERE 	id_user='".$id_user."' 
+			WHERE 	id_user='".$id_user."'
 			LIMIT 	1";//echo($query);
-			GeneralMYSQL::query_update($MSQLc,$query);	
+			GeneralMYSQL::query_update($MSQLc,$query);
 
-			
-	
-			//записываем соленый пароль в БД	
+
+
+			//записываем соленый пароль в БД
 			$query="INSERT INTO registrated_users___secure_passwords (id_user,password) VALUES('".$id_user."','".$password."')";
 			GeneralMYSQL::query_insert($MSQLc,$query);
 
 
 			//находим id пользователя из временных данных
-			$id_temporary=self::return_id_temporary_user_by_mail($MSQLc,$mail);	
+			$id_temporary=self::return_id_temporary_user_by_mail($MSQLc,$mail);
 
-			
+
 			//находим соль
-			$salt=self::return_salt_by_id_user($MSQLc,$id_temporary);				
-			
+			$salt=self::return_salt_by_id_user($MSQLc,$id_temporary);
+
 			//записываем соль в БД
 			$query="INSERT INTO registrated_users___secure_salt (id_user,salt) VALUES('".$id_user."','".$salt."')";
 			GeneralMYSQL::query_insert($MSQLc,$query);
 
-			
+
 
 			self::action_after_registration($MSQLc,$id_user);
 
@@ -670,9 +670,9 @@ static public function registration_final_from_mail($MSQLc,$mail,$password){//р
 
 			$query="DELETE FROM registrated_users___temporary___secure_salt WHERE id='".$id_temporary."'";
 			GeneralMYSQL::query_delete($MSQLc,$query);
-			
+
 			GeneralCookies::setglobal("UsersRegDataStatus",3);
-						
+
 			self::setcookies($id_user,$password,0,0,0,$mail,0);//установить в куки Id, Password и имя идентифицированного пльзователя
 
 			GeneralHeaderHTTP::location(GeneralGlobalVars::url."/users/".$id_user);
@@ -680,16 +680,15 @@ static public function registration_final_from_mail($MSQLc,$mail,$password){//р
 		else{
 		GeneralHeaderHTTP::location(GeneralGlobalVars::url);
 		}}}
-		
-	
-	
-	
-		
-		
-		
-		
-		
-		
+
+
+
+
+
+
+
+
+
+
 		}
-		
-		
+

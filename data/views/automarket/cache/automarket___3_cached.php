@@ -209,7 +209,7 @@ UsersBase::set_points($MSQLc, AutomarketBase::$id_autor); //начисляем �
 
 
     <?php /*
-      <a target="_blank" href="http://140706.selcdn.com/tazteam/_files/images/automarket/<?php echo($row['id']);?>/<?php  echo(GeneralImagesCalculate::return_size_to_photo(AutomarketBase::$img1, '3', '1'));?>" id="automarket_photo_ref" class="lead"><div class="photo_item3" style="width:458px;">
+      <a target="_blank" href="http://140706.selcdn.ru/tazteam/images/automarket/<?php echo($row['id']);?>/<?php  echo(GeneralImagesCalculate::return_size_to_photo(AutomarketBase::$img1, '3', '1'));?>" id="automarket_photo_ref" class="lead"><div class="photo_item3" style="width:458px;">
       &#9658;
       </div></a> */ ?>
 
@@ -223,7 +223,7 @@ UsersBase::set_points($MSQLc, AutomarketBase::$id_autor); //начисляем �
                                                 if (AutomarketBase::$img1) { /* ?>onclick="automarket___next_photo('automarket_img_photo_big');"<?php */
                                                 }
                                                 ?>><?php if (AutomarketBase::$img1) { ?>
-                                                    <a target="_blank" href="http://140706.selcdn.com/tazteam/_files/images/automarket/<?php echo($row['id']); ?>/<?php echo(GeneralImagesCalculate::return_size_to_photo(AutomarketBase::$img1, '3', '1')); ?>" id="automarket_photo_ref" class="lead"><img style="max-width:458px; max-height:458px; cursor:pointer;" src="http://140706.selcdn.com/tazteam/_files/images/automarket/<?php echo($row['id']); ?>/<?php echo(AutomarketBase::$img1); ?>" id="automarket_img_photo_big" alt="<?php echo(GeneralPageTree::$title); ?>"></a>
+                                                    <a target="_blank" href="http://140706.selcdn.ru/tazteam/images/automarket/<?php echo($row['id']); ?>/<?php echo(GeneralImagesCalculate::return_size_to_photo(AutomarketBase::$img1, '3', '1')); ?>" id="automarket_photo_ref" class="lead"><img style="max-width:458px; max-height:458px; cursor:pointer;" src="http://140706.selcdn.ru/tazteam/images/automarket/<?php echo($row['id']); ?>/<?php echo(AutomarketBase::$img1); ?>" id="automarket_img_photo_big" alt="<?php echo(GeneralPageTree::$title); ?>"></a>
     <?php } else {
         ?>
                                                     <img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/general___photo_none_600x400.jpg" width="458"  class="refimage" <?php /* onclick="swimwin('gallery','automarket'); automarket_img_to_gallery(); " */ ?>>

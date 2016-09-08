@@ -10,7 +10,7 @@ while ($row = GeneralMYSQL::fetch_array($res)) {
         ?>
         <div class="photo_item1" style="margin-right:1px; float: left; width:320px;">
             <a href="http://mapstore.org/my_portfolio/tazteam.net/photo/<?php echo($row['id_section'] . "/" . $row['id_topic'] . "=" . PhotoBase::$current_num_page_photo); ?>"><?php
-        ?><img src="http://140706.selcdn.com/tazteam/_files/images/photo/<?php echo($row['id_section'] . "/" . $row['id_topic'] . "/" . $row['id_photo'] . "_11." . $row['format_photo']); ?>" 
+        ?><img src="http://140706.selcdn.ru/tazteam/images/photo/<?php echo($row['id_section'] . "/" . $row['id_topic'] . "/" . $row['id_photo'] . "_11." . $row['format_photo']); ?>" 
                      width="320"
                      height="240"
                      alt="<?php echo(UsersMyData::return_name($row['gen_login_user'], $row['site_mail_user'], $row['gen_name_user'], $row['gen_surname_user'], $row['site_login_status'])); ?>" title="<?php echo(UsersMyData::return_name($row['gen_login_user'], $row['site_mail_user'], $row['gen_name_user'], $row['gen_surname_user'], $row['site_login_status'])); ?>"></a>
@@ -29,7 +29,7 @@ while ($row = GeneralMYSQL::fetch_array($res)) {
     if (($current_var4 == 2) || ($current_var4 == 3)) {
         ?>
             <div class="photo_item1" style="<?php if ($current_var4 != 3) { ?>margin-bottom:1px;<?php } ?>">
-                <a href="http://mapstore.org/my_portfolio/tazteam.net/photo/<?php echo($row['id_section'] . "/" . $row['id_topic'] . "=" . PhotoBase::$current_num_page_photo); ?>"><?php ?><img src="http://140706.selcdn.com/tazteam/_files/images/photo/<?php echo($row['id_section'] . "/" . $row['id_topic'] . "/" . $row['id_photo'] . "_12." . $row['format_photo']); ?>"
+                <a href="http://mapstore.org/my_portfolio/tazteam.net/photo/<?php echo($row['id_section'] . "/" . $row['id_topic'] . "=" . PhotoBase::$current_num_page_photo); ?>"><?php ?><img src="http://140706.selcdn.ru/tazteam/images/photo/<?php echo($row['id_section'] . "/" . $row['id_topic'] . "/" . $row['id_photo'] . "_12." . $row['format_photo']); ?>"
                          style="height:<?php if ($current_var4 == 3) { ?>119<?php } else { ?>120<?php } ?>px;
                          width:192px;"
                          alt="<?php echo(UsersMyData::return_name($row['gen_login_user'], $row['site_mail_user'], $row['gen_name_user'], $row['gen_surname_user'], $row['site_login_status'])); ?>" title="<?php echo(UsersMyData::return_name($row['gen_login_user'], $row['site_mail_user'], $row['gen_name_user'], $row['gen_surname_user'], $row['site_login_status'])); ?>"></a>
@@ -52,7 +52,7 @@ while ($row = GeneralMYSQL::fetch_array($res)) {
     if (($current_var4 == 4) || ($current_var4 == 5) || ($current_var4 == 6)) {
         ?>
             <div class="photo_item1" style="<?php if ($current_var4 != 6) { ?>margin-bottom:1px;<?php } ?>">
-                <a href="http://mapstore.org/my_portfolio/tazteam.net/photo/<?php echo($row['id_section'] . "/" . $row['id_topic'] . "=" . PhotoBase::$current_num_page_photo); ?>"><?php ?><img src="http://140706.selcdn.com/tazteam/_files/images/photo/<?php echo($row['id_section'] . "/" . $row['id_topic'] . "/" . $row['id_photo'] . "_13." . $row['format_photo']); ?>"
+                <a href="http://mapstore.org/my_portfolio/tazteam.net/photo/<?php echo($row['id_section'] . "/" . $row['id_topic'] . "=" . PhotoBase::$current_num_page_photo); ?>"><?php ?><img src="http://140706.selcdn.ru/tazteam/images/photo/<?php echo($row['id_section'] . "/" . $row['id_topic'] . "/" . $row['id_photo'] . "_13." . $row['format_photo']); ?>"
 
                          style="height:<?php if ($current_var4 == 6) { ?>78<?php } else { ?>80<?php } ?>px; 
                          width:128px"

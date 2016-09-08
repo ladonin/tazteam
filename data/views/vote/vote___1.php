@@ -14,7 +14,7 @@ if (GeneralPageBasic::$code_sign=="ga"){
 	<table cellpadding="0" cellspacing="0" style="width:100%; padding-bottom:10px;">
 	<tr>
 	<td valign="top" align="left" width="200">
-<a href="http://mapstore.org/my_portfolio/tazteam.net/photo/<?php echo(VoteBase::$id_section."/".VoteBase::$id_topic."=".PhotoBase::$current_num_page_photo);?>" alt="<?php echo(VoteBase::$name_photo);?>"><img src="http://140706.selcdn.com/tazteam/_files/images/photo/<?php echo(VoteBase::$id_section."/".VoteBase::$id_topic."/".VoteBase::$id_photo."_5.".VoteBase::$format_photo);?>" width="200" height="200" class="refimage" title="<?php echo(VoteBase::$name_photo);?>"></a>
+<a href="http://mapstore.org/my_portfolio/tazteam.net/photo/<?php echo(VoteBase::$id_section."/".VoteBase::$id_topic."=".PhotoBase::$current_num_page_photo);?>" alt="<?php echo(VoteBase::$name_photo);?>"><img src="http://140706.selcdn.ru/tazteam/images/photo/<?php echo(VoteBase::$id_section."/".VoteBase::$id_topic."/".VoteBase::$id_photo."_5.".VoteBase::$format_photo);?>" width="200" height="200" class="refimage" title="<?php echo(VoteBase::$name_photo);?>"></a>
 	</td>
 	<td align="left" valign="top" class="padding_left_10">
 		<span class="lead"><?php echo(VoteBase::$name_album);?></span><div></div>
@@ -36,7 +36,7 @@ else if (GeneralPageBasic::$code_sign=="sf"){
 	UsersPhotoalbumsBase::detect_current_num_page_photo($MSQLc,VoteBase::$page_photo,VoteBase::$id_photo,VoteBase::$id_topic,VoteBase::$id_section);
 	?>
 	<table cellpadding="0" cellspacing="0" style="width:100%; padding-bottom:10px;">
-	<tr><td valign="top" width="200"><a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo(VoteBase::$id_section."/photoalbums/".VoteBase::$id_topic."=".UsersPhotoalbumsBase::$current_num_page_photo);?>" alt="<?php echo(VoteBase::$name_photo);?>"><img src="http://140706.selcdn.com/tazteam/_files/images/users/photoalbums/<?php echo(VoteBase::$dir_album."/".VoteBase::$id_section."/".VoteBase::$id_topic."/".VoteBase::$id_photo."_5.".VoteBase::$format_photo);?>" width="200" height="200" class="refimage" title="<?php echo(VoteBase::$name_photo);?>"></a></td>
+	<tr><td valign="top" width="200"><a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo(VoteBase::$id_section."/photoalbums/".VoteBase::$id_topic."=".UsersPhotoalbumsBase::$current_num_page_photo);?>" alt="<?php echo(VoteBase::$name_photo);?>"><img src="http://140706.selcdn.ru/tazteam/images/users/photoalbums/<?php echo(VoteBase::$dir_album."/".VoteBase::$id_section."/".VoteBase::$id_topic."/".VoteBase::$id_photo."_5.".VoteBase::$format_photo);?>" width="200" height="200" class="refimage" title="<?php echo(VoteBase::$name_photo);?>"></a></td>
 	<td align="left" valign="top" class="padding_left_10">
 	<span class="lead"><?php echo(VoteBase::$name_album);?></span><div></div>	
 	<?php if (!VoteBase::$name_photo) { echo("без названия");} else {echo(VoteBase::$name_photo);}?>

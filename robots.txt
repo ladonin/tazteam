@@ -2,5 +2,5 @@ User-agent: *
 Disallow: /cgi-bin/
 Disallow: /away.php
 
-Host: instorage.org/portfolio/tazteam
+Host: mapstore.org/my_portfolio/tazteam.net
 Sitemap: http://mapstore.org/my_portfolio/tazteam.net/sitemap.xml

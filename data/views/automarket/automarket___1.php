@@ -226,7 +226,7 @@ while ($row = GeneralMYSQL::fetch_array($res)) {
                                         <td align="left" valign="top">
                                             <div style="padding-left:10px;">
                                                 <a href="http://mapstore.org/my_portfolio/tazteam.net/automarket/<?php echo($row['themepage'] . "/" . $row['id']); ?>"><?php if ($row['img'] == "") { ?><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/general___photo_none_210x160.png" width="210" height="160" class="refimage"/><?php } else {
-                    ?><img src="http://140706.selcdn.com/tazteam/_files/images/automarket/<?php echo($row['id']); ?>/<?php echo(AutomarketBase::return_size_to_photo(AutomarketBase::$img1_cur, 5)); ?>" width="210" height="160" class="refimage"><?php }
+                    ?><img src="http://140706.selcdn.ru/tazteam/images/automarket/<?php echo($row['id']); ?>/<?php echo(AutomarketBase::return_size_to_photo(AutomarketBase::$img1_cur, 5)); ?>" width="210" height="160" class="refimage"><?php }
                             ?></a>
                                             </div>
                                         </td>
@@ -278,7 +278,7 @@ while ($row = GeneralMYSQL::fetch_array($res)) {
                                         <td align="left" valign="top">
                                             <div style="padding:0px 10px;">
                                                 <a href="http://mapstore.org/my_portfolio/tazteam.net/automarket/<?php echo($row['themepage'] . "/" . $row['id']); ?>"><?php if ($row['img'] == "") { ?><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/general___photo_none_210x160.png" width="210" height="160" class="refimage"/><?php } else {
-                        ?><img src="http://140706.selcdn.com/tazteam/_files/images/automarket/<?php echo($row['id']); ?>/<?php echo(AutomarketBase::return_size_to_photo(AutomarketBase::$img1_cur, 5)); ?>" width="210" height="160" class="refimage"/><?php }
+                        ?><img src="http://140706.selcdn.ru/tazteam/images/automarket/<?php echo($row['id']); ?>/<?php echo(AutomarketBase::return_size_to_photo(AutomarketBase::$img1_cur, 5)); ?>" width="210" height="160" class="refimage"/><?php }
                     ?></a>
                                             </div>
                                         </td>

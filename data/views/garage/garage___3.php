@@ -111,7 +111,7 @@ include("data/components/".GeneralGetVars::$var1."/".GeneralGetVars::$var1."___3
 			?>
 
                   <div class="item <?php if ($current_var1==1) {?>active<?php } ?>">
-                    <img src="http://140706.selcdn.com/tazteam/_files/images/garage/<?php echo($row['id']);?>/<?php echo(garageBase::$$varimg);?>" alt="" style="max-width: 550px; max-height:395px;">
+                    <img src="http://140706.selcdn.ru/tazteam/images/garage/<?php echo($row['id']);?>/<?php echo(garageBase::$$varimg);?>" alt="" style="max-width: 550px; max-height:395px;">
                     <?php/*<div class="carousel-caption">
                       <h4>First Thumbnail label</h4>
                       <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>

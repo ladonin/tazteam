@@ -3,7 +3,7 @@ include("data/components/".GeneralGetVars::$var1."/panels/".GeneralGetVars::$var
 include("data/components/".GeneralGetVars::$var1."/".GeneralGetVars::$var1."___3_query_2.php");
 while ($row2=GeneralMYSQL::fetch_array($res2)){
 UsersPhotoalbumsBase::detect_current_num_page_photo($MSQLc,$row2['page_photo'],$row2['id_photo'],$row2['id_album'],GeneralGetVars::$var2);?>
-<a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo(GeneralGetVars::$var2."/photoalbums/".$row2['id_album']."=".UsersPhotoalbumsBase::$current_num_page_photo);?>" class="refimage"><img src="<?php echo("http://140706.selcdn.com/tazteam/_files/images/users/photoalbums/".$row2['dir_album']."/".GeneralGetVars::$var2."/".$row2['id_album']."/".$row2['id_photo']."_3.".$row2['format_photo']);?>" width="70" height="70" style="border:0px;"></a><?php }
+<a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo(GeneralGetVars::$var2."/photoalbums/".$row2['id_album']."=".UsersPhotoalbumsBase::$current_num_page_photo);?>" class="refimage"><img src="<?php echo("http://140706.selcdn.ru/tazteam/images/users/photoalbums/".$row2['dir_album']."/".GeneralGetVars::$var2."/".$row2['id_album']."/".$row2['id_photo']."_3.".$row2['format_photo']);?>" width="70" height="70" style="border:0px;"></a><?php }
 GeneralMYSQL::free($res2);?>
 <div class="v_i_b"></div>		
 

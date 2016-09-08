@@ -1,9 +1,9 @@
 <?php
-ini_set("max_execution_time", "60000");			
+ini_set("max_execution_time", "60000");
 ini_set('display_errors', 1); /////////////////////////////
 error_reporting(E_ALL);///////////////////////////////////
      mysql_pconnect("localhost","quitecorg_taz","d5nj8n3umfvguj");
-mysql_select_db("tazteamDB");	
+mysql_select_db("tazteamDB");
 
 
 
@@ -17,28 +17,28 @@ $query = "SELECT * FROM photo___photos_2";
 $res = mysql_query($query) or die(mysql_error());
 while ($row=mysql_fetch_array($res))
 {
-	
+
 	$source=$url.'_files/images/photo/2/'.$row['id_topic']."/".$row['id_photo']."_1.".$row['format_photo'];
 
 		$imageinfo = getimagesize($source);
 		if (($imageinfo[0]>0)&&(filesize($source)>0)){
-			$width_source=$imageinfo[0];//ширина исходника
-			$height_source=$imageinfo[1];//высота исходника
+			$width_source=$imageinfo[0];//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+			$height_source=$imageinfo[1];//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 			$i=$row['id_photo'];
 			foreach (GeneralImagesCalculate::$imagessizes_photo as $key => $value){
 				$square=$value['square'];
-				$limit=$value['limit'];		
+				$limit=$value['limit'];
 				$path_to=$url."_files/images/photo/2/".$row['id_topic']."/".$i."_".$key.".".$row['format_photo'];
-				
+
 				if(((filesize($path_to)==0)||(!file_exists($path_to)))&&
 				(($key==11)||($key==12)||($key==13)))
-				
-				
+
+
 				{
 				echo($path_to."<br>");
-				
-				
-					GeneralImagesCalculate::detect_xywh($i,$key,$square,$width_source,$height_source,$limit,1);//определение ширины, высоты и координат текущей копии
+
+
+					GeneralImagesCalculate::detect_xywh($i,$key,$square,$width_source,$height_source,$limit,1);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 					GeneralImagesWork::resize_and_save(
 						$source,
 						$path_to,
@@ -53,8 +53,8 @@ while ($row=mysql_fetch_array($res))
 						GeneralImagesWork::$imagesdestination['y'][$i][$key],
 						100,
 						'0xffffff');
-						
-						
+
+
 						}}}}
 
 
@@ -72,15 +72,15 @@ while ($row=mysql_fetch_array($res))
 
 
 
-//можно удалить отдельные виды фоток
+//пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 /*
-$url="D:\\my\\openserver\\OpenServer\\domains\\instorage.org/portfolio/tazteam\\";
+$url="D:\\my\\openserver\\OpenServer\\domains\\mapstore.org/my_portfolio/tazteam.net\\";
 $photo_number=11;
 $query = "SELECT * FROM photo___photos_2";
 $res = mysql_query($query) or die(mysql_error());
 while ($row=mysql_fetch_array($res))
 {
-	echo $foto."<br>";	
+	echo $foto."<br>";
 	$foto=$url.'_files/images/photo/2/'.$row['id_topic']."/".$row['id_photo']."_".$photo_number.".".$row['format_photo'];
 	unlink($foto);
 }

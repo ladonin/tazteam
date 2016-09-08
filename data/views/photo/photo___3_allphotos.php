@@ -61,7 +61,7 @@ while ($row=GeneralMYSQL::fetch_array($res)){
 
 	<table cellpadding="0" cellspacing="0" style="width:25%; float:left; margin-bottom:20px;">
 	<tr>
-	<td valign="top" align="center"><a href="http://mapstore.org/my_portfolio/tazteam.net/photo/<?php echo(GeneralGetVars::$var2."/".$row['id_topic']."=".PhotoBase::$current_num_page_photo);?>" alt="<?php echo($row['name_photo']);?>"><img src="http://140706.selcdn.com/tazteam/_files/images/photo/<?php echo(GeneralGetVars::$var2."/".$row['id_topic']."/".$row['id_photo']."_5.".$row['format_photo']);?>" width="210" height="210"></a></td>
+	<td valign="top" align="center"><a href="http://mapstore.org/my_portfolio/tazteam.net/photo/<?php echo(GeneralGetVars::$var2."/".$row['id_topic']."=".PhotoBase::$current_num_page_photo);?>" alt="<?php echo($row['name_photo']);?>"><img src="http://140706.selcdn.ru/tazteam/images/photo/<?php echo(GeneralGetVars::$var2."/".$row['id_topic']."/".$row['id_photo']."_5.".$row['format_photo']);?>" width="210" height="210"></a></td>
 	</tr>
 	</table>		
 		

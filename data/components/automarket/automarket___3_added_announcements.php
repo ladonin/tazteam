@@ -15,7 +15,7 @@ if (GeneralMYSQL::num_rows($res2)<AutomarketBase::min_additional_announcements){
 			<td valign="top" width="210">
 				<a href="http://mapstore.org/my_portfolio/tazteam.net/automarket/<?php echo(GeneralGetVars::$var2."/".$row2['id']);?>"><?php		
 		if ($row2['img']==""){?><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/general___photo_none_210x160.png" width="210" height="160" class="refimage"><?php }
-		else {?><img src="http://140706.selcdn.com/tazteam/_files/images/automarket/<?php echo($row2['id']);?>/<?php echo(AutomarketBase::return_size_to_photo(AutomarketBase::$img1_cur,5));?>" width="210" height="160" class="refimage"><?php } ?></a>
+		else {?><img src="http://140706.selcdn.ru/tazteam/images/automarket/<?php echo($row2['id']);?>/<?php echo(AutomarketBase::return_size_to_photo(AutomarketBase::$img1_cur,5));?>" width="210" height="160" class="refimage"><?php } ?></a>
 			</td>
 			<td valign="top" align="left" style="padding:0px 10px 0px 10px;">
 			

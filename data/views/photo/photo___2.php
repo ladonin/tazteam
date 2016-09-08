@@ -88,7 +88,7 @@ while ($row=GeneralMYSQL::fetch_array($res)){
 	<tr>
 	<td valign="top" align="center">
 
-            <a href="http://mapstore.org/my_portfolio/tazteam.net/photo/<?php echo(GeneralGetVars::$var2."/".$row['id_topic']."=1"/*.PhotoBase::$current_num_page_photo*/);?>"><img src="http://140706.selcdn.com/tazteam/_files/images/photo/<?php echo(GeneralGetVars::$var2."/".$row['id_topic']."/".$row['id_photo']."_5.".$row['format_photo']);?>" width="210" height="210"/></a>
+            <a href="http://mapstore.org/my_portfolio/tazteam.net/photo/<?php echo(GeneralGetVars::$var2."/".$row['id_topic']."=1"/*.PhotoBase::$current_num_page_photo*/);?>"><img src="http://140706.selcdn.ru/tazteam/images/photo/<?php echo(GeneralGetVars::$var2."/".$row['id_topic']."/".$row['id_photo']."_5.".$row['format_photo']);?>" width="210" height="210"/></a>
         <?php /*echo(GeneralGetVars::$var2."/".$row['id_topic']."/allphotos=1*/?>
         
         </td>

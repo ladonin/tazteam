@@ -103,7 +103,7 @@ UsersBase::detect_garage($MSQLc); //определяем автомобили в
                         <tr>
                             <td align="left" width="120" valign="top">
                                 <a href="http://mapstore.org/my_portfolio/tazteam.net/garage/<?php echo($value['themepage']); ?>/<?php echo($value['id']); ?>" alt="<?php echo(GarageBase::return_parameters("mark", $value['mark']) . " " . $value['model']); ?>"
-                                   ><img src="http://140706.selcdn.com/tazteam/_files/images/garage/<?php echo($value['id']); ?>/<?php echo($value['img']); ?>" 
+                                   ><img src="http://140706.selcdn.ru/tazteam/images/garage/<?php echo($value['id']); ?>/<?php echo($value['img']); ?>" 
                                       width="110"></a>
                             </td>
                             <td align="left" valign="top">

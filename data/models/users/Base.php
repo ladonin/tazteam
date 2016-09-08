@@ -1,4 +1,4 @@
-<?php   
+<?php
 class UsersBase{
 static public $cur_dir_catalog="";//директория текущего пользователя в каталоге
 static public $dir_catalog="";//директория нашего пользователя в каталоге
@@ -202,42 +202,42 @@ static public function set_array_self_data($row){
 
 	foreach(self::$array_self_data_main as $key=>$value){
 		self::$array_self_data_main[$key]=$row[$key];
-		if (self::$array_self_data_main[$key]){		
+		if (self::$array_self_data_main[$key]){
 			self::$array_self_data_main_enable=1;
 			self::$flag_self_data_enable=1;}}
-			
-			
+
+
 	foreach(self::$array_self_data_main_borndate as $key=>$value){
 		self::$array_self_data_main_borndate[$key]=$row[$key];}
-	if ((self::$array_self_data_main_borndate['gen_borndate_month']>0)&&(self::$array_self_data_main_borndate['gen_borndate_day']>0)){	
+	if ((self::$array_self_data_main_borndate['gen_borndate_month']>0)&&(self::$array_self_data_main_borndate['gen_borndate_day']>0)){
 		self::$array_self_data_main_enable=1;
 		self::$array_self_data_main_borndate_enable=1;
 		self::$flag_self_data_enable=1;}
-		
-		
+
+
 	foreach(self::$array_self_data_main_relations as $key=>$value){
 		self::$array_self_data_main_relations[$key]=$row[$key];}
-	if ((self::$array_self_data_main_relations['gen_sex']>0)&&(self::$array_self_data_main_relations['gen_relations']>0)){	
+	if ((self::$array_self_data_main_relations['gen_sex']>0)&&(self::$array_self_data_main_relations['gen_relations']>0)){
 		self::$array_self_data_main_enable=1;
 		self::$array_self_data_main_relations_enable=1;
 		self::$flag_self_data_enable=1;}
-		
-		
+
+
 	foreach(self::$array_self_data_contacts as $key=>$value){
 		self::$array_self_data_contacts[$key]=$row[$key];
 		if (self::$array_self_data_contacts[$key]){
 			self::$array_self_data_contacts_enable=1;
 			self::$flag_self_data_enable=1;}}
-			
+
 	foreach(self::$array_self_data_contacts_mail as $key=>$value){
 		self::$array_self_data_contacts_mail[$key]=$row[$key];}
-	if ((self::$array_self_data_contacts_mail['site_mail_user'])&&(self::$array_self_data_contacts_mail['site_mail_status']>0)){	
+	if ((self::$array_self_data_contacts_mail['site_mail_user'])&&(self::$array_self_data_contacts_mail['site_mail_status']>0)){
 		self::$array_self_data_contacts_enable=1;
 		self::$array_self_data_contacts_mail_enable=1;
 		self::$flag_self_data_enable=1;}
 
-			
-			
+
+
 	foreach(self::$array_self_data_schools as $key=>$value){
 		self::$array_self_data_schools[$key]=$row[$key];
 		if (self::$array_self_data_schools[$key]){
@@ -252,7 +252,7 @@ static public function set_array_self_data($row){
 		self::$array_self_data_activity[$key]=$row[$key];
 		if (self::$array_self_data_activity[$key]){
 			self::$array_self_data_activity_enable=1;
-			self::$flag_self_data_enable=1;}}			
+			self::$flag_self_data_enable=1;}}
 	foreach(self::$array_self_data_lichnoe as $key=>$value){
 		self::$array_self_data_lichnoe[$key]=$row[$key];
 		if (self::$array_self_data_lichnoe[$key]){
@@ -278,9 +278,9 @@ if (UsersMyData::$identified==1){
 		gen_schools_name,
 		gen_city_name
 	FROM 	registrated_users___main_data
-	WHERE 	id_user='".UsersMyData::$id."' 
+	WHERE 	id_user='".UsersMyData::$id."'
 	LIMIT 	1";
-	$res=GeneralMYSQL::query($MSQLc,$query);		
+	$res=GeneralMYSQL::query($MSQLc,$query);
 	$row=GeneralMYSQL::fetch_array($res);
 	GeneralMYSQL::free($res);
 
@@ -295,13 +295,13 @@ if (UsersMyData::$identified==1){
 	self::$my_addition_data_array['gen_schools_name']=$row['gen_schools_name'];
 	self::$my_addition_data_array['gen_city_name']=$row['gen_city_name'];*/
 
-	
+
 	if ($row['sn_city_id_vk']){
 		$currentsarray = explode(" ",$row['sn_city_id_vk']);
 		foreach($currentsarray as $key=>$value){
 			if ($value)	{
 				self::$condition_added1.=" OR sn_city_id_vk='".$value."'";}}}
-		
+
 	if ($row['sn_universities_id_vk']){
 		$currentsarray = explode(" ",$row['sn_universities_id_vk']);
 		foreach($currentsarray as $key=>$value){
@@ -319,21 +319,21 @@ if (UsersMyData::$identified==1){
 		foreach($currentsarray as $key=>$value){
 			if ($value)	{
 				self::$condition_added1.=" OR sn_universities_faculty_id_vk='".$value."'";}}}
-	
+
 	if ($row['sn_universities_chair_id_vk']){
 		$currentsarray = explode(" ",$row['sn_universities_chair_id_vk']);
 		foreach($currentsarray as $key=>$value){
 			if ($value)	{
 				self::$condition_added1.=" OR sn_universities_chair_id_vk='".$value."'";}}}
-				
+
 	if ($row['sn_schools_id_vk']){
 		$currentsarray = explode(" ",$row['sn_schools_id_vk']);
 		foreach($currentsarray as $key=>$value){
 			if ($value)	{
 				self::$condition_added1.=" OR sn_schools_id_vk='".$value."'";}}}
-				
+
 	self::$condition_added1=preg_replace("/^ OR /i","",self::$condition_added1);
-	
+
 	}}
 
 
@@ -350,21 +350,21 @@ static public function detect_garage($MSQLc){//устанавливаем доп
     $res=GeneralMYSQL::query($MSQLc,$query);
     $i=0;
     while($row=GeneralMYSQL::fetch_array($res)){
-       $i++; 
-        
+       $i++;
+
         self::$garage_enable=1;
-        
+
         self::$garage_array[$i]['id']=$row['id'];
         self::$garage_array[$i]['themepage']=$row['themepage'];
         self::$garage_array[$i]['mark']=$row['mark'];
         self::$garage_array[$i]['model']=$row['model'];
         self::$garage_array[$i]['motor_type']=$row['motor_type'];
         self::$garage_array[$i]['power']=$row['power'];
-        
+
     	$textphotosarray=explode(" ",$row['img']);
     	foreach($textphotosarray as $value){
     		if ($value){
-              
+
     			self::$garage_array[$i]['img']=str_replace("_3.","_5.",$value);
     			break;}}}
 	}
@@ -376,35 +376,35 @@ static public function detect_garage($MSQLc){//устанавливаем доп
 
 
 
-static public function return_dir_catalog($id_user){	
+static public function return_dir_catalog($id_user){
 	return floor($id_user/GeneralGlobalVars::maxusersincatalog)+1;}
 
 
-	
-	
-	
-	
-static public function return_url_photo($photo,$photo_url_from_site,$photo_url_from_sn_big,$photo_url_from_sn_huge){	
-	if ($photo==1) {	
-		return "http://140706.selcdn.com/tazteam/_files/images/users/avas/".$photo_url_from_site;}
-	else if (($photo==2)&&($photo_url_from_sn_big)){	
+
+
+
+
+static public function return_url_photo($photo,$photo_url_from_site,$photo_url_from_sn_big,$photo_url_from_sn_huge){
+	if ($photo==1) {
+		return "http://140706.selcdn.ru/tazteam/images/users/avas/".$photo_url_from_site;}
+	else if (($photo==2)&&($photo_url_from_sn_big)){
 		return $photo_url_from_sn_big;}
-	else if (($photo==2)&&($photo_url_from_sn_huge)){	
-		return $photo_url_from_sn_huge;}	
-	return "http://140706.selcdn.com/tazteam/_files/images/users/avas/nophoto_2.png";}
-	
-	
-	
-static public function return_age($day,$month,$year){	
+	else if (($photo==2)&&($photo_url_from_sn_huge)){
+		return $photo_url_from_sn_huge;}
+	return "http://140706.selcdn.ru/tazteam/images/users/avas/nophoto_2.png";}
+
+
+
+static public function return_age($day,$month,$year){
 	if ($year){
 		$age=GeneralGlobalVars::$year-$year;
 		if ((GeneralGlobalVars::$month-$month)<0) {$age--;}
 		else if ((GeneralGlobalVars::$month-$month)==0) {
-			if ((GeneralGlobalVars::$day-$day)<0) {$age--;}}		
+			if ((GeneralGlobalVars::$day-$day)<0) {$age--;}}
 		if ($age==1) {$text="лет";}
 		else if (($age>1)&&($age<5)) {$text="года";}
-		else if (($age>4)&&($age<11)) {$text="лет";}	
-		else if (($age>10)&&($age<20)) {$text="лет";}	
+		else if (($age>4)&&($age<11)) {$text="лет";}
+		else if (($age>10)&&($age<20)) {$text="лет";}
 		else if (($age%10)==0) {$text="лет";}
 		else if (($age%10)==1) {$text="год";}
 		else if (((($age%10)>1)&&($age%10)<5)) {$text="года";}
@@ -413,125 +413,125 @@ static public function return_age($day,$month,$year){
 
 
 
-static public function return_online($time){	
+static public function return_online($time){
 	if ((GeneralGlobalVars::$timeunix-$time)>GeneralGlobalVars::$onlineusertimegate) {self::$cur_user_online=false; return false;}
 	else {self::$cur_user_online=true; return true;}}
 
 
 
-	
+
 static public function detect_friends_from_text($text){
 	$text=trim($text);
-	$friendsarray = explode("  ",$text); 
-	self::$count_friends=0;	
+	$friendsarray = explode("  ",$text);
+	self::$count_friends=0;
 	foreach($friendsarray as $key=>$value){
 		if ($value)	{
 		self::$friends_array[]=$value;
 		self::$count_friends++;}}}
-		
-		
-		
-		
-		
 
-		
-		
-		
-		
-		
-static public function detect_friendslist_from_text($MSQLc,$id_user){	
+
+
+
+
+
+
+
+
+
+
+static public function detect_friendslist_from_text($MSQLc,$id_user){
 	$textrfiends=trim(self::return_row_friendship($MSQLc,$id_user));
 	self::$friends_list = str_replace("  ",",",$textrfiends);}
 
-	
-static public function detect_friendsinlist_from_text($MSQLc){	
+
+static public function detect_friendsinlist_from_text($MSQLc){
 	$textrfiends=trim(self::return_row_friendship_tohim($MSQLc));
-	self::$friendsin_list = str_replace("  ",",",$textrfiends);}	
-	
-static public function detect_friendsoutlist_from_text($MSQLc){	
+	self::$friendsin_list = str_replace("  ",",",$textrfiends);}
+
+static public function detect_friendsoutlist_from_text($MSQLc){
 	$textrfiends=trim(self::return_row_friendship_heto($MSQLc,GeneralGetVars::$var2));
-	self::$friendsout_list = str_replace("  ",",",$textrfiends);}	
-	
-	
+	self::$friendsout_list = str_replace("  ",",",$textrfiends);}
+
+
 static public function return_row_friendship($MSQLc,$id_user){
 	$query="
 	SELECT	friendship
 	FROM 	registrated_users___friendship
-	WHERE 	id_user='".$id_user."' 
+	WHERE 	id_user='".$id_user."'
 	LIMIT 	1";//UsersMyData::$id
-	$res=GeneralMYSQL::query($MSQLc,$query);		
+	$res=GeneralMYSQL::query($MSQLc,$query);
 	$row=GeneralMYSQL::fetch_array($res);
 	GeneralMYSQL::free($res);
 	return $row['friendship'];}
-	
-	
-	
-	
-	
+
+
+
+
+
 static public function set_keyedarray_my_friendship_and_heto($MSQLc){
 	$query="
 	SELECT	friendship,heto
 	FROM 	registrated_users___friendship
-	WHERE 	id_user='".UsersMyData::$id."' 
+	WHERE 	id_user='".UsersMyData::$id."'
 	LIMIT 	1";
-	$res=GeneralMYSQL::query($MSQLc,$query);		
+	$res=GeneralMYSQL::query($MSQLc,$query);
 	$row=GeneralMYSQL::fetch_array($res);
 	GeneralMYSQL::free($res);
 
-	$friendshiparray = explode(" ",$row['friendship']); 
+	$friendshiparray = explode(" ",$row['friendship']);
 	foreach($friendshiparray as $key=>$value){
-		if ($value)	{	
+		if ($value)	{
 		UsersForreg::$array_my_friends[$value]=1;}}//массив моих друзей
-		
-	$friendship_hetoarray = explode(" ",$row['heto']); 
+
+	$friendship_hetoarray = explode(" ",$row['heto']);
 	foreach($friendship_hetoarray as $key=>$value){
-		if ($value)	{	
+		if ($value)	{
 		UsersForreg::$array_my_friends_heto[$value]=1;}}}//массив заявок от меня
 
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
 static public function return_row_friendship_tohim($MSQLc){
 	$query="
 	SELECT	tohim
 	FROM 	registrated_users___friendship
-	WHERE 	id_user='".GeneralGetVars::$var2."' 
+	WHERE 	id_user='".GeneralGetVars::$var2."'
 	LIMIT 	1";//UsersMyData::$id
-	$res=GeneralMYSQL::query($MSQLc,$query);		
+	$res=GeneralMYSQL::query($MSQLc,$query);
 	$row=GeneralMYSQL::fetch_array($res);
 	GeneralMYSQL::free($res);
-	return $row['tohim'];}	
-	
-	
-	
+	return $row['tohim'];}
+
+
+
 static public function return_row_friendship_heto($MSQLc,$id_user){
 	$query="
 	SELECT	heto
 	FROM 	registrated_users___friendship
-	WHERE 	id_user='".$id_user."' 
+	WHERE 	id_user='".$id_user."'
 	LIMIT 	1";//UsersMyData::$id
-	$res=GeneralMYSQL::query($MSQLc,$query);		
+	$res=GeneralMYSQL::query($MSQLc,$query);
 	$row=GeneralMYSQL::fetch_array($res);
 	GeneralMYSQL::free($res);
-	return $row['heto'];}	
-	
-	
-	
-	
+	return $row['heto'];}
+
+
+
+
 static public function detect_friends($MSQLc){
 	self::detect_friends_from_text(self::return_row_friendship($MSQLc,GeneralGetVars::$var2));
-	GeneralMYSQL::free($res);}		
-		
-		
-		
-		
-		
-		
-		
+	GeneralMYSQL::free($res);}
+
+
+
+
+
+
+
 static public function detect_its_mypage($flag){// 1 - с учетом администрации, 2 - без учета администрации
 	if (UsersMyData::$identified==1){
 		if ((GeneralGetVars::$var2==UsersMyData::$id)||(($flag==1)&&(GeneralSecurity::detect_administrator()==true))){
@@ -542,16 +542,16 @@ static public function detect_its_mypage($flag){// 1 - с учетом адми�
 			return true;}}
 	return false;}
 
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
 static public function send_mail_for_redactpassword($MSQLc){
 	if ($_POST['unreg_repassword_mail_antibot']==$_POST['unreg_repassword_mail_oves']){//если антибот и овес совпадают
 
-	
+
 		$query="
 		SELECT
 				gen_login_user,
@@ -559,25 +559,25 @@ static public function send_mail_for_redactpassword($MSQLc){
 				gen_name_user,
 				gen_surname_user,
 				site_login_status,
-				id_user 
+				id_user
 		FROM 	registrated_users___main_data
 		WHERE 	site_mail_user='".$_POST['unreg_repassword_mail']."'
 		LIMIT 	1";//UsersMyData::$id
-	$res=GeneralMYSQL::query($MSQLc,$query);		
+	$res=GeneralMYSQL::query($MSQLc,$query);
 	$row=GeneralMYSQL::fetch_array($res);
 	GeneralMYSQL::free($res);
 	if ($row['id_user']>0){
 		$key=UsersMyData::return_composed_password();//придумываем пароль - ключ
 
-		//записываем 
-		$query="INSERT INTO unregistered_users___identification_mail_key (mail,keypass,timewhen,id_user) VALUES ('".$_POST['unreg_repassword_mail']."','".$key."','".GeneralGlobalVars::$timeunix."','".$row['id_user']."') 
+		//записываем
+		$query="INSERT INTO unregistered_users___identification_mail_key (mail,keypass,timewhen,id_user) VALUES ('".$_POST['unreg_repassword_mail']."','".$key."','".GeneralGlobalVars::$timeunix."','".$row['id_user']."')
 		ON DUPLICATE KEY UPDATE unregistered_users___identification_mail_key.keypass='".$key."', unregistered_users___identification_mail_key.timewhen='".GeneralGlobalVars::$timeunix."'";
 		GeneralMYSQL::query_insert($MSQLc,$query);
 
-		UsersMail::$to=$_POST['unreg_repassword_mail'];	
-		UsersMail::$subject="Восстановление пароля на сайте instorage.org/portfolio/tazteam";
-		UsersMail::$header.="From: instorage.org/portfolio/tazteam <".UsersMail::from.">";
-		UsersMail::$header.="\nContent-type: text/html; charset=\"UTF-8\""; 
+		UsersMail::$to=$_POST['unreg_repassword_mail'];
+		UsersMail::$subject="Восстановление пароля на сайте mapstore.org/my_portfolio/tazteam.net";
+		UsersMail::$header.="From: mapstore.org/my_portfolio/tazteam.net <".UsersMail::from.">";
+		UsersMail::$header.="\nContent-type: text/html; charset=\"UTF-8\"";
 		UsersMail::$text="<HTML>\r\n
 		<HEAD>\r\n
 		<META http-equiv=Content-Type content='text/html; charset=UTF-8'>\r\n
@@ -590,7 +590,7 @@ static public function send_mail_for_redactpassword($MSQLc){
 		<td height='25' align='left' style='background-color:#006bbc; padding-left:5px; border-left:1px solid #8194b2; border-top:1px solid #8194b2; border-bottom:1px solid #385194;'>
 			<b style='font-size:13px; color:#ffffff;'>Восстановление пароля</b>
 		</td>
-		<td height='25' align='left' width='110' valign='middle' style='background-color:#006bbc; padding-right:5px; border-right:1px solid #8194b2; border-top:1px solid #8194b2; border-bottom:1px solid #385194;'><a href='http://mapstore.org/my_portfolio/tazteam.net' title='instorage.org/portfolio/tazteam - главная страница'><img src='http://mapstore.org/my_portfolio/tazteam.net/images/MAILlogoTAZ.png' width='115' height='16' style='margin-top:3px;'></a></td>
+		<td height='25' align='left' width='110' valign='middle' style='background-color:#006bbc; padding-right:5px; border-right:1px solid #8194b2; border-top:1px solid #8194b2; border-bottom:1px solid #385194;'><a href='http://mapstore.org/my_portfolio/tazteam.net' title='mapstore.org/my_portfolio/tazteam.net - главная страница'><img src='http://mapstore.org/my_portfolio/tazteam.net/images/MAILlogoTAZ.png' width='115' height='16' style='margin-top:3px;'></a></td>
 		</tr>
 		</table>
 		<table cellpadding='5' cellspacing='0' width='400' style='border:1px solid #b6c3e5; background-color:#dce1ed; text-align: justify; word-spacing: 0.2ex;'>
@@ -601,28 +601,28 @@ static public function send_mail_for_redactpassword($MSQLc){
 		</tr>
 		</table>
 		<table cellpadding='0' cellspacing='0' width='100%'><tr><td height='10' align='left'></td></tr></table>
-		<font style='font-size:12px;'>С уважением, администрация <a href='http://mapstore.org/my_portfolio/tazteam.net/users/155'>instorage.org/portfolio/tazteam</a></font>
+		<font style='font-size:12px;'>С уважением, администрация <a href='http://mapstore.org/my_portfolio/tazteam.net/users/155'>mapstore.org/my_portfolio/tazteam.net</a></font>
 		<table cellpadding='0' cellspacing='0' width='100%'><tr><td height='10' align='left'></td></tr></table>
 		<font style='font-size:12px;'><a href='http://mapstore.org/my_portfolio/tazteam.net/users/1'>Разработка сайта</a></font>
 		</BODY>\r\n
-		</HTML>";	
+		</HTML>";
 
 		UsersMail::send();
-		
-		GeneralCookies::setglobal("UsersSendMailForRepasswordStatus",1);		
+
+		GeneralCookies::setglobal("UsersSendMailForRepasswordStatus",1);
 
 }
 else {
 GeneralCookies::setglobal("UsersSendMailForRepasswordStatus",2);
 }
-}	
+}
 	}
-	
-	
-	
-	
 
-	
+
+
+
+
+
 static public function confirm_by_mail($MSQLc){
 	//проверяем - есть ли мы с такими данными в таблице unregistered_users___identification_mail_key
 	$query="
@@ -630,12 +630,12 @@ static public function confirm_by_mail($MSQLc){
 	FROM 	unregistered_users___identification_mail_key
 	WHERE 	mail='".$_GET['get_var1']."' AND keypass='".$_GET['get_var2']."'
 	LIMIT 1";
-	$res=GeneralMYSQL::query($MSQLc,$query);		
+	$res=GeneralMYSQL::query($MSQLc,$query);
 	$row=GeneralMYSQL::fetch_array($res);
-	GeneralMYSQL::free($res);	
+	GeneralMYSQL::free($res);
 	if ($row['id_user']){//если данные mail и keypass присланы в get запросе правильно - если мы есть там
 		$query="
-		SELECT	
+		SELECT
 		rumd.gen_login_user as gen_login_user,
 		rumd.site_mail_user as site_mail_user,
 		rumd.gen_name_user as gen_name_user,
@@ -643,59 +643,59 @@ static public function confirm_by_mail($MSQLc){
 		rumd.site_login_status as site_login_status,
 		rumd.id_user as id_user,
 		registrated_users___secure_passwords.password as password
-		FROM 
-		(SELECT 
+		FROM
+		(SELECT
 		registrated_users___main_data.id_user,
-		registrated_users___main_data.gen_login_user,		
-		registrated_users___main_data.site_mail_user,		
-		registrated_users___main_data.gen_name_user,		
-		registrated_users___main_data.gen_surname_user,		
-		registrated_users___main_data.site_login_status	
+		registrated_users___main_data.gen_login_user,
+		registrated_users___main_data.site_mail_user,
+		registrated_users___main_data.gen_name_user,
+		registrated_users___main_data.gen_surname_user,
+		registrated_users___main_data.site_login_status
 		FROM 	registrated_users___main_data
 		WHERE 	id_user='".$row['id_user']."' AND site_mail_user='".$_GET['get_var1']."'
 		LIMIT 1) as rumd
 		LEFT JOIN registrated_users___secure_passwords
 		ON rumd.id_user=registrated_users___secure_passwords.id_user";
-		$res=GeneralMYSQL::query($MSQLc,$query);		
+		$res=GeneralMYSQL::query($MSQLc,$query);
 		$row=GeneralMYSQL::fetch_array($res);
 		GeneralMYSQL::free($res);
 		if ($row['id_user']){//если данные найдены, то записываем их в куки, и тем самым делаем, что пользователь вошел
 			//записываем необходимые куки
 			GeneralCookies::setglobal("UsersMyDataId",$row['id_user']);
-			GeneralCookies::setglobal("UsersMyDataPassword",$row['password']);			
+			GeneralCookies::setglobal("UsersMyDataPassword",$row['password']);
 			GeneralCookies::setglobal("UsersMyDataName",UsersMyData::return_name($row['gen_login_user'],$row['site_mail_user'],$row['gen_name_user'],$row['gen_surname_user'],$row['site_login_status']));
 			//теперь стираем запись в unregistered_users___identification_mail_key
 			$query="
-			DELETE FROM unregistered_users___identification_mail_key 
+			DELETE FROM unregistered_users___identification_mail_key
 			WHERE mail='".$_GET['get_var1']."' AND keypass='".$_GET['get_var2']."'";
 			GeneralMYSQL::query_delete($MSQLc,$query);
 			//и валим
 			GeneralHeaderHTTP::location(GeneralGlobalVars::url."/users/".$row['id_user']."/redactpassword");}}//идем на свою страницу сменя пароля
 	return false;}
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
 static public function detect_photoalbums($MSQLc,$friends_flag,$limit){
 	$query="
-	SELECT 
+	SELECT
 	registrated_users___photoalbums_photos.id_album as id_album,
 	registrated_users___photoalbums_photos.dir_album as dir_album,
-	registrated_users___photoalbums_photos.id_photo as id_photo,	
+	registrated_users___photoalbums_photos.id_photo as id_photo,
 	registrated_users___photoalbums_photos_n1.count_photos as count_photos,
 	registrated_users___photoalbums_photos.format_photo as format_photo,
 	registrated_users___photoalbums.name_album as name_album
-	FROM 
-	(SELECT 
+	FROM
+	(SELECT
 		id_user,
 		id_album,
 		MAX(id_photo) as last_id_photo,
 		COUNT(id_photo) as count_photos
-	FROM 
+	FROM
 		registrated_users___photoalbums_photos
-	GROUP BY 
+	GROUP BY
 		id_user,id_album
 	HAVING";
 	if (!$friends_flag){$query.="(id_user='".GeneralGetVars::$var2."')";}
@@ -710,19 +710,19 @@ static public function detect_photoalbums($MSQLc,$friends_flag,$limit){
 	as registrated_users___photoalbums_photos_n1
 	LEFT JOIN
 		registrated_users___photoalbums_photos
-	ON  
-		registrated_users___photoalbums_photos_n1.id_user=registrated_users___photoalbums_photos.id_user 
-		AND 
+	ON
+		registrated_users___photoalbums_photos_n1.id_user=registrated_users___photoalbums_photos.id_user
+		AND
 		registrated_users___photoalbums_photos_n1.id_album=registrated_users___photoalbums_photos.id_album
-		AND 
+		AND
 		registrated_users___photoalbums_photos_n1.last_id_photo=registrated_users___photoalbums_photos.id_photo
-		
+
 	LEFT JOIN
 		registrated_users___photoalbums
-		ON  
+		ON
 		registrated_users___photoalbums.id_user=registrated_users___photoalbums_photos.id_user	AND registrated_users___photoalbums.id_album=registrated_users___photoalbums_photos.id_album
 		";
-	$res=GeneralMYSQL::query($MSQLc,$query);		
+	$res=GeneralMYSQL::query($MSQLc,$query);
 
 
 	self::$count_photoalbums=0;
@@ -735,26 +735,26 @@ static public function detect_photoalbums($MSQLc,$friends_flag,$limit){
 		self::$array_photoalbums_list[$row['id_album']]['format_photo']=$row['format_photo'];
 		self::$array_photoalbums_list[$row['id_album']]['name_album']=$row['name_album'];}
 		GeneralMYSQL::free($res);}
-	
-	
-	
 
-	
-	
-	
 
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
+
+
+
 	static public function return_online_query_text($varquery){
-		return " AND ".$varquery.">'".(GeneralGlobalVars::$timeunix-GeneralGlobalVars::$onlineusertimegate)."'";}	
-	
-	
-	
-	
-	
+		return " AND ".$varquery.">'".(GeneralGlobalVars::$timeunix-GeneralGlobalVars::$onlineusertimegate)."'";}
+
+
+
+
+
 	static public function write_sql_query_where($MSQLc,$var,$varquery,$type){//$type - 1 точно, 2 - приблизительно, 3 - по номерам, 4 - кто онлайн, 5 - фото
 		if (isset($_COOKIE[$var])) {
 			if ($_COOKIE[$var]) {
@@ -769,23 +769,23 @@ static public function detect_photoalbums($MSQLc,$friends_flag,$limit){
 				else if ($type==5){
 					self::$find_query.=" AND (".$varquery."='1' OR ".$varquery."='2')";}
                     }}}
-		
 
-	static public function set_cookies_find(){	
+
+	static public function set_cookies_find(){
 		GeneralCookies::setglobal("users_find_query_online",$_POST['online']);
-		GeneralCookies::setglobal("users_find_query_widthphoto",$_POST['widthphoto']);		
-		GeneralCookies::setglobal("users_find_query_sex",$_POST['sex']);		
-		GeneralCookies::setglobal("users_find_query_relations",$_POST['relations']);		
-		GeneralCookies::setglobal("users_find_query_bdate_year",$_POST['bdate_year']);		
-		GeneralCookies::setglobal("users_find_query_login",$_POST['login']);		
-		GeneralCookies::setglobal("users_find_query_name",$_POST['name']);		
-		GeneralCookies::setglobal("users_find_query_surname",$_POST['surname']);		
+		GeneralCookies::setglobal("users_find_query_widthphoto",$_POST['widthphoto']);
+		GeneralCookies::setglobal("users_find_query_sex",$_POST['sex']);
+		GeneralCookies::setglobal("users_find_query_relations",$_POST['relations']);
+		GeneralCookies::setglobal("users_find_query_bdate_year",$_POST['bdate_year']);
+		GeneralCookies::setglobal("users_find_query_login",$_POST['login']);
+		GeneralCookies::setglobal("users_find_query_name",$_POST['name']);
+		GeneralCookies::setglobal("users_find_query_surname",$_POST['surname']);
 		GeneralCookies::setglobal("users_find_query_mail",$_POST['mail']);
-		//GeneralCookies::setglobal("users_find_query_phone",$_POST['phone']);		
-		GeneralCookies::setglobal("users_find_query_city",$_POST['city']);		
-		GeneralCookies::setglobal("users_find_query_university",$_POST['university']);	
-		GeneralCookies::setglobal("users_find_query_school_region",$_POST['school_region']);		
-		GeneralCookies::setglobal("users_find_query_school_city",$_POST['school_city']);		
+		//GeneralCookies::setglobal("users_find_query_phone",$_POST['phone']);
+		GeneralCookies::setglobal("users_find_query_city",$_POST['city']);
+		GeneralCookies::setglobal("users_find_query_university",$_POST['university']);
+		GeneralCookies::setglobal("users_find_query_school_region",$_POST['school_region']);
+		GeneralCookies::setglobal("users_find_query_school_city",$_POST['school_city']);
 		GeneralCookies::setglobal("users_find_query_school_name",$_POST['school_name']);
 
 		GeneralCookies::setglobal("users_find_status",1);
@@ -800,86 +800,86 @@ static public function detect_photoalbums($MSQLc,$friends_flag,$limit){
 		GeneralGetVars::$num_page=1;
 		GeneralGetVars::$var3="";
 		GeneralGetVars::$var2="";}
-		
-	
+
+
 static public function convert_cookie_find_query($MSQLc){//составляем из всех куков, которые есть
 	if (isset($_COOKIE['users_find_status'])){
 		self::$find_status=$_COOKIE['users_find_status'];
 		if(self::$find_status==1){
-			self::$find_query="";//предварительно очищаем текст запроса			
+			self::$find_query="";//предварительно очищаем текст запроса
 			self::write_sql_query_where($MSQLc,"users_find_query_online","gen_timecoming",4);
 			self::write_sql_query_where($MSQLc,"users_find_query_widthphoto","gen_photo",5);
 			self::write_sql_query_where($MSQLc,"users_find_query_sex","gen_sex",3);
 			self::write_sql_query_where($MSQLc,"users_find_query_relations","gen_relations",3);
 			self::write_sql_query_where($MSQLc,"users_find_query_bdate_year","gen_borndate_year",3);
-			self::write_sql_query_where($MSQLc,"users_find_query_login","gen_login_user",2);			
-			self::write_sql_query_where($MSQLc,"users_find_query_name","gen_name_user",2);			
-			self::write_sql_query_where($MSQLc,"users_find_query_surname","gen_surname_user",2);				
-			self::write_sql_query_where($MSQLc,"users_find_query_mail","site_mail_user",2);			
-			//self::write_sql_query_where($MSQLc,"users_find_query_phone","gen_relations",2);			
-			self::write_sql_query_where($MSQLc,"users_find_query_city","gen_city_name",2);			
-			self::write_sql_query_where($MSQLc,"users_find_query_university","gen_universities_name",2);				
-			self::write_sql_query_where($MSQLc,"users_find_query_school_region","site_oblastschool",2);			
+			self::write_sql_query_where($MSQLc,"users_find_query_login","gen_login_user",2);
+			self::write_sql_query_where($MSQLc,"users_find_query_name","gen_name_user",2);
+			self::write_sql_query_where($MSQLc,"users_find_query_surname","gen_surname_user",2);
+			self::write_sql_query_where($MSQLc,"users_find_query_mail","site_mail_user",2);
+			//self::write_sql_query_where($MSQLc,"users_find_query_phone","gen_relations",2);
+			self::write_sql_query_where($MSQLc,"users_find_query_city","gen_city_name",2);
+			self::write_sql_query_where($MSQLc,"users_find_query_university","gen_universities_name",2);
+			self::write_sql_query_where($MSQLc,"users_find_query_school_region","site_oblastschool",2);
 			self::write_sql_query_where($MSQLc,"users_find_query_school_city","site_cityschool",2);
-			self::write_sql_query_where($MSQLc,"users_find_query_school_name","gen_schools_name",2);			
-				
+			self::write_sql_query_where($MSQLc,"users_find_query_school_name","gen_schools_name",2);
+
 			self::$find_query=GeneralSecurity::return_safe_outside_sql_query(self::$find_query);
 			self::$condition_main="WHERE 1".self::$find_query;}}}
 
 
-			
-			
-static public function 	clear_find(){//очищаем поиск		
-		GeneralCookies::setglobal("users_find_query_online",'');
-		GeneralCookies::setglobal("users_find_query_widthphoto",'');		
-		GeneralCookies::setglobal("users_find_query_sex",'');		
-		GeneralCookies::setglobal("users_find_query_relations",'');		
-		GeneralCookies::setglobal("users_find_query_bdate_year",'');		
-		GeneralCookies::setglobal("users_find_query_login",'');		
-		GeneralCookies::setglobal("users_find_query_name",'');		
-		GeneralCookies::setglobal("users_find_query_surname",'');		
-		GeneralCookies::setglobal("users_find_query_mail",'');
-		GeneralCookies::setglobal("users_find_query_city",'');		
-		GeneralCookies::setglobal("users_find_query_university",'');		
-		GeneralCookies::setglobal("users_find_query_school_region",'');	
-		GeneralCookies::setglobal("users_find_query_school_city",'');
-		GeneralCookies::setglobal("users_find_query_school_city",'');		
-		GeneralCookies::setglobal("users_find_status",'');
-        
-        
-        
-		GeneralCookies::setglobal("users_find_clear",1);        
-        
-        
-        }
-	
 
-	
-	
-	
-	
-	
+
+static public function 	clear_find(){//очищаем поиск
+		GeneralCookies::setglobal("users_find_query_online",'');
+		GeneralCookies::setglobal("users_find_query_widthphoto",'');
+		GeneralCookies::setglobal("users_find_query_sex",'');
+		GeneralCookies::setglobal("users_find_query_relations",'');
+		GeneralCookies::setglobal("users_find_query_bdate_year",'');
+		GeneralCookies::setglobal("users_find_query_login",'');
+		GeneralCookies::setglobal("users_find_query_name",'');
+		GeneralCookies::setglobal("users_find_query_surname",'');
+		GeneralCookies::setglobal("users_find_query_mail",'');
+		GeneralCookies::setglobal("users_find_query_city",'');
+		GeneralCookies::setglobal("users_find_query_university",'');
+		GeneralCookies::setglobal("users_find_query_school_region",'');
+		GeneralCookies::setglobal("users_find_query_school_city",'');
+		GeneralCookies::setglobal("users_find_query_school_city",'');
+		GeneralCookies::setglobal("users_find_status",'');
+
+
+
+		GeneralCookies::setglobal("users_find_clear",1);
+
+
+        }
+
+
+
+
+
+
+
 static public function 	set_points($MSQLc,$id_user){//начисляем баллы
 	if (UsersMyData::$id!=$id_user){//если это не мы
 		if ($_COOKIE['url_last_page']!==$_COOKIE['url_current_page']){//если прошлая страница не та же
 			$query="
-			UPDATE 	registrated_users___main_data 
+			UPDATE 	registrated_users___main_data
 			SET 	site_points=site_points+50
-			WHERE 	id_user='".$id_user."' 
+			WHERE 	id_user='".$id_user."'
 			LIMIT 	1";//echo($query);
 			GeneralMYSQL::query_update($MSQLc,$query);}}}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
+
+
 	}
 
 
 
-	
+

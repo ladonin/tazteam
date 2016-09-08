@@ -10,7 +10,7 @@ NewsBase::detect_first_photo($row['img']); //вычисляем первое ф�
            ?></a>
     <div class="v_i_b"></div>
     <?php if (NewsBase::$img1_cur) { ?>
-        <div style="float:left; margin:0px 10px 5px 0px"><a href="http://mapstore.org/my_portfolio/tazteam.net/<?php echo($current_var2); ?>/<?php echo($row['id']); ?>"><img src="http://140706.selcdn.com/tazteam/_files/images/<?php echo($current_var2); ?>/<?php echo($row['id']); ?>/<?php echo(NewsBase::return_size_to_photo(NewsBase::$img1_cur, 2)); ?>" width="100" height="100" class="img-rounded"></a></div>
+        <div style="float:left; margin:0px 10px 5px 0px"><a href="http://mapstore.org/my_portfolio/tazteam.net/<?php echo($current_var2); ?>/<?php echo($row['id']); ?>"><img src="http://140706.selcdn.ru/tazteam/images/<?php echo($current_var2); ?>/<?php echo($row['id']); ?>/<?php echo(NewsBase::return_size_to_photo(NewsBase::$img1_cur, 2)); ?>" width="100" height="100" class="img-rounded"></a></div>
     <?php } ?>
 
     <p>

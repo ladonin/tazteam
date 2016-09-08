@@ -39,7 +39,7 @@ while($row=GeneralMYSQL::fetch_array($res)) {
             
 		<a href="http://mapstore.org/my_portfolio/tazteam.net/garage/<?php echo($row['themepage']."/".$row['id']);?>"><?php
         if ($row['img']==""){?><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/general___photo_none_300x200.png" width="300" height="200" class="refimage"/><?php }
-		else {?><img src="http://140706.selcdn.com/tazteam/_files/images/garage/<?php echo($row['id']);?>/<?php echo(GarageBase::return_size_to_photo(GarageBase::$img1_cur,5));/*width="434" height="300"*/?>" width="300" height="200" class="refimage"><?php } 		
+		else {?><img src="http://140706.selcdn.ru/tazteam/images/garage/<?php echo($row['id']);?>/<?php echo(GarageBase::return_size_to_photo(GarageBase::$img1_cur,5));/*width="434" height="300"*/?>" width="300" height="200" class="refimage"><?php } 		
         ?></a>
 <div class="v_i_s"></div>
 

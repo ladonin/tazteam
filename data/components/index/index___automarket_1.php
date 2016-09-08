@@ -15,7 +15,7 @@ while ($row = GeneralMYSQL::fetch_array($res)) {
                 <a href="http://mapstore.org/my_portfolio/tazteam.net/automarket/<?php echo($current_var1 . "/" . $row['id']); ?>">
                     <img id="automarket_img_vaz<?php echo($cv); ?>" style="height:99px;">
                     <script type="text/javascript">
-                        cur_url_img = "http://140706.selcdn.com/tazteam/_files/images/automarket/<?php echo($row['id'] . "/"); ?>";
+                        cur_url_img = "http://140706.selcdn.ru/tazteam/images/automarket/<?php echo($row['id'] . "/"); ?>";
                         cur_url_name = "<?php echo(AutomarketBase::$img1_cur); ?>";
                         cur_url_name = cur_url_name.replace("_3.", "_5.");
                         $('#automarket_img_vaz<?php echo($cv); ?>').attr('src', cur_url_img + cur_url_name);

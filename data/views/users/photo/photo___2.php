@@ -74,7 +74,7 @@ while ($row=GeneralMYSQL::fetch_array($res)){
 </tr>
 <tr>
 <td onclick="javascript:location.href='http://mapstore.org/my_portfolio/tazteam.net/photo/<?php echo(GeneralGetVars::$var2."/".$row['id_topic']."=".PhotoBase::$current_num_page_photo);?>'" 
-style="cursor:pointer; background-image: url(http://140706.selcdn.com/tazteam/_files/images/photo/<?php echo(GeneralGetVars::$var2."/".$row['id_topic']."/".$row['id_photo']."_5.".$row['format_photo']);?>); background-repeat:no-repeat;"> </td>
+style="cursor:pointer; background-image: url(http://140706.selcdn.ru/tazteam/images/photo/<?php echo(GeneralGetVars::$var2."/".$row['id_topic']."/".$row['id_photo']."_5.".$row['format_photo']);?>); background-repeat:no-repeat;"> </td>
 </tr>
 </table>
 

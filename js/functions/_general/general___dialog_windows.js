@@ -10,47 +10,47 @@ var dialog_windows_width_message=0;
 
 
 
-function dialog_windows_detect_width_message(parent){//устанавливаем ширину сообщения, ставится заранее, чтобы не сбилась потом аяксом, т.к. он возвращает весь код с длинным текстом и только потом определяется ширина уже длинного блока
-	
-    
+function dialog_windows_detect_width_message(parent){//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅ.пїЅ. пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+
+
     width=$('#'+parent).width()-92;
-    if (width<0){ width=100+'%'; }//для осла
-    
-    dialog_windows_width_message=width;}//поправка на ширины фотки отступов и т.д.
+    if (width<0){ width=100+'%'; }//пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+
+    dialog_windows_width_message=width;}//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅ.пїЅ.
 
 
-function dialog_windows_set_width_message(child){//копируем ширину
+function dialog_windows_set_width_message(child){//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 	$('#'+child).width(dialog_windows_width_message);
 													//alert(dialog_windows_width_message);
 	}
 
 
 function general___dialog_windows_1_send_message_ajax(id_dialog,text,database,autor,time,textvalue,idmessage,valuesnumber,value1,value2,value3,value4,value5,value6,value7,value8,value9,value10,condition1,condition2,condition3,condition4,condition5,signaturing,pagetype,getvar1,getvar2,getvar3,getvar4,getnumpage,idphoto)	{
-	text = text.replace(/\+/g,'%2B'); //преобразуем плюсы, чтобы передать их как плюсы, а не как спецсимволы
+	text = text.replace(/\+/g,'%2B'); //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅ пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	$.post(
-	"http://instorage.org/portfolio/tazteam/data/components/_general/dialog_windows/dialog_windows_1_send_message_ajax.php", 
+	"http://mapstore.org/my_portfolio/tazteam.net/data/components/_general/dialog_windows/dialog_windows_1_send_message_ajax.php",
 	{
 		'text':text,
 		'database':database,
-		'autor':autor,//какую value делаем автором
-		'time':time,//какую value делаем временем создания сообщения
-		'textvalue':textvalue,//где будет текст
-		'idmessage':idmessage,//где будет номер сообщения
-		'valuesnumber':valuesnumber,//сколько value делаем	
-		'value1':value1,//значение для вставки
-		'value2':value2,//значение для вставки
-		'value3':value3,//значение для вставки
-		'value4':value4,//значение для вставки
-		'value5':value5,//значение для вставки
-		'value6':value6,//значение для вставки
-		'value7':value7,//значение для вставки
-		'value8':value8,//значение для вставки
-		'value9':value9,//значение для вставки
-		'value10':value10,//значение для вставки
-		'condition1':condition1,	
-		'condition2':condition2,		
-		'condition3':condition3,		
-		'condition4':condition4,		
+		'autor':autor,//пїЅпїЅпїЅпїЅпїЅ value пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+		'time':time,//пїЅпїЅпїЅпїЅпїЅ value пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+		'textvalue':textvalue,//пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+		'idmessage':idmessage,//пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+		'valuesnumber':valuesnumber,//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ value пїЅпїЅпїЅпїЅпїЅпїЅ
+		'value1':value1,//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+		'value2':value2,//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+		'value3':value3,//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+		'value4':value4,//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+		'value5':value5,//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+		'value6':value6,//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+		'value7':value7,//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+		'value8':value8,//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+		'value9':value9,//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+		'value10':value10,//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+		'condition1':condition1,
+		'condition2':condition2,
+		'condition3':condition3,
+		'condition4':condition4,
 		'condition5':condition5,
 		'signaturing':signaturing,
 		'pagetype':pagetype,
@@ -60,7 +60,7 @@ function general___dialog_windows_1_send_message_ajax(id_dialog,text,database,au
 		'getvar4':getvar4,
 		'getnumpage':getnumpage,
 		'idphoto':idphoto
-	}, 
+	},
 	function(responseText){
 		setTimeout("dwLN1_"+id_dialog+"()",10);
 		//alert(responseText);

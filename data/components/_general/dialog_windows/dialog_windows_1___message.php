@@ -17,7 +17,7 @@
      <?php 
     }
     else { ?>
-    <img src="http://140706.selcdn.com/tazteam/_files/images/users/avas/nophoto_2.png" width="60" height="60"
+    <img src="http://140706.selcdn.ru/tazteam/images/users/avas/nophoto_2.png" width="60" height="60"
     style="border-right:3px solid #ffffff" class="img-var"/>           
     <?php }  ?>
     

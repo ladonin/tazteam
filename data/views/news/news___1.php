@@ -50,7 +50,7 @@ NewsBase::detect_first_photo($row['img']);//вычисляем первое фо
 	<td valign="top" width="110" align="left">
 		<a href="http://mapstore.org/my_portfolio/tazteam.net/<?php echo(GeneralGetVars::$var1);?>/<?php echo($row['id']);?>"><?php		
 		if ($row['img']==""){?><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/general___photo_none_100x100.jpg" width="100" height="100" class="refimage"><?php }
-		else {?><img src="http://140706.selcdn.com/tazteam/_files/images/<?php echo(GeneralGetVars::$var1);?>/<?php echo($row['id']);?>/<?php echo(NewsBase::return_size_to_photo(NewsBase::$img1_cur,2));?>" width="100" height="100" class="refimage"><?php } 		
+		else {?><img src="http://140706.selcdn.ru/tazteam/images/<?php echo(GeneralGetVars::$var1);?>/<?php echo($row['id']);?>/<?php echo(NewsBase::return_size_to_photo(NewsBase::$img1_cur,2));?>" width="100" height="100" class="refimage"><?php } 		
 		?></a>
 	</td>
 		<td valign="top" align="left" class="grey">

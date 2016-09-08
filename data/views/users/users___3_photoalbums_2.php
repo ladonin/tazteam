@@ -33,7 +33,7 @@ while($row=GeneralMYSQL::fetch_array($res)) {
 	<tr>
 	<td valign="top" align="center">
 
-            <a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo($row['id_user']."/photoalbums/".$row['id_album']);?>=1"><img src="http://140706.selcdn.com/tazteam/_files/images/users/photoalbums/<?php echo($row['dir_album']."/".$row['id_user']."/".$row['id_album']."/".$row['id_photo']."_5.".$row['format_photo']);?>" width="210" height="210"/></a>
+            <a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo($row['id_user']."/photoalbums/".$row['id_album']);?>=1"><img src="http://140706.selcdn.ru/tazteam/images/users/photoalbums/<?php echo($row['dir_album']."/".$row['id_user']."/".$row['id_album']."/".$row['id_photo']."_5.".$row['format_photo']);?>" width="210" height="210"/></a>
         </td>
 		</tr> 
 		<tr>

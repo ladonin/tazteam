@@ -39,13 +39,13 @@ UsersBase::set_points($MSQLc,PhotoBase::$id_autor_topic);//начисляем а
 <td align="left" width="598" valign="top">
 
 		<div style="width:588px; overflow:hidden; text-align:center;">		
-			<a href="http://mapstore.org/my_portfolio/tazteam.net/photo/<?php echo(GeneralGetVars::$var2."/".PhotoBase::$id_next_topic."=".PhotoBase::$next_num_page_photo);?>"><img style="max-height:588px; max-width:588px;" src="http://140706.selcdn.com/tazteam/_files/images/photo/<?php echo(GeneralGetVars::$var2."/".$row['id_topic']."/".$row['id_photo']."_6.".$row['format_photo']);?>" class="refimage">
+			<a href="http://mapstore.org/my_portfolio/tazteam.net/photo/<?php echo(GeneralGetVars::$var2."/".PhotoBase::$id_next_topic."=".PhotoBase::$next_num_page_photo);?>"><img style="max-height:588px; max-width:588px;" src="http://140706.selcdn.ru/tazteam/images/photo/<?php echo(GeneralGetVars::$var2."/".$row['id_topic']."/".$row['id_photo']."_6.".$row['format_photo']);?>" class="refimage">
 </a></div>
 
 
 	<?php if (PhotoBase::$id_next_photo){?>
 	<script type="text/javascript">
-	next_photo_img_url="http://140706.selcdn.com/tazteam/_files/images/photo/<?php echo(GeneralGetVars::$var2);?>/<?php echo(PhotoBase::$id_next_topic);?>/<?php echo(PhotoBase::$id_next_photo);?>";
+	next_photo_img_url="http://140706.selcdn.ru/tazteam/images/photo/<?php echo(GeneralGetVars::$var2);?>/<?php echo(PhotoBase::$id_next_topic);?>/<?php echo(PhotoBase::$id_next_photo);?>";
 	next_photo_img_format="<?php echo(PhotoBase::$format_next_photo);?>";
 	next_photo_img_full_url=next_photo_img_url+'_6.'+next_photo_img_format;
 	general___preload_one_image(next_photo_img_full_url);

@@ -71,7 +71,7 @@ NewsBase::detect_photos_main($row['img'],$row['img_sizes']);//вычисляем
 		<tr>
 		<td valign="top" align="left" bgcolor="#ffffff" class="text_normal">	
         	<?php if (NewsBase::$img1){	?>
-        		<div style="float:left; margin:0px 20px 10px 0px"><img src="http://140706.selcdn.com/tazteam/_files/images/<?php echo(GeneralGetVars::$var1);?>/<?php echo($row['id']);?>/<?php echo(NewsBase::$img1);?>" width="400" class="refimage news3_3" <?php /*onclick="swimwin('gallery','news'); news_img_to_gallery(); "*/?>></div>
+        		<div style="float:left; margin:0px 20px 10px 0px"><img src="http://140706.selcdn.ru/tazteam/images/<?php echo(GeneralGetVars::$var1);?>/<?php echo($row['id']);?>/<?php echo(NewsBase::$img1);?>" width="400" class="refimage news3_3" <?php /*onclick="swimwin('gallery','news'); news_img_to_gallery(); "*/?>></div>
         	<?php }
         	echo($row['contenthtml']);
         	?>
@@ -202,7 +202,7 @@ class="boxShadow3"
 	<td valign="top" width="100" align="left">
 			<a href="http://mapstore.org/my_portfolio/tazteam.net/<?php echo(GeneralGetVars::$var1);?>/<?php echo($row2['id']);?>"><?php		
 			if ($row2['img']==""){?><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/general___photo_none_100x100.jpg" width="100" height="100" class="refimage"><?php }
-			else {?><img src="http://140706.selcdn.com/tazteam/_files/images/<?php echo(GeneralGetVars::$var1);?>/<?php echo($row2['id']);?>/<?php echo(NewsBase::return_size_to_photo(NewsBase::$img1_cur,2));?>" width="100" height="100" class="refimage"><?php } 		
+			else {?><img src="http://140706.selcdn.ru/tazteam/images/<?php echo(GeneralGetVars::$var1);?>/<?php echo($row2['id']);?>/<?php echo(NewsBase::return_size_to_photo(NewsBase::$img1_cur,2));?>" width="100" height="100" class="refimage"><?php } 		
 			?></a>
 	</td>
 	<td valign="top" align="left">

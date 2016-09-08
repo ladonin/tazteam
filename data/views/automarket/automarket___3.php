@@ -128,7 +128,7 @@
           ?>
 
           <div class="item <?php if ($current_var1==1) {?>active<?php } ?>">
-          <img src="http://140706.selcdn.com/tazteam/_files/images/automarket/<?php echo($row['id']);?>/<?php echo(AutomarketBase::$$varimg);?>" alt="" style="max-width: 550px; max-height:395px;">
+          <img src="http://140706.selcdn.ru/tazteam/images/automarket/<?php echo($row['id']);?>/<?php echo(AutomarketBase::$$varimg);?>" alt="" style="max-width: 550px; max-height:395px;">
 
           </div>
 

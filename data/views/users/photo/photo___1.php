@@ -29,7 +29,7 @@ $current_var2=$row['id_section'];
 include("data/components/".GeneralGetVars::$var1."/".GeneralGetVars::$var1."___1_query_2.php");
 while ($row2=GeneralMYSQL::fetch_array($res2)){
 	PhotoBase::detect_current_num_page_photo($MSQLc,$row2['page_photo'],$row2['id_photo'],$row2['id_topic'],$row['id_section']);
-	?><a href="http://mapstore.org/my_portfolio/tazteam.net/photo/<?php echo($row['id_section']."/".$row2['id_topic']."=".PhotoBase::$current_num_page_photo);?>"><img src="http://140706.selcdn.com/tazteam/_files/images/photo/<?php echo($row['id_section']."/".$row2['id_topic']."/".$row2['id_photo']."_5.".$row2['format_photo']);?>" width="200" height="200" class="refimage"></a><?php
+	?><a href="http://mapstore.org/my_portfolio/tazteam.net/photo/<?php echo($row['id_section']."/".$row2['id_topic']."=".PhotoBase::$current_num_page_photo);?>"><img src="http://140706.selcdn.ru/tazteam/images/photo/<?php echo($row['id_section']."/".$row2['id_topic']."/".$row2['id_photo']."_5.".$row2['format_photo']);?>" width="200" height="200" class="refimage"></a><?php
 }
 ?>
 </td>

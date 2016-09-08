@@ -19,7 +19,7 @@ require("data/models/users/MyData.php"); //базовая библиотека �
 require("data/models/users/Base.php");
 require("data/models/users/Mail.php"); //базовая библиотека работы с почтой
 require("data/models/_general/InputText.php");
-//require_once ("data/models/_general/Cache/Lite/Output.php"); 
+//require_once ("data/models/_general/Cache/Lite/Output.php");
 
 GeneralPageBasic::$pagestatus = "view"; //просмотр
 $current_var1 = ""; //вспомогательная переменная
@@ -51,7 +51,7 @@ if (GeneralGetVars::$var1) {
 }//базовая библиотека для конкретной страницы
 if ((GeneralGetVars::$var3 === "photoalbums") || (GeneralGetVars::$var3 === "allphotosinalbum")) {
     include_once("data/models/" . GeneralGetVars::$var1 . "/PhotoalbumsBase.php");
-}//базовая библиотека для конкретной страницы	
+}//базовая библиотека для конкретной страницы
 
 GeneralSecurity::cookiescontrol($MSQLc);
 UsersMyData::identification($MSQLc);
@@ -112,13 +112,13 @@ if (UsersMyData::$id == 1) {
             <script type='text/javascript' src='http://mapstore.org/my_portfolio/tazteam.net/js/functions/_general/general___signature.js'></script>
             <?php
         }
-        include("data/lists/" . GeneralPageTree::$url . "_js.txt"); //подгрузка списка подключаемых  js файлов 
+        include("data/lists/" . GeneralPageTree::$url . "_js.txt"); //подгрузка списка подключаемых  js файлов
         ?>
         <?php /* <link type="text/css" rel="stylesheet" href="http://is.mixmarket.biz/css/uni/partner.css"> */ ?>
 
         <style>
             a {
-                cursor:pointer;    
+                cursor:pointer;
             }
         </style>
 
@@ -194,46 +194,46 @@ if (UsersMyData::$id == 1) {
                                 </a>
                             </li>
                             <li class="divider-vertical"></li>
-                            
+
 
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown">
                                     Еще
                                 </a>
-                                <ul class="dropdown-menu">    
+                                <ul class="dropdown-menu">
                                     <li><a href="http://urcclub.nethouse.ru" target="_blank">TAZTEAM SHOP</a></li>
                                     <li><a href="http://mapstore.org/my_portfolio/tazteam.net/users">Участники</a></li>
                                     <li><a href="#calculator" data-toggle="modal">Калькулятор</a></li>
-                                    <li><a href="http://mapstore.org/my_portfolio/tazteam.net/articles">Статьи</a></li>                                 
-                                    <li><a href="http://mapstore.org/my_portfolio/tazteam.net/news">Новости</a></li>                                    
+                                    <li><a href="http://mapstore.org/my_portfolio/tazteam.net/articles">Статьи</a></li>
+                                    <li><a href="http://mapstore.org/my_portfolio/tazteam.net/news">Новости</a></li>
                                     <li><a href="http://mapstore.org/my_portfolio/tazteam.net/photo/2=1">Фото - авто участников</a></li>
                                     <li><a href="http://mapstore.org/my_portfolio/tazteam.net/photo/1=1">Фото - лучшие подборки</a></li>
                                     <li><a href="http://mapstore.org/my_portfolio/tazteam.net/video">Видео</a></li>
-                                    <li><a href="http://mapstore.org/my_portfolio/tazteam.net/garage">Гараж</a></li>                                    
+                                    <li><a href="http://mapstore.org/my_portfolio/tazteam.net/garage">Гараж</a></li>
                                     <li><a href="http://mapstore.org/my_portfolio/tazteam.net/tests/1=60">Тесты ПДД</a></li>
                                 </ul>
                             </li>
-                          <li class="divider-vertical"></li> 
+                          <li class="divider-vertical"></li>
                             <li>
                             <button style="padding:0px 10px; margin-top:6px; margin-left:10px; margin-right:10px;" type="submit" class="btn btn-warning btn-mini" href="#<?php echo((UsersMyData::$identified == 1) ? 'new_announcement':'enter'); ?>" data-toggle="modal">Дать&nbsp;объявление</button>
                             </li>
-                                 
-                                 
-                                 
-                                 
-                                 
-                             
+
+
+
+
+
+
                             <li>
                             <button style="padding:0px 10px; margin-top:6px; margin-left:10px; margin-right:10px;" type="submit" class="btn btn-success btn-mini" href="#<?php echo((UsersMyData::$identified == 1) ? 'new_topic_forum':'enter'); ?>" data-toggle="modal">Задать&nbsp;вопрос</button>
-                            </li>      
-                                 
-                                 
-                                 
-                                 
-                                 
-                                 
-                                                        
-      
+                            </li>
+
+
+
+
+
+
+
+
                         </ul>
                         <ul class="nav pull-right">
                             <li><a href="http://mapstore.org/my_portfolio/tazteam.net/games">
@@ -257,7 +257,7 @@ if (UsersMyData::$id == 1) {
                                         <li class="divider"></li>
                                         <li class="text-center">
                                             <form method="post" action="<?php echo(GeneralGetVars::$urltosubmit); ?>" class="navbar-form" style="margin:-5px 0 5px 0;">
-                                                <input name="submit" value="quit" type="hidden">		
+                                                <input name="submit" value="quit" type="hidden">
                                                 <input name="UsersMyDataQuit" value="1" type="hidden">
                                                 <button type="submit" class="btn btn-primary btn-small">Выход</button>
                                             </form>
@@ -288,7 +288,7 @@ if (UsersMyData::$id == 1) {
                             <ul class="nav">
                                 <li class="">
                                     <a class="close" onclick="general___hat_menu_toggle('q_hat_market');">&times;</a>
-                                </li>		
+                                </li>
                                 <li class="divider-vertical-sub-menu"></li>
                                 <li class="">
                                     <a href="http://mapstore.org/my_portfolio/tazteam.net/automarket">Авторынок</a>
@@ -304,7 +304,7 @@ if (UsersMyData::$id == 1) {
                             <ul class="nav">
                                 <li class="">
                                     <a class="close" onclick="general___hat_menu_toggle('q_hat_see');">&times;</a>
-                                </li>		
+                                </li>
                                 <li class="divider-vertical-sub-menu"></li>
                                 <li class="">
                                     <a href="http://mapstore.org/my_portfolio/tazteam.net/photo/2=1">Фото - авто участников</a>
@@ -317,7 +317,7 @@ if (UsersMyData::$id == 1) {
                                 <li class="">
                                     <a href="http://mapstore.org/my_portfolio/tazteam.net/video">Видео</a>
                                 </li>
-                            </ul>                            
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -328,7 +328,7 @@ if (UsersMyData::$id == 1) {
                             <ul class="nav">
                                 <li class="">
                                     <a class="close" onclick="general___hat_menu_toggle('q_hat_read');">&times;</a>
-                                </li>		
+                                </li>
                                 <li class="divider-vertical-sub-menu"></li>
                                 <li class="">
                                     <a href="http://mapstore.org/my_portfolio/tazteam.net/news">Новости</a>
@@ -337,7 +337,7 @@ if (UsersMyData::$id == 1) {
                                 <li class="">
                                     <a href="http://mapstore.org/my_portfolio/tazteam.net/articles">Статьи</a>
                                 </li>
-                            </ul>                            
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -348,7 +348,7 @@ if (UsersMyData::$id == 1) {
                             <ul class="nav">
                                 <li class="">
                                     <a class="close" onclick="general___hat_menu_toggle('q_hat_talk');">&times;</a>
-                                </li>		
+                                </li>
                                 <li class="divider-vertical-sub-menu"></li>
                                 <li class="">
                                     <a href="http://mapstore.org/my_portfolio/tazteam.net/forum">Форум</a>
@@ -357,7 +357,7 @@ if (UsersMyData::$id == 1) {
                                 <li class="">
                                     <a href="http://mapstore.org/my_portfolio/tazteam.net/users">Участники</a>
                                 </li>
-                            </ul>                            
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -368,7 +368,7 @@ if (UsersMyData::$id == 1) {
                             <ul class="nav">
                                 <li class="">
                                     <a class="close" onclick="general___hat_menu_toggle('q_hat_else');">&times;</a>
-                                </li>		
+                                </li>
                                 <li class="divider-vertical-sub-menu"></li>
                                 <li class="">
                                     <a href="http://mapstore.org/my_portfolio/tazteam.net/garage">Гараж</a>
@@ -381,7 +381,7 @@ if (UsersMyData::$id == 1) {
                                 <li class="">
                                     <a href="http://mapstore.org/my_portfolio/tazteam.net/tests/1=<?php echo(rand(1, GeneralGlobalVars::count_tests)); ?>">Тесты ПДД</a>
                                 </li>
-                            </ul>                            
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -394,7 +394,7 @@ if (UsersMyData::$id == 1) {
                                 <li class="">
                                     <a class="close" onclick="general___hat_menu_toggle('q_hat_user');">&times;</a>
                                 </li>
-                                <li class="divider-vertical-sub-menu"></li> 
+                                <li class="divider-vertical-sub-menu"></li>
                                 <li class="">
                                     <a href="<?php echo(GeneralGlobalVars::url . "/users/" . UsersMyData::$id); ?>">Моя страница</a>
                                 </li>
@@ -412,15 +412,15 @@ if (UsersMyData::$id == 1) {
                                     <a href="<?php echo(GeneralGlobalVars::url . "/users/" . UsersMyData::$id); ?>/friends=1">Друзья</a>
                                 </li>
 
-                                <li class="divider-vertical-sub-menu"></li> 
+                                <li class="divider-vertical-sub-menu"></li>
                                 <li class="">
                                     <form method="post" style="margin:2px 0 0px 18px;" action="<?php echo(GeneralGetVars::$urltosubmit); ?>" class="navbar-form" style="margin:-5px 0 5px 0;">
-                                        <input name="submit" value="quit" type="hidden">		
+                                        <input name="submit" value="quit" type="hidden">
                                         <input name="UsersMyDataQuit" value="1" type="hidden">
                                         <button type="submit" class="btn btn-inverse btn-mini">Выход</button>
                                     </form>
-                                </li>  
-                            </ul>                            
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -438,14 +438,14 @@ if (UsersMyData::$id == 1) {
                 <a href="http://mapstore.org/my_portfolio/tazteam.net/calculator/1">Расчет мощности двигателя</a>
                 <br>
                 <a href="http://mapstore.org/my_portfolio/tazteam.net/calculator/2">Расчет времени прохождения дистанции 402 м</a>
-                <br>                            
-                <a href="http://mapstore.org/my_portfolio/tazteam.net/calculator/3">Расчет rs и степени сжатия мотора</a><br>    
+                <br>
+                <a href="http://mapstore.org/my_portfolio/tazteam.net/calculator/3">Расчет rs и степени сжатия мотора</a><br>
                 <a href="http://mapstore.org/my_portfolio/tazteam.net/calculator/4">Расчет степени сжатия для турбо мотора</a><br>
             </div>
             <div class="modal-footer">
                 <button class="btn" data-dismiss="modal" aria-hidden="true">Закрыть</button>
             </div>
-        </div>  
+        </div>
 
 <?php if (UsersMyData::$identified == 0) { ?>
             <!-- enter -->
@@ -476,7 +476,7 @@ if (UsersMyData::$id == 1) {
                 <div class="modal-footer">
                     <button class="btn" data-dismiss="modal" aria-hidden="true">Закрыть</button>
                 </div>
-            </div>   
+            </div>
 
             <!-- problems -->
             <div id="problems" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="problemsLabel" aria-hidden="true">
@@ -490,7 +490,7 @@ if (UsersMyData::$id == 1) {
                 <div class="modal-footer">
                     <button class="btn" data-dismiss="modal" aria-hidden="true">Закрыть</button>
                 </div>
-            </div>  
+            </div>
 
     <?php if (UsersMyData::$reg_status == 1) { ?>
                 <div class="alert alert-success"><button type="button" class="close btn-small" data-dismiss="alert">закрыть &times;</button>
@@ -515,7 +515,7 @@ if (UsersMyData::$id == 1) {
                     <table cellpadding="0" cellspacing="0" width="928" border="0">
                         <tr>
                             <td align="left">
-                                <?php /* if ((GeneralPageTree::$url!=="news/news___1")&&(GeneralPageTree::$url!=="articles/articles___1")&&(GeneralPageTree::$url!=="forum/forum___1")&&(GeneralGetVars::$var1!="")&&(GeneralGetVars::$var1!=="photo")&&(GeneralGetVars::$var1!=="users")&&(GeneralGetVars::$var3!=="photoalbums")&&(GeneralGetVars::$var1!=="tests")){ ?>                
+                                <?php /* if ((GeneralPageTree::$url!=="news/news___1")&&(GeneralPageTree::$url!=="articles/articles___1")&&(GeneralPageTree::$url!=="forum/forum___1")&&(GeneralGetVars::$var1!="")&&(GeneralGetVars::$var1!=="photo")&&(GeneralGetVars::$var1!=="users")&&(GeneralGetVars::$var3!=="photoalbums")&&(GeneralGetVars::$var1!=="tests")){ ?>
 
                                   <table cellpadding="0" cellspacing="0" width="928" bgcolor="#ffffff">
                                   <tr>
@@ -561,14 +561,14 @@ if (UsersMyData::$id == 1) {
                                   </tr>
                                   </table>
                                   <?php } */ ?>
-<?php if ((GeneralPageTree::$url !== "articles/articles___1") && (GeneralPageTree::$url !== "news/news___1") && (GeneralPageTree::$url !== "forum/forum___1") && (GeneralGetVars::$var1 != "") && (GeneralGetVars::$var1 !== "garage") && (GeneralGetVars::$var1 !== "photo") && (GeneralGetVars::$var1 !== "users") && (GeneralGetVars::$var3 !== "photoalbums") && (GeneralGetVars::$var1 !== "tests") && (GeneralGetVars::$var1 !== "games")) { ?>                
+<?php if ((GeneralPageTree::$url !== "articles/articles___1") && (GeneralPageTree::$url !== "news/news___1") && (GeneralPageTree::$url !== "forum/forum___1") && (GeneralGetVars::$var1 != "") && (GeneralGetVars::$var1 !== "garage") && (GeneralGetVars::$var1 !== "photo") && (GeneralGetVars::$var1 !== "users") && (GeneralGetVars::$var3 !== "photoalbums") && (GeneralGetVars::$var1 !== "tests") && (GeneralGetVars::$var1 !== "games")) { ?>
                                     <div style="float: left; overflow:hidden; width:888px; margin-top:20px; padding-top:15px;"
                                          class="boxShadow3"
                                          >
                                         <div class="no-adb">
                                             <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">
                                                 <tr>
-                                                    <td valign="top" align="left">                                  
+                                                    <td valign="top" align="left">
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                                     <!-- 728х90 автомобили -->
                                     <ins class="adsbygoogle"
@@ -633,7 +633,7 @@ if (UsersMyData::$id == 1) {
 $width_message_textarea_forum=400;
 $height_message_textarea_forum=100;
 include('data/components/forum/new_topic_modal.php');?>
-<?php 
+<?php
 
 include("data/components/automarket/panels/new_announcement.php");?>
 
@@ -703,7 +703,7 @@ include("data/components/automarket/panels/new_announcement.php");?>
                                                   <div style="margin-bottom:5px;">
                                                   <a href="http://mapstore.org/my_portfolio/tazteam.net/video" class="link_lead_topic">Видео</a>
                                                   </div>
-                                                 */ ?>                                        
+                                                 */ ?>
 
                                                 <div style="margin-top:5px; margin-bottom:5px;">
 
@@ -738,26 +738,26 @@ include("data/components/automarket/panels/new_announcement.php");?>
                                                             //--></script><!--/LiveInternet-->
 
                                                     <?php }
-                                                    ?>			
-                                                </div>                       
+                                                    ?>
+                                                </div>
 
                                                 <div style="margin-right:5px; display:inline;">
                                                     <a href="http://mapstore.org/my_portfolio/tazteam.net/users/1" class="link_lead_topic white">Разработка</a>
-                                                </div>                                              
+                                                </div>
                                                 <div style="margin-right:5px; display:inline;">
                                                     <a href="http://mapstore.org/my_portfolio/tazteam.net/users/155" class="link_lead_topic white">Влас Прудов</a>
-                                                </div> 
+                                                </div>
                                                 <div style="margin-right:5px; display:inline;">
                                                     <a href="http://instorage.org" class="link_lead_topic white">instorage.org</a>
                                                 </div>
 
                                                 <div style="margin-top:5px; margin-bottom:5px;"  class="link_lead_topic white">
                                                     © TAZTEAM, 2012 - <?php echo(date('Y')); ?>
-                                                </div>                             
+                                                </div>
 
                                             </td>
                                         </tr>
-                                    </table>    
+                                    </table>
 
                                 </div>
 
@@ -782,26 +782,26 @@ include("data/components/automarket/panels/new_announcement.php");?>
 <?php } ?>
         </script>
 
-        <?php /* боремся с adblock 
+        <?php /* боремся с adblock
           <script type="text/javascript" >
           var ads = "no-adb";onload=function(){if (document.getElementsByClassName == undefined) {document.getElementsByClassName = function(className){var hasClassName = new RegExp("(?:^|\s)" + className + "(?:$|\s)");var allElements = document.getElementsByTagName("*");var results = [];var element;for (var i = 0; (element = allElements[i]) != null; i++) {var elementClass = element.className;if (elementClass && elementClass.indexOf(className) != -1 && hasClassName.test(elementClass))results.push(element);}return results;}}   blocked = 0;var ad_nodes = document.getElementsByClassName(ads);for(i in ad_nodes){
           if (ad_nodes[i].offsetHeight == 0){blocked = 1;
-          document.write("<table width=\"100%\"><tr><td valign=\"top\" align=\"left\">Уважаемый пользователь! Мы обнаружили, что вы блокируете показ рекламы на нашем сайте, просим внести наш сайт в список исключения, так как наш контент предоставляется на бесплатной основе, поэтому единственным доходом является реклама на сайте. А она даёт мотивацию работать дальше и создавать интересные решения для вашего сайта. Спасибо за понимание.</td><td width=\"1%\" valign=\"top\"><img src=\"http://mapstore.org/my_portfolio/tazteam.net/images/_general/auto_old.jpg\" width=\"170\" style=\"margin-left:10px;\"></td></tr></table><b>Чтобы внести сайт instorage.org/portfolio/tazteam в список исключений, достаточно:</b><br /><br /><b><big>Chrome</big></b><ol><li>В браузере вверху справа нажать на логотип ABP и затем на кнопку \"включено на этом сайте\", тем самым отключив Adblock для сайта instorage.org/portfolio/tazteam</li></ol>или<br /><br /><ol><li>перейти в браузере в раздел \"Настройки\"</li><li>Расширения</li><li>AdBlock Plus</li><li>кнопка \"Настройки\"</li><li>Белый список доменов</li><li>ввести адрес instorage.org/portfolio/tazteam</li><li>Добавить домен</li><li>готово</li></ol><br /><b><big>Firefox</big></b><ol><li>В браузере вверху справа нажать на логотип ABP и затем на кнопку \"отключить на instorage.org/portfolio/tazteam\"</li></ol>или<br /><br /><ol><li>перейти в браузере в раздел \"Дополнения\"</li><li>Расширения</li><li>AdBlock Plus</li><li>кнопка \"Настройки фильтров\"</li><li>Добавить группу фильтров</li><li>справа \"Добавить фильтр\"</li><li>вставляем адрес http://mapstore.org/my_portfolio/tazteam.net</li><li>нажимаем Enter</li><li>убираем галочку напротив созданной ссылки</li><li>готово</li></ol>");
+          document.write("<table width=\"100%\"><tr><td valign=\"top\" align=\"left\">Уважаемый пользователь! Мы обнаружили, что вы блокируете показ рекламы на нашем сайте, просим внести наш сайт в список исключения, так как наш контент предоставляется на бесплатной основе, поэтому единственным доходом является реклама на сайте. А она даёт мотивацию работать дальше и создавать интересные решения для вашего сайта. Спасибо за понимание.</td><td width=\"1%\" valign=\"top\"><img src=\"http://mapstore.org/my_portfolio/tazteam.net/images/_general/auto_old.jpg\" width=\"170\" style=\"margin-left:10px;\"></td></tr></table><b>Чтобы внести сайт mapstore.org/my_portfolio/tazteam.net в список исключений, достаточно:</b><br /><br /><b><big>Chrome</big></b><ol><li>В браузере вверху справа нажать на логотип ABP и затем на кнопку \"включено на этом сайте\", тем самым отключив Adblock для сайта mapstore.org/my_portfolio/tazteam.net</li></ol>или<br /><br /><ol><li>перейти в браузере в раздел \"Настройки\"</li><li>Расширения</li><li>AdBlock Plus</li><li>кнопка \"Настройки\"</li><li>Белый список доменов</li><li>ввести адрес mapstore.org/my_portfolio/tazteam.net</li><li>Добавить домен</li><li>готово</li></ol><br /><b><big>Firefox</big></b><ol><li>В браузере вверху справа нажать на логотип ABP и затем на кнопку \"отключить на mapstore.org/my_portfolio/tazteam.net\"</li></ol>или<br /><br /><ol><li>перейти в браузере в раздел \"Дополнения\"</li><li>Расширения</li><li>AdBlock Plus</li><li>кнопка \"Настройки фильтров\"</li><li>Добавить группу фильтров</li><li>справа \"Добавить фильтр\"</li><li>вставляем адрес http://mapstore.org/my_portfolio/tazteam.net</li><li>нажимаем Enter</li><li>убираем галочку напротив созданной ссылки</li><li>готово</li></ol>");
           }}}</script>
          */ ?>
-         
-         
-         
-         
+
+
+
+
 <script type="text/javascript">
 <!--
 document.write('<img src="http://tr.mixmarket.biz/t.php?id=3560756&uid=1294945932&r=' + escape(document.referrer) + '&t=' + (new Date()).getTime() + '" width="1" height="1"/>');var mix_tracker_shown=true;var uni_tracker_shown=true;
 //-->
 </script>
 <noscript><img src="http://tr.mixmarket.biz/t.php?id=3560756&amp;uid=1294945932" width="1" height="1" alt=""/></noscript>
-         
-         
-         
+
+
+
          <!-- разместите на месте показа блока -->
 <div id="mixkt_4294910437"></div>
 <!-- разместите на месте показа блока -->
@@ -819,8 +819,8 @@ document.write('<scr' + 'ipt language="javascript" type="text/javascript" src="h
 document.write('<scr' + 'ipt language="javascript" type="text/javascript" src="http://4294907498.kt.mixmarket.biz/show/4294907498/?div=mixkt_4294907498&r=' + escape(document.referrer) + '&rnd=' + Math.round(Math.random() * 100000) + '" charset="UTF-8"><' + '/scr' + 'ipt>');
 </script>
 
-         
-         
+
+
     </body>
 </html>
 <?php

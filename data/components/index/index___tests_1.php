@@ -18,7 +18,7 @@ $row = GeneralMYSQL::fetch_array($res);
 
 
                     <a href="http://mapstore.org/my_portfolio/tazteam.net/tests/1=<?php echo($row['id']); ?>">
-                        <img src="http://140706.selcdn.com/tazteam/_files/images/tests/1/<?php echo($row['id']); ?>.jpg" height="200" class="img-rounded"/>
+                        <img src="http://140706.selcdn.ru/tazteam/images/tests/1/<?php echo($row['id']); ?>.jpg" height="200" class="img-rounded"/>
                     </a><div class="v_i_b"></div><?php } ?>
 
                 <div class="well">
