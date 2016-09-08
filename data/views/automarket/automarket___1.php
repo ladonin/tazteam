@@ -208,7 +208,7 @@ while ($row = GeneralMYSQL::fetch_array($res)) {
                                     <tr>
                                         <td align="left" valign="top">
                                             <div style="width:171px; overflow:hidden;  padding:0px;">
-                                                <a href="http://mapstore.org/my_portfolio/tazteam.net/automarket/<?php echo($row['themepage'] . "/" . $row['id']); ?>" class="lead"><?php echo(AutomarketBase::return_parameters("mark", $row['mark']) . " ");
+                                                <a href="<?php echo(GeneralGlobalVars::url);?>/automarket/<?php echo($row['themepage'] . "/" . $row['id']); ?>" class="lead"><?php echo(AutomarketBase::return_parameters("mark", $row['mark']) . " ");
                     echo($row['model']); ?></a>
                                             </div>
 
@@ -225,7 +225,7 @@ while ($row = GeneralMYSQL::fetch_array($res)) {
 
                                         <td align="left" valign="top">
                                             <div style="padding-left:10px;">
-                                                <a href="http://mapstore.org/my_portfolio/tazteam.net/automarket/<?php echo($row['themepage'] . "/" . $row['id']); ?>"><?php if ($row['img'] == "") { ?><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/general___photo_none_210x160.png" width="210" height="160" class="refimage"/><?php } else {
+                                                <a href="<?php echo(GeneralGlobalVars::url);?>/automarket/<?php echo($row['themepage'] . "/" . $row['id']); ?>"><?php if ($row['img'] == "") { ?><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/general___photo_none_210x160.png" width="210" height="160" class="refimage"/><?php } else {
                     ?><img src="http://140706.selcdn.ru/tazteam/images/automarket/<?php echo($row['id']); ?>/<?php echo(AutomarketBase::return_size_to_photo(AutomarketBase::$img1_cur, 5)); ?>" width="210" height="160" class="refimage"><?php }
                             ?></a>
                                             </div>
@@ -265,7 +265,7 @@ while ($row = GeneralMYSQL::fetch_array($res)) {
                                     <tr>
                                         <td align="left" valign="top">
                                             <div style="width:268px; overflow:hidden;  padding:5px 0px;">
-                                                <a href="http://mapstore.org/my_portfolio/tazteam.net/automarket/<?php echo($row['themepage'] . "/" . $row['id']); ?>" class="link_lead_big"><?php echo($row['name']); ?></a>
+                                                <a href="<?php echo(GeneralGlobalVars::url);?>/automarket/<?php echo($row['themepage'] . "/" . $row['id']); ?>" class="link_lead_big"><?php echo($row['name']); ?></a>
                                             </div>
                                         </td>
 
@@ -277,7 +277,7 @@ while ($row = GeneralMYSQL::fetch_array($res)) {
 
                                         <td align="left" valign="top">
                                             <div style="padding:0px 10px;">
-                                                <a href="http://mapstore.org/my_portfolio/tazteam.net/automarket/<?php echo($row['themepage'] . "/" . $row['id']); ?>"><?php if ($row['img'] == "") { ?><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/general___photo_none_210x160.png" width="210" height="160" class="refimage"/><?php } else {
+                                                <a href="<?php echo(GeneralGlobalVars::url);?>/automarket/<?php echo($row['themepage'] . "/" . $row['id']); ?>"><?php if ($row['img'] == "") { ?><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/general___photo_none_210x160.png" width="210" height="160" class="refimage"/><?php } else {
                         ?><img src="http://140706.selcdn.ru/tazteam/images/automarket/<?php echo($row['id']); ?>/<?php echo(AutomarketBase::return_size_to_photo(AutomarketBase::$img1_cur, 5)); ?>" width="210" height="160" class="refimage"/><?php }
                     ?></a>
                                             </div>
@@ -301,7 +301,7 @@ while ($row = GeneralMYSQL::fetch_array($res)) {
                                     <tr>
                                         <td align="left" valign="top"><div class="v_i_s"></div>
                                             <div style="width:558px; overflow:hidden;  padding:5px 0px;">
-                                                <a href="http://mapstore.org/my_portfolio/tazteam.net/automarket/<?php echo($row['themepage'] . "/" . $row['id']); ?>" class="link_lead_big"><?php echo($row['name']); ?></a>
+                                                <a href="<?php echo(GeneralGlobalVars::url);?>/automarket/<?php echo($row['themepage'] . "/" . $row['id']); ?>" class="link_lead_big"><?php echo($row['name']); ?></a>
                                             </div>
                                         </td>
 

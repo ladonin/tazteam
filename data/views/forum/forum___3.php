@@ -20,7 +20,7 @@ GeneralInputText::$id="submit_1";
 <table cellpadding="0" cellspacing="0" width="100%">
 <tr>
 <td align="left" width="1%" class="padding_right_10">
-<a href="http://mapstore.org/my_portfolio/tazteam.net/<?php echo(GeneralGetVars::$var1."/".GeneralGetVars::$var2);?>=<?php echo(GeneralPagesCounter::$N_cur_to_outer);?>" class="btn btn-primary btn-small" title="наверх">▲</a>
+<a href="<?php echo(GeneralGlobalVars::url);?>/<?php echo(GeneralGetVars::$var1."/".GeneralGetVars::$var2);?>=<?php echo(GeneralPagesCounter::$N_cur_to_outer);?>" class="btn btn-primary btn-small" title="наверх">▲</a>
 </td>
 <td align="left" width="1%" class="padding_right_10">
 	<?php
@@ -101,12 +101,12 @@ UsersBase::$cur_user_online=UsersBase::return_online($row['m_a_timecoming']);
 	<tr>
 	<td align="left" width="85" valign="top">
 		<div class="padding_right_10">
-		<a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo($row['id_autor_message']);?>" class="refimage"><img src="<?php echo(UsersBase::return_url_photo($row['m_a_photo'],$row['m_a_dir_user']."/".$row['id_autor_message']."_2.".$row['m_a_photo_format'],$row['m_a_photo_url_from_small'],$row['m_a_photo_url_from_huge']));?>" width="75" height="75" class="refimage" style="border-right:3px solid <?php if (UsersBase::$cur_user_online){?>#f09007<?php } else { ?>#e0e0e0<?php } ?>"></a>
+		<a href="<?php echo(GeneralGlobalVars::url);?>/users/<?php echo($row['id_autor_message']);?>" class="refimage"><img src="<?php echo(UsersBase::return_url_photo($row['m_a_photo'],$row['m_a_dir_user']."/".$row['id_autor_message']."_2.".$row['m_a_photo_format'],$row['m_a_photo_url_from_small'],$row['m_a_photo_url_from_huge']));?>" width="75" height="75" class="refimage" style="border-right:3px solid <?php if (UsersBase::$cur_user_online){?>#f09007<?php } else { ?>#e0e0e0<?php } ?>"></a>
 		</div>
 	</td>
 	<td align="left" valign="top">
 		<div style="width:165px;">
-		<a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo($row['id_autor_message']);?>" class="link_lead_small black"><?php echo($current_var2);?></a>
+		<a href="<?php echo(GeneralGlobalVars::url);?>/users/<?php echo($row['id_autor_message']);?>" class="link_lead_small black"><?php echo($current_var2);?></a>
 		</div>
 		
 		<div class="link-carcas"><?php echo(ForumBase::detect_status_user_by_messages($row['m_a_count_messages'],$row['id_autor_message']));?></div>

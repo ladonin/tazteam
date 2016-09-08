@@ -12,7 +12,7 @@ while ($row = GeneralMYSQL::fetch_array($res)) {
     <table cellpadding="0" cellspacing="0">
         <tr>
             <td valign="top" style="padding:0px 10px 0px 0px;" width="1">
-                <a href="http://mapstore.org/my_portfolio/tazteam.net/automarket/<?php echo($current_var1 . "/" . $row['id']); ?>">
+                <a href="<?php echo(GeneralGlobalVars::url);?>/automarket/<?php echo($current_var1 . "/" . $row['id']); ?>">
                     <img id="automarket_img_vaz<?php echo($cv); ?>" style="height:99px;">
                     <script type="text/javascript">
                         cur_url_img = "http://140706.selcdn.ru/tazteam/images/automarket/<?php echo($row['id'] . "/"); ?>";
@@ -25,7 +25,7 @@ while ($row = GeneralMYSQL::fetch_array($res)) {
             <td valign="top" align="left">
                 <div  style="width:140px; overflow:hidden;">
                     <?php if ($current_var1 == 1) { ?>			
-                        <a href="http://mapstore.org/my_portfolio/tazteam.net/automarket/<?php echo($current_var1 . "/" . $row['id']); ?>" class="lead_gros"><?php echo(AutomarketBase::return_parameters("mark", $row['mark']) . " ");
+                        <a href="<?php echo(GeneralGlobalVars::url);?>/automarket/<?php echo($current_var1 . "/" . $row['id']); ?>" class="lead_gros"><?php echo(AutomarketBase::return_parameters("mark", $row['mark']) . " ");
                 echo($row['model']); ?></a>
                         <div></div>	
 
@@ -47,7 +47,7 @@ while ($row = GeneralMYSQL::fetch_array($res)) {
 
                     <?php } else {
                         ?>
-                        <a href="http://mapstore.org/my_portfolio/tazteam.net/automarket/<?php echo($current_var1 . "/" . $row['id']); ?>" class="lead_gros"><?php echo($row['name']); ?></a>
+                        <a href="<?php echo(GeneralGlobalVars::url);?>/automarket/<?php echo($current_var1 . "/" . $row['id']); ?>" class="lead_gros"><?php echo($row['name']); ?></a>
                         <div></div>
                         <span class="label label-important"><?php echo($row['price']); ?> руб.</span>
                         <div class="v_i_l"></div>

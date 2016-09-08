@@ -9,7 +9,7 @@ while ($row = GeneralMYSQL::fetch_array($res)) {
 
 
 
-        <a href="http://mapstore.org/my_portfolio/tazteam.net/photo/<?php echo($current_var1 . "/" . $row['id_topic'] . "=" . PhotoBase::$current_num_page_photo); ?>"><img src="http://140706.selcdn.ru/tazteam/images/photo/<?php echo($current_var1 . "/" . $row['id_topic'] . "/" . $row['id_photo'] . "_10." . $row['format_photo']); ?>" width="220" alt="" title="" class="img-polaroid"></a>
+        <a href="<?php echo(GeneralGlobalVars::url);?>/photo/<?php echo($current_var1 . "/" . $row['id_topic'] . "=" . PhotoBase::$current_num_page_photo); ?>"><img src="http://140706.selcdn.ru/tazteam/images/photo/<?php echo($current_var1 . "/" . $row['id_topic'] . "/" . $row['id_photo'] . "_10." . $row['format_photo']); ?>" width="220" alt="" title="" class="img-polaroid"></a>
 
         <div class="photo_item2" style="width:200px;"><?php echo($row['name_topic']); ?>
         </div>

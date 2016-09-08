@@ -226,7 +226,7 @@ UsersBase::set_points($MSQLc, AutomarketBase::$id_autor); //начисляем �
                                                     <a target="_blank" href="http://140706.selcdn.ru/tazteam/images/automarket/<?php echo($row['id']); ?>/<?php echo(GeneralImagesCalculate::return_size_to_photo(AutomarketBase::$img1, '3', '1')); ?>" id="automarket_photo_ref" class="lead"><img style="max-width:458px; max-height:458px; cursor:pointer;" src="http://140706.selcdn.ru/tazteam/images/automarket/<?php echo($row['id']); ?>/<?php echo(AutomarketBase::$img1); ?>" id="automarket_img_photo_big" alt="<?php echo(GeneralPageTree::$title); ?>"></a>
     <?php } else {
         ?>
-                                                    <img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/general___photo_none_600x400.jpg" width="458"  class="refimage" <?php /* onclick="swimwin('gallery','automarket'); automarket_img_to_gallery(); " */ ?>>
+                                                    <img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/general___photo_none_600x400.jpg" width="458"  class="refimage" <?php /* onclick="swimwin('gallery','automarket'); automarket_img_to_gallery(); " */ ?>>
     <?php } ?></div>
                                         </td>
                                     </tr>

@@ -1,7 +1,7 @@
 <div style="float: left; overflow:hidden; width:888px; margin-top:20px; padding-top:20px;"
 class="boxShadow3"
 >   <?php include("data/components/_general/breadcrumbs.php"); ?>
-<a href="http://mapstore.org/my_portfolio/tazteam.net/garage<?php if (GeneralGetVars::$num_page) {echo("/".GeneralGetVars::$var2."/".GeneralGetVars::$num_page);}?>" class="brn btn-warning btn-small">отменить</a>
+<a href="<?php echo(GeneralGlobalVars::url);?>/garage<?php if (GeneralGetVars::$num_page) {echo("/".GeneralGetVars::$var2."/".GeneralGetVars::$num_page);}?>" class="brn btn-warning btn-small">отменить</a>
 <div class="v_i_b"></div>
 
 <?php  

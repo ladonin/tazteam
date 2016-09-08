@@ -33,18 +33,18 @@ while($row=GeneralMYSQL::fetch_array($res)) {
 	<tr>
 	<td valign="top" align="center">
 
-            <a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo($row['id_user']."/photoalbums/".$row['id_album']);?>=1"><img src="http://140706.selcdn.ru/tazteam/images/users/photoalbums/<?php echo($row['dir_album']."/".$row['id_user']."/".$row['id_album']."/".$row['id_photo']."_5.".$row['format_photo']);?>" width="210" height="210"/></a>
+            <a href="<?php echo(GeneralGlobalVars::url);?>/users/<?php echo($row['id_user']."/photoalbums/".$row['id_album']);?>=1"><img src="http://140706.selcdn.ru/tazteam/images/users/photoalbums/<?php echo($row['dir_album']."/".$row['id_user']."/".$row['id_album']."/".$row['id_photo']."_5.".$row['format_photo']);?>" width="210" height="210"/></a>
         </td>
-		</tr> 
+		</tr>
 		<tr>
 		<td align="center">
 		<div style="padding:5px 0 0 0;">
 		<?php if (UsersPhotoalbumsBase::$sort_by!=1){?>
-		
-		<span class="link-carcas ">Автор: </span> <a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo($row['id_user']);?>" class="link_lead_small black"><?php echo(UsersMyData::return_name($row['t_login_user'],$row['t_mail_user'],$row['t_name_user'],$row['t_surname_user'],$row['t_login_status']));?></a>
+
+		<span class="link-carcas ">Автор: </span> <a href="<?php echo(GeneralGlobalVars::url);?>/users/<?php echo($row['id_user']);?>" class="link_lead_small black"><?php echo(UsersMyData::return_name($row['t_login_user'],$row['t_mail_user'],$row['t_name_user'],$row['t_surname_user'],$row['t_login_status']));?></a>
 		<div></div><?php } ?>
-				<a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo($row['id_user']."/photoalbums/".$row['id_album']);?>=1" class="link_lead_small"><?php echo($row['name_album']);?></a>
-<?php /*http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo($row['id_user']."/allphotosinalbum/".$row['id_album']);?>=1*/ ?>
+				<a href="<?php echo(GeneralGlobalVars::url);?>/users/<?php echo($row['id_user']."/photoalbums/".$row['id_album']);?>=1" class="link_lead_small"><?php echo($row['name_album']);?></a>
+<?php /*<?php echo(GeneralGlobalVars::url);?>/users/<?php echo($row['id_user']."/allphotosinalbum/".$row['id_album']);?>=1*/ ?>
 		</div>
 		</td>
 		</tr>
@@ -55,7 +55,7 @@ if ($current_var1%4==0){
     ?>
     <div style="clear:both"></div>
     <?php
-    
+
 }
 
 
@@ -70,7 +70,7 @@ GeneralMYSQL::free($res);
 <div style="clear:both"></div>
 </div>
 <div style="padding-left:20px; padding-right:20px;">
-<?php 
+<?php
 if (GeneralPagesCounter::$N_max>1){ ?>
 		<table cellpadding="0" cellspacing="0" width="100%">
 	<tr>
@@ -82,7 +82,7 @@ if (GeneralPagesCounter::$N_max>1){ ?>
 	</td>
 	</tr>
 	</table>
-	<div class="v_i_b"></div> 
+	<div class="v_i_b"></div>
 <?php }
 GeneralPagesCounter::clearvars(); ?>
 </div>

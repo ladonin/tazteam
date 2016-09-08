@@ -25,7 +25,7 @@ GeneralPagesCounter::calculate_to_outer($MSQLc, "news","id>='".GeneralGetVars::$
 	<?php GeneralImagesPreload::input("images/_general/general___new_announcement_submit_hover.png"); ?>
 </td>
 <td align="left" class="padding_left_10">
-	<a href="http://mapstore.org/my_portfolio/tazteam.net/<?php echo(GeneralGetVars::$var1);?>/redact=<?php echo($row['id']);?>" class="btn btn-warning btn-mini">редактировать</a>
+	<a href="<?php echo(GeneralGlobalVars::url);?>/<?php echo(GeneralGetVars::$var1);?>/redact=<?php echo($row['id']);?>" class="btn btn-warning btn-mini">редактировать</a>
 </td>
 <td align="left" class="padding_left_10">
 	<form method="post" action="<?php echo(GeneralGetVars::$urltosubmit);?>" onsubmit="return confirm('Удалить новость?');">
@@ -61,7 +61,7 @@ NewsBase::detect_photos_main($row['img'],$row['img_sizes']);//вычисляем
 
 
 
-	<div class="lead"><a href="http://mapstore.org/my_portfolio/tazteam.net/<?php echo(GeneralGetVars::$var1);?>=<?php echo(GeneralPagesCounter::$N_cur_to_outer);?>" title="наверх" class="btn btn-primary btn-mini" style="margin-right:5px; margin-bottom:3px;">&#9650;</a> <?php echo($row['name']);?></div>
+	<div class="lead"><a href="<?php echo(GeneralGlobalVars::url);?>/<?php echo(GeneralGetVars::$var1);?>=<?php echo(GeneralPagesCounter::$N_cur_to_outer);?>" title="наверх" class="btn btn-primary btn-mini" style="margin-right:5px; margin-bottom:3px;">&#9650;</a> <?php echo($row['name']);?></div>
 
 
 	
@@ -200,14 +200,14 @@ class="boxShadow3"
 	<table cellpadding="0" cellspacing="0" style="width:50%; float:left; margin-bottom:10px;">
 	<tr>
 	<td valign="top" width="100" align="left">
-			<a href="http://mapstore.org/my_portfolio/tazteam.net/<?php echo(GeneralGetVars::$var1);?>/<?php echo($row2['id']);?>"><?php		
-			if ($row2['img']==""){?><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/general___photo_none_100x100.jpg" width="100" height="100" class="refimage"><?php }
+			<a href="<?php echo(GeneralGlobalVars::url);?>/<?php echo(GeneralGetVars::$var1);?>/<?php echo($row2['id']);?>"><?php		
+			if ($row2['img']==""){?><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/general___photo_none_100x100.jpg" width="100" height="100" class="refimage"><?php }
 			else {?><img src="http://140706.selcdn.ru/tazteam/images/<?php echo(GeneralGetVars::$var1);?>/<?php echo($row2['id']);?>/<?php echo(NewsBase::return_size_to_photo(NewsBase::$img1_cur,2));?>" width="100" height="100" class="refimage"><?php } 		
 			?></a>
 	</td>
 	<td valign="top" align="left">
 		<div  style="width:320px; overflow:hidden;  padding:5px 10px 5px 10px;">
-			<a href="http://mapstore.org/my_portfolio/tazteam.net/<?php echo(GeneralGetVars::$var1);?>/<?php echo($row2['id']);?>"  class="link_lead " <?php if ($cv1>5){echo("rel=\"nofollow\"");} ?>><?php echo($row2['name']);?></a>
+			<a href="<?php echo(GeneralGlobalVars::url);?>/<?php echo(GeneralGetVars::$var1);?>/<?php echo($row2['id']);?>"  class="link_lead " <?php if ($cv1>5){echo("rel=\"nofollow\"");} ?>><?php echo($row2['name']);?></a>
 			<?php /*<div class="v_i_s"></div>
             <noindex><div class="grey"><?php echo($row2['contentnacked']);?>...</div></noindex>*/?>
 		</div>

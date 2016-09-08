@@ -4,7 +4,7 @@ class="boxShadow3"
 <table cellpadding="0" cellspacing="0" width="100%">
 <tr>
 <td align="left">
-	<a href="http://mapstore.org/my_portfolio/tazteam.net/<?php echo(GeneralGetVars::$var1."/".GeneralGetVars::$var2);?>" class="btn btn-primary btn-small">к&nbsp;моей странице</a>
+	<a href="<?php echo(GeneralGlobalVars::url);?>/<?php echo(GeneralGetVars::$var1."/".GeneralGetVars::$var2);?>" class="btn btn-primary btn-small">к&nbsp;моей странице</a>
 </td>	
 </tr>
 </table>
@@ -31,7 +31,7 @@ if (UsersBase::detect_its_mypage(2)==true){//определяем - наша с�
 	$cv=0;
 	include("data/components/".GeneralGetVars::$var1."/".GeneralGetVars::$var1."___2_mythemes_query_forum_1.php");
 	while($row=GeneralMYSQL::fetch_array($res)) {
-		?><a href="http://mapstore.org/my_portfolio/tazteam.net/forum/<?php echo($row['id_section']);?>/<?php echo($row['id_topic']);?>=1" class="link_lead_topic"><?php echo($row['name_topic']);?></a>
+		?><a href="<?php echo(GeneralGlobalVars::url);?>/forum/<?php echo($row['id_section']);?>/<?php echo($row['id_topic']);?>=1" class="link_lead_topic"><?php echo($row['name_topic']);?></a>
 		<div class="v_i_b"></div>
 		<?php	
 		$cv=1;}
@@ -51,7 +51,7 @@ if (UsersBase::detect_its_mypage(2)==true){//определяем - наша с�
 	$cv=0;
 	include("data/components/".GeneralGetVars::$var1."/".GeneralGetVars::$var1."___2_mythemes_query_photo_1.php");
 	while($row=GeneralMYSQL::fetch_array($res)) {
-		?><a href="http://mapstore.org/my_portfolio/tazteam.net/photo/<?php echo($row['id_section']);?>/<?php echo($row['id_topic']);?>/allphotos=1" class="link_lead_topic"><?php echo($row['name_topic']);?></a>
+		?><a href="<?php echo(GeneralGlobalVars::url);?>/photo/<?php echo($row['id_section']);?>/<?php echo($row['id_topic']);?>/allphotos=1" class="link_lead_topic"><?php echo($row['name_topic']);?></a>
 		<div class="v_i_b"></div>
 		<?php	
 		$cv=1;}
@@ -70,7 +70,7 @@ if (UsersBase::detect_its_mypage(2)==true){//определяем - наша с�
 	$cv=0;
 	include("data/components/".GeneralGetVars::$var1."/".GeneralGetVars::$var1."___2_mythemes_query_automarket_1.php");
 	while($row=GeneralMYSQL::fetch_array($res)) { ?>
-	<a href="http://mapstore.org/my_portfolio/tazteam.net/automarket/<?php echo($row['themepage']);?>/<?php echo($row['id']);?>" class="link_lead_topic">
+	<a href="<?php echo(GeneralGlobalVars::url);?>/automarket/<?php echo($row['themepage']);?>/<?php echo($row['id']);?>" class="link_lead_topic">
 	<?php if ($row['themepage']==1){ ?>
 		<span class="grey">продам</span> <?php echo(AutomarketBase::return_parameters("mark", $row['mark'])." "); echo($row['model']);?>
 	<?php } 

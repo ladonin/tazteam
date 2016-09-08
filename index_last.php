@@ -160,43 +160,43 @@ timeserver=<?php echo(GeneralGlobalVars::$timeunix);?>;
 		<table cellpadding="0" cellspacing="0" width="100%" style="background-image:url(http://mapstore.org/my_portfolio/tazteam.net/images/index/index___top_fon.png); background-repeat:repeat;">
 		<tr>
 		<td align="left" valign="top" width="190">
-			<a href="http://mapstore.org/my_portfolio/tazteam.net" class="logotext"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/index/index___logotype.png" width="190" height="33"></a>
+			<a href="<?php echo(GeneralGlobalVars::url);?>" class="logotext"><img src="<?php echo(GeneralGlobalVars::url);?>/images/index/index___logotype.png" width="190" height="33"></a>
 		</td>
 		<td valign="middle" align="right">
 		<div class="padding_right_20">
 
 			<div class="padding_left_10" style="float:right;">
-				<a href="http://mapstore.org/my_portfolio/tazteam.net/calculator" class="link_normal_white">Калькулятор</a>
+				<a href="<?php echo(GeneralGlobalVars::url);?>/calculator" class="link_normal_white">Калькулятор</a>
 			</div>
 			<div class="padding_left_10" style="float:right;">
-				<a href="http://mapstore.org/my_portfolio/tazteam.net/users" class="link_normal_white">Участники</a>
+				<a href="<?php echo(GeneralGlobalVars::url);?>/users" class="link_normal_white">Участники</a>
 			</div>				
 			<div class="padding_left_10" style="float:right;">
-				<a href="http://mapstore.org/my_portfolio/tazteam.net/forum" class="link_normal_white">Форум</a>
+				<a href="<?php echo(GeneralGlobalVars::url);?>/forum" class="link_normal_white">Форум</a>
 			</div>			
 			<div class="padding_left_10" style="float:right;">
-				<a href="http://mapstore.org/my_portfolio/tazteam.net/photo" class="link_normal_white">Галерея</a>
+				<a href="<?php echo(GeneralGlobalVars::url);?>/photo" class="link_normal_white">Галерея</a>
 			</div>				
 			<div class="padding_left_10" style="float:right;">
-				<a href="http://mapstore.org/my_portfolio/tazteam.net/photo/1=1" class="link_normal_white">ТОП</a>
+				<a href="<?php echo(GeneralGlobalVars::url);?>/photo/1=1" class="link_normal_white">ТОП</a>
 			</div>
 			<div class="padding_left_10" style="float:right;">
-				<a href="http://mapstore.org/my_portfolio/tazteam.net/articles" class="link_normal_white">Статьи</a>
+				<a href="<?php echo(GeneralGlobalVars::url);?>/articles" class="link_normal_white">Статьи</a>
 			</div>
 			<div class="padding_left_10" style="float:right;">
-				<a href="http://mapstore.org/my_portfolio/tazteam.net/news" class="link_normal_white">Новости</a>
+				<a href="<?php echo(GeneralGlobalVars::url);?>/news" class="link_normal_white">Новости</a>
 			</div>
 			<div class="padding_left_10" style="float:right;">
-				<a href="http://mapstore.org/my_portfolio/tazteam.net/automarket" class="link_normal_white">Авторынок</a>
+				<a href="<?php echo(GeneralGlobalVars::url);?>/automarket" class="link_normal_white">Авторынок</a>
 			</div>
 			<div class="padding_left_10" style="float:right;">
-				<a href="http://mapstore.org/my_portfolio/tazteam.net/video" class="link_normal_white">Видео</a>
+				<a href="<?php echo(GeneralGlobalVars::url);?>/video" class="link_normal_white">Видео</a>
 			</div>
 			<div class="padding_left_10" style="float:right;">
-				<a href="http://mapstore.org/my_portfolio/tazteam.net/shop" class="link_normal_white">Автозвук</a>
+				<a href="<?php echo(GeneralGlobalVars::url);?>/shop" class="link_normal_white">Автозвук</a>
 			</div>
 			<div class="padding_left_10" style="float:right;">
-				<a href="http://mapstore.org/my_portfolio/tazteam.net" class="link_normal_white">Главная</a>	
+				<a href="<?php echo(GeneralGlobalVars::url);?>" class="link_normal_white">Главная</a>	
 			</div>
 			<div style="clear:both;"> </div>	
 		</div>
@@ -267,25 +267,25 @@ timeserver=<?php echo(GeneralGlobalVars::$timeunix);?>;
 
 
 			<div class="padding_left_20" style="float:left;">
-				<a href="http://mapstore.org/my_portfolio/tazteam.net/users/155" class="link_normal">Администрация</a>
+				<a href="<?php echo(GeneralGlobalVars::url);?>/users/155" class="link_normal">Администрация</a>
 			</div>
 			<div class="padding_left_10" style="float:left;">
-				<a href="http://mapstore.org/my_portfolio/tazteam.net/users/1" class="link_normal">Разработка сайта</a>
+				<a href="<?php echo(GeneralGlobalVars::url);?>/users/1" class="link_normal">Разработка сайта</a>
 			</div>
 			<div class="padding_left_10" style="float:left;">
-				<a href="http://mapstore.org/my_portfolio/tazteam.net/users/1" class="link_normal">Рекламодателям</a>
+				<a href="<?php echo(GeneralGlobalVars::url);?>/users/1" class="link_normal">Рекламодателям</a>
 			</div>
 			
 			
 			
 			<div class="padding_right_20" style="float:right;">
-				<a href="http://mapstore.org/my_portfolio/tazteam.net/map" class="link_normal">Карта сайта</a>
+				<a href="<?php echo(GeneralGlobalVars::url);?>/map" class="link_normal">Карта сайта</a>
 			</div>			
 			<div class="padding_right_10" style="float:right;">
-				<a href="http://mapstore.org/my_portfolio/tazteam.net/mapnews" class="link_normal">Новости</a>
+				<a href="<?php echo(GeneralGlobalVars::url);?>/mapnews" class="link_normal">Новости</a>
 			</div>			
 			<div class="padding_right_10" style="float:right;">
-				<a href="http://mapstore.org/my_portfolio/tazteam.net/maparticles" class="link_normal">Статьи</a>
+				<a href="<?php echo(GeneralGlobalVars::url);?>/maparticles" class="link_normal">Статьи</a>
 			</div>
 			
 			<div class="padding_right_10" style="float:right;">

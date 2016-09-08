@@ -1,4 +1,4 @@
-<?php   
+<?php
 class GeneralPagesCounter{
 
 static public $whole_rows=0;//всего строк
@@ -97,10 +97,10 @@ static public function imagespreload(){
 	//GeneralImagesPreload::input("images/_general/general___pages_counter_all_left.png");
 	GeneralImagesPreload::input("images/_general/general___pages_counter_all_right_hover.png");
 	//GeneralImagesPreload::input("images/_general/general___pages_counter_all_right.png");
-	GeneralImagesPreload::input("images/_general/general___pages_counter_one_left_big_hover.png");	
+	GeneralImagesPreload::input("images/_general/general___pages_counter_one_left_big_hover.png");
 	GeneralImagesPreload::input("images/_general/general___pages_counter_one_right_big_hover.png");
-	GeneralImagesPreload::input("images/_general/general___pages_counter_one_right_big_hover.png");	
-	GeneralImagesPreload::input("images/_general/general___pages_counter_one_left_big_hover.png");	
+	GeneralImagesPreload::input("images/_general/general___pages_counter_one_right_big_hover.png");
+	GeneralImagesPreload::input("images/_general/general___pages_counter_one_left_big_hover.png");
 	}
 
 static public function clearvars(){
@@ -119,53 +119,53 @@ static protected function setN_cur(){
 	else {
 		self::$N_cur=1;	}}
 
-		
+
 static protected function setN_cur_to_outer(){
 	self::$N_cur_to_outer=ceil(self::$whole_rows_left/self::$rowsonpage);
-	if (self::$N_cur_to_outer==0){self::$N_cur_to_outer=1;}}		
-	
+	if (self::$N_cur_to_outer==0){self::$N_cur_to_outer=1;}}
+
 static protected function setN_cur_current(){
 	self::$N_cur_current=ceil(self::$whole_rows_current/self::$rowsonpage);
-	if (self::$N_cur_current==0){self::$N_cur_current=1;}}		
-		
+	if (self::$N_cur_current==0){self::$N_cur_current=1;}}
+
 static public function return_whole_rows($MSQLc,$db,$condition1,$condition2,$condition3,$condition4,$condition5){
 	$query="SELECT COUNT(1) count FROM ".$db;
 	$status_where=0;
-	if ($condition1) {$query.=" WHERE ".$condition1; $status_where=1;}	
+	if ($condition1) {$query.=" WHERE ".$condition1; $status_where=1;}
 	if ($condition2) {$query.=" AND ".$condition2; $status_where=1;}
 	if ($condition3) {$query.=" AND ".$condition3; $status_where=1;}
 	if ($condition4) {$query.=" AND ".$condition4; $status_where=1;}
 	if ($condition5) {$query.=" AND ".$condition5; $status_where=1;}
-	
+
 	if (self::$find_query) {
 		if ($status_where==0){$query.=" WHERE 1 ";}
 		else {$query.=" ";}
 		$query.=self::$find_query;}
-	
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
+
+
+
+
 	$res=GeneralMYSQL::query($MSQLc,$query);
 	$row=GeneralMYSQL::fetch_array($res);
 	GeneralMYSQL::free($res);
 	return $row['count'];}
 
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
 static protected function setpage(){
 	self::$page=GeneralGetVars::$var1;
 	if ((GeneralSecurity::tonumber(GeneralGetVars::$var3)>0)||(!GeneralGetVars::$var3)){}
@@ -180,18 +180,18 @@ static protected function setrowsonpage(){
 		self::$rowspage_name="rowspage".self::$page.GeneralPageTree::$nesting;}
 	self::$rowsonpage=self::${self::$rowspage_name};}
 
-	
-	
-	
-	
-	
+
+
+
+
+
 static protected function setrowsonpage_to_outer(){
 	if (self::$rowspage_name==""){//если не задали принудительно имя
 		self::$rowspage_name="rowspage".self::$page.(GeneralPageTree::$nesting-1);}
 	self::$rowsonpage=self::${self::$rowspage_name};}
-	
 
-	
+
+
 static protected function setN_max(){
 	self::$N_max=ceil(self::$whole_rows/self::$rowsonpage);}
 
@@ -199,32 +199,32 @@ static protected function setN_left_N_right(){
 	if (self::$N_max>self::maxlist){
 		if (((self::$N_cur-self::$listVar1)>=1)&&((self::$N_cur+self::$listVar1)<=self::$N_max)) {self::$N_left=self::$N_cur-self::$listVar1; self::$N_right=self::$N_cur+self::$listVar1;}//45x78|->, 12x45->,67x910|->
 		else if (((self::$N_cur-self::$listVar1)>=1)&&((self::$N_cur+self::$listVar1)>self::$N_max)) {self::$N_left=self::$N_max-self::$listVar3; self::$N_right=self::$N_max;}//<-678x10|
-		else {self::$N_left=1; self::$N_right=self::maxlist;}}//1x345->	
+		else {self::$N_left=1; self::$N_right=self::maxlist;}}//1x345->
 	else {
 		self::$N_left=1; self::$N_right=self::$N_max;}}//1x345|
 
-		
-		
-		
-		
+
+
+
+
 static public function calculate_to_outer($MSQLc,$db,$condition1,$condition2,$condition3,$condition4,$condition5){//чтобы выйти на вложение выше
-	self::setpage();	
+	self::setpage();
 	self::setrowsonpage_to_outer();
 	self::$whole_rows_left=self::return_whole_rows($MSQLc,$db,$condition1,$condition2,$condition3,$condition4,$condition5);
 	self::setN_cur_to_outer();
 	self::$rowspage_name="";}//очищаем наименование массива
-	
-static public function calculate_current($MSQLc,$db,$condition1,$condition2,$condition3,$condition4,$condition5){//параллельный основному расчет, без затрагивания основных чисел		
-	self::setpage();		
-	self::setrowsonpage();		
-	self::$whole_rows_current=self::return_whole_rows($MSQLc,$db,$condition1,$condition2,$condition3,$condition4,$condition5);		
-	self::setN_cur_current();
-	self::$rowspage_name="";}//очищаем наименование массива		
-		
-		
-		
 
-		
+static public function calculate_current($MSQLc,$db,$condition1,$condition2,$condition3,$condition4,$condition5){//параллельный основному расчет, без затрагивания основных чисел
+	self::setpage();
+	self::setrowsonpage();
+	self::$whole_rows_current=self::return_whole_rows($MSQLc,$db,$condition1,$condition2,$condition3,$condition4,$condition5);
+	self::setN_cur_current();
+	self::$rowspage_name="";}//очищаем наименование массива
+
+
+
+
+
 static public function calculate($MSQLc,$db,$condition1,$condition2,$condition3,$condition4,$condition5,$url){
 	self::setlistVars();
 	self::setpage();
@@ -235,143 +235,143 @@ static public function calculate($MSQLc,$db,$condition1,$condition2,$condition3,
 	self::setN_left_N_right();
 	self::$rowspage_name="";//очищаем наименование массива
 	//echo("<br>N_cur=".self::$N_cur."<br>");
-	//echo("whole_rows=".self::$whole_rows."<br>");	
-	//echo("page=".self::$page."<br>");	
-	//echo("rowsonpage=".self::$rowsonpage."<br>");	
-	//echo("N_max=".self::$N_max."<br>");	
-	//echo("N_left=".self::$N_left."<br>");	
+	//echo("whole_rows=".self::$whole_rows."<br>");
+	//echo("page=".self::$page."<br>");
+	//echo("rowsonpage=".self::$rowsonpage."<br>");
+	//echo("N_max=".self::$N_max."<br>");
+	//echo("N_left=".self::$N_left."<br>");
 	//echo("N_right=".self::$N_right."<br>");
-	//echo("start_id_topic=".self::$start_id_topic."<br>");		
+	//echo("start_id_topic=".self::$start_id_topic."<br>");
 
 	self::$htmlcode="<table cellpadding=\"0\" cellspacing=\"0\" border='0'><tr>";
 	if ((self::$N_cur>self::$listVar2)&&(self::$N_max>self::maxlist)) {self::$htmlcode.="
-    
-    <td class=\"".self::pageslistcssclass."\" valign=\"middle\">
-    
-    <div class=\"btn btn btn-primary btn-small\" onclick=\"javascript:location.href='http://mapstore.org/my_portfolio/tazteam.net/".$url."=1'\" style=\"cursor:pointer;\">1</div>
-    
 
-    
-    
-    
-    </td>";}	
+    <td class=\"".self::pageslistcssclass."\" valign=\"middle\">
+
+    <div class=\"btn btn btn-primary btn-small\" onclick=\"javascript:location.href='".GeneralGlobalVars::url."/".$url."=1'\" style=\"cursor:pointer;\">1</div>
+
+
+
+
+
+    </td>";}
 	if (self::$N_cur>1) {self::$htmlcode.="<td class=\"".self::pageslistcssclass."\" valign=\"middle\">
-    
-    <div class=\"btn btn btn-primary btn-small\" onclick=\"javascript:location.href='http://mapstore.org/my_portfolio/tazteam.net/".$url."=".(self::$N_cur-1)."'\" style=\"cursor:pointer;\">&#9664</div>
-    
-    
-    
+
+    <div class=\"btn btn btn-primary btn-small\" onclick=\"javascript:location.href='".GeneralGlobalVars::url."/".$url."=".(self::$N_cur-1)."'\" style=\"cursor:pointer;\">&#9664</div>
+
+
+
     </td>";}
 	for ($i=self::$N_left; $i<=self::$N_right; $i++){
 		if (self::$N_cur==$i) {self::$htmlcode.="<td class=\"".self::pageslistcssclass."\" valign=\"middle\">
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
         <span class=\"badge badge-warning\" style=\"margin:0 0 0px 0;\">".$i."</span></td>";}
 		else {self::$htmlcode.="
         <td class=\"".self::pageslistcssclass."\" valign=\"middle\">
-        
-        
-        
+
+
+
         <div  style=\"margin-top:3px;\">
-        <a href=\"http://mapstore.org/my_portfolio/tazteam.net/".$url."=".$i."\" class=\"link_pagecounter_light\"> ".$i."</a>
+        <a href=\"".GeneralGlobalVars::url."/".$url."=".$i."\" class=\"link_pagecounter_light\"> ".$i."</a>
         </div>
-        
-        
-        
+
+
+
         </td>";}	}
 	if (self::$N_cur<self::$N_max) {self::$htmlcode.="
-    
+
     <td class=\"".self::pageslistcssclass."\" valign=\"middle\">
-    
-    
-    <div  class=\"btn btn btn-primary btn-small\" onclick=\"javascript:location.href='http://mapstore.org/my_portfolio/tazteam.net/".$url."=".(self::$N_cur+1)."'\" style=\"cursor:pointer;\">&#9654;</div>
-         
-    
-    </td>";}	
+
+
+    <div  class=\"btn btn btn-primary btn-small\" onclick=\"javascript:location.href='".GeneralGlobalVars::url."/".$url."=".(self::$N_cur+1)."'\" style=\"cursor:pointer;\">&#9654;</div>
+
+
+    </td>";}
 	if ((self::$N_cur<(self::$N_max-self::$listVar1)&&(self::$N_max>self::maxlist))) {self::$htmlcode.="
     <td class=\"".self::pageslistcssclass."\" valign=\"middle\">
-    <div  class=\"btn btn btn-primary btn-small\" onclick=\"javascript:location.href='http://mapstore.org/my_portfolio/tazteam.net/".$url."=".self::$N_max."'\" style=\"cursor:pointer;\">".self::$N_max."</div>
-    
-   
+    <div  class=\"btn btn btn-primary btn-small\" onclick=\"javascript:location.href='".GeneralGlobalVars::url."/".$url."=".self::$N_max."'\" style=\"cursor:pointer;\">".self::$N_max."</div>
+
+
     </td>";}
 
 
 
 
-    
-    
-    
+
+
+
 	if (self::$N_max>1) {
         self::$htmlcode.="<td  class=\"".self::finishpagecssclass."\" width=\"1\" valign=\"middle\"><select style=\"height:26px; width:62px; margin:0px;\">";
-        for ($i=1; $i<=self::$N_max; $i++){ 
-            self::$htmlcode.="<option onclick=\"javascript:location.href='http://mapstore.org/my_portfolio/tazteam.net/".$url."=".$i."'\"";
+        for ($i=1; $i<=self::$N_max; $i++){
+            self::$htmlcode.="<option onclick=\"javascript:location.href='".GeneralGlobalVars::url."/".$url."=".$i."'\"";
             if ($i==self::$N_cur){self::$htmlcode.=" selected ";}
             self::$htmlcode.=">".$i."</option>";
         }
         self::$htmlcode.="</select></td>";
-    }    
-    else {
-	self::$htmlcode.="<td class=\"".self::finishpagecssclass."\" valign=\"middle\" width=\"1\">".self::$N_cur."</td>";       
-        
     }
-    
-	self::$htmlcode.="<td valign=\"middle\">&nbsp;из&nbsp;<a href=\"http://mapstore.org/my_portfolio/tazteam.net/".$url."=".self::$N_max."\" class=\"".self::finishpageurlcssclass."\">".self::$N_max."</a></td>";
+    else {
+	self::$htmlcode.="<td class=\"".self::finishpagecssclass."\" valign=\"middle\" width=\"1\">".self::$N_cur."</td>";
+
+    }
+
+	self::$htmlcode.="<td valign=\"middle\">&nbsp;из&nbsp;<a href=\"".GeneralGlobalVars::url."/".$url."=".self::$N_max."\" class=\"".self::finishpageurlcssclass."\">".self::$N_max."</a></td>";
 
     self::$htmlcode.="</tr></table>";
-	
-	
-	
+
+
+
 	self::$htmlarrows="<table cellpadding=\"0\" cellspacing=\"0\"><tr>";
 	if (self::$N_cur>1) {self::$htmlarrows.="
-    
+
     <td style=\"padding-right:10px;\">
-    
-    
-    <div class=\"btn btn btn-primary btn-small\" onclick=\"javascript:location.href='http://mapstore.org/my_portfolio/tazteam.net/".$url."=".(self::$N_cur-1)."'\" style=\"cursor:pointer;\">&#9664;</div>
-    
-    
-    
-     
-    
-    
-    
-    
-    
-    
+
+
+    <div class=\"btn btn btn-primary btn-small\" onclick=\"javascript:location.href='".GeneralGlobalVars::url."/".$url."=".(self::$N_cur-1)."'\" style=\"cursor:pointer;\">&#9664;</div>
+
+
+
+
+
+
+
+
+
+
     </td>";}
 	else {self::$htmlarrows.="<td style=\"padding-right:10px;\">
-    
-    
+
+
     <div class=\"btn btn btn-primary btn-small disabled\">&#9664;</div>
-    
-    
-   
-    
-    
-    
-   
-    
+
+
+
+
+
+
+
+
     </td>";}
 	if (self::$N_cur<self::$N_max) {self::$htmlarrows.="<td>
-    
-    
-    <div class=\"btn btn btn-primary btn-small\" onclick=\"javascript:location.href='http://mapstore.org/my_portfolio/tazteam.net/".$url."=".(self::$N_cur+1)."'\" style=\"cursor:pointer;\">&#9654;</div>
-    
-    
-    	
-     
-    
-    
-    </td>";}	
+
+
+    <div class=\"btn btn btn-primary btn-small\" onclick=\"javascript:location.href='".GeneralGlobalVars::url."/".$url."=".(self::$N_cur+1)."'\" style=\"cursor:pointer;\">&#9654;</div>
+
+
+
+
+
+
+    </td>";}
 	else {self::$htmlarrows.="<td><div class=\"btn btn btn-primary btn-small disabled\">&#9654;</div></td>";}
-	self::$htmlarrows.="</tr></table>";	
-	
-	
-	
+	self::$htmlarrows.="</tr></table>";
+
+
+
 	}
 }
 ?>

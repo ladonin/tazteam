@@ -1,5 +1,5 @@
 <div class="v_i_b"></div>
-<div class="padding_left_10"><a href="http://mapstore.org/my_portfolio/tazteam.net/automarket<?php if (GeneralGetVars::$num_page) {echo("/".GeneralGetVars::$var2."/".GeneralGetVars::$num_page);}?>" class="small_dark_link">отменить</a></div>
+<div class="padding_left_10"><a href="<?php echo(GeneralGlobalVars::url);?>/automarket<?php if (GeneralGetVars::$num_page) {echo("/".GeneralGetVars::$var2."/".GeneralGetVars::$num_page);}?>" class="small_dark_link">отменить</a></div>
 <div class="v_i_b"></div>
 <div class="grey_line_1"></div>
 <div class="v_i_b"></div>

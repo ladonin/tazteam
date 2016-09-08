@@ -12,7 +12,7 @@ while ($row=GeneralMYSQL::fetch_array($res))
 ?>
 	<table cellpadding="0" cellspacing="0" style="width:1%; float:left; padding-right:20px; padding-bottom:20px;">
 	<tr>
-	<td valign="top" align="center"><a href="http://mapstore.org/my_portfolio/tazteam.net/photo/<?php echo($row['id_section']);?>=1"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/photo/photo___section_<?php echo($row['id_section']);?>.png" width="206" height="206" style="border:0px solid #191c20;"></a></td>
+	<td valign="top" align="center"><a href="<?php echo(GeneralGlobalVars::url);?>/photo/<?php echo($row['id_section']);?>=1"><img src="<?php echo(GeneralGlobalVars::url);?>/images/photo/photo___section_<?php echo($row['id_section']);?>.png" width="206" height="206" style="border:0px solid #191c20;"></a></td>
 	</tr>
 	</table>
 <?php } GeneralMYSQL::free($res); ?>

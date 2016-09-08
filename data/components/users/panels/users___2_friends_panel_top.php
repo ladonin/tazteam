@@ -8,7 +8,7 @@
 	</td>
 	<td><div class="padding_right_10">
     
-<a href="http://mapstore.org/my_portfolio/tazteam.net/<?php echo(GeneralGetVars::$var1."/".GeneralGetVars::$var2);?>" class="btn btn-primary btn-small" title="наверх">▲</a>
+<a href="<?php echo(GeneralGlobalVars::url);?>/<?php echo(GeneralGetVars::$var1."/".GeneralGetVars::$var2);?>" class="btn btn-primary btn-small" title="наверх">▲</a>
 </div>
 	</td>	
 	<td align="left">

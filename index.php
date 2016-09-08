@@ -81,35 +81,35 @@ if (UsersMyData::$id == 1) {
         <meta name='yandex-verification' content='7c2a3a7e1b6dfd6b' />
         <meta name="4d88a69ce36aad5b651e142429b1f5f9" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="http://mapstore.org/my_portfolio/tazteam.net/favicon.ico" type="image/x-icon">
-        <link rel="shortcut icon" href="http://mapstore.org/my_portfolio/tazteam.net/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="<?php echo(GeneralGlobalVars::url);?>/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="<?php echo(GeneralGlobalVars::url);?>/favicon.ico" type="image/x-icon">
 
-        <link rel="stylesheet" type="text/css" href="http://mapstore.org/my_portfolio/tazteam.net/css/_general/carcas.css">
-        <?php /* <link rel="stylesheet" type="text/css" href="http://mapstore.org/my_portfolio/tazteam.net/css/_general/text.css">
-          <link rel="stylesheet" type="text/css" href="http://mapstore.org/my_portfolio/tazteam.net/css/index/carcas.css">
-          <link rel="stylesheet" type="text/css" href="http://mapstore.org/my_portfolio/tazteam.net/css/index/text.css">
+        <link rel="stylesheet" type="text/css" href="<?php echo(GeneralGlobalVars::url);?>/css/_general/carcas.css">
+        <?php /* <link rel="stylesheet" type="text/css" href="<?php echo(GeneralGlobalVars::url);?>/css/_general/text.css">
+          <link rel="stylesheet" type="text/css" href="<?php echo(GeneralGlobalVars::url);?>/css/index/carcas.css">
+          <link rel="stylesheet" type="text/css" href="<?php echo(GeneralGlobalVars::url);?>/css/index/text.css">
          */ ?>
 
 
         <?php /* if (GeneralGetVars::$var1) {?>
-          <link rel="stylesheet" type="text/css" href="http://mapstore.org/my_portfolio/tazteam.net/css/<?php echo(GeneralGetVars::$var1);?>/carcas.css">
-          <link rel="stylesheet" type="text/css" href="http://mapstore.org/my_portfolio/tazteam.net/css/<?php echo(GeneralGetVars::$var1);?>/text.css">
+          <link rel="stylesheet" type="text/css" href="<?php echo(GeneralGlobalVars::url);?>/css/<?php echo(GeneralGetVars::$var1);?>/carcas.css">
+          <link rel="stylesheet" type="text/css" href="<?php echo(GeneralGlobalVars::url);?>/css/<?php echo(GeneralGetVars::$var1);?>/text.css">
           <?php } */ ?>
         <!-- Bootstrap -->
-        <link href="http://mapstore.org/my_portfolio/tazteam.net/bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
-        <link href="http://mapstore.org/my_portfolio/tazteam.net/bootstrap/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+        <link href="<?php echo(GeneralGlobalVars::url);?>/bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
+        <link href="<?php echo(GeneralGlobalVars::url);?>/bootstrap/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
 
-        <script type='text/javascript' src='http://mapstore.org/my_portfolio/tazteam.net/js/functions/_general/jquery/jquery.js'></script>
-        <script type='text/javascript' src='http://mapstore.org/my_portfolio/tazteam.net/js/functions/_general/general___images_preload.js'></script>
-        <script type='text/javascript' src='http://mapstore.org/my_portfolio/tazteam.net/js/functions/_general/general___swim.js'></script>
-        <script type='text/javascript' src='http://mapstore.org/my_portfolio/tazteam.net/js/functions/_general/general___scroll.js'></script>
-        <script type='text/javascript' src='http://mapstore.org/my_portfolio/tazteam.net/js/functions/_general/general___ajax.js'></script>
-        <script type='text/javascript' src='http://mapstore.org/my_portfolio/tazteam.net/js/functions/_general/general___textarea.js'></script>
-        <script type='text/javascript' src='http://mapstore.org/my_portfolio/tazteam.net/js/functions/_general/general___send_to_server.js'></script>
-        <script type='text/javascript' src='http://mapstore.org/my_portfolio/tazteam.net/js/functions/_general/general___brousers.js'></script>
-        <script type='text/javascript' src='http://mapstore.org/my_portfolio/tazteam.net/js/functions/_general/jquery/jquery.cookie.js'></script>
+        <script type='text/javascript' src='<?php echo(GeneralGlobalVars::url);?>/js/functions/_general/jquery/jquery.js'></script>
+        <script type='text/javascript' src='<?php echo(GeneralGlobalVars::url);?>/js/functions/_general/general___images_preload.js'></script>
+        <script type='text/javascript' src='<?php echo(GeneralGlobalVars::url);?>/js/functions/_general/general___swim.js'></script>
+        <script type='text/javascript' src='<?php echo(GeneralGlobalVars::url);?>/js/functions/_general/general___scroll.js'></script>
+        <script type='text/javascript' src='<?php echo(GeneralGlobalVars::url);?>/js/functions/_general/general___ajax.js'></script>
+        <script type='text/javascript' src='<?php echo(GeneralGlobalVars::url);?>/js/functions/_general/general___textarea.js'></script>
+        <script type='text/javascript' src='<?php echo(GeneralGlobalVars::url);?>/js/functions/_general/general___send_to_server.js'></script>
+        <script type='text/javascript' src='<?php echo(GeneralGlobalVars::url);?>/js/functions/_general/general___brousers.js'></script>
+        <script type='text/javascript' src='<?php echo(GeneralGlobalVars::url);?>/js/functions/_general/jquery/jquery.cookie.js'></script>
         <?php if (UsersMyData::$identified == 1) { ?>
-            <script type='text/javascript' src='http://mapstore.org/my_portfolio/tazteam.net/js/functions/_general/general___signature.js'></script>
+            <script type='text/javascript' src='<?php echo(GeneralGlobalVars::url);?>/js/functions/_general/general___signature.js'></script>
             <?php
         }
         include("data/lists/" . GeneralPageTree::$url . "_js.txt"); //подгрузка списка подключаемых  js файлов
@@ -168,8 +168,8 @@ if (UsersMyData::$id == 1) {
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </a>
-                    <a class="brand" href="http://mapstore.org/my_portfolio/tazteam.net" style="padding:4px 20px 10px 20px;">
-                        <img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/logos/logo_taz.png" style="height:12px;">
+                    <a class="brand" href="<?php echo(GeneralGlobalVars::url);?>" style="padding:4px 20px 10px 20px;">
+                        <img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/logos/logo_taz.png" style="height:12px;">
                     </a>
                     <div class="nav-collapse collapse navbar-responsive-collapse">
                         <ul class="nav">
@@ -183,13 +183,13 @@ if (UsersMyData::$id == 1) {
                               <li class="divider-vertical"></li>
                               <?php } */ ?>
                             <li class="dropdown" id="q_hat_market_button">
-                                <a href="http://mapstore.org/my_portfolio/tazteam.net/automarket">
+                                <a href="<?php echo(GeneralGlobalVars::url);?>/automarket">
                                     Авторынок
                                 </a>
                             </li>
                             <li class="divider-vertical"></li>
                             <li class="dropdown" id="q_hat_market_button">
-                                <a href="http://mapstore.org/my_portfolio/tazteam.net/forum">
+                                <a href="<?php echo(GeneralGlobalVars::url);?>/forum">
                                     Форум
                                 </a>
                             </li>
@@ -202,15 +202,15 @@ if (UsersMyData::$id == 1) {
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a href="http://urcclub.nethouse.ru" target="_blank">TAZTEAM SHOP</a></li>
-                                    <li><a href="http://mapstore.org/my_portfolio/tazteam.net/users">Участники</a></li>
+                                    <li><a href="<?php echo(GeneralGlobalVars::url);?>/users">Участники</a></li>
                                     <li><a href="#calculator" data-toggle="modal">Калькулятор</a></li>
-                                    <li><a href="http://mapstore.org/my_portfolio/tazteam.net/articles">Статьи</a></li>
-                                    <li><a href="http://mapstore.org/my_portfolio/tazteam.net/news">Новости</a></li>
-                                    <li><a href="http://mapstore.org/my_portfolio/tazteam.net/photo/2=1">Фото - авто участников</a></li>
-                                    <li><a href="http://mapstore.org/my_portfolio/tazteam.net/photo/1=1">Фото - лучшие подборки</a></li>
-                                    <li><a href="http://mapstore.org/my_portfolio/tazteam.net/video">Видео</a></li>
-                                    <li><a href="http://mapstore.org/my_portfolio/tazteam.net/garage">Гараж</a></li>
-                                    <li><a href="http://mapstore.org/my_portfolio/tazteam.net/tests/1=60">Тесты ПДД</a></li>
+                                    <li><a href="<?php echo(GeneralGlobalVars::url);?>/articles">Статьи</a></li>
+                                    <li><a href="<?php echo(GeneralGlobalVars::url);?>/news">Новости</a></li>
+                                    <li><a href="<?php echo(GeneralGlobalVars::url);?>/photo/2=1">Фото - авто участников</a></li>
+                                    <li><a href="<?php echo(GeneralGlobalVars::url);?>/photo/1=1">Фото - лучшие подборки</a></li>
+                                    <li><a href="<?php echo(GeneralGlobalVars::url);?>/video">Видео</a></li>
+                                    <li><a href="<?php echo(GeneralGlobalVars::url);?>/garage">Гараж</a></li>
+                                    <li><a href="<?php echo(GeneralGlobalVars::url);?>/tests/1=60">Тесты ПДД</a></li>
                                 </ul>
                             </li>
                           <li class="divider-vertical"></li>
@@ -236,11 +236,11 @@ if (UsersMyData::$id == 1) {
 
                         </ul>
                         <ul class="nav pull-right">
-                            <li><a href="http://mapstore.org/my_portfolio/tazteam.net/games">
+                            <li><a href="<?php echo(GeneralGlobalVars::url);?>/games">
                                     <?php if (UsersMyData::$score > 0) { ?><b class="white"><?php
                                         echo(UsersMyData::$score);
                                     }
-                                    ?></b>&nbsp;<img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/moneta.png" width="16" height="16" style="margin-bottom:1px;"></a></li>
+                                    ?></b>&nbsp;<img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/moneta.png" width="16" height="16" style="margin-bottom:1px;"></a></li>
 
                             <li class="divider-vertical"></li>
 <?php if (UsersMyData::$identified == 1) { ?>
@@ -291,7 +291,7 @@ if (UsersMyData::$id == 1) {
                                 </li>
                                 <li class="divider-vertical-sub-menu"></li>
                                 <li class="">
-                                    <a href="http://mapstore.org/my_portfolio/tazteam.net/automarket">Авторынок</a>
+                                    <a href="<?php echo(GeneralGlobalVars::url);?>/automarket">Авторынок</a>
                                 </li>
                             </ul>
                         </div>
@@ -307,15 +307,15 @@ if (UsersMyData::$id == 1) {
                                 </li>
                                 <li class="divider-vertical-sub-menu"></li>
                                 <li class="">
-                                    <a href="http://mapstore.org/my_portfolio/tazteam.net/photo/2=1">Фото - авто участников</a>
+                                    <a href="<?php echo(GeneralGlobalVars::url);?>/photo/2=1">Фото - авто участников</a>
                                 </li>
 
                                 <li class="">
-                                    <a href="http://mapstore.org/my_portfolio/tazteam.net/photo/1=1">Фото - лучшие подборки</a>
+                                    <a href="<?php echo(GeneralGlobalVars::url);?>/photo/1=1">Фото - лучшие подборки</a>
                                 </li>
 
                                 <li class="">
-                                    <a href="http://mapstore.org/my_portfolio/tazteam.net/video">Видео</a>
+                                    <a href="<?php echo(GeneralGlobalVars::url);?>/video">Видео</a>
                                 </li>
                             </ul>
                         </div>
@@ -331,11 +331,11 @@ if (UsersMyData::$id == 1) {
                                 </li>
                                 <li class="divider-vertical-sub-menu"></li>
                                 <li class="">
-                                    <a href="http://mapstore.org/my_portfolio/tazteam.net/news">Новости</a>
+                                    <a href="<?php echo(GeneralGlobalVars::url);?>/news">Новости</a>
                                 </li>
 
                                 <li class="">
-                                    <a href="http://mapstore.org/my_portfolio/tazteam.net/articles">Статьи</a>
+                                    <a href="<?php echo(GeneralGlobalVars::url);?>/articles">Статьи</a>
                                 </li>
                             </ul>
                         </div>
@@ -351,11 +351,11 @@ if (UsersMyData::$id == 1) {
                                 </li>
                                 <li class="divider-vertical-sub-menu"></li>
                                 <li class="">
-                                    <a href="http://mapstore.org/my_portfolio/tazteam.net/forum">Форум</a>
+                                    <a href="<?php echo(GeneralGlobalVars::url);?>/forum">Форум</a>
                                 </li>
 
                                 <li class="">
-                                    <a href="http://mapstore.org/my_portfolio/tazteam.net/users">Участники</a>
+                                    <a href="<?php echo(GeneralGlobalVars::url);?>/users">Участники</a>
                                 </li>
                             </ul>
                         </div>
@@ -371,7 +371,7 @@ if (UsersMyData::$id == 1) {
                                 </li>
                                 <li class="divider-vertical-sub-menu"></li>
                                 <li class="">
-                                    <a href="http://mapstore.org/my_portfolio/tazteam.net/garage">Гараж</a>
+                                    <a href="<?php echo(GeneralGlobalVars::url);?>/garage">Гараж</a>
                                 </li>
 
                                 <li class="">
@@ -379,7 +379,7 @@ if (UsersMyData::$id == 1) {
                                 </li>
 
                                 <li class="">
-                                    <a href="http://mapstore.org/my_portfolio/tazteam.net/tests/1=<?php echo(rand(1, GeneralGlobalVars::count_tests)); ?>">Тесты ПДД</a>
+                                    <a href="<?php echo(GeneralGlobalVars::url);?>/tests/1=<?php echo(rand(1, GeneralGlobalVars::count_tests)); ?>">Тесты ПДД</a>
                                 </li>
                             </ul>
                         </div>
@@ -435,12 +435,12 @@ if (UsersMyData::$id == 1) {
                 <h3 id="calculatorLabel">Выберите калькулятор</h3>
             </div>
             <div class="modal-body">
-                <a href="http://mapstore.org/my_portfolio/tazteam.net/calculator/1">Расчет мощности двигателя</a>
+                <a href="<?php echo(GeneralGlobalVars::url);?>/calculator/1">Расчет мощности двигателя</a>
                 <br>
-                <a href="http://mapstore.org/my_portfolio/tazteam.net/calculator/2">Расчет времени прохождения дистанции 402 м</a>
+                <a href="<?php echo(GeneralGlobalVars::url);?>/calculator/2">Расчет времени прохождения дистанции 402 м</a>
                 <br>
-                <a href="http://mapstore.org/my_portfolio/tazteam.net/calculator/3">Расчет rs и степени сжатия мотора</a><br>
-                <a href="http://mapstore.org/my_portfolio/tazteam.net/calculator/4">Расчет степени сжатия для турбо мотора</a><br>
+                <a href="<?php echo(GeneralGlobalVars::url);?>/calculator/3">Расчет rs и степени сжатия мотора</a><br>
+                <a href="<?php echo(GeneralGlobalVars::url);?>/calculator/4">Расчет степени сжатия для турбо мотора</a><br>
             </div>
             <div class="modal-footer">
                 <button class="btn" data-dismiss="modal" aria-hidden="true">Закрыть</button>
@@ -668,39 +668,39 @@ include("data/components/automarket/panels/new_announcement.php");?>
 
                                                 <?php /*
                                                   <div style="margin-bottom:5px;">
-                                                  <a href="http://mapstore.org/my_portfolio/tazteam.net/news" class="link_lead_topic">Новости</a>
+                                                  <a href="<?php echo(GeneralGlobalVars::url);?>/news" class="link_lead_topic">Новости</a>
                                                   </div>
                                                   <div style="margin-bottom:5px;">
-                                                  <a href="http://mapstore.org/my_portfolio/tazteam.net/articles" class="link_lead_topic">Статьи</a>
+                                                  <a href="<?php echo(GeneralGlobalVars::url);?>/articles" class="link_lead_topic">Статьи</a>
                                                   </div>
                                                   <div style="margin-bottom:5px;">
-                                                  <a href="http://mapstore.org/my_portfolio/tazteam.net/forum" class="link_lead_topic">Форум</a>
+                                                  <a href="<?php echo(GeneralGlobalVars::url);?>/forum" class="link_lead_topic">Форум</a>
                                                   </div>
                                                   <div style="margin-bottom:5px;">
-                                                  <a href="http://mapstore.org/my_portfolio/tazteam.net/users" class="link_lead_topic">Участники</a>
-                                                  </div>
-
-                                                  <div style="margin-bottom:5px;">
-                                                  <a href="http://mapstore.org/my_portfolio/tazteam.net/garage" class="link_lead_topic">Гараж</a>
-                                                  </div>
-                                                  <div style="margin-bottom:5px;">
-                                                  <a href="http://mapstore.org/my_portfolio/tazteam.net/automarket" class="link_lead_topic">Авторынок</a>
-                                                  </div>
-                                                  <div style="margin-bottom:5px;">
-                                                  <a href="http://mapstore.org/my_portfolio/tazteam.net/tests/1=1" class="link_lead_topic">Тесты ПДД</a>
-                                                  </div>
-                                                  <div style="margin-bottom:5px;">
-                                                  <a href="http://mapstore.org/my_portfolio/tazteam.net/shop" class="link_lead_topic">TAZTEAM SHOP</a>
+                                                  <a href="<?php echo(GeneralGlobalVars::url);?>/users" class="link_lead_topic">Участники</a>
                                                   </div>
 
                                                   <div style="margin-bottom:5px;">
-                                                  <a href="http://mapstore.org/my_portfolio/tazteam.net/photo/2=1" class="link_lead_topic">Фото - авто участников</a>
+                                                  <a href="<?php echo(GeneralGlobalVars::url);?>/garage" class="link_lead_topic">Гараж</a>
                                                   </div>
                                                   <div style="margin-bottom:5px;">
-                                                  <a href="http://mapstore.org/my_portfolio/tazteam.net/photo/1=1" class="link_lead_topic">Фото - лучшие подборки</a>
+                                                  <a href="<?php echo(GeneralGlobalVars::url);?>/automarket" class="link_lead_topic">Авторынок</a>
                                                   </div>
                                                   <div style="margin-bottom:5px;">
-                                                  <a href="http://mapstore.org/my_portfolio/tazteam.net/video" class="link_lead_topic">Видео</a>
+                                                  <a href="<?php echo(GeneralGlobalVars::url);?>/tests/1=1" class="link_lead_topic">Тесты ПДД</a>
+                                                  </div>
+                                                  <div style="margin-bottom:5px;">
+                                                  <a href="<?php echo(GeneralGlobalVars::url);?>/shop" class="link_lead_topic">TAZTEAM SHOP</a>
+                                                  </div>
+
+                                                  <div style="margin-bottom:5px;">
+                                                  <a href="<?php echo(GeneralGlobalVars::url);?>/photo/2=1" class="link_lead_topic">Фото - авто участников</a>
+                                                  </div>
+                                                  <div style="margin-bottom:5px;">
+                                                  <a href="<?php echo(GeneralGlobalVars::url);?>/photo/1=1" class="link_lead_topic">Фото - лучшие подборки</a>
+                                                  </div>
+                                                  <div style="margin-bottom:5px;">
+                                                  <a href="<?php echo(GeneralGlobalVars::url);?>/video" class="link_lead_topic">Видео</a>
                                                   </div>
                                                  */ ?>
 
@@ -741,11 +741,11 @@ include("data/components/automarket/panels/new_announcement.php");?>
                                                 </div>
 
                                                 <div style="margin-right:5px; display:inline;">
-                                                    <a href="http://mapstore.org/my_portfolio/tazteam.net/users/1" class="link_lead_topic white">Разработка</a>
+                                                    <a href="<?php echo(GeneralGlobalVars::url);?>/users/1" class="link_lead_topic white">Разработка</a>
                                                 </div>
-                                                
+
                                                 <div style="margin-right:5px; display:inline;">
-                                                    <a href="http://mapstore.org/my_portfolio/tazteam.net/users/155" class="link_lead_topic white">Влас Прудов</a>
+                                                    <a href="<?php echo(GeneralGlobalVars::url);?>/users/155" class="link_lead_topic white">Влас Прудов</a>
                                                 </div>
 
 
@@ -784,7 +784,7 @@ include("data/components/automarket/panels/new_announcement.php");?>
           <script type="text/javascript" >
           var ads = "no-adb";onload=function(){if (document.getElementsByClassName == undefined) {document.getElementsByClassName = function(className){var hasClassName = new RegExp("(?:^|\s)" + className + "(?:$|\s)");var allElements = document.getElementsByTagName("*");var results = [];var element;for (var i = 0; (element = allElements[i]) != null; i++) {var elementClass = element.className;if (elementClass && elementClass.indexOf(className) != -1 && hasClassName.test(elementClass))results.push(element);}return results;}}   blocked = 0;var ad_nodes = document.getElementsByClassName(ads);for(i in ad_nodes){
           if (ad_nodes[i].offsetHeight == 0){blocked = 1;
-          document.write("<table width=\"100%\"><tr><td valign=\"top\" align=\"left\">Уважаемый пользователь! Мы обнаружили, что вы блокируете показ рекламы на нашем сайте, просим внести наш сайт в список исключения, так как наш контент предоставляется на бесплатной основе, поэтому единственным доходом является реклама на сайте. А она даёт мотивацию работать дальше и создавать интересные решения для вашего сайта. Спасибо за понимание.</td><td width=\"1%\" valign=\"top\"><img src=\"http://mapstore.org/my_portfolio/tazteam.net/images/_general/auto_old.jpg\" width=\"170\" style=\"margin-left:10px;\"></td></tr></table><b>Чтобы внести сайт mapstore.org/my_portfolio/tazteam.net в список исключений, достаточно:</b><br /><br /><b><big>Chrome</big></b><ol><li>В браузере вверху справа нажать на логотип ABP и затем на кнопку \"включено на этом сайте\", тем самым отключив Adblock для сайта mapstore.org/my_portfolio/tazteam.net</li></ol>или<br /><br /><ol><li>перейти в браузере в раздел \"Настройки\"</li><li>Расширения</li><li>AdBlock Plus</li><li>кнопка \"Настройки\"</li><li>Белый список доменов</li><li>ввести адрес mapstore.org/my_portfolio/tazteam.net</li><li>Добавить домен</li><li>готово</li></ol><br /><b><big>Firefox</big></b><ol><li>В браузере вверху справа нажать на логотип ABP и затем на кнопку \"отключить на mapstore.org/my_portfolio/tazteam.net\"</li></ol>или<br /><br /><ol><li>перейти в браузере в раздел \"Дополнения\"</li><li>Расширения</li><li>AdBlock Plus</li><li>кнопка \"Настройки фильтров\"</li><li>Добавить группу фильтров</li><li>справа \"Добавить фильтр\"</li><li>вставляем адрес http://mapstore.org/my_portfolio/tazteam.net</li><li>нажимаем Enter</li><li>убираем галочку напротив созданной ссылки</li><li>готово</li></ol>");
+          document.write("<table width=\"100%\"><tr><td valign=\"top\" align=\"left\">Уважаемый пользователь! Мы обнаружили, что вы блокируете показ рекламы на нашем сайте, просим внести наш сайт в список исключения, так как наш контент предоставляется на бесплатной основе, поэтому единственным доходом является реклама на сайте. А она даёт мотивацию работать дальше и создавать интересные решения для вашего сайта. Спасибо за понимание.</td><td width=\"1%\" valign=\"top\"><img src=\"<?php echo(GeneralGlobalVars::url);?>/images/_general/auto_old.jpg\" width=\"170\" style=\"margin-left:10px;\"></td></tr></table><b>Чтобы внести сайт mapstore.org/my_portfolio/tazteam.net в список исключений, достаточно:</b><br /><br /><b><big>Chrome</big></b><ol><li>В браузере вверху справа нажать на логотип ABP и затем на кнопку \"включено на этом сайте\", тем самым отключив Adblock для сайта mapstore.org/my_portfolio/tazteam.net</li></ol>или<br /><br /><ol><li>перейти в браузере в раздел \"Настройки\"</li><li>Расширения</li><li>AdBlock Plus</li><li>кнопка \"Настройки\"</li><li>Белый список доменов</li><li>ввести адрес mapstore.org/my_portfolio/tazteam.net</li><li>Добавить домен</li><li>готово</li></ol><br /><b><big>Firefox</big></b><ol><li>В браузере вверху справа нажать на логотип ABP и затем на кнопку \"отключить на mapstore.org/my_portfolio/tazteam.net\"</li></ol>или<br /><br /><ol><li>перейти в браузере в раздел \"Дополнения\"</li><li>Расширения</li><li>AdBlock Plus</li><li>кнопка \"Настройки фильтров\"</li><li>Добавить группу фильтров</li><li>справа \"Добавить фильтр\"</li><li>вставляем адрес <?php echo(GeneralGlobalVars::url);?></li><li>нажимаем Enter</li><li>убираем галочку напротив созданной ссылки</li><li>готово</li></ol>");
           }}}</script>
          */ ?>
 

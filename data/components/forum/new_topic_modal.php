@@ -3,15 +3,15 @@
     ?>
                <!-- new_topic_forum automarket -->
             <div id="new_topic_forum" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="new_topic_forumLabel" aria-hidden="true" style="width:689px; max-height: 700px; margin-left:-345px; top: 5%;">
-            
-    <?php    
-    
+
+    <?php
+
 		GeneralInputText::$id="submit_1";
-		?><form method="post" 
-		action="http://mapstore.org/my_portfolio/tazteam.net/submit.php?get_var1=forum" 
-		enctype="multipart/form-data" 
+		?><form method="post"
+		action="<?php echo(GeneralGlobalVars::url);?>/submit.php?get_var1=forum"
+		enctype="multipart/form-data"
 		onsubmit="return general___send_topic_forum('inputtexttextarea<?php echo(GeneralInputText::$id);?>','inputtexthtml<?php echo(GeneralInputText::$id);?>','inputtextnacked<?php echo(GeneralInputText::$id);?>','ForumCitateId<?php echo(GeneralInputText::$id);?>','inputnametopictextarea<?php echo(GeneralInputText::$id);?>');">
-            
+
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                     <h3 id="new_topic_forumLabel">Новая тема</h3>
@@ -27,8 +27,8 @@
 		<div class="link_lead">	Выберите рубрику:</div>
 	    <div class="v_i_b"></div>
 
-        
-        
+
+
 
 		<select name="forum_section_id" style="width:300px; border:1px solid #bbbbbb;">
 			<option value="1">Тюнинг ДВС</option>
@@ -62,19 +62,19 @@
 
 
 
-	
+
                 </div>
- 
-                
+
+
                </form>
-            </div> 
+            </div>
 
 
 
 
 
 
-      
+
         <?php	}
 	?>
 
@@ -89,12 +89,11 @@
 
 
 
-  
 
 
-        
-        
 
-    
-    
-    
+
+
+
+
+

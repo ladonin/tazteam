@@ -29,7 +29,7 @@ PhotoBase::detect_next_num_page_photo($MSQLc,$row['id_photo']);//определ�
 	<div class="v_i_b"></div>	
 	<div class="padding_right_10"><?php echo(GeneralPagesCounter::$htmlcode); ?></div>
 	<div class="v_i_b"></div>
-	<a href="http://mapstore.org/my_portfolio/tazteam.net/photo/<?php echo(GeneralGetVars::$var2."/".$row['id_topic']."=".PhotoBase::$next_num_page_photo);?>"><img class="refimage" id="image_var_size" src="http://140706.selcdn.ru/tazteam/images/photo/<?php echo(GeneralGetVars::$var2."/".$row['id_topic']."/".$row['id_photo']."_6.".$row['format_photo']);?>" width="500"></a>
+	<a href="<?php echo(GeneralGlobalVars::url);?>/photo/<?php echo(GeneralGetVars::$var2."/".$row['id_topic']."=".PhotoBase::$next_num_page_photo);?>"><img class="refimage" id="image_var_size" src="http://140706.selcdn.ru/tazteam/images/photo/<?php echo(GeneralGetVars::$var2."/".$row['id_topic']."/".$row['id_photo']."_6.".$row['format_photo']);?>" width="500"></a>
 	<script type="text/javascript">	
 		photo_width_img=<?php echo(GeneralImagesCalculate::$view_width);?>;
 		photo_height_img=<?php echo(GeneralImagesCalculate::$view_height);?>;	

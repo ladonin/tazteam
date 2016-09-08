@@ -13,12 +13,12 @@
 				PhotoBase::$current_num_page_photo=$row2['page_photo'];}
 			if ((GeneralGetVars::$var3!=$row2['id_topic'])&&($current_var2==1))	{
 				$current_var2=0;	?>
-				<div class="photo3_8" style="width:20px;height:<?php echo(GeneralImagesCalculate::$view_height);?>px;">	</div>	
-				<?php } ?>	
+				<div class="photo3_8" style="width:20px;height:<?php echo(GeneralImagesCalculate::$view_height);?>px;">	</div>
+				<?php } ?>
 				<div class="photo3_8" id="photo3_id_photo_list_<?php echo($current_var3);?>">
 					<script type="text/javascript">
-						general___photos_show_visible_photo("<?php echo("http://140706.selcdn.ru/tazteam/images/photo/".GeneralGetVars::$var2."/".$row2['id_topic']."/".$row2['id_photo']."_2.".$row2['format_photo']);?>","photo3_id_photo_list_<?php echo($current_var3);?>","<?php echo(GeneralImagesCalculate::$view_width);?>","<?php echo(GeneralImagesCalculate::$view_height);?>","<?php if((GeneralGetVars::$var3==$row2['id_topic'])&&(PhotoBase::$id_photo_page==$row2['id_photo'])) {echo("refimage_border");} else {echo("refimage");}?>","http://mapstore.org/my_portfolio/tazteam.net/photo/<?php echo(GeneralGetVars::$var2."/".$row2['id_topic']."=".PhotoBase::$current_num_page_photo);?>");
-					</script>					
+						general___photos_show_visible_photo("<?php echo("http://140706.selcdn.ru/tazteam/images/photo/".GeneralGetVars::$var2."/".$row2['id_topic']."/".$row2['id_photo']."_2.".$row2['format_photo']);?>","photo3_id_photo_list_<?php echo($current_var3);?>","<?php echo(GeneralImagesCalculate::$view_width);?>","<?php echo(GeneralImagesCalculate::$view_height);?>","<?php if((GeneralGetVars::$var3==$row2['id_topic'])&&(PhotoBase::$id_photo_page==$row2['id_photo'])) {echo("refimage_border");} else {echo("refimage");}?>","<?php echo(GeneralGlobalVars::url);?>/photo/<?php echo(GeneralGetVars::$var2."/".$row2['id_topic']."=".PhotoBase::$current_num_page_photo);?>");
+					</script>
 				</div>
 				<?php }
 		GeneralMYSQL::free($res2);
@@ -31,17 +31,17 @@
 			<span class="explanation"><?php echo($row['name_photo']);?></span>
 			<div class="v_i_b"></div>
 			<?php if (GeneralGetVars::$var2!=1){?>
-			<span class="explanation">Автор: </span><a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo($row['t_id_user']);?>" class="small_dark_link"><?php echo(UsersMyData::return_name($row['t_login_user'],$row['t_mail_user'],$row['t_name_user'],$row['t_surname_user'],$row['t_login_status']));?></a>
+			<span class="explanation">Автор: </span><a href="<?php echo(GeneralGlobalVars::url);?>/users/<?php echo($row['t_id_user']);?>" class="small_dark_link"><?php echo(UsersMyData::return_name($row['t_login_user'],$row['t_mail_user'],$row['t_name_user'],$row['t_surname_user'],$row['t_login_status']));?></a>
 			<?php } ?>
 			<div class="v_i_b"></div>
 			<span class="explanation">Просмотров: <?php echo($row['number_views']);?></span>
 			<div class="v_i_b"></div>
-			<div class="v_i_b"></div>		
-			<?php 
+			<div class="v_i_b"></div>
+			<?php
 			if (PhotoBase::detect_belong_topic_to_user()==true){
 
 				$current_var2="components/photo/panel_delete_photo.php";
-				$current_var3="components/photo/panel_new_photo.php";				
+				$current_var3="components/photo/panel_new_photo.php";
 				include("data/components/_general/panels/rule_photo_in_album.php"); }
 			?>
 		</div>

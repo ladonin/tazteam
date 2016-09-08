@@ -7,7 +7,7 @@ static public $code=0;
 
 static public function show()
 {
-	self::$number=rand(1, 10);  
+	self::$number=rand(1, 10);
 	switch (self::$number){
 	case 1 :self::$code="a7W4f"; break;
 	case 2 :self::$code="7pENT"; break;
@@ -20,7 +20,7 @@ static public function show()
 	case 9 :self::$code="P77CM"; break;
 	case 10 :self::$code="CY5H7"; break;
 	}
-	return "<img src=\"http://mapstore.org/my_portfolio/tazteam.net/images/_general/antibot/".self::$number.".png\" width=\"80\" height=\"20\">";
+	return "<img src=\"".GeneralGlobalVars::url."/images/_general/antibot/".self::$number.".png\" width=\"80\" height=\"20\">";
 }
 }
 ?>

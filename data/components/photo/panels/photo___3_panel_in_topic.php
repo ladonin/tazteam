@@ -15,12 +15,12 @@ GeneralPagesCounter::calculate_to_outer($MSQLc, GeneralGetVars::$var1."___topics
 <tr>
 <td align="left">
 	<div class="padding_right_10">
-    	<a href="http://mapstore.org/my_portfolio/tazteam.net/<?php echo(GeneralGetVars::$var1."/".GeneralGetVars::$var2);?>=<?php echo(GeneralPagesCounter::$N_cur_to_outer);?>" class="btn btn-primary btn-small">&#9650;</a>
+    	<a href="<?php echo(GeneralGlobalVars::url);?>/<?php echo(GeneralGetVars::$var1."/".GeneralGetVars::$var2);?>=<?php echo(GeneralPagesCounter::$N_cur_to_outer);?>" class="btn btn-primary btn-small">&#9650;</a>
 
     </div>
 </td>
 <td align="left">
-<a href="http://mapstore.org/my_portfolio/tazteam.net/photo/<?php echo(GeneralGetVars::$var2."/".GeneralGetVars::$var3."/allphotos=1");?>" class="btn btn-primary btn-small">все&nbsp;фото</a>
+<a href="<?php echo(GeneralGlobalVars::url);?>/photo/<?php echo(GeneralGetVars::$var2."/".GeneralGetVars::$var3."/allphotos=1");?>" class="btn btn-primary btn-small">все&nbsp;фото</a>
 </td>
 </tr>
 </table>	

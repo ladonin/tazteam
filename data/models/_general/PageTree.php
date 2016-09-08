@@ -1066,7 +1066,7 @@ if (self::$enable==1){
 if ((GeneralGetVars::$var1=="photo")&&(GeneralGetVars::$var2==1)&&(!GeneralGetVars::$var3)){
 	$text="<li>".self::$name2."</li>"; return($text);}
 else if ((GeneralGetVars::$var1=="photo")&&(GeneralGetVars::$var2==1)&&(GeneralGetVars::$var3)){
-	$text="<li><a href=\"http://mapstore.org/my_portfolio/tazteam.net/photo/1=1\">".self::$name2."</a></li>"; return($text);}
+	$text="<li><a href=\"".GeneralGlobalVars::url."/photo/1=1\">".self::$name2."</a></li>"; return($text);}
 
 
 
@@ -1081,16 +1081,16 @@ else if ((GeneralGetVars::$var1=="vote")&&(GeneralGetVars::$var2)){
 
 	if (GeneralGetVars::$var1){//для всех страниц, кроме главной
 		if ((GeneralGetVars::$var2)&&(GeneralGetVars::$var3)&&(GeneralGetVars::$var1!="news")&&(GeneralGetVars::$var1!="articles")) {//если три переменные
-			$text="<li><a href=\"http://mapstore.org/my_portfolio/tazteam.net/".GeneralGetVars::$var1."\">".self::$name1."</a></li>";
+			$text="<li><a href=\"".GeneralGlobalVars::url."/".GeneralGetVars::$var1."\">".self::$name1."</a></li>";
 
 			if ((GeneralGetVars::$var1=="video")||(GeneralGetVars::$var1=="automarket")||(GeneralGetVars::$var1=="garage")){
-				$text.="<span class=\"divider\">/</span><li><a href=\"http://mapstore.org/my_portfolio/tazteam.net/".GeneralGetVars::$var1."\">".self::$name2."</a></li>";}
+				$text.="<span class=\"divider\">/</span><li><a href=\"".GeneralGlobalVars::url."/".GeneralGetVars::$var1."\">".self::$name2."</a></li>";}
 			else {
-				$text.="<span class=\"divider\">/</span><li><a href=\"http://mapstore.org/my_portfolio/tazteam.net/".GeneralGetVars::$var1."/".GeneralGetVars::$var2."\">".self::$name2."</a></li>";}
+				$text.="<span class=\"divider\">/</span><li><a href=\"".GeneralGlobalVars::url."/".GeneralGetVars::$var1."/".GeneralGetVars::$var2."\">".self::$name2."</a></li>";}
 
 		}
 		else if ((GeneralGetVars::$var2)&&((!GeneralGetVars::$var3)||(GeneralGetVars::$var1=="automarket")||(GeneralGetVars::$var1=="garage")||(GeneralGetVars::$var1=="news")||(GeneralGetVars::$var1=="articles"))) {//если только две переменные
-			$text="<li><a href=\"http://mapstore.org/my_portfolio/tazteam.net/".GeneralGetVars::$var1."\">".self::$name1."</a></li>";
+			$text="<li><a href=\"".GeneralGlobalVars::url."/".GeneralGetVars::$var1."\">".self::$name1."</a></li>";
 			$text.="<span class=\"divider\">/</span><li>".self::$name2."</li>";
 		}
 		else if ((!GeneralGetVars::$var2)&&(!GeneralGetVars::$var3)){//если только одна переменная
@@ -1121,7 +1121,7 @@ if ((GeneralGetVars::$var1==="photo")&&(!GeneralGetVars::$var3)){
 	$text=self::$name2; return($text);}
 
 else if ((GeneralGetVars::$var1==="photo")&&(GeneralGetVars::$var3)){
-	$text="<a href=\"http://mapstore.org/my_portfolio/tazteam.net/photo/".GeneralGetVars::$var2."=1\">".self::$name2."</a>"; return($text);}
+	$text="<a href=\"".GeneralGlobalVars::url."/photo/".GeneralGetVars::$var2."=1\">".self::$name2."</a>"; return($text);}
 
 
 
@@ -1160,13 +1160,13 @@ else if (GeneralGetVars::$var1==="chat"){
 
 	if (GeneralGetVars::$var1){//для всех страниц, кроме главной
 		if ((GeneralGetVars::$var2)&&(GeneralGetVars::$var3)&&(GeneralGetVars::$var1!=="news")&&(GeneralGetVars::$var1!=="articles")) {//если три переменные
-			$text="<a href=\"http://mapstore.org/my_portfolio/tazteam.net/".GeneralGetVars::$var1."\">".self::$name1."</a>";
+			$text="<a href=\"".GeneralGlobalVars::url."/".GeneralGetVars::$var1."\">".self::$name1."</a>";
 
 
 			if ((GeneralGetVars::$var1==="video")||(GeneralGetVars::$var1==="automarket")||(GeneralGetVars::$var1==="garage")){
-				$text.="<span class=\"divider\"> / </span><a href=\"http://mapstore.org/my_portfolio/tazteam.net/".GeneralGetVars::$var1."\">".self::$name2."</a>";}
+				$text.="<span class=\"divider\"> / </span><a href=\"".GeneralGlobalVars::url."/".GeneralGetVars::$var1."\">".self::$name2."</a>";}
 			else {
-				$text.="<span class=\"divider\"> / </span><a href=\"http://mapstore.org/my_portfolio/tazteam.net/".GeneralGetVars::$var1."/".GeneralGetVars::$var2."\">".self::$name2."</a>";}
+				$text.="<span class=\"divider\"> / </span><a href=\"".GeneralGlobalVars::url."/".GeneralGetVars::$var1."/".GeneralGetVars::$var2."\">".self::$name2."</a>";}
 
 
 
@@ -1176,7 +1176,7 @@ else if (GeneralGetVars::$var1==="chat"){
 
 		}
 		else if ((GeneralGetVars::$var2)&&((!GeneralGetVars::$var3)||(GeneralGetVars::$var1==="automarket")||(GeneralGetVars::$var1==="garage")||(GeneralGetVars::$var1==="news")||(GeneralGetVars::$var1==="articles"))) {//если только две переменные
-			$text="<a href=\"http://mapstore.org/my_portfolio/tazteam.net/".GeneralGetVars::$var1."\">".self::$name1."</a><span class=\"divider\"> / </span>";
+			$text="<a href=\"".GeneralGlobalVars::url."/".GeneralGetVars::$var1."\">".self::$name1."</a><span class=\"divider\"> / </span>";
 			$text.=self::$name2;
 		}
 		else if ((!GeneralGetVars::$var2)&&(!GeneralGetVars::$var3)){//если только одна переменная

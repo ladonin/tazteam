@@ -10,36 +10,36 @@
 <meta name='yandex-verification' content='7c2a3a7e1b6dfd6b' />
 <meta name="verify-admitad" content="22fe08fc94" />
 <meta name="4d88a69ce36aad5b651e142429b1f5f9" content="">
-<link rel="icon" href="http://mapstore.org/my_portfolio/tazteam.net/favicon.ico" type="image/x-icon">
-<link rel="shortcut icon" href="http://mapstore.org/my_portfolio/tazteam.net/favicon.ico" type="image/x-icon">
+<link rel="icon" href="<?php echo(GeneralGlobalVars::url);?>/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="<?php echo(GeneralGlobalVars::url);?>/favicon.ico" type="image/x-icon">
 <link rel="icon" href="" type="image/x-icon">
 <link rel="shortcut icon" href="" type="image/x-icon">
-<link rel="stylesheet" type="text/css" href="http://mapstore.org/my_portfolio/tazteam.net/css/_general/carcas.css">
-<link rel="stylesheet" type="text/css" href="http://mapstore.org/my_portfolio/tazteam.net/css/_general/text.css">
-<link rel="stylesheet" type="text/css" href="http://mapstore.org/my_portfolio/tazteam.net/css/index/carcas.css">
-<link rel="stylesheet" type="text/css" href="http://mapstore.org/my_portfolio/tazteam.net/css/index/text.css">
-<link rel="stylesheet" type="text/css" href="http://mapstore.org/my_portfolio/tazteam.net/css/news/carcas.css">
-<link rel="stylesheet" type="text/css" href="http://mapstore.org/my_portfolio/tazteam.net/css/news/text.css">
-<script type='text/javascript' src='http://mapstore.org/my_portfolio/tazteam.net/js/functions/_general/jquery/jquery.min.js'></script>
-<script type='text/javascript' src='http://mapstore.org/my_portfolio/tazteam.net/js/functions/_general/general___images_preload.js'></script>
-<script type='text/javascript' src='http://mapstore.org/my_portfolio/tazteam.net/js/functions/_general/general___swim.js'></script>
-<script type='text/javascript' src='http://mapstore.org/my_portfolio/tazteam.net/js/functions/_general/general___scroll.js'></script>
-<script type='text/javascript' src='http://mapstore.org/my_portfolio/tazteam.net/js/functions/_general/general___ajax.js'></script>
-<script type='text/javascript' src='http://mapstore.org/my_portfolio/tazteam.net/js/functions/_general/general___textarea.js'></script>
-<script type='text/javascript' src='http://mapstore.org/my_portfolio/tazteam.net/js/functions/_general/general___send_to_server.js'></script>
-<script type='text/javascript' src='http://mapstore.org/my_portfolio/tazteam.net/js/functions/_general/general___brousers.js'></script>
-<script type='text/javascript' src='http://mapstore.org/my_portfolio/tazteam.net/js/functions/_general/jquery/jquery.cookie.js'></script>
-<script type='text/javascript' src='http://mapstore.org/my_portfolio/tazteam.net/js/functions/_general/general___signature.js'></script>
-<script type='text/javascript' src='http://mapstore.org/my_portfolio/tazteam.net/js/functions/_general/general___date.js'></script>
-<script type='text/javascript' src='http://mapstore.org/my_portfolio/tazteam.net/js/functions/_general/general___dialog_windows.js'></script>
-<script type='text/javascript' src='http://mapstore.org/my_portfolio/tazteam.net/js/functions/_general/general___inputtext.js'></script>
-<script type='text/javascript' src='http://mapstore.org/my_portfolio/tazteam.net/js/functions/_general/general___images.js'></script>
-<script type='text/javascript' src='http://mapstore.org/my_portfolio/tazteam.net/js/functions/_general/general___sizes.js'></script>
-<script type='text/javascript' src='http://mapstore.org/my_portfolio/tazteam.net/js/functions/_general/general___swim.js'></script>
-<script type='text/javascript' src='http://mapstore.org/my_portfolio/tazteam.net/js/functions/news/news___photos.js'></script><link type="text/css" rel="stylesheet" href="http://is.mixmarket.biz/css/uni/partner.css">
+<link rel="stylesheet" type="text/css" href="<?php echo(GeneralGlobalVars::url);?>/css/_general/carcas.css">
+<link rel="stylesheet" type="text/css" href="<?php echo(GeneralGlobalVars::url);?>/css/_general/text.css">
+<link rel="stylesheet" type="text/css" href="<?php echo(GeneralGlobalVars::url);?>/css/index/carcas.css">
+<link rel="stylesheet" type="text/css" href="<?php echo(GeneralGlobalVars::url);?>/css/index/text.css">
+<link rel="stylesheet" type="text/css" href="<?php echo(GeneralGlobalVars::url);?>/css/news/carcas.css">
+<link rel="stylesheet" type="text/css" href="<?php echo(GeneralGlobalVars::url);?>/css/news/text.css">
+<script type='text/javascript' src='<?php echo(GeneralGlobalVars::url);?>/js/functions/_general/jquery/jquery.min.js'></script>
+<script type='text/javascript' src='<?php echo(GeneralGlobalVars::url);?>/js/functions/_general/general___images_preload.js'></script>
+<script type='text/javascript' src='<?php echo(GeneralGlobalVars::url);?>/js/functions/_general/general___swim.js'></script>
+<script type='text/javascript' src='<?php echo(GeneralGlobalVars::url);?>/js/functions/_general/general___scroll.js'></script>
+<script type='text/javascript' src='<?php echo(GeneralGlobalVars::url);?>/js/functions/_general/general___ajax.js'></script>
+<script type='text/javascript' src='<?php echo(GeneralGlobalVars::url);?>/js/functions/_general/general___textarea.js'></script>
+<script type='text/javascript' src='<?php echo(GeneralGlobalVars::url);?>/js/functions/_general/general___send_to_server.js'></script>
+<script type='text/javascript' src='<?php echo(GeneralGlobalVars::url);?>/js/functions/_general/general___brousers.js'></script>
+<script type='text/javascript' src='<?php echo(GeneralGlobalVars::url);?>/js/functions/_general/jquery/jquery.cookie.js'></script>
+<script type='text/javascript' src='<?php echo(GeneralGlobalVars::url);?>/js/functions/_general/general___signature.js'></script>
+<script type='text/javascript' src='<?php echo(GeneralGlobalVars::url);?>/js/functions/_general/general___date.js'></script>
+<script type='text/javascript' src='<?php echo(GeneralGlobalVars::url);?>/js/functions/_general/general___dialog_windows.js'></script>
+<script type='text/javascript' src='<?php echo(GeneralGlobalVars::url);?>/js/functions/_general/general___inputtext.js'></script>
+<script type='text/javascript' src='<?php echo(GeneralGlobalVars::url);?>/js/functions/_general/general___images.js'></script>
+<script type='text/javascript' src='<?php echo(GeneralGlobalVars::url);?>/js/functions/_general/general___sizes.js'></script>
+<script type='text/javascript' src='<?php echo(GeneralGlobalVars::url);?>/js/functions/_general/general___swim.js'></script>
+<script type='text/javascript' src='<?php echo(GeneralGlobalVars::url);?>/js/functions/news/news___photos.js'></script><link type="text/css" rel="stylesheet" href="http://is.mixmarket.biz/css/uni/partner.css">
 </head>
 
-<body onLoad="" style="background-image: url(http://mapstore.org/my_portfolio/tazteam.net/images/index/background.png);
+<body onLoad="" style="background-image: url(<?php echo(GeneralGlobalVars::url);?>/images/index/background.png);
 background-repeat:repeat;">
 <script type="text/javascript">
 window_width=918;
@@ -70,7 +70,7 @@ timeserver=1393086917;
 
 
 
-	<table cellpadding="0" cellspacing="0" width="100%" border="0" style="background-image: url(http://mapstore.org/my_portfolio/tazteam.net/images/index/background.png); background-repeat:repeat;">
+	<table cellpadding="0" cellspacing="0" width="100%" border="0" style="background-image: url(<?php echo(GeneralGlobalVars::url);?>/images/index/background.png); background-repeat:repeat;">
 	<tr>
 	<td width="40%" height="0">
 	</td>
@@ -94,46 +94,46 @@ timeserver=1393086917;
 <td align="center" width="928">
 
 	<div style="width:928px;">
-		<table cellpadding="0" cellspacing="0" width="100%" style="background-image:url(http://mapstore.org/my_portfolio/tazteam.net/images/index/index___top_fon.png); background-repeat:repeat;">
+		<table cellpadding="0" cellspacing="0" width="100%" style="background-image:url(<?php echo(GeneralGlobalVars::url);?>/images/index/index___top_fon.png); background-repeat:repeat;">
 		<tr>
 		<td align="left" valign="top" width="190">
-			<a href="http://mapstore.org/my_portfolio/tazteam.net" class="logotext"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/index/index___logotype.png" width="190" height="33"></a>
+			<a href="<?php echo(GeneralGlobalVars::url);?>" class="logotext"><img src="<?php echo(GeneralGlobalVars::url);?>/images/index/index___logotype.png" width="190" height="33"></a>
 		</td>
 		<td valign="middle" align="right">
 		<div class="padding_right_20">
 
 			<div class="padding_left_10" style="float:right;">
-				<a href="http://mapstore.org/my_portfolio/tazteam.net/calculator" class="link_normal_white">Калькулятор</a>
+				<a href="<?php echo(GeneralGlobalVars::url);?>/calculator" class="link_normal_white">Калькулятор</a>
 			</div>
 			<div class="padding_left_10" style="float:right;">
-				<a href="http://mapstore.org/my_portfolio/tazteam.net/users" class="link_normal_white">Участники</a>
+				<a href="<?php echo(GeneralGlobalVars::url);?>/users" class="link_normal_white">Участники</a>
 			</div>
 			<div class="padding_left_10" style="float:right;">
-				<a href="http://mapstore.org/my_portfolio/tazteam.net/forum" class="link_normal_white">Форум</a>
+				<a href="<?php echo(GeneralGlobalVars::url);?>/forum" class="link_normal_white">Форум</a>
 			</div>
 			<div class="padding_left_10" style="float:right;">
-				<a href="http://mapstore.org/my_portfolio/tazteam.net/photo" class="link_normal_white">Галерея</a>
+				<a href="<?php echo(GeneralGlobalVars::url);?>/photo" class="link_normal_white">Галерея</a>
 			</div>
 			<div class="padding_left_10" style="float:right;">
-				<a href="http://mapstore.org/my_portfolio/tazteam.net/photo/1=1" class="link_normal_white">ТОП</a>
+				<a href="<?php echo(GeneralGlobalVars::url);?>/photo/1=1" class="link_normal_white">ТОП</a>
 			</div>
 			<div class="padding_left_10" style="float:right;">
-				<a href="http://mapstore.org/my_portfolio/tazteam.net/articles" class="link_normal_white">Статьи</a>
+				<a href="<?php echo(GeneralGlobalVars::url);?>/articles" class="link_normal_white">Статьи</a>
 			</div>
 			<div class="padding_left_10" style="float:right;">
-				<a href="http://mapstore.org/my_portfolio/tazteam.net/news" class="link_normal_white">Новости</a>
+				<a href="<?php echo(GeneralGlobalVars::url);?>/news" class="link_normal_white">Новости</a>
 			</div>
 			<div class="padding_left_10" style="float:right;">
-				<a href="http://mapstore.org/my_portfolio/tazteam.net/automarket" class="link_normal_white">Авторынок</a>
+				<a href="<?php echo(GeneralGlobalVars::url);?>/automarket" class="link_normal_white">Авторынок</a>
 			</div>
 			<div class="padding_left_10" style="float:right;">
-				<a href="http://mapstore.org/my_portfolio/tazteam.net/video" class="link_normal_white">Видео</a>
+				<a href="<?php echo(GeneralGlobalVars::url);?>/video" class="link_normal_white">Видео</a>
 			</div>
 			<div class="padding_left_10" style="float:right;">
-				<a href="http://mapstore.org/my_portfolio/tazteam.net/shop" class="link_normal_white">Автозвук</a>
+				<a href="<?php echo(GeneralGlobalVars::url);?>/shop" class="link_normal_white">Автозвук</a>
 			</div>
 			<div class="padding_left_10" style="float:right;">
-				<a href="http://mapstore.org/my_portfolio/tazteam.net" class="link_normal_white">Главная</a>
+				<a href="<?php echo(GeneralGlobalVars::url);?>" class="link_normal_white">Главная</a>
 			</div>
 			<div style="clear:both;"> </div>
 		</div>
@@ -160,7 +160,7 @@ timeserver=1393086917;
 
 
 
-<a href="http://mapstore.org/my_portfolio/tazteam.net/users/1" class="link_topic">Александр Ладонин</a>
+<a href="<?php echo(GeneralGlobalVars::url);?>/users/1" class="link_topic">Александр Ладонин</a>
 
 
 
@@ -176,14 +176,14 @@ timeserver=1393086917;
 <td>
 
 <div style="float:left;">
-<a href='http://mapstore.org/my_portfolio/tazteam.net/news' class='link_normal'>Новости</a><span class='content_dark'> / </span><span class='content_dark'>Автотема</span></div>
+<a href='<?php echo(GeneralGlobalVars::url);?>/news' class='link_normal'>Новости</a><span class='content_dark'> / </span><span class='content_dark'>Автотема</span></div>
 
 
 
 
 
 
-<div style="float:right;">	<form method="post" action="http://mapstore.org/my_portfolio/tazteam.net/submit.php?get_var1=news&amp;get_var2=1">
+<div style="float:right;">	<form method="post" action="<?php echo(GeneralGlobalVars::url);?>/submit.php?get_var1=news&amp;get_var2=1">
 	<input name="submit" value="quit" type="hidden">
 	<input name="UsersMyDataQuit" value="1" type="hidden">
 	<input value="Выход" class="link_normal" type="submit">
@@ -191,17 +191,17 @@ timeserver=1393086917;
 	</div>
 
 <div class="padding_right_10" style="float:right;">
-	<a href="http://mapstore.org/my_portfolio/tazteam.net/users/1/friends=1" class="link_normal">Друзья</a><span id="signaturing_friends"></span>
+	<a href="<?php echo(GeneralGlobalVars::url);?>/users/1/friends=1" class="link_normal">Друзья</a><span id="signaturing_friends"></span>
 </div>
 
 
 <div class="padding_right_10" style="float:right;">
-	<a href="http://mapstore.org/my_portfolio/tazteam.net/users/1/signatures" class="link_normal">Оповещения</a><span id="signaturing_talking"></span> <span id="signaturing_forum"></span>
+	<a href="<?php echo(GeneralGlobalVars::url);?>/users/1/signatures" class="link_normal">Оповещения</a><span id="signaturing_talking"></span> <span id="signaturing_forum"></span>
 </div>
 
 
 <div class="padding_right_10" style="float:right;">
-	<a href="http://mapstore.org/my_portfolio/tazteam.net/users/1/dialogs=1" class="link_normal">Сообщения</a><span id="signaturing_dialogs"></span>
+	<a href="<?php echo(GeneralGlobalVars::url);?>/users/1/dialogs=1" class="link_normal">Сообщения</a><span id="signaturing_dialogs"></span>
 </div>
 
 
@@ -279,18 +279,18 @@ timeserver=1393086917;
 			<div class="padding_left_10">
 			<div class="padding_left_10 padding_right_10">
 
-<a href="http://mapstore.org/my_portfolio/tazteam.net/news=16" class="link_normal">наверх</a>
+<a href="<?php echo(GeneralGlobalVars::url);?>/news=16" class="link_normal">наверх</a>
 <div class="v_i_b"></div>
 <table cellpadding="0" cellspacing="0">
 <tr>
 <td align="left">
-	<input value=" " class="submit_new_announcement" type="button" onclick="javascript:location.href='http://mapstore.org/my_portfolio/tazteam.net/news/redact'">
+	<input value=" " class="submit_new_announcement" type="button" onclick="javascript:location.href='<?php echo(GeneralGlobalVars::url);?>/news/redact'">
 	</td>
 <td align="left" class="padding_left_10">
-	<a href="http://mapstore.org/my_portfolio/tazteam.net/news/redact=1" class="link_normal">редактировать</a>
+	<a href="<?php echo(GeneralGlobalVars::url);?>/news/redact=1" class="link_normal">редактировать</a>
 </td>
 <td align="left" class="padding_left_10">
-	<form method="post" action="http://mapstore.org/my_portfolio/tazteam.net/submit.php?get_var1=news&amp;get_var2=1" onsubmit="return confirm('Удалить новость?');">
+	<form method="post" action="<?php echo(GeneralGlobalVars::url);?>/submit.php?get_var1=news&amp;get_var2=1" onsubmit="return confirm('Удалить новость?');">
 	<input name="submit" value="deletenews" type="hidden">
 	<input name="id" value="0" type="hidden">
 	<input value="удалить" class="link_normal" type="submit">
@@ -390,7 +390,7 @@ var dwLL1_adress_news_3_1=new String();//устанавливается ВРУЧ
 
 dwLL1_max_news_3_1=17;//>>>>>>>>>>>>>>>>>>>>     СКОЛЬКО ПОДГРУЖАЕМ         <<<<<<<<<<<<<<<<<<<<<<<<<
 dwLL1_N_current_news_3_1="-16";//последний подгруженный idkey до аякса записываем в ячейку счетчика
-dwLL1_adress_news_3_1="http://mapstore.org/my_portfolio/tazteam.net/data/components/_general/dialog_windows/dialog_windows_1_loading_last_ajax.php";//исполняемый файл
+dwLL1_adress_news_3_1="<?php echo(GeneralGlobalVars::url);?>/data/components/_general/dialog_windows/dialog_windows_1_loading_last_ajax.php";//исполняемый файл
 
 var dwLL1_scroll_divchat_news_3_1;//прокрутка от верха окна
 var dwLL1_height_bodychat_news_3_1;//высота тела чата
@@ -489,7 +489,7 @@ var dwLN1_adress_news_3_1=new String();//устанавливается ВРУЧ
 var dwLN1_content_news_3_1=new String();
 
 dwLN1_newmess_news_3_1=2;//с чего начинать
-dwLN1_adress_news_3_1="http://mapstore.org/my_portfolio/tazteam.net/data/components/_general/dialog_windows/dialog_windows_1_loading_new_ajax.php";//исполняемый файл
+dwLN1_adress_news_3_1="<?php echo(GeneralGlobalVars::url);?>/data/components/_general/dialog_windows/dialog_windows_1_loading_new_ajax.php";//исполняемый файл
 
 document.getElementById('dw1_divchat_news_3_1').onmouseover = function() { dialog_windows_1_mouseover_news_3_1=true;}
 document.getElementById('dw1_divchat_news_3_1').onmouseout = function() { dialog_windows_1_mouseover_news_3_1=false;}
@@ -542,20 +542,20 @@ function dwLN1_news_3_1(){
 	<div style="background-color:#ffffff;">
 <table cellpadding="0" cellspacing="5" border="0">
 <tr>
-<td width="25" height="25" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/smiles/D.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'D','smile');"  width="25" height="25" title=":D"></td>
-<td width="25" height="25" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/smiles/thanks.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'thanks','smile');"  width="25" height="25" title="thanks"></td>
-<td width="25" height="25" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/smiles/smile.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'smile','smile');"  width="25" height="25" title="smile"></td>
-<td width="25" height="25" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/smiles/good.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'good','smile');"  width="25" height="25" title="good"></td>
+<td width="25" height="25" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/smiles/D.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'D','smile');"  width="25" height="25" title=":D"></td>
+<td width="25" height="25" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/smiles/thanks.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'thanks','smile');"  width="25" height="25" title="thanks"></td>
+<td width="25" height="25" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/smiles/smile.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'smile','smile');"  width="25" height="25" title="smile"></td>
+<td width="25" height="25" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/smiles/good.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'good','smile');"  width="25" height="25" title="good"></td>
 </tr>
 <tr>
-<td width="25" height="25" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/smiles/think.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'think','smile');"  width="25" height="25" title="think"></td>
-<td width="25" height="25" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/smiles/no.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'no','smile');"  width="25" height="25" title="no"></td>
-<td width="25" height="25" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/smiles/fury.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'fury','smile');"  width="25" height="25" title="fury"></td>
-<td width="25" height="25" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/smiles/wacko.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'wacko','smile');"  width="25" height="25" title="wacko"></td>
+<td width="25" height="25" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/smiles/think.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'think','smile');"  width="25" height="25" title="think"></td>
+<td width="25" height="25" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/smiles/no.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'no','smile');"  width="25" height="25" title="no"></td>
+<td width="25" height="25" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/smiles/fury.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'fury','smile');"  width="25" height="25" title="fury"></td>
+<td width="25" height="25" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/smiles/wacko.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'wacko','smile');"  width="25" height="25" title="wacko"></td>
 </tr>
 <tr>
-<td width="25" height="25" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/smiles/firtoy.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'firtoy','smile');"  width="25" height="25" title="firtoy"></td>
-<td width="25" height="25" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/smiles/palms.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'palms','smile');"  width="25" height="25" title="palms"></td>
+<td width="25" height="25" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/smiles/firtoy.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'firtoy','smile');"  width="25" height="25" title="firtoy"></td>
+<td width="25" height="25" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/smiles/palms.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'palms','smile');"  width="25" height="25" title="palms"></td>
 <td width="25" height="25" style="cursor:pointer;"></td>
 <td width="25" height="25" style="cursor:pointer;"></td>
 </tr>
@@ -567,139 +567,139 @@ function dwLN1_news_3_1(){
 	<div style="background-color:#ffffff;">
 <table cellpadding="0" cellspacing="5" border="0">
 <tr>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/yaoming.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'yaoming','smile');"  width="40" height="40" title="yaoming"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/yaoming2.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'yaoming2','smile');"  width="40" height="40" title="yaoming2"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/yaoming3.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'yaoming3','smile');"  width="40" height="40" title="yaoming3"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/yaowoman.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'yaowoman','smile');"  width="40" height="40" title="yaowoman"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/yaoming.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'yaoming','smile');"  width="40" height="40" title="yaoming"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/yaoming2.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'yaoming2','smile');"  width="40" height="40" title="yaoming2"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/yaoming3.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'yaoming3','smile');"  width="40" height="40" title="yaoming3"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/yaowoman.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'yaowoman','smile');"  width="40" height="40" title="yaowoman"></td>
 </tr>
 <tr>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/yaowoman2.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'yaowoman2','smile');"  width="40" height="40" title="yaowoman2"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/yaowoman3.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'yaowoman3','smile');"  width="40" height="40" title="yaowoman3"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/men.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'men','smile');"  width="40" height="40" title="men"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/men2.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'men2','smile');"  width="40" height="40" title="men2"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/yaowoman2.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'yaowoman2','smile');"  width="40" height="40" title="yaowoman2"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/yaowoman3.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'yaowoman3','smile');"  width="40" height="40" title="yaowoman3"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/men.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'men','smile');"  width="40" height="40" title="men"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/men2.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'men2','smile');"  width="40" height="40" title="men2"></td>
 </tr>
 <tr>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/men3.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'men3','smile');"  width="40" height="40" title="men3"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/men4.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'men4','smile');"  width="40" height="40" title="men4"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/men5.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'men5','smile');"  width="40" height="40" title="men5"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/pokerface.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'pokerface','smile');"  width="40" height="40" title="pokerface"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/men3.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'men3','smile');"  width="40" height="40" title="men3"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/men4.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'men4','smile');"  width="40" height="40" title="men4"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/men5.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'men5','smile');"  width="40" height="40" title="men5"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/pokerface.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'pokerface','smile');"  width="40" height="40" title="pokerface"></td>
 </tr>
 <tr>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/pokerface2.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'pokerface2','smile');"  width="40" height="40" title="pokerface2"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/pokerface3.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'pokerface3','smile');"  width="40" height="40" title="pokerface3"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/people.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people','smile');"  width="40" height="40" title="people"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/people2.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people2','smile');"  width="40" height="40" title="people2"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/pokerface2.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'pokerface2','smile');"  width="40" height="40" title="pokerface2"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/pokerface3.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'pokerface3','smile');"  width="40" height="40" title="pokerface3"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/people.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people','smile');"  width="40" height="40" title="people"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/people2.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people2','smile');"  width="40" height="40" title="people2"></td>
 </tr>
 <tr>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/people3.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people3','smile');"  width="40" height="40" title="people3"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/people4.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people4','smile');"  width="40" height="40" title="people4"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/people5.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people5','smile');"  width="40" height="40" title="people5"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/people6.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people6','smile');"  width="40" height="40" title="people6"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/people3.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people3','smile');"  width="40" height="40" title="people3"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/people4.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people4','smile');"  width="40" height="40" title="people4"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/people5.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people5','smile');"  width="40" height="40" title="people5"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/people6.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people6','smile');"  width="40" height="40" title="people6"></td>
 </tr>
 <tr>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/people7.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people7','smile');"  width="40" height="40" title="people7"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/people8.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people8','smile');"  width="40" height="40" title="people8"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/people9.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people9','smile');"  width="40" height="40" title="people9"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/people10.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people10','smile');"  width="40" height="40" title="people10"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/people7.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people7','smile');"  width="40" height="40" title="people7"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/people8.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people8','smile');"  width="40" height="40" title="people8"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/people9.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people9','smile');"  width="40" height="40" title="people9"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/people10.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people10','smile');"  width="40" height="40" title="people10"></td>
 </tr>
 <tr>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/people11.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people11','smile');"  width="40" height="40" title="people11"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/people12.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people12','smile');"  width="40" height="40" title="people12"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/people13.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people13','smile');"  width="40" height="40" title="people13"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/people14.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people14','smile');"  width="40" height="40" title="people14"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/people11.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people11','smile');"  width="40" height="40" title="people11"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/people12.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people12','smile');"  width="40" height="40" title="people12"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/people13.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people13','smile');"  width="40" height="40" title="people13"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/people14.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people14','smile');"  width="40" height="40" title="people14"></td>
 </tr>
 <tr>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/people15.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people15','smile');"  width="40" height="40" title="people15"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/people16.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people16','smile');"  width="40" height="40" title="people16"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/people17.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people17','smile');"  width="40" height="40" title="people17"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/people18.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people18','smile');"  width="40" height="40" title="people18"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/people15.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people15','smile');"  width="40" height="40" title="people15"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/people16.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people16','smile');"  width="40" height="40" title="people16"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/people17.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people17','smile');"  width="40" height="40" title="people17"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/people18.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people18','smile');"  width="40" height="40" title="people18"></td>
 </tr>
 <tr>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/people19.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people19','smile');"  width="40" height="40" title="people19"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/people20.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people20','smile');"  width="40" height="40" title="people20"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/people21.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people21','smile');"  width="40" height="40" title="people21"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/people22.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people22','smile');"  width="40" height="40" title="people22"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/people19.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people19','smile');"  width="40" height="40" title="people19"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/people20.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people20','smile');"  width="40" height="40" title="people20"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/people21.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people21','smile');"  width="40" height="40" title="people21"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/people22.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people22','smile');"  width="40" height="40" title="people22"></td>
 </tr>
 <tr>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/people23.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people23','smile');"  width="40" height="40" title="people23"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/people24.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people24','smile');"  width="40" height="40" title="people24"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/people25.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people25','smile');"  width="40" height="40" title="people25"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/people26.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people26','smile');"  width="40" height="40" title="people26"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/people23.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people23','smile');"  width="40" height="40" title="people23"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/people24.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people24','smile');"  width="40" height="40" title="people24"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/people25.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people25','smile');"  width="40" height="40" title="people25"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/people26.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people26','smile');"  width="40" height="40" title="people26"></td>
 </tr>
 <tr>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/people27.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people27','smile');"  width="40" height="40" title="people27"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/people28.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people28','smile');"  width="40" height="40" title="people28"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/people29.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people29','smile');"  width="40" height="40" title="people29"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/rageguy.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'rageguy','smile');"  width="40" height="40" title="rageguy"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/people27.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people27','smile');"  width="40" height="40" title="people27"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/people28.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people28','smile');"  width="40" height="40" title="people28"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/people29.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'people29','smile');"  width="40" height="40" title="people29"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/rageguy.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'rageguy','smile');"  width="40" height="40" title="rageguy"></td>
 </tr>
 <tr>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/rageguy2.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'rageguy2','smile');"  width="40" height="40" title="rageguy2"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/cat.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'cat','smile');"  width="40" height="40" title="cat"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/cat2.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'cat2','smile');"  width="40" height="40" title="cat2"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/cat3.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'cat3','smile');"  width="40" height="40" title="cat3"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/rageguy2.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'rageguy2','smile');"  width="40" height="40" title="rageguy2"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/cat.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'cat','smile');"  width="40" height="40" title="cat"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/cat2.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'cat2','smile');"  width="40" height="40" title="cat2"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/cat3.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'cat3','smile');"  width="40" height="40" title="cat3"></td>
 </tr>
 <tr>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/cat4.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'cat4','smile');"  width="40" height="40" title="cat4"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/cat5.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'cat5','smile');"  width="40" height="40" title="cat5"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/cat6.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'cat6','smile');"  width="40" height="40" title="cat6"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/cat7.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'cat7','smile');"  width="40" height="40" title="cat7"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/cat4.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'cat4','smile');"  width="40" height="40" title="cat4"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/cat5.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'cat5','smile');"  width="40" height="40" title="cat5"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/cat6.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'cat6','smile');"  width="40" height="40" title="cat6"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/cat7.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'cat7','smile');"  width="40" height="40" title="cat7"></td>
 </tr>
 <tr>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/cat8.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'cat8','smile');"  width="40" height="40" title="cat8"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/ololosh.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'ololosh','smile');"  width="40" height="40" title="ololosh"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/ololosh2.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'ololosh2','smile');"  width="40" height="40" title="ololosh2"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/ololosh3.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'ololosh3','smile');"  width="40" height="40" title="ololosh3"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/cat8.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'cat8','smile');"  width="40" height="40" title="cat8"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/ololosh.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'ololosh','smile');"  width="40" height="40" title="ololosh"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/ololosh2.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'ololosh2','smile');"  width="40" height="40" title="ololosh2"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/ololosh3.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'ololosh3','smile');"  width="40" height="40" title="ololosh3"></td>
 </tr>
 <tr>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/cerealguy.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'cerealguy','smile');"  width="40" height="40" title="cerealguy"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/troll.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'troll','smile');"  width="40" height="40" title="troll"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/troll2.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'troll2','smile');"  width="40" height="40" title="troll2"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/troll3.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'troll3','smile');"  width="40" height="40" title="troll3"></td>
-</tr>
-
-
-
-<tr>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/troll4.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'troll4','smile');"  width="40" height="40" title="troll4"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/troll5.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'troll5','smile');"  width="40" height="40" title="troll5"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/troll6.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'troll6','smile');"  width="40" height="40" title="troll6"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/troll7.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'troll7','smile');"  width="40" height="40" title="troll7"></td>
-</tr>
-
-<tr>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/troll8.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'troll8','smile');"  width="40" height="40" title="troll8"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/troll9.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'troll9','smile');"  width="40" height="40" title="troll9"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/troll10.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'troll10','smile');"  width="40" height="40" title="troll10"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/troll11.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'troll11','smile');"  width="40" height="40" title="troll11"></td>
-</tr>
-
-<tr>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/troll12.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'troll12','smile');"  width="40" height="40" title="troll12"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/troll13.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'troll13','smile');"  width="40" height="40" title="troll13"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/troll14.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'troll14','smile');"  width="40" height="40" title="troll14"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/memface.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'memface','smile');"  width="40" height="40" title="memface"></td>
-</tr>
-
-<tr>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/memface2.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'memface2','smile');"  width="40" height="40" title="memface2"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/memface3.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'memface3','smile');"  width="40" height="40" title="memface3"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/memface4.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'memface4','smile');"  width="40" height="40" title="memface4"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/memface5.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'memface5','smile');"  width="40" height="40" title="memface5"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/cerealguy.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'cerealguy','smile');"  width="40" height="40" title="cerealguy"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/troll.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'troll','smile');"  width="40" height="40" title="troll"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/troll2.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'troll2','smile');"  width="40" height="40" title="troll2"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/troll3.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'troll3','smile');"  width="40" height="40" title="troll3"></td>
 </tr>
 
 
 
 <tr>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/memface6.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'memface6','smile');"  width="40" height="40" title="memface6"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/memface7.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'memface7','smile');"  width="40" height="40" title="memface7"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/memface8.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'memface8','smile');"  width="40" height="40" title="memface8"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/memface9.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'memface9','smile');"  width="40" height="40" title="memface9"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/troll4.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'troll4','smile');"  width="40" height="40" title="troll4"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/troll5.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'troll5','smile');"  width="40" height="40" title="troll5"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/troll6.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'troll6','smile');"  width="40" height="40" title="troll6"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/troll7.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'troll7','smile');"  width="40" height="40" title="troll7"></td>
 </tr>
 
 <tr>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/memface10.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'memface10','smile');"  width="40" height="40" title="memface10"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/memface11.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'memface11','smile');"  width="40" height="40" title="memface11"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/memface12.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'memface12','smile');"  width="40" height="40" title="memface12"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/troll8.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'troll8','smile');"  width="40" height="40" title="troll8"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/troll9.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'troll9','smile');"  width="40" height="40" title="troll9"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/troll10.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'troll10','smile');"  width="40" height="40" title="troll10"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/troll11.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'troll11','smile');"  width="40" height="40" title="troll11"></td>
+</tr>
+
+<tr>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/troll12.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'troll12','smile');"  width="40" height="40" title="troll12"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/troll13.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'troll13','smile');"  width="40" height="40" title="troll13"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/troll14.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'troll14','smile');"  width="40" height="40" title="troll14"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/memface.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'memface','smile');"  width="40" height="40" title="memface"></td>
+</tr>
+
+<tr>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/memface2.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'memface2','smile');"  width="40" height="40" title="memface2"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/memface3.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'memface3','smile');"  width="40" height="40" title="memface3"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/memface4.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'memface4','smile');"  width="40" height="40" title="memface4"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/memface5.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'memface5','smile');"  width="40" height="40" title="memface5"></td>
+</tr>
+
+
+
+<tr>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/memface6.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'memface6','smile');"  width="40" height="40" title="memface6"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/memface7.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'memface7','smile');"  width="40" height="40" title="memface7"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/memface8.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'memface8','smile');"  width="40" height="40" title="memface8"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/memface9.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'memface9','smile');"  width="40" height="40" title="memface9"></td>
+</tr>
+
+<tr>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/memface10.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'memface10','smile');"  width="40" height="40" title="memface10"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/memface11.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'memface11','smile');"  width="40" height="40" title="memface11"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/memface12.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'memface12','smile');"  width="40" height="40" title="memface12"></td>
 <td width="40" height="40" style="cursor:pointer;"></td>
 </tr>
 
@@ -712,69 +712,69 @@ function dwLN1_news_3_1(){
 
 
 <tr>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/car.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car','smile');"  width="40" height="40" title="car"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/car2.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car2','smile');"  width="40" height="40" title="car2"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/car3.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car3','smile');"  width="40" height="40" title="car3"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/car4.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car4','smile');"  width="40" height="40" title="car4"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/car.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car','smile');"  width="40" height="40" title="car"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/car2.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car2','smile');"  width="40" height="40" title="car2"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/car3.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car3','smile');"  width="40" height="40" title="car3"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/car4.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car4','smile');"  width="40" height="40" title="car4"></td>
 </tr>
 <tr>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/car5.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car5','smile');"  width="40" height="40" title="car5"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/car6.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car6','smile');"  width="40" height="40" title="car6"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/car7.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car7','smile');"  width="40" height="40" title="car7"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/car8.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car8','smile');"  width="40" height="40" title="car8"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/car5.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car5','smile');"  width="40" height="40" title="car5"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/car6.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car6','smile');"  width="40" height="40" title="car6"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/car7.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car7','smile');"  width="40" height="40" title="car7"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/car8.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car8','smile');"  width="40" height="40" title="car8"></td>
 </tr>
 <tr>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/car9.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car9','smile');"  width="40" height="40" title="car9"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/car10.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car10','smile');"  width="40" height="40" title="car10"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/car11.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car11','smile');"  width="40" height="40" title="car11"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/car12.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car12','smile');"  width="40" height="40" title="car12"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/car9.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car9','smile');"  width="40" height="40" title="car9"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/car10.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car10','smile');"  width="40" height="40" title="car10"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/car11.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car11','smile');"  width="40" height="40" title="car11"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/car12.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car12','smile');"  width="40" height="40" title="car12"></td>
 </tr>
 <tr>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/car13.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car13','smile');"  width="40" height="40" title="car13"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/car14.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car14','smile');"  width="40" height="40" title="car14"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/car15.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car15','smile');"  width="40" height="40" title="car15"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/car16.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car16','smile');"  width="40" height="40" title="car16"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/car13.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car13','smile');"  width="40" height="40" title="car13"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/car14.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car14','smile');"  width="40" height="40" title="car14"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/car15.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car15','smile');"  width="40" height="40" title="car15"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/car16.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car16','smile');"  width="40" height="40" title="car16"></td>
 </tr>
 <tr>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/car17.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car17','smile');"  width="40" height="40" title="car17"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/car18.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car18','smile');"  width="40" height="40" title="car18"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/car19.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car19','smile');"  width="40" height="40" title="car19"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/car20.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car20','smile');"  width="40" height="40" title="car20"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/car17.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car17','smile');"  width="40" height="40" title="car17"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/car18.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car18','smile');"  width="40" height="40" title="car18"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/car19.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car19','smile');"  width="40" height="40" title="car19"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/car20.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car20','smile');"  width="40" height="40" title="car20"></td>
 </tr>
 <tr>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/car21.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car21','smile');"  width="40" height="40" title="car21"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/car22.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car22','smile');"  width="40" height="40" title="car22"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/car23.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car23','smile');"  width="40" height="40" title="car23"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/car24.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car24','smile');"  width="40" height="40" title="car24"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/car21.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car21','smile');"  width="40" height="40" title="car21"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/car22.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car22','smile');"  width="40" height="40" title="car22"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/car23.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car23','smile');"  width="40" height="40" title="car23"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/car24.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car24','smile');"  width="40" height="40" title="car24"></td>
 </tr>
 <tr>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/car25.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car25','smile');"  width="40" height="40" title="car25"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/car26.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car26','smile');"  width="40" height="40" title="car26"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/car27.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car27','smile');"  width="40" height="40" title="car27"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/car28.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car28','smile');"  width="40" height="40" title="car28"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/car25.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car25','smile');"  width="40" height="40" title="car25"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/car26.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car26','smile');"  width="40" height="40" title="car26"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/car27.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car27','smile');"  width="40" height="40" title="car27"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/car28.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car28','smile');"  width="40" height="40" title="car28"></td>
 </tr>
 <tr>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/car29.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car29','smile');"  width="40" height="40" title="car29"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/car30.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car30','smile');"  width="40" height="40" title="car30"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/car31.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car31','smile');"  width="40" height="40" title="car31"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/car32.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car32','smile');"  width="40" height="40" title="car32"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/car29.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car29','smile');"  width="40" height="40" title="car29"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/car30.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car30','smile');"  width="40" height="40" title="car30"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/car31.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car31','smile');"  width="40" height="40" title="car31"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/car32.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car32','smile');"  width="40" height="40" title="car32"></td>
 </tr>
 <tr>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/car33.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car33','smile');"  width="40" height="40" title="car33"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/car33.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'car33','smile');"  width="40" height="40" title="car33"></td>
 <td width="40" height="40" style="cursor:pointer;"></td>
 <td width="40" height="40" style="cursor:pointer;"></td>
 <td width="40" height="40" style="cursor:pointer;"></td>
 </tr>
 
 <tr>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/taz.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'taz','smile');"  width="40" height="40" title="taz"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/taz2.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'taz2','smile');"  width="40" height="40" title="taz2"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/taz3.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'taz3','smile');"  width="40" height="40" title="taz3"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/taz4.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'taz4','smile');"  width="40" height="40" title="taz4"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/taz.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'taz','smile');"  width="40" height="40" title="taz"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/taz2.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'taz2','smile');"  width="40" height="40" title="taz2"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/taz3.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'taz3','smile');"  width="40" height="40" title="taz3"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/taz4.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'taz4','smile');"  width="40" height="40" title="taz4"></td>
 </tr>
 <tr>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/taz5.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'taz5','smile');"  width="40" height="40" title="taz5"></td>
-<td width="40" height="40" style="cursor:pointer;"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/ifaces/taz6.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'taz6','smile');"  width="40" height="40" title="taz6"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/taz5.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'taz5','smile');"  width="40" height="40" title="taz5"></td>
+<td width="40" height="40" style="cursor:pointer;"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/ifaces/taz6.gif" border="0" onclick="general___inputtextincludetag('inputtexttextareadialog', 'taz6','smile');"  width="40" height="40" title="taz6"></td>
 <td width="40" height="40" style="cursor:pointer;"></td>
 <td width="40" height="40" style="cursor:pointer;"></td>
 </tr>
@@ -811,47 +811,47 @@ function dwLN1_news_3_1(){
 </tr>
 <tr>
 <td width="25" height="25" style="background-color:#ffffff; cursor:pointer;">
-	<img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/redactor/bold.gif" onclick="general___inputtextincludetag('inputtexttextareadialog', 'b','text');" title="жирный текст">
+	<img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/redactor/bold.gif" onclick="general___inputtextincludetag('inputtexttextareadialog', 'b','text');" title="жирный текст">
 </td>
 <td width="25" height="25" style="background-color:#ffffff; cursor:pointer;">
-	<img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/redactor/italics.gif" onclick="general___inputtextincludetag('inputtexttextareadialog', 'i','text');" title="курсив">
+	<img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/redactor/italics.gif" onclick="general___inputtextincludetag('inputtexttextareadialog', 'i','text');" title="курсив">
 </td>
 <td width="25" height="25" style="background-color:#ffffff; cursor:pointer;">
-	<img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/redactor/underline.gif" onclick="general___inputtextincludetag('inputtexttextareadialog', 'u','text');" title="подчеркнутый текст">
+	<img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/redactor/underline.gif" onclick="general___inputtextincludetag('inputtexttextareadialog', 'u','text');" title="подчеркнутый текст">
 </td>
 <td width="25" height="25" style="background-color:#ffffff; cursor:pointer;">
-	<img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/redactor/strikethrough.gif" onclick="general___inputtextincludetag('inputtexttextareadialog', 's','text');" title="зачеркнутый текст">
+	<img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/redactor/strikethrough.gif" onclick="general___inputtextincludetag('inputtexttextareadialog', 's','text');" title="зачеркнутый текст">
 </td>
 <td width="25" height="25" style="background-color:#ffffff; cursor:pointer;">
-	<img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/redactor/subscript.gif" onclick="general___inputtextincludetag('inputtexttextareadialog', 'sub','text');" title="под текстом">
-</td>
-</tr>
-<tr>
-<td width="25" height="25" style="background-color:#ffffff; cursor:pointer;">
-	<img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/redactor/superscript.gif" onclick="general___inputtextincludetag('inputtexttextareadialog', 'sup','text');" title="над текстом">
-</td>
-<td width="25" height="25" style="background-color:#ffffff; cursor:pointer;">
-	<img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/redactor/justify.gif" onclick="general___inputtextincludetag('inputtexttextareadialog', 'justify','text');" title="растягивание по ширине">
-</td>
-<td width="25" height="25" style="background-color:#ffffff; cursor:pointer;">
-	<img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/redactor/left.gif" onclick="general___inputtextincludetag('inputtexttextareadialog', 'left','text');"  title="выравнивание слева">
-</td>
-<td width="25" height="25" style="background-color:#ffffff; cursor:pointer;">
-	<img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/redactor/center.gif" onclick="general___inputtextincludetag('inputtexttextareadialog', 'center','text');"  title="выравнивание по центру">
-</td>
-<td width="25" height="25" style="background-color:#ffffff; cursor:pointer;">
-	<img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/redactor/right.gif" onclick="general___inputtextincludetag('inputtexttextareadialog', 'right','text');"  title="выравнивание справа">
+	<img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/redactor/subscript.gif" onclick="general___inputtextincludetag('inputtexttextareadialog', 'sub','text');" title="под текстом">
 </td>
 </tr>
 <tr>
 <td width="25" height="25" style="background-color:#ffffff; cursor:pointer;">
-	<img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/redactor/ref_list_ordered.gif" onclick="general___inputtextincludetag('inputtexttextareadialog', 'list=ol','text');" title="пронумерованный список">
+	<img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/redactor/superscript.gif" onclick="general___inputtextincludetag('inputtexttextareadialog', 'sup','text');" title="над текстом">
 </td>
 <td width="25" height="25" style="background-color:#ffffff; cursor:pointer;">
-	<img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/redactor/ref_list_unordered.gif" onclick="general___inputtextincludetag('inputtexttextareadialog', 'list=ul','text');" title="непронумерованный список">
+	<img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/redactor/justify.gif" onclick="general___inputtextincludetag('inputtexttextareadialog', 'justify','text');" title="растягивание по ширине">
 </td>
 <td width="25" height="25" style="background-color:#ffffff; cursor:pointer;">
-	<img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/inputtext/redactor/ref_li.gif" onclick="general___inputtextincludetag('inputtexttextareadialog', '*','text');" title="элемент списка">
+	<img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/redactor/left.gif" onclick="general___inputtextincludetag('inputtexttextareadialog', 'left','text');"  title="выравнивание слева">
+</td>
+<td width="25" height="25" style="background-color:#ffffff; cursor:pointer;">
+	<img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/redactor/center.gif" onclick="general___inputtextincludetag('inputtexttextareadialog', 'center','text');"  title="выравнивание по центру">
+</td>
+<td width="25" height="25" style="background-color:#ffffff; cursor:pointer;">
+	<img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/redactor/right.gif" onclick="general___inputtextincludetag('inputtexttextareadialog', 'right','text');"  title="выравнивание справа">
+</td>
+</tr>
+<tr>
+<td width="25" height="25" style="background-color:#ffffff; cursor:pointer;">
+	<img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/redactor/ref_list_ordered.gif" onclick="general___inputtextincludetag('inputtexttextareadialog', 'list=ol','text');" title="пронумерованный список">
+</td>
+<td width="25" height="25" style="background-color:#ffffff; cursor:pointer;">
+	<img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/redactor/ref_list_unordered.gif" onclick="general___inputtextincludetag('inputtexttextareadialog', 'list=ul','text');" title="непронумерованный список">
+</td>
+<td width="25" height="25" style="background-color:#ffffff; cursor:pointer;">
+	<img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/inputtext/redactor/ref_li.gif" onclick="general___inputtextincludetag('inputtexttextareadialog', '*','text');" title="элемент списка">
 </td>
 <td width="25" height="25" style="background-color:#ffffff;">
 </td>
@@ -924,11 +924,11 @@ function dwLN1_news_3_1(){
 		<table cellpadding="0" cellspacing="0" style="width:50%; float:left; padding-bottom:10px;">
 	<tr>
 	<td valign="top" width="100" align="left">
-			<a href="http://mapstore.org/my_portfolio/tazteam.net/news/254"><img src="http://140706.selcdn.ru/tazteam/images/news/254/1_2.jpeg" width="100" height="100" class="refimage"></a>
+			<a href="<?php echo(GeneralGlobalVars::url);?>/news/254"><img src="http://140706.selcdn.ru/tazteam/images/news/254/1_2.jpeg" width="100" height="100" class="refimage"></a>
 	</td>
 	<td valign="top" align="left">
 		<div  style="width:320px; overflow:hidden;  padding:5px 10px 5px 10px;">
-			<a href="http://mapstore.org/my_portfolio/tazteam.net/news/254" class="link_topic">АвтоВАЗу можно предложить свой эскиз автомобиля</a>
+			<a href="<?php echo(GeneralGlobalVars::url);?>/news/254" class="link_topic">АвтоВАЗу можно предложить свой эскиз автомобиля</a>
 
 				<div class="v_i_s"></div>
 	<div class="explanation_dark">Тольяттинское предприятие объявило в одной из популярных социальных сетей России...</div>
@@ -943,11 +943,11 @@ function dwLN1_news_3_1(){
 	<table cellpadding="0" cellspacing="0" style="width:50%; float:left; padding-bottom:10px;">
 	<tr>
 	<td valign="top" width="100" align="left">
-			<a href="http://mapstore.org/my_portfolio/tazteam.net/news/252"><img src="http://140706.selcdn.ru/tazteam/images/news/252/1_2.jpeg" width="100" height="100" class="refimage"></a>
+			<a href="<?php echo(GeneralGlobalVars::url);?>/news/252"><img src="http://140706.selcdn.ru/tazteam/images/news/252/1_2.jpeg" width="100" height="100" class="refimage"></a>
 	</td>
 	<td valign="top" align="left">
 		<div  style="width:320px; overflow:hidden;  padding:5px 10px 5px 10px;">
-			<a href="http://mapstore.org/my_portfolio/tazteam.net/news/252" class="link_topic">Правительство запретило продажу </a>
+			<a href="<?php echo(GeneralGlobalVars::url);?>/news/252" class="link_topic">Правительство запретило продажу </a>
 
 				<div class="v_i_s"></div>
 	<div class="explanation_dark">Кабинет министров вынес отрицательный отзыв на законопроект, определяющий порядо...</div>
@@ -962,11 +962,11 @@ function dwLN1_news_3_1(){
 	<table cellpadding="0" cellspacing="0" style="width:50%; float:left; padding-bottom:10px;">
 	<tr>
 	<td valign="top" width="100" align="left">
-			<a href="http://mapstore.org/my_portfolio/tazteam.net/news/194"><img src="http://140706.selcdn.ru/tazteam/images/news/194/1_2.jpeg" width="100" height="100" class="refimage"></a>
+			<a href="<?php echo(GeneralGlobalVars::url);?>/news/194"><img src="http://140706.selcdn.ru/tazteam/images/news/194/1_2.jpeg" width="100" height="100" class="refimage"></a>
 	</td>
 	<td valign="top" align="left">
 		<div  style="width:320px; overflow:hidden;  padding:5px 10px 5px 10px;">
-			<a href="http://mapstore.org/my_portfolio/tazteam.net/news/194" class="link_topic">Новая Lada Kalina пиздует к дилерам</a>
+			<a href="<?php echo(GeneralGlobalVars::url);?>/news/194" class="link_topic">Новая Lada Kalina пиздует к дилерам</a>
 
 				<div class="v_i_s"></div>
 	<div class="explanation_dark">АвтоВАЗ приступил к отгрузке официальным дилерам марки новых автомобилей Lada Ka...</div>
@@ -981,11 +981,11 @@ function dwLN1_news_3_1(){
 	<table cellpadding="0" cellspacing="0" style="width:50%; float:left; padding-bottom:10px;">
 	<tr>
 	<td valign="top" width="100" align="left">
-			<a href="http://mapstore.org/my_portfolio/tazteam.net/news/251"><img src="http://140706.selcdn.ru/tazteam/images/news/251/1_2.jpeg" width="100" height="100" class="refimage"></a>
+			<a href="<?php echo(GeneralGlobalVars::url);?>/news/251"><img src="http://140706.selcdn.ru/tazteam/images/news/251/1_2.jpeg" width="100" height="100" class="refimage"></a>
 	</td>
 	<td valign="top" align="left">
 		<div  style="width:320px; overflow:hidden;  padding:5px 10px 5px 10px;">
-			<a href="http://mapstore.org/my_portfolio/tazteam.net/news/251" class="link_topic">Роботизированная коробка передач для приоры</a>
+			<a href="<?php echo(GeneralGlobalVars::url);?>/news/251" class="link_topic">Роботизированная коробка передач для приоры</a>
 
 				<div class="v_i_s"></div>
 	<div class="explanation_dark">Рестайлинговая версия флагманской модели АвтоВАЗа, продажи которой стартуют в ок...</div>
@@ -1000,11 +1000,11 @@ function dwLN1_news_3_1(){
 	<table cellpadding="0" cellspacing="0" style="width:50%; float:left; padding-bottom:10px;">
 	<tr>
 	<td valign="top" width="100" align="left">
-			<a href="http://mapstore.org/my_portfolio/tazteam.net/news/299"><img src="http://140706.selcdn.ru/tazteam/images/news/299/1_2.jpeg" width="100" height="100" class="refimage"></a>
+			<a href="<?php echo(GeneralGlobalVars::url);?>/news/299"><img src="http://140706.selcdn.ru/tazteam/images/news/299/1_2.jpeg" width="100" height="100" class="refimage"></a>
 	</td>
 	<td valign="top" align="left">
 		<div  style="width:320px; overflow:hidden;  padding:5px 10px 5px 10px;">
-			<a href="http://mapstore.org/my_portfolio/tazteam.net/news/299" class="link_topic">Бензин и автомобили подорожают со дня на день</a>
+			<a href="<?php echo(GeneralGlobalVars::url);?>/news/299" class="link_topic">Бензин и автомобили подорожают со дня на день</a>
 
 				<div class="v_i_s"></div>
 	<div class="explanation_dark">С начала года оптовая стоимость бензина АИ-92 выросла в среднем по стране на 5%,...</div>
@@ -1019,11 +1019,11 @@ function dwLN1_news_3_1(){
 	<table cellpadding="0" cellspacing="0" style="width:50%; float:left; padding-bottom:10px;">
 	<tr>
 	<td valign="top" width="100" align="left">
-			<a href="http://mapstore.org/my_portfolio/tazteam.net/news/244"><img src="http://140706.selcdn.ru/tazteam/images/news/244/1_2.jpeg" width="100" height="100" class="refimage"></a>
+			<a href="<?php echo(GeneralGlobalVars::url);?>/news/244"><img src="http://140706.selcdn.ru/tazteam/images/news/244/1_2.jpeg" width="100" height="100" class="refimage"></a>
 	</td>
 	<td valign="top" align="left">
 		<div  style="width:320px; overflow:hidden;  padding:5px 10px 5px 10px;">
-			<a href="http://mapstore.org/my_portfolio/tazteam.net/news/244" class="link_topic">Обзор Tagaz Aquila</a>
+			<a href="<?php echo(GeneralGlobalVars::url);?>/news/244" class="link_topic">Обзор Tagaz Aquila</a>
 
 				<div class="v_i_s"></div>
 	<div class="explanation_dark">Таганрогский автозавод передал первым счастливчикам ключи от Aquila: новой модел...</div>
@@ -1038,11 +1038,11 @@ function dwLN1_news_3_1(){
 	<table cellpadding="0" cellspacing="0" style="width:50%; float:left; padding-bottom:10px;">
 	<tr>
 	<td valign="top" width="100" align="left">
-			<a href="http://mapstore.org/my_portfolio/tazteam.net/news/176"><img src="http://140706.selcdn.ru/tazteam/images/news/176/1_2.jpeg" width="100" height="100" class="refimage"></a>
+			<a href="<?php echo(GeneralGlobalVars::url);?>/news/176"><img src="http://140706.selcdn.ru/tazteam/images/news/176/1_2.jpeg" width="100" height="100" class="refimage"></a>
 	</td>
 	<td valign="top" align="left">
 		<div  style="width:320px; overflow:hidden;  padding:5px 10px 5px 10px;">
-			<a href="http://mapstore.org/my_portfolio/tazteam.net/news/176" class="link_topic">МВД определилось с глубиной протектора</a>
+			<a href="<?php echo(GeneralGlobalVars::url);?>/news/176" class="link_topic">МВД определилось с глубиной протектора</a>
 
 				<div class="v_i_s"></div>
 	<div class="explanation_dark">Департамент обеспечения безопасности дорожного движения МВД России по поручению ...</div>
@@ -1057,11 +1057,11 @@ function dwLN1_news_3_1(){
 	<table cellpadding="0" cellspacing="0" style="width:50%; float:left; padding-bottom:10px;">
 	<tr>
 	<td valign="top" width="100" align="left">
-			<a href="http://mapstore.org/my_portfolio/tazteam.net/news/68"><img src="http://140706.selcdn.ru/tazteam/images/news/68/1_2.jpeg" width="100" height="100" class="refimage"></a>
+			<a href="<?php echo(GeneralGlobalVars::url);?>/news/68"><img src="http://140706.selcdn.ru/tazteam/images/news/68/1_2.jpeg" width="100" height="100" class="refimage"></a>
 	</td>
 	<td valign="top" align="left">
 		<div  style="width:320px; overflow:hidden;  padding:5px 10px 5px 10px;">
-			<a href="http://mapstore.org/my_portfolio/tazteam.net/news/68" class="link_topic">АвтоВАЗ создаст кроссовер на базе Lada Kalina</a>
+			<a href="<?php echo(GeneralGlobalVars::url);?>/news/68" class="link_topic">АвтоВАЗ создаст кроссовер на базе Lada Kalina</a>
 
 				<div class="v_i_s"></div>
 	<div class="explanation_dark">Лидер российского автопрома, Волжский автомобильный завод, намерен в скором буду...</div>
@@ -1076,11 +1076,11 @@ function dwLN1_news_3_1(){
 	<table cellpadding="0" cellspacing="0" style="width:50%; float:left; padding-bottom:10px;">
 	<tr>
 	<td valign="top" width="100" align="left">
-			<a href="http://mapstore.org/my_portfolio/tazteam.net/news/116"><img src="http://140706.selcdn.ru/tazteam/images/news/116/1_2.jpeg" width="100" height="100" class="refimage"></a>
+			<a href="<?php echo(GeneralGlobalVars::url);?>/news/116"><img src="http://140706.selcdn.ru/tazteam/images/news/116/1_2.jpeg" width="100" height="100" class="refimage"></a>
 	</td>
 	<td valign="top" align="left">
 		<div  style="width:320px; overflow:hidden;  padding:5px 10px 5px 10px;">
-			<a href="http://mapstore.org/my_portfolio/tazteam.net/news/116" class="link_topic">Экспортная Lada Granta Sport</a>
+			<a href="<?php echo(GeneralGlobalVars::url);?>/news/116" class="link_topic">Экспортная Lada Granta Sport</a>
 
 				<div class="v_i_s"></div>
 	<div class="explanation_dark">АвтоВАЗ планирует отправлять на экспорт модель Lada Granta Sport, продажи которо...</div>
@@ -1095,11 +1095,11 @@ function dwLN1_news_3_1(){
 	<table cellpadding="0" cellspacing="0" style="width:50%; float:left; padding-bottom:10px;">
 	<tr>
 	<td valign="top" width="100" align="left">
-			<a href="http://mapstore.org/my_portfolio/tazteam.net/news/146"><img src="http://140706.selcdn.ru/tazteam/images/news/146/1_2.jpeg" width="100" height="100" class="refimage"></a>
+			<a href="<?php echo(GeneralGlobalVars::url);?>/news/146"><img src="http://140706.selcdn.ru/tazteam/images/news/146/1_2.jpeg" width="100" height="100" class="refimage"></a>
 	</td>
 	<td valign="top" align="left">
 		<div  style="width:320px; overflow:hidden;  padding:5px 10px 5px 10px;">
-			<a href="http://mapstore.org/my_portfolio/tazteam.net/news/146" class="link_topic">Приставы объявляют охоту на водителей-штрафников</a>
+			<a href="<?php echo(GeneralGlobalVars::url);?>/news/146" class="link_topic">Приставы объявляют охоту на водителей-штрафников</a>
 
 				<div class="v_i_s"></div>
 	<div class="explanation_dark">В столичном управлении Федеральной службы судебных приставов планируют создать ч...</div>
@@ -1114,11 +1114,11 @@ function dwLN1_news_3_1(){
 	<table cellpadding="0" cellspacing="0" style="width:50%; float:left; padding-bottom:10px;">
 	<tr>
 	<td valign="top" width="100" align="left">
-			<a href="http://mapstore.org/my_portfolio/tazteam.net/news/54"><img src="http://140706.selcdn.ru/tazteam/images/news/54/1_2.jpeg" width="100" height="100" class="refimage"></a>
+			<a href="<?php echo(GeneralGlobalVars::url);?>/news/54"><img src="http://140706.selcdn.ru/tazteam/images/news/54/1_2.jpeg" width="100" height="100" class="refimage"></a>
 	</td>
 	<td valign="top" align="left">
 		<div  style="width:320px; overflow:hidden;  padding:5px 10px 5px 10px;">
-			<a href="http://mapstore.org/my_portfolio/tazteam.net/news/54" class="link_topic">Сотрудники ГИБДД, устроившие &quot;живой щит&quot;, будут уволены</a>
+			<a href="<?php echo(GeneralGlobalVars::url);?>/news/54" class="link_topic">Сотрудники ГИБДД, устроившие &quot;живой щит&quot;, будут уволены</a>
 
 				<div class="v_i_s"></div>
 	<div class="explanation_dark">Сотрудники, которые организовали «живой щит» из автомобилей в Екатеринбурге, что...</div>
@@ -1133,11 +1133,11 @@ function dwLN1_news_3_1(){
 	<table cellpadding="0" cellspacing="0" style="width:50%; float:left; padding-bottom:10px;">
 	<tr>
 	<td valign="top" width="100" align="left">
-			<a href="http://mapstore.org/my_portfolio/tazteam.net/news/234"><img src="http://140706.selcdn.ru/tazteam/images/news/234/1_2.jpeg" width="100" height="100" class="refimage"></a>
+			<a href="<?php echo(GeneralGlobalVars::url);?>/news/234"><img src="http://140706.selcdn.ru/tazteam/images/news/234/1_2.jpeg" width="100" height="100" class="refimage"></a>
 	</td>
 	<td valign="top" align="left">
 		<div  style="width:320px; overflow:hidden;  padding:5px 10px 5px 10px;">
-			<a href="http://mapstore.org/my_portfolio/tazteam.net/news/234" class="link_topic">Медведев потребовал оснастить все номера микрочипами</a>
+			<a href="<?php echo(GeneralGlobalVars::url);?>/news/234" class="link_topic">Медведев потребовал оснастить все номера микрочипами</a>
 
 				<div class="v_i_s"></div>
 	<div class="explanation_dark">Глава Правительства поручил ввести обязательное оснащение автомобильных номеров ...</div>
@@ -1152,11 +1152,11 @@ function dwLN1_news_3_1(){
 	<table cellpadding="0" cellspacing="0" style="width:50%; float:left; padding-bottom:10px;">
 	<tr>
 	<td valign="top" width="100" align="left">
-			<a href="http://mapstore.org/my_portfolio/tazteam.net/news/202"><img src="http://140706.selcdn.ru/tazteam/images/news/202/1_2.jpeg" width="100" height="100" class="refimage"></a>
+			<a href="<?php echo(GeneralGlobalVars::url);?>/news/202"><img src="http://140706.selcdn.ru/tazteam/images/news/202/1_2.jpeg" width="100" height="100" class="refimage"></a>
 	</td>
 	<td valign="top" align="left">
 		<div  style="width:320px; overflow:hidden;  padding:5px 10px 5px 10px;">
-			<a href="http://mapstore.org/my_portfolio/tazteam.net/news/202" class="link_topic">Занижать автомобиль могут запретить</a>
+			<a href="<?php echo(GeneralGlobalVars::url);?>/news/202" class="link_topic">Занижать автомобиль могут запретить</a>
 
 				<div class="v_i_s"></div>
 	<div class="explanation_dark"> Ходят слухи о том, что занижать автомобиль могут запретить. На самом же деле эт...</div>
@@ -1171,11 +1171,11 @@ function dwLN1_news_3_1(){
 	<table cellpadding="0" cellspacing="0" style="width:50%; float:left; padding-bottom:10px;">
 	<tr>
 	<td valign="top" width="100" align="left">
-			<a href="http://mapstore.org/my_portfolio/tazteam.net/news/296"><img src="http://140706.selcdn.ru/tazteam/images/news/296/1_2.jpeg" width="100" height="100" class="refimage"></a>
+			<a href="<?php echo(GeneralGlobalVars::url);?>/news/296"><img src="http://140706.selcdn.ru/tazteam/images/news/296/1_2.jpeg" width="100" height="100" class="refimage"></a>
 	</td>
 	<td valign="top" align="left">
 		<div  style="width:320px; overflow:hidden;  padding:5px 10px 5px 10px;">
-			<a href="http://mapstore.org/my_portfolio/tazteam.net/news/296" class="link_topic">Жители дома подожгли BMW X6 за парковку на газоне</a>
+			<a href="<?php echo(GeneralGlobalVars::url);?>/news/296" class="link_topic">Жители дома подожгли BMW X6 за парковку на газоне</a>
 
 				<div class="v_i_s"></div>
 	<div class="explanation_dark">СМИ пишут: "6 января, в 5 часу утра на улице Зеленгинская дом 2 корп. 2 произошл...</div>
@@ -1206,22 +1206,22 @@ function dwLN1_news_3_1(){
 
 
 			<div class="padding_left_20" style="float:left;">
-				<a href="http://mapstore.org/my_portfolio/tazteam.net/users/155" class="link_normal">Администрация</a>
+				<a href="<?php echo(GeneralGlobalVars::url);?>/users/155" class="link_normal">Администрация</a>
 			</div>
 			<div class="padding_left_10" style="float:left;">
-				<a href="http://mapstore.org/my_portfolio/tazteam.net/users/1" class="link_normal">Разработка сайта</a>
+				<a href="<?php echo(GeneralGlobalVars::url);?>/users/1" class="link_normal">Разработка сайта</a>
 			</div>
 			<div class="padding_left_10" style="float:left;">
-				<a href="http://mapstore.org/my_portfolio/tazteam.net/users/1" class="link_normal">Рекламодателям</a>
+				<a href="<?php echo(GeneralGlobalVars::url);?>/users/1" class="link_normal">Рекламодателям</a>
 			</div>
 
 
 
 			<div class="padding_right_20" style="float:right;">
-				<a href="http://mapstore.org/my_portfolio/tazteam.net/map" class="link_normal">Карта сайта</a>
+				<a href="<?php echo(GeneralGlobalVars::url);?>/map" class="link_normal">Карта сайта</a>
 			</div>
 			<div class="padding_right_10" style="float:right;">
-				<a href="http://mapstore.org/my_portfolio/tazteam.net/mapusers" class="link_normal">Участники</a>
+				<a href="<?php echo(GeneralGlobalVars::url);?>/mapusers" class="link_normal">Участники</a>
 			</div>
 
 			<div style="clear:both;"> </div>
@@ -1355,7 +1355,7 @@ if (uni_tracker_shown===undefined || mix_tracker_shown===undefined){document.wri
 
 <script type="text/javascript">
 jQuery(document).ready(function(){
-	general___preload_images(['http://mapstore.org/my_portfolio/tazteam.net/images/_general/general___new_announcement_submit_hover.png','http://mapstore.org/my_portfolio/tazteam.net/images/_general/general___inputtext_url_img_main_hover.gif','http://mapstore.org/my_portfolio/tazteam.net/images/_general/general___inputtext_quote_img_main_hover.gif','http://mapstore.org/my_portfolio/tazteam.net/images/_general/general___inputtext_redactor_img_main_hover.gif','http://mapstore.org/my_portfolio/tazteam.net/images/_general/general___inputtext_smiles_img_main_hover.gif','http://mapstore.org/my_portfolio/tazteam.net/images/_general/general___inputtext_ifaces_img_main_hover.gif','http://mapstore.org/my_portfolio/tazteam.net/images/_general/general___send_submit_hover.png','http://mapstore.org/my_portfolio/tazteam.net/images/index/index___top_menu_fon_hover.png']);});
+	general___preload_images(['<?php echo(GeneralGlobalVars::url);?>/images/_general/general___new_announcement_submit_hover.png','<?php echo(GeneralGlobalVars::url);?>/images/_general/general___inputtext_url_img_main_hover.gif','<?php echo(GeneralGlobalVars::url);?>/images/_general/general___inputtext_quote_img_main_hover.gif','<?php echo(GeneralGlobalVars::url);?>/images/_general/general___inputtext_redactor_img_main_hover.gif','<?php echo(GeneralGlobalVars::url);?>/images/_general/general___inputtext_smiles_img_main_hover.gif','<?php echo(GeneralGlobalVars::url);?>/images/_general/general___inputtext_ifaces_img_main_hover.gif','<?php echo(GeneralGlobalVars::url);?>/images/_general/general___send_submit_hover.png','<?php echo(GeneralGlobalVars::url);?>/images/index/index___top_menu_fon_hover.png']);});
 </script>
 
 </body>

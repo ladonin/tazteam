@@ -11,7 +11,7 @@
 	while($row2=GeneralMYSQL::fetch_array($res2)) {
 	NewsBase::detect_first_photo($row2['img']);//вычисляем первое фото
 	?>
-<a href="http://mapstore.org/my_portfolio/tazteam.net/<?php echo(GeneralGetVars::$var1);?>/<?php echo($row2['id']);?>">
+<a href="<?php echo(GeneralGlobalVars::url);?>/<?php echo(GeneralGetVars::$var1);?>/<?php echo($row2['id']);?>">
 	<table cellpadding="0" cellspacing="0" style="width:<?php echo(GeneralPageBasic::$general_width_blocks_in_list);?>; float:left; padding-right:10px; padding-bottom:10px;">
 	<tr>
 	<td valign="top" width="100" align="left"  style="
@@ -22,8 +22,8 @@ border-bottom:1px solid #e0e0e0;
 "	><div style="
  padding:10px;
 ">	<!-- было 110-->
-			<a href="http://mapstore.org/my_portfolio/tazteam.net/<?php echo(GeneralGetVars::$var1);?>/<?php echo($row2['id']);?>"><?php		
-			if ($row2['img']==""){?><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/general___photo_none_100x100.jpg" width="100" height="100" class="refimage"><?php }
+			<a href="<?php echo(GeneralGlobalVars::url);?>/<?php echo(GeneralGetVars::$var1);?>/<?php echo($row2['id']);?>"><?php		
+			if ($row2['img']==""){?><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/general___photo_none_100x100.jpg" width="100" height="100" class="refimage"><?php }
 			else {?><img src="http://140706.selcdn.ru/tazteam/images/<?php echo(GeneralGetVars::$var1);?>/<?php echo($row2['id']);?>/<?php echo(NewsBase::return_size_to_photo(NewsBase::$img1_cur,2));?>" width="100" height="100" class="refimage"><?php } 		
 			?></a></div>
 	</td>
@@ -34,7 +34,7 @@ border-right:1px solid #e0e0e0;
 border-bottom:1px solid #e0e0e0; 
 "	><!-- было 120-->
 		<div  style="width:<?php echo(GeneralPageBasic::$general_width_div_in_block_in_list);?>; overflow:hidden;  padding:10px 10px 10px 0px;"><!-- было 120-->
-			<a href="http://mapstore.org/my_portfolio/tazteam.net/<?php echo(GeneralGetVars::$var1);?>/<?php echo($row2['id']);?>" class="huge_link"><?php echo($row2['name']);?></a>
+			<a href="<?php echo(GeneralGlobalVars::url);?>/<?php echo(GeneralGetVars::$var1);?>/<?php echo($row2['id']);?>" class="huge_link"><?php echo($row2['name']);?></a>
 	<div class="v_i_s"></div>
 	<noindex><div class="explanation_dark"><?php echo($row2['contentnacked']);?>...</div></noindex>			
 			

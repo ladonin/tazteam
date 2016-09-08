@@ -6,13 +6,13 @@ while($rowusers=GeneralMYSQL::fetch_array($res)) {
 	?>
 <table cellpadding="0" cellspacing="0" style="width:50%; float:left; margin-bottom:10px;">
 <tr>
-<td valign="top" width="150" align="left">	
-	<a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo($rowusers['id_user']);?>"><img src="<?php echo(UsersBase::return_url_photo($rowusers['gen_photo'],$rowusers['dir_user']."/".$rowusers['id_user']."_5.".$rowusers['site_photo_format'],$rowusers['sn_photo_url_from_small'],$rowusers['sn_photo_url_from_huge'],0));?>" width="140" height="140" class="refimage"></a>
+<td valign="top" width="150" align="left">
+	<a href="<?php echo(GeneralGlobalVars::url);?>/users/<?php echo($rowusers['id_user']);?>"><img src="<?php echo(UsersBase::return_url_photo($rowusers['gen_photo'],$rowusers['dir_user']."/".$rowusers['id_user']."_5.".$rowusers['site_photo_format'],$rowusers['sn_photo_url_from_small'],$rowusers['sn_photo_url_from_huge'],0));?>" width="140" height="140" class="refimage"></a>
 </td>
 <td valign="top" align="left">
 <div style="padding:5px 10px 0px 0px;">
 	<div style="width:280px; margin:0px; background-color:#ffffff; overflow:hidden; ">
-		<a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo($rowusers['id_user']);?>" class="lead"><?php echo(UsersMyData::return_name($rowusers['gen_login_user'],$rowusers['site_mail_user'],$rowusers['gen_name_user'],$rowusers['gen_surname_user'],$rowusers['site_login_status']));?></a></div>
+		<a href="<?php echo(GeneralGlobalVars::url);?>/users/<?php echo($rowusers['id_user']);?>" class="lead"><?php echo(UsersMyData::return_name($rowusers['gen_login_user'],$rowusers['site_mail_user'],$rowusers['gen_name_user'],$rowusers['gen_surname_user'],$rowusers['site_login_status']));?></a></div>
 
 <div class="v_i_s"></div>
 
@@ -24,40 +24,40 @@ while($rowusers=GeneralMYSQL::fetch_array($res)) {
 
 
 		<div></div>
-		
-		<?php if ($rowusers['gen_borndate_year']){?>		
+
+		<?php if ($rowusers['gen_borndate_year']){?>
 		<?php echo(UsersBase::return_age($rowusers['gen_borndate_day'],$rowusers['gen_borndate_month'],$rowusers['gen_borndate_year']));?>
 		<div></div><?php } ?>
-				
-		<?php if ($rowusers['gen_city_name']){?>		
+
+		<?php if ($rowusers['gen_city_name']){?>
 		город: <?php echo($rowusers['gen_city_name']);?>
 		<div></div>
 		<?php } ?>
-	
+
 		<?php if ($rowusers['gen_universities_name']){?>
 		ВУЗ: <?php echo(str_replace("  ",", ",$rowusers['gen_universities_name']));?>
-		<div></div><?php } ?>		
-		
+		<div></div><?php } ?>
+
 		<?php if (UsersBase::$cur_user_online==true){?>
 		<b style="text-decoration:underline; color:#f09007;">Online</b>
 		<div></div>
 		<?php } ?>
-		
-		
-		
-		
 
 
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </div>
 </td>
 </tr>
@@ -71,7 +71,7 @@ if (UsersBase::$users_enable==0) { ?>
 GeneralMYSQL::free($res); ?>
 
 
-<?php 
+<?php
 if (GeneralPagesCounter::$N_max>1){ ?>
 
 	<table cellpadding="0" cellspacing="0" width="100%">

@@ -6,11 +6,11 @@
     	<?php if ((GeneralInputText::$type_panels=="maximum")&&(!1)) { ?>
     	<li><a href="#inputtext_tab4<?php echo($chat_var);?>" data-toggle="tab">Таблица</a></li>
     	<?php } ?>
-        
+
         <li><a href="#inputtext_tab5<?php echo($chat_var);?>" data-toggle="tab">Еще</a></li>
-        
+
         </ul>
-        
+
 
         <div class="tab-content">
         <div class="tab-pane active" id="inputtext_tab3<?php echo($chat_var);?>">
@@ -29,42 +29,42 @@
         <?php } ?>
         <div class="tab-pane" id="inputtext_tab5<?php echo($chat_var);?>">
         <div class="q_content_inputtext">
-        
-        
-        
-        
-        
-<img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/general___inputtext_quote_img_main.gif"
+
+
+
+
+
+<img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/general___inputtext_quote_img_main.gif"
   onclick="general___inputtextincludetag('inputtexttextarea<?php echo(GeneralInputText::$id);?>', 'quote','text');" title="цитата"
   width="20" height="20">
-        
-        
-<img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/general___inputtext_video_img_main.gif"
+
+
+<img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/general___inputtext_video_img_main.gif"
   onclick="general___inputtextincludetag('inputtexttextarea<?php echo(GeneralInputText::$id);?>', 'video','text');" title="видео"
-  width="20" height="20">    
- 
- 
- 
-<img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/general___inputtext_url_img_main.gif"
+  width="20" height="20">
+
+
+
+<img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/general___inputtext_url_img_main.gif"
   onclick="general___inputtextincludetag('inputtexttextarea<?php echo(GeneralInputText::$id);?>', 'link','text');" title="ссылка"
-  width="20" height="20">  
-  
-  
+  width="20" height="20">
 
- 
- 
- 
- 
- 
+
+
+
+
+
+
+
 	        <?php
-            if ((GeneralGetVars::$var1==="news")||(GeneralGetVars::$var1==="articles")) {?>  
-<img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/general___inputtext_url_img_main.gif"
+            if ((GeneralGetVars::$var1==="news")||(GeneralGetVars::$var1==="articles")) {?>
+<img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/general___inputtext_url_img_main.gif"
   onclick="general___inputtextincludetag('inputtexttextarea<?php echo(GeneralInputText::$id);?>', 'url','text');" title="ссылка"
-  width="20" height="20">      
-  <?php } ?></div> 
-      
+  width="20" height="20">
+  <?php } ?></div>
 
-        </div>        
+
+        </div>
         </div>
 
 </div>

@@ -1,10 +1,10 @@
             <!-- new_announcement automarket -->
             <div id="new_announcement" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="new_announcementLabel" aria-hidden="true">
-            
-<form method="post" 
-		action="http://mapstore.org/my_portfolio/tazteam.net/submit.php?get_var1=automarket" 
+
+<form method="post"
+		action="<?php echo(GeneralGlobalVars::url);?>/submit.php?get_var1=automarket"
 		enctype="multipart/form-data">
-            
+
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                     <h3 id="new_announcementLabel">Новое объявление</h3>
@@ -21,11 +21,11 @@
 		<input type="radio" style="margin-bottom:8px;" name="themepage" id="automarket_radio_themepage3" value="3"> <span style="cursor:pointer;" class="link_lead " onclick="document.getElementById('automarket_radio_themepage3').checked='ckecked';">Куплю</span>
 		<input name="submit" value="detectthemepagefornewautomarket" type="hidden">
 
-	
+
                 </div>
                 <div class="modal-footer">
                     <input value="Далее" class="btn btn-success btn-small" type="submit">
                 </div>
-                
+
                </form>
-            </div> 
+            </div>

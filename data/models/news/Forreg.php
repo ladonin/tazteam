@@ -1,4 +1,4 @@
-<?php   
+<?php
 class NewsForreg{
 const maxrattachedimages=20;//максимальное количество приложенных изображений
 
@@ -6,8 +6,8 @@ static public $status_news=0; //статус робъявления (0-прос�
 static public $array_redact_news_attached_photos=array();//массив отправленных фоток
 static public $array_redact_news_empty_photos=array(); //массив пустых фоток
 
-		
-		
+
+
 /*static public $statussend=1;//статус отправки сообщения (1=новое,2=редактируемое)
 static public $array_messages_number_id=array();//массив с данными id - number
 static public $id_mesage_to_redact=0;//какое сообщение редактируем
@@ -22,11 +22,11 @@ static public $status_redactmessagepanel=0;//показывать или нет 
 
 
 static public function detect_to_redact_basic($MSQLc){//обще определяем редактирование сообщения
-	self::detect_id_mesage_to_redact();		
-	if (self::detect_autority_to_work_width_message(self::$id_mesage_to_redact,$MSQLc)==true){//если мы зарегистрированы, подали заявку на редактирование и это наше сообщение, то мы его редактируем	
+	self::detect_id_mesage_to_redact();
+	if (self::detect_autority_to_work_width_message(self::$id_mesage_to_redact,$MSQLc)==true){//если мы зарегистрированы, подали заявку на редактирование и это наше сообщение, то мы его редактируем
 			self::$statussend=2;}}
 
-			
+
 static public function set_array_messages_number_id($number,$id){//заполняем массив с данными id - number
 	self::$array_messages_number_id[$number]=$id;}
 
@@ -36,16 +36,16 @@ static public function returnlastidmessage($MSQLc){//возвращаем id п�
 	$row=GeneralMYSQL::fetch_array($res);
 	GeneralMYSQL::free($res);
 	return $row['id_message'];}
-	
 
-	
+
+
 static public function detect_status_for_redactmessage_panel($MSQLc){//возвращаем статус для возможности редактирования сообщения
 	if ((GeneralPagesCounter::$N_max==GeneralPagesCounter::$N_cur)||(GeneralSecurity::detect_administrator()==true)){
 		self::$last_id_message=self::returnlastidmessage($MSQLc);
 		self::$status_redactmessagepanel=1;}}
-	
-	
-	
+
+
+
 static public function detect_available_to_redact_or_delete_message($id_message,$id_autor_message){//можно ли удалять или редактировать сообщение
 	if (GeneralSecurity::detect_administrator()==true) {return true;}//если мы - администратор
 	//если сообщение прнадлежит ему
@@ -54,17 +54,17 @@ static public function detect_available_to_redact_or_delete_message($id_message,
 		if ($id_message==self::$last_id_message){
 			return true;}}
 	return false;}
-	
+
 static public function detect_id_mesage_to_redact(){//какое сообщение редактируем
-	self::$id_mesage_to_redact=self::$array_messages_number_id[GeneralGetVars::$redact_message];}	
+	self::$id_mesage_to_redact=self::$array_messages_number_id[GeneralGetVars::$redact_message];}
 
 static public function return_autor_message($id_message,$MSQLc){//выводим автора сообщения
 	$query="SELECT id_user FROM ".ForumBase::$sqlmessagestablename." WHERE id_topic='".GeneralGetVars::$var3."' AND id_message='".$id_message."' LIMIT 1";
-	$res=GeneralMYSQL::query($MSQLc,$query);		
+	$res=GeneralMYSQL::query($MSQLc,$query);
 	$row=GeneralMYSQL::fetch_array($res);
-	GeneralMYSQL::free($res);		
-	return $row['id_user'];}	
-	
+	GeneralMYSQL::free($res);
+	return $row['id_user'];}
+
 static public function detect_autority_to_work_width_message($id_message,$MSQLc){//проверяем реальность автора для рабты с сообщением
 	if (GeneralSecurity::detect_administrator()==true) {return true;}//если мы - администратор
 	if($id_message>0){
@@ -72,15 +72,15 @@ static public function detect_autority_to_work_width_message($id_message,$MSQLc)
 
 	return false;}
 
-	
-	
-	
-	
+
+
+
+
 static public function detect_availability_to_delete_topic($id_topic,$MSQLc){//проверяем реальность автора для рабты с темой
 	if (GeneralSecurity::detect_administrator()==true) {return true;}//если мы - администратор
 	//если нет чужих сообщений
 	$query="SELECT id_user FROM ".ForumBase::$sqlmessagestablename." WHERE id_topic='".$id_topic."' AND id_user!='".UsersMyData::$id."' LIMIT 1";
-	$res=GeneralMYSQL::query($MSQLc,$query);		
+	$res=GeneralMYSQL::query($MSQLc,$query);
 	$row=GeneralMYSQL::fetch_array($res);
 
 	if ($row['id_user']>0) {return false;}
@@ -89,22 +89,22 @@ static public function detect_availability_to_delete_topic($id_topic,$MSQLc){//�
 static public function return_autor_topic($id_topic,$MSQLc){//узнаем автора темы
 	//если нет чужих сообщений
 	$query="SELECT id_user FROM ".ForumBase::$sqlmessagestablename." WHERE id_topic='".$id_topic."' LIMIT 1";
-	$res=GeneralMYSQL::query($MSQLc,$query);		
+	$res=GeneralMYSQL::query($MSQLc,$query);
 	$row=GeneralMYSQL::fetch_array($res);
 	if ($row['id_user']>0) {return $row['id_user'];}
 	return false;}
-	
-	
-	
+
+
+
 
 static public function minus_message_to_user($MSQLc,$id_user){//вычитаем из сообщений пользователя 1 сообщение
 	$query="UPDATE registrated_users___main_data SET forums_messages=forums_messages-1 WHERE id_user='".$id_user."' LIMIT 1";
 	GeneralMYSQL::query_update($MSQLc,$query);}
 
-	
+
 static public function return_text_images_from_message($id_message,$MSQLc){//выводим список приложенных изображений
 	$query="SELECT imagesattached FROM ".ForumBase::$sqlmessagestablename." WHERE id_topic='".GeneralGetVars::$var3."' AND id_message='".$id_message."' LIMIT 1";
-	$res=GeneralMYSQL::query($MSQLc,$query);		
+	$res=GeneralMYSQL::query($MSQLc,$query);
 	$row=GeneralMYSQL::fetch_array($res);
 	return $row['imagesattached'];}
 
@@ -121,25 +121,25 @@ static public function set_arrays_for_message_photos_in_redact($MSQLc){//уст�
 
 static public function return_text_message_source($id,$MSQLc){//выводим исходник сообщения
 	$query="SELECT text_message_source FROM ".ForumBase::$sqlmessagestablename." WHERE id_topic='".GeneralGetVars::$var3."' AND id_message='".$id."' LIMIT 1";
-	$res=GeneralMYSQL::query($MSQLc,$query);		
+	$res=GeneralMYSQL::query($MSQLc,$query);
 	$row=GeneralMYSQL::fetch_array($res);
-	GeneralMYSQL::free($res);	
+	GeneralMYSQL::free($res);
 	return $row['text_message_source'];}
 
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
+
+
 static public function display_images_in_redact_message(){//определяем фотографии в редактируемом сообщении
 	foreach(self::$array_redact_message_attached_photos as $key=>$value){//перебираем приложенные фотки
-		echo("		
+		echo("
 
 <img src=\"http://mapstore.org/my_portfolio/tazteam.net/".GeneralGlobalVars::pathtofiles."/images/".GeneralGetVars::$var1."/".GeneralGetVars::$var2."/".GeneralGetVars::$var3."/".$value."\" class=\"for3_25\">
 <table cellpadding=\"0\" cellspacing=\"0\" class=\"for3_27\">
@@ -161,66 +161,66 @@ static public function display_images_in_redact_message(){//определяем
 static public function display_forms_images_in_redact_message(){//определяем формы отправки для фотографий в редактируемом сообщении
 	foreach(self::$array_redact_message_empty_photos as $key=>$value){//перебираем пустые фотки
 		echo("
-		
+
 <table cellpadding=\"0\" cellspacing=\"0\" class=\"for3_27\">
 <tr>
 <td align=\"left\" valign=\"middle\" class=\"for3_28\">Загрузить:</td>
 <td align=\"left\" class=\"for3_4\"><input type=\"file\" name=\"img".$key."\"></td>
 </tr>
 </table>
-	
-		");}}
-	
-	
-	
-	*/
-	
-	
 
-	
-	
-	
-	
-	
-	
-	
-	
+		");}}
+
+
+
+	*/
+
+
+
+
+
+
+
+
+
+
+
 static public function return_imagesnames_from_DB($MSQLc){//выводим имена загруженных в БД изображений
 	$query="SELECT img FROM news WHERE id='".GeneralGetVars::$num_page."' LIMIT 1";
-	$res=GeneralMYSQL::query($MSQLc,$query);		
+	$res=GeneralMYSQL::query($MSQLc,$query);
 	$row=GeneralMYSQL::fetch_array($res);
-	GeneralMYSQL::free($res);		
+	GeneralMYSQL::free($res);
 	return $row['img'];}
 
 static public function return_imagessizes_from_DB($MSQLc){//выводим размеры загруженных в БД изображений
 	$query="SELECT img_sizes FROM news WHERE id='".GeneralGetVars::$num_page."' LIMIT 1";
-	$res=GeneralMYSQL::query($MSQLc,$query);		
+	$res=GeneralMYSQL::query($MSQLc,$query);
 	$row=GeneralMYSQL::fetch_array($res);
-	GeneralMYSQL::free($res);		
+	GeneralMYSQL::free($res);
 	return $row['img_sizes'];}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 static public function detect_autor($MSQLc){//определяем автора темы
 	$query="SELECT id_user FROM news WHERE id='".GeneralGetVars::$num_page."' AND themepage='".GeneralGetVars::$var2."' LIMIT 1";
-	$res=GeneralMYSQL::query($MSQLc,$query);		
+	$res=GeneralMYSQL::query($MSQLc,$query);
 	$row=GeneralMYSQL::fetch_array($res);
 	GeneralMYSQL::free($res);
 	NewsBase::$id_autor=$row['id_user'];}
@@ -235,7 +235,7 @@ static public function detect_belong_news_to_user(){//проверяем при�
 
 
 
-	
+
 static public function detect_status_news(){//определяем статус страницы объявления
 	if (GeneralPageTree::$nesting==2){
 		if (GeneralGetVars::$num_page){
@@ -243,9 +243,9 @@ static public function detect_status_news(){//определяем статус 
 		else{
 			self::$status_news=1;}}
 	else {
-		self::$status_news=0;}}	
-	
-	
+		self::$status_news=0;}}
+
+
 static public function go_to_page_new_news(){//переходим на страницу создания темы
 	GeneralGetVars::$num_page="";
 	GeneralGetVars::$var3="";
@@ -263,12 +263,12 @@ static public function detect_arrays_attached_photos_for_redact_news($textphotos
 			self::$array_redact_news_attached_photos[$words[0]]=$image;//прикладываем к массиву приложеное фото
 			unset(self::$array_redact_news_empty_photos[$words[0]]);}}}//убираем из массива элемент, т.к. он не пустой
 
-	
+
 static public function display_images_in_redact_news(){//определяем фотографии в редактируемом объявлении
 echo("<span class=\"red\">* - главное фото</span><div class=\"v_i_b\"></div>");
 	foreach(self::$array_redact_news_attached_photos as $key=>$value){//перебираем приложенные фотки
 		echo("
-<img src=\"http://mapstore.org/my_portfolio/tazteam.net/".GeneralGlobalVars::pathtofiles."/images/".GeneralGetVars::$var1."/".GeneralGetVars::$num_page."/".$value."\" style=\"width:260px; margin-bottom:10px;\">
+<img src=\"".GeneralGlobalVars::url."/".GeneralGlobalVars::pathtofiles."/images/".GeneralGetVars::$var1."/".GeneralGetVars::$num_page."/".$value."\" style=\"width:260px; margin-bottom:10px;\">
 <table cellpadding=\"0\" cellspacing=\"0\" width=\"100%\">
 <tr id=\"imgupdate".$key."\">
 <td align=\"left\" width=\"70\"><div class=\"v_i_s\"></div>");
@@ -307,7 +307,7 @@ else {echo("Загрузить:");}
 echo("</td>
 <td align=\"left\"><div class=\"v_i_s\"></div><input type=\"file\" name=\"img".$key."\"></td>
 </tr>
-</table>");}}	
+</table>");}}
 
 }
 

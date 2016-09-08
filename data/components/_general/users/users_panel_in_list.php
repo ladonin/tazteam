@@ -14,29 +14,29 @@ if (UsersMyData::$identified==1){
 			$cv2=2;}}
 	else if ((GeneralGetvars::$var4=="friends")&&(UsersBase::$its_mypage==1)){
 		if (UsersFriends::$sort_by==1){
-			
+
 			$cv3=3;}
 		else if (UsersFriends::$sort_by==2){
-			
+
 			$cv3=3;}
 		else if (UsersFriends::$sort_by==3){
 			$cv5=5;
 			$cv6=6;}
 		else if (UsersFriends::$sort_by==4){
 			$cv4=4;}}
-            
+
             ?>
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
 
 <div style="float:left; padding-left:0px;">
     <div class="btn-group">
-    
+
     <button class="btn btn-mini dropdown-toggle" data-toggle="dropdown">Действия <span class="caret"></span></button>
     <ul class="dropdown-menu pull-left">
 
@@ -56,33 +56,33 @@ if (UsersMyData::$identified==1){
 
 	if ($cv1){?>
 
-    
-    
-    
+
+
+
     <li style="text-align:left; padding:0 20px;">
 
-    
-		<form method="post" action="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo($rowusers['id_user']);?>/dialogs">		
+
+		<form method="post" action="<?php echo(GeneralGlobalVars::url);?>/users/<?php echo($rowusers['id_user']);?>/dialogs">
 		<input type="submit" value="<?php echo(UsersBase::$array_buttons_to_userslists[$cv1]);?>" class="btn btn-link btn-small">
 		</form>
-    
+
     </li>
-    
-    
-                                
+
+
+
     <?php }
 	if ($cv2){?>
-    
+
     <li style="text-align:left; padding:0 20px;">
 		<form method="post" action="<?php echo(GeneralGetVars::$urltosubmit);?>">
 		<input type="hidden" name="submit" value="userstofriends">
-		<input type="hidden" name="who" value="<?php echo($rowusers['id_user']);?>">		
+		<input type="hidden" name="who" value="<?php echo($rowusers['id_user']);?>">
 		<input type="submit" value="Добавить в друзья" class="btn btn-link btn-small">
 		</form>
     </li>
-    
 
-		<?php }		
+
+		<?php }
 	if ($cv3){?>
 
 
@@ -101,7 +101,7 @@ if (UsersMyData::$identified==1){
 
 
 
-	<?php }		
+	<?php }
 	if ($cv4){?>
 
 
@@ -124,7 +124,7 @@ if (UsersMyData::$identified==1){
 
 
 
-		<?php }			
+		<?php }
 	if ($cv5){?>
 
 
@@ -147,7 +147,7 @@ if (UsersMyData::$identified==1){
 
 
 
-	<?php }		
+	<?php }
 	if ($cv6){?>
     <li style="text-align:left; padding:0 20px;">
 		<form method="post" action="<?php echo(GeneralGetVars::$urltosubmit);?>">
@@ -156,12 +156,12 @@ if (UsersMyData::$identified==1){
 		<input type="submit" value="Принять заявку в друзья" class="btn btn-link btn-small">
 		</form>
     </li>
-    
-    
-    
-    
-    
-                            
+
+
+
+
+
+
 
 
 	<?php }
@@ -177,24 +177,23 @@ if (UsersMyData::$identified==1){
 
 
 
-   	    
-    
+
+
     </ul>
     </div>
-</div>     
-            
-            
+</div>
+
+
             <div style="clear: both;"></div>
-            
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
+
             <?php
-           
 
 
 
@@ -234,31 +233,32 @@ if (UsersMyData::$identified==1){
 
 
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
      }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    	
-		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ?>

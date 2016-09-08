@@ -4,7 +4,7 @@ class="boxShadow3"
 <table cellpadding="0" cellspacing="0" width="100%">
 <tr>
 <td align="left">
-	<a href="http://mapstore.org/my_portfolio/tazteam.net/<?php echo(GeneralGetVars::$var1."/".GeneralGetVars::$var2);?>" class="btn btn-primary btn-small">к&nbsp;странице&nbsp;пользователя</a>
+	<a href="<?php echo(GeneralGlobalVars::url);?>/<?php echo(GeneralGetVars::$var1."/".GeneralGetVars::$var2);?>" class="btn btn-primary btn-small">к&nbsp;странице&nbsp;пользователя</a>
 </td>	
 </tr>
 </table>
@@ -99,7 +99,7 @@ if (UsersBase::detect_its_mypage(2)==true){//определяем - наша с�
 		?><b class="link_lead">Форум:</b><div class="v_i_b"></div><?php
 		}
 		?>		
-		<a href="http://mapstore.org/my_portfolio/tazteam.net/forum/<?php echo(GeneralPageBasic::$code_section);?>/<?php echo(GeneralPageBasic::$code_topic);?>=1" class="link_lead_topic"><?php echo(GeneralPageBasic::$current_name_topic);?></a>
+		<a href="<?php echo(GeneralGlobalVars::url);?>/forum/<?php echo(GeneralPageBasic::$code_section);?>/<?php echo(GeneralPageBasic::$code_topic);?>=1" class="link_lead_topic"><?php echo(GeneralPageBasic::$current_name_topic);?></a>
 		<div class="v_i_b"></div>	
 		<?php $cv1=1; //только для форума, потом для всех - главное, чтобы показывала, что оповещения есть
 		}}
@@ -157,7 +157,7 @@ if (UsersBase::detect_its_mypage(2)==true){//определяем - наша с�
 				<table cellpadding="0" cellspacing="0" width="100%">
 				<tr>
 				<td align="left" width="200"><span class="link_lead">Новости:</span></td>
-				<td align="left"><a href="http://mapstore.org/my_portfolio/tazteam.net/news/<?php echo(GeneralPageBasic::$code_topic);?>" class="link_lead_topic "><?php echo(GeneralPageBasic::$current_name_topic);?></a></td>
+				<td align="left"><a href="<?php echo(GeneralGlobalVars::url);?>/news/<?php echo(GeneralPageBasic::$code_topic);?>" class="link_lead_topic "><?php echo(GeneralPageBasic::$current_name_topic);?></a></td>
 				</tr>
 				</table>		
 				<div class="v_i_b"></div>
@@ -171,7 +171,7 @@ if (UsersBase::detect_its_mypage(2)==true){//определяем - наша с�
 		<table cellpadding="0" cellspacing="0" width="100%">
 		<tr>
 		<td align="left" width="200"><span class="link_lead">Статьи от TAZTEAM:</span></td>
-		<td align="left"><a href="http://mapstore.org/my_portfolio/tazteam.net/articles/<?php echo(GeneralPageBasic::$code_topic);?>" class="link_lead_topic"><?php echo(GeneralPageBasic::$current_name_topic);?></a></td>
+		<td align="left"><a href="<?php echo(GeneralGlobalVars::url);?>/articles/<?php echo(GeneralPageBasic::$code_topic);?>" class="link_lead_topic"><?php echo(GeneralPageBasic::$current_name_topic);?></a></td>
 		</tr>
 		</table>		
 		<div class="v_i_b"></div>
@@ -184,7 +184,7 @@ if (UsersBase::detect_its_mypage(2)==true){//определяем - наша с�
 				<table cellpadding="0" cellspacing="0" width="100%">
 				<tr>
 				<td align="left" width="200"><span class="link_lead">Объявления:</span></td>
-				<td align="left"><a href="http://mapstore.org/my_portfolio/tazteam.net/automarket/<?php echo(GeneralPageBasic::$code_section);?>/<?php echo(GeneralPageBasic::$code_topic);?>" class="link_lead_topic"><?php echo(GeneralPageBasic::$current_name_topic);?></a></td>
+				<td align="left"><a href="<?php echo(GeneralGlobalVars::url);?>/automarket/<?php echo(GeneralPageBasic::$code_section);?>/<?php echo(GeneralPageBasic::$code_topic);?>" class="link_lead_topic"><?php echo(GeneralPageBasic::$current_name_topic);?></a></td>
 				</tr>
 				</table>		
 				<div class="v_i_b"></div>
@@ -203,7 +203,7 @@ if (UsersBase::detect_its_mypage(2)==true){//определяем - наша с�
 				<table cellpadding="0" cellspacing="0" width="100%">
 				<tr>
 				<td align="left" width="200"><span class="link_lead">Галерея:</span></td>
-				<td align="left"><a href="http://mapstore.org/my_portfolio/tazteam.net/photo/<?php echo(GeneralPageBasic::$code_section);?>/<?php echo(GeneralPageBasic::$code_topic);?>=<?php echo(GeneralPagesCounter::$N_cur_current);?>" class="link_lead_topic"><?php echo(GeneralPageBasic::$current_name_topic);?> (фото №<?php echo(GeneralPagesCounter::$N_cur_current);?>)</a></td>
+				<td align="left"><a href="<?php echo(GeneralGlobalVars::url);?>/photo/<?php echo(GeneralPageBasic::$code_section);?>/<?php echo(GeneralPageBasic::$code_topic);?>=<?php echo(GeneralPagesCounter::$N_cur_current);?>" class="link_lead_topic"><?php echo(GeneralPageBasic::$current_name_topic);?> (фото №<?php echo(GeneralPagesCounter::$N_cur_current);?>)</a></td>
 				</tr>
 				</table>
 				<div class="v_i_b"></div>			
@@ -215,7 +215,7 @@ if (UsersBase::detect_its_mypage(2)==true){//определяем - наша с�
 				<table cellpadding="0" cellspacing="0" width="100%">
 				<tr>
 				<td align="left" width="200"><span class="link_lead">Видео:</span></td>
-				<td align="left"><a href="http://mapstore.org/my_portfolio/tazteam.net/video/<?php echo(GeneralPageBasic::$code_section);?>/<?php echo(GeneralPageBasic::$code_topic);?>" class="link_lead_topic"><?php echo(GeneralPageBasic::$current_name_topic);?></a></td>
+				<td align="left"><a href="<?php echo(GeneralGlobalVars::url);?>/video/<?php echo(GeneralPageBasic::$code_section);?>/<?php echo(GeneralPageBasic::$code_topic);?>" class="link_lead_topic"><?php echo(GeneralPageBasic::$current_name_topic);?></a></td>
 				</tr>
 				</table>
 				<div class="v_i_b"></div>
@@ -227,7 +227,7 @@ if (UsersBase::detect_its_mypage(2)==true){//определяем - наша с�
 				<table cellpadding="0" cellspacing="0" width="100%">
 				<tr>
 				<td align="left" width="200"><span class="link_lead">Форум - чат:</span></td>
-				<td align="left"><a href="http://mapstore.org/my_portfolio/tazteam.net/forum/<?php echo(GeneralPageBasic::$code_section);?>" class="link_lead_topic"><?php echo(GeneralPageBasic::$current_name_topic);?></a></td>
+				<td align="left"><a href="<?php echo(GeneralGlobalVars::url);?>/forum/<?php echo(GeneralPageBasic::$code_section);?>" class="link_lead_topic"><?php echo(GeneralPageBasic::$current_name_topic);?></a></td>
 				</tr>
 				</table>
 				<div class="v_i_b"></div>
@@ -242,7 +242,7 @@ if (UsersBase::detect_its_mypage(2)==true){//определяем - наша с�
 				<table cellpadding="0" cellspacing="0" width="100%">
 				<tr>
 				<td align="left" width="200"><span class="link_lead">Фотоальбомы:</span></td>
-				<td align="left"><a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo(GeneralPageBasic::$code_section);?>/photoalbums/<?php echo(GeneralPageBasic::$code_topic);?>=<?php echo(GeneralPagesCounter::$N_cur_current);?>" class="link_lead_topic"><?php echo(GeneralPageBasic::$current_name_topic);?> (фото №<?php echo(GeneralPagesCounter::$N_cur_current);?>)</a></td>
+				<td align="left"><a href="<?php echo(GeneralGlobalVars::url);?>/users/<?php echo(GeneralPageBasic::$code_section);?>/photoalbums/<?php echo(GeneralPageBasic::$code_topic);?>=<?php echo(GeneralPagesCounter::$N_cur_current);?>" class="link_lead_topic"><?php echo(GeneralPageBasic::$current_name_topic);?> (фото №<?php echo(GeneralPagesCounter::$N_cur_current);?>)</a></td>
 				</tr>
 				</table>
 				<div class="v_i_b"></div><?php }}
@@ -253,7 +253,7 @@ if (UsersBase::detect_its_mypage(2)==true){//определяем - наша с�
 				<table cellpadding="0" cellspacing="0" width="100%">
 				<tr>
 				<td align="left" width="200"><span class="link_lead">Стена участников:</span></td>
-				<td align="left"><a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo(GeneralPageBasic::$code_section);?>#dw1sw" class="link_lead_topic"><?php 
+				<td align="left"><a href="<?php echo(GeneralGlobalVars::url);?>/users/<?php echo(GeneralPageBasic::$code_section);?>#dw1sw" class="link_lead_topic"><?php 
 				if (GeneralPageBasic::$code_section==UsersMyData::$id){ echo("Моя страница"); }
 				else {	echo(GeneralPageBasic::$current_name_topic);} ?></a></td>
 				</tr>
@@ -264,13 +264,13 @@ if (UsersBase::detect_its_mypage(2)==true){//определяем - наша с�
 		
 		
 		else if (GeneralPageBasic::$code_sign=="mc") { ?>
-			<a href="http://mapstore.org/my_portfolio/tazteam.net" class="link_lead">Главная страница - чат</a>
+			<a href="<?php echo(GeneralGlobalVars::url);?>" class="link_lead">Главная страница - чат</a>
 			<div class="v_i_b"></div>
 			<?php }		
 			
 			
 		else if (GeneralPageBasic::$code_sign=="sh") { ?>
-			<a href="http://mapstore.org/my_portfolio/tazteam.net/shop" class="link_lead">Автозвук</a>
+			<a href="<?php echo(GeneralGlobalVars::url);?>/shop" class="link_lead">Автозвук</a>
 			<div class="v_i_b"></div>
 			<?php }			
 			

@@ -62,7 +62,7 @@ UsersBase::set_points($MSQLc,GarageBase::$id_autor);//начисляем авт�
 			<img style="max-height: 460px; max-width: 460px;" src="http://140706.selcdn.ru/tazteam/images/garage/<?php echo($row['id']);?>/<?php echo(GarageBase::$img1);?>"   class="refimage" style="cursor:pointer" id="garage_img_photo_big" alt="<?php echo(GeneralPageTree::$title);?>">
 <?php }
 		else{ ?>
-			<img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/general___photo_none_600x400.jpg" width="460"  class="refimage" <?php /*onclick="swimwin('gallery','garage'); garage_img_to_gallery(); "*/?>>
+			<img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/general___photo_none_600x400.jpg" width="460"  class="refimage" <?php /*onclick="swimwin('gallery','garage'); garage_img_to_gallery(); "*/?>>
 <?php } ?>
 
 

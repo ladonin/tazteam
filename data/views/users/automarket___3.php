@@ -79,7 +79,7 @@ AutomarketBase::$model=$row['model'];
 		<td style="padding-left:10px; background-color:#0571c4">
 			<span class="text_18_light_bold" style="line-height:38px;"><?php echo($row['price']);?> руб.</span>
 		</td>
-		<td width="38" style="background-image: url('http://mapstore.org/my_portfolio/tazteam.net/images/automarket/automarket___price_triangle38.png');">
+		<td width="38" style="background-image: url('<?php echo(GeneralGlobalVars::url);?>/images/automarket/automarket___price_triangle38.png');">
 		</td>
 		</tr>
 		</table>

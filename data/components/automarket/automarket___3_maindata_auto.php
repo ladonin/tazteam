@@ -3,7 +3,7 @@
 
 
 
-<a href="http://mapstore.org/my_portfolio/tazteam.net/<?php echo(GeneralGetVars::$var1."=".GeneralPagesCounter::$N_cur_current);?>" class="btn btn-primary btn-mini" style="margin-bottom:5px; margin-right:5px;" title="наверх">&#9650;</a>
+<a href="<?php echo(GeneralGlobalVars::url);?>/<?php echo(GeneralGetVars::$var1."=".GeneralPagesCounter::$N_cur_current);?>" class="btn btn-primary btn-mini" style="margin-bottom:5px; margin-right:5px;" title="наверх">&#9650;</a>
 
 
 
@@ -16,7 +16,7 @@
 	<table cellpadding="0" cellspacing="0" width="100%">
 	<tr>
 	<td align="left" width="5%" valign="top" style="padding-right:10px;">
-		<span class="grey">Дата&nbsp;размещения:</span>	
+		<span class="grey">Дата&nbsp;размещения:</span>
 	</td>
 	<td align="left">
 		<div class="big_text" id="automarket_date_announcement"></div>
@@ -24,10 +24,10 @@
 	</td>
 	</tr>
 	</table>
-<div class="v_i_b"></div>			
-			
-			
-			
+<div class="v_i_b"></div>
+
+
+
 <table cellpadding="5" cellspacing="0" width="100%">
 <tr>
 <td align="left" colspan="2" bgcolor="#35526a" style="color: #ffffff; padding-left:10px;">
@@ -41,7 +41,7 @@
 
 
 
-<?php if ($row['year_production']) { ?>	
+<?php if ($row['year_production']) { ?>
 <tr>
 <td align="left" width="50%" bgcolor="#dddddd" style="border-bottom:1px solid #f1f1f1; padding-left:10px;">
 Год выпуска
@@ -52,7 +52,7 @@
 </tr>
 <?php } ?>
 
-<?php if ($row['country_producer']) { ?>	
+<?php if ($row['country_producer']) { ?>
 <tr>
 <td align="left" width="50%" bgcolor="#dddddd" style="border-bottom:1px solid #f1f1f1; padding-left:10px;">
 Страна-производитель
@@ -63,7 +63,7 @@
 </tr>
 <?php } ?>
 
-<?php if ($row['run']) { ?>	
+<?php if ($row['run']) { ?>
 <tr>
 <td align="left" width="50%" bgcolor="#dddddd" style="border-bottom:1px solid #f1f1f1; padding-left:10px;">
 Пробег
@@ -83,7 +83,7 @@
 
 
 
-<?php if ($row['power']) { ?>	
+<?php if ($row['power']) { ?>
 <tr>
 <td align="left" width="50%" bgcolor="#dddddd" style="border-bottom:1px solid #f1f1f1; padding-left:10px;">
 Мощность двигателя
@@ -94,7 +94,7 @@
 </tr>
 <?php } ?>
 
-		
+
 <?php if ($row['motor_type']) { ?>
 <tr>
 <td align="left" width="50%" bgcolor="#dddddd" style="border-bottom:1px solid #f1f1f1; padding-left:10px;">
@@ -205,7 +205,7 @@
 <?php echo(AutomarketBase::return_parameters("presense", $row['presense']));?>
 </td>
 </tr>
-<?php } ?>	
+<?php } ?>
 
 <?php if ($row['changing']) { ?>
 <tr>
@@ -240,12 +240,12 @@
 </tr>
 <?php } ?>
 </table>
-			
-			
-		
-		
 
 
-	
-		
+
+
+
+
+
+
 <div class="v_i_b"></div>

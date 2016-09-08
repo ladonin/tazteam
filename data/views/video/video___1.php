@@ -138,7 +138,7 @@ GeneralPagesCounter::imagespreload();?>
 	include("data/components/".GeneralGetVars::$var1."/".GeneralGetVars::$var1."___1_query_1.php");
 	while($row=GeneralMYSQL::fetch_array($res)) {
 		VideoBase::$announcements_enable=1;	?>
-		<a href="http://mapstore.org/my_portfolio/tazteam.net/video/<?php echo($row['themepage']."/".$row['id']);?>" class="link_topic"><?php echo($row['video_name']);?></a>
+		<a href="<?php echo(GeneralGlobalVars::url);?>/video/<?php echo($row['themepage']."/".$row['id']);?>" class="link_topic"><?php echo($row['video_name']);?></a>
 		<div class="v_i_b"></div>
 	<?php }
 	if (VideoBase::$announcements_enable==0) { ?>

@@ -14,7 +14,7 @@ GeneralPagesCounter::calculate_to_outer($MSQLc, "video","id>='".GeneralGetVars::
 	include("data/components/".GeneralGetVars::$var1."/".GeneralGetVars::$var1."___3_query_1.php");
 	$row=GeneralMYSQL::fetch_array($res);
 	?>
-<a href="http://mapstore.org/my_portfolio/tazteam.net/<?php echo(GeneralGetVars::$var1);?>=<?php echo(GeneralPagesCounter::$N_cur_to_outer);?>" class="btn btn-primary btn-mini" style="margin-bottom:7px; margin-right:5px;" title="наверх">▲</a>
+<a href="<?php echo(GeneralGlobalVars::url);?>/<?php echo(GeneralGetVars::$var1);?>=<?php echo(GeneralPagesCounter::$N_cur_to_outer);?>" class="btn btn-primary btn-mini" style="margin-bottom:7px; margin-right:5px;" title="наверх">▲</a>
 
 	<span class="lead"><?php echo($row['video_name']);?></span>
 	<div class="v_i_b"></div>
@@ -82,7 +82,7 @@ GeneralPagesCounter::calculate_to_outer($MSQLc, "video","id>='".GeneralGetVars::
 <?php
 include("data/components/".GeneralGetVars::$var1."/".GeneralGetVars::$var1."___3_query_2.php");
 while($row=GeneralMYSQL::fetch_array($res)) {	?>
-	<a href="http://mapstore.org/my_portfolio/tazteam.net/video/<?php echo($row['themepage']."/".$row['id']);?>" class="link_topic"><?php echo($row['video_name']);?></a>
+	<a href="<?php echo(GeneralGlobalVars::url);?>/video/<?php echo($row['themepage']."/".$row['id']);?>" class="link_topic"><?php echo($row['video_name']);?></a>
 	<div class="v_i_b"></div>
 <?php } 
 GeneralMYSQL::free($res); ?>

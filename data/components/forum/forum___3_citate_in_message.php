@@ -1,7 +1,7 @@
 <?php
 if ($row['id_message_to_citate']>0){ ?>
 <div class="for3_30">
-Цитирование: <a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo($row['c_a_id_user']);?>" class="small_link_h1"><?php echo(UsersMyData::return_name($row['c_a_login_user'],$row['c_a_mail_user'],$row['c_a_name_user'],$row['c_a_surname_user'],$row['c_a_login_status']));?></a>
+Цитирование: <a href="<?php echo(GeneralGlobalVars::url);?>/users/<?php echo($row['c_a_id_user']);?>" class="small_link_h1"><?php echo(UsersMyData::return_name($row['c_a_login_user'],$row['c_a_mail_user'],$row['c_a_name_user'],$row['c_a_surname_user'],$row['c_a_login_status']));?></a>
  написал:
 </div>
 <div class="for3_2">

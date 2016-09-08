@@ -10,7 +10,7 @@
 
 	<td class="padding_right_10">
     
-    <a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo(GeneralGetVars::$var2);?>" class="btn btn-primary btn-small" style="margin-right:5px;" title="наверх">▲</a>
+    <a href="<?php echo(GeneralGlobalVars::url);?>/users/<?php echo(GeneralGetVars::$var2);?>" class="btn btn-primary btn-small" style="margin-right:5px;" title="наверх">▲</a>
 
 	</td>
 	<?php if (UsersBase::$its_mypage==1) {//для зарегистрированных пользователей ?>	

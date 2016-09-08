@@ -7,7 +7,7 @@
 	<div class="v_i_b"></div>
 	<div class="content_dark">Войти через</div>
 	<div class="v_i_b"></div>
-	<a href="<?php echo(GeneralGlobalVars::url_enter_across_vk."&response_type=code&v=5.0");?>"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/logos/general___logo_vk.png" width="46" height="46" style="border:0px;"></a>
+	<a href="<?php echo(GeneralGlobalVars::url_enter_across_vk."&response_type=code&v=5.0");?>"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/logos/general___logo_vk.png" width="46" height="46" style="border:0px;"></a>
 	<div class="v_i_b"></div>
 </td>
 <td valign="top" align="left" width="160">
@@ -133,7 +133,7 @@
 		<div class="v_i_b"></div>
 		<div class="content_dark">Новый аккаунт за 1 сек</div>
 		<div class="v_i_b"></div>
-		<a href="<?php echo(GeneralGlobalVars::url_registration_across_vk."&response_type=code&v=5.0");?>"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/logos/general___logo_vk.png" width="46" height="46" style="border:0px;"></a>
+		<a href="<?php echo(GeneralGlobalVars::url_registration_across_vk."&response_type=code&v=5.0");?>"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/logos/general___logo_vk.png" width="46" height="46" style="border:0px;"></a>
 		<div class="v_i_b"></div>
 </td>
 <td valign="top" align="left" width="160">

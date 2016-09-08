@@ -2,12 +2,12 @@
 <html>
 <head>
 <title>Карта сайта</title>
-<link rel="icon" href="http://mapstore.org/my_portfolio/tazteam.net/favicon.ico" type="image/x-icon">
-<link rel="shortcut icon" href="http://mapstore.org/my_portfolio/tazteam.net/favicon.ico" type="image/x-icon">
+<link rel="icon" href="<?php echo(GeneralGlobalVars::url);?>/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="<?php echo(GeneralGlobalVars::url);?>/favicon.ico" type="image/x-icon">
 <link rel="icon" href="" type="image/x-icon">
 <link rel="shortcut icon" href="" type="image/x-icon">
-<link rel="stylesheet" type="text/css" href="http://mapstore.org/my_portfolio/tazteam.net/css/_general/carcas.css">
-<link rel="stylesheet" type="text/css" href="http://mapstore.org/my_portfolio/tazteam.net/css/_general/text.css">
+<link rel="stylesheet" type="text/css" href="<?php echo(GeneralGlobalVars::url);?>/css/_general/carcas.css">
+<link rel="stylesheet" type="text/css" href="<?php echo(GeneralGlobalVars::url);?>/css/_general/text.css">
 </head>
 
 <body style="padding:20px;"><?php
@@ -23,20 +23,20 @@ mysql_select_db($dbName) or die(mysql_error());
 mysql_query('SET NAMES UTF8');//на время
 
 ?>
-<a href="http://mapstore.org/my_portfolio/tazteam.net"><b>Главная</b></a><br>
+<a href="<?php echo(GeneralGlobalVars::url);?>"><b>Главная</b></a><br>
 
 
 
 
-<a href="http://mapstore.org/my_portfolio/tazteam.net/news"><strong>Новости</strong></a><br>
+<a href="<?php echo(GeneralGlobalVars::url);?>/news"><strong>Новости</strong></a><br>
 <?php
 
 
-$res=mysql_query("SELECT id,name FROM news where themepage='1' order by id DESC limit 20"); 	
-while ($row=mysql_fetch_array($res)) 
+$res=mysql_query("SELECT id,name FROM news where themepage='1' order by id DESC limit 20");
+while ($row=mysql_fetch_array($res))
 {
 ?>
-<a href="http://mapstore.org/my_portfolio/tazteam.net/news/<?php echo($row['id']);?>"><?php echo($row['name']);?></a><br>
+<a href="<?php echo(GeneralGlobalVars::url);?>/news/<?php echo($row['id']);?>"><?php echo($row['name']);?></a><br>
 <?php
 
 }

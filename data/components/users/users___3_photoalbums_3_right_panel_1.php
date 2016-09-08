@@ -29,11 +29,11 @@
 include("data/components/".GeneralGetVars::$var1."/users___3_photoalbums_3_query_2.php");
 while ($row2=GeneralMYSQL::fetch_array($res2)){
 UsersPhotoalbumsBase::detect_current_num_page_photo($MSQLc,$row2['page_photo'],$row2['id_photo'],$row2['id_album'],$row2['id_user']);?>
-<a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo($row2['id_user']."/photoalbums/".$row2['id_album']."=".UsersPhotoalbumsBase::$current_num_page_photo);?>" class="refimage"><img src="<?php echo("http://140706.selcdn.ru/tazteam/images/users/photoalbums/".$row2['dir_album']."/".$row2['id_user']."/".$row2['id_album']."/".$row2['id_photo']."_3.".$row2['format_photo']);?>" width="69" height="69" style="border-bottom:1px solid #ffffff; border-right:1px solid #ffffff;"></a><?php }
+<a href="<?php echo(GeneralGlobalVars::url);?>/users/<?php echo($row2['id_user']."/photoalbums/".$row2['id_album']."=".UsersPhotoalbumsBase::$current_num_page_photo);?>" class="refimage"><img src="<?php echo("http://140706.selcdn.ru/tazteam/images/users/photoalbums/".$row2['dir_album']."/".$row2['id_user']."/".$row2['id_album']."/".$row2['id_photo']."_3.".$row2['format_photo']);?>" width="69" height="69" style="border-bottom:1px solid #ffffff; border-right:1px solid #ffffff;"></a><?php }
 GeneralMYSQL::free($res2);?>
 <div class="v_i_b"></div>
 
-<div>Альбом: <a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo(GeneralGetVars::$var2."/allphotosinalbum/".GeneralGetVars::$var4."=1");?>" class="link_lead_small"><?php echo(GeneralPagetree::$name4);?></a></div>
+<div>Альбом: <a href="<?php echo(GeneralGlobalVars::url);?>/users/<?php echo(GeneralGetVars::$var2."/allphotosinalbum/".GeneralGetVars::$var4."=1");?>" class="link_lead_small"><?php echo(GeneralPagetree::$name4);?></a></div>
 <div class="v_i_s"></div>
 <?php if (!$row['name_photo']) { echo("без названия");} else {echo($row['name_photo']);}?>
 <div class="v_i_b"></div>
@@ -53,7 +53,7 @@ include("data/components/_general/vote/panel_under_photo.php");
 Дата размещения: <span id="photo_3_date_photo"></span>
 <script type="text/javascript">general___date_DMYvHM_show(<?php echo($row['dateloading']);?>,'photo_3_date_photo');</script>
 <div></div>
-	Автор: <a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo($row['t_id_user']);?>" class="link_lead_small black"><?php echo(UsersMyData::return_name($row['t_login_user'],$row['t_mail_user'],$row['t_name_user'],$row['t_surname_user'],$row['t_login_status']));?></a>
+	Автор: <a href="<?php echo(GeneralGlobalVars::url);?>/users/<?php echo($row['t_id_user']);?>" class="link_lead_small black"><?php echo(UsersMyData::return_name($row['t_login_user'],$row['t_mail_user'],$row['t_name_user'],$row['t_surname_user'],$row['t_login_status']));?></a>
 <div></div>
 Просмотров: <?php echo($row['number_views']);?>
 <div></div>
@@ -65,7 +65,7 @@ $cv1=1;
 <span class="panel_text_dark_small">Другие альбомы:</span> (всего: <?php echo(UsersBase::$count_photoalbums); ?>)<div class="v_i_s"></div><?php
 shuffle(UsersBase::$array_photoalbums_list);
 	foreach(UsersBase::$array_photoalbums_list as $key=>$value){
-	?><a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo(GeneralGetVars::$var2."/allphotosinalbum/".UsersBase::$array_photoalbums_list[$key]['id_album']);?>=1" title="<?php echo(UsersBase::$array_photoalbums_list[$key]['name_album']);?>" class="link_lead_small "><?php echo(UsersBase::$array_photoalbums_list[$key]['name_album']);?></a><div></div>	<?php
+	?><a href="<?php echo(GeneralGlobalVars::url);?>/users/<?php echo(GeneralGetVars::$var2."/allphotosinalbum/".UsersBase::$array_photoalbums_list[$key]['id_album']);?>=1" title="<?php echo(UsersBase::$array_photoalbums_list[$key]['name_album']);?>" class="link_lead_small "><?php echo(UsersBase::$array_photoalbums_list[$key]['name_album']);?></a><div></div>	<?php
 	if ($cv1==10) {break;}
 	$cv1++;	}	?>
 <div class="v_i_s"></div><?php }

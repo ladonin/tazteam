@@ -64,7 +64,7 @@ include("data/components/".GeneralGetVars::$var1."/".GeneralGetVars::$var1."___2
 while($row=GeneralMYSQL::fetch_array($res)) {
 
 ?>
-<a href="http://mapstore.org/my_portfolio/tazteam.net/video/<?php echo($row['id']);?>" class="huge_link"><?php echo($row['video_name']);?></a>
+<a href="<?php echo(GeneralGlobalVars::url);?>/video/<?php echo($row['id']);?>" class="huge_link"><?php echo($row['video_name']);?></a>
 <div class="v_i_b"></div>
 <?php } 
 GeneralMYSQL::free($res); ?>

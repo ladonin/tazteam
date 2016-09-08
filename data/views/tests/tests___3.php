@@ -55,7 +55,7 @@ while($row=GeneralMYSQL::fetch_array($res)) {
         <div class="v_i_b"></div>
         <?php echo(GeneralPageTree::$title);?>
         <div class="v_i_b"></div>
-        <a href="http://mapstore.org/my_portfolio/tazteam.net/<?php
+        <a href="<?php echo(GeneralGlobalVars::url);?>/<?php
         echo(GeneralGetVars::$var1."/".GeneralGetVars::$var2."=");
 
         echo(rand(1,GeneralGlobalVars::count_tests));

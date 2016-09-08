@@ -590,20 +590,20 @@ static public function send_mail_for_redactpassword($MSQLc){
 		<td height='25' align='left' style='background-color:#006bbc; padding-left:5px; border-left:1px solid #8194b2; border-top:1px solid #8194b2; border-bottom:1px solid #385194;'>
 			<b style='font-size:13px; color:#ffffff;'>Восстановление пароля</b>
 		</td>
-		<td height='25' align='left' width='110' valign='middle' style='background-color:#006bbc; padding-right:5px; border-right:1px solid #8194b2; border-top:1px solid #8194b2; border-bottom:1px solid #385194;'><a href='http://mapstore.org/my_portfolio/tazteam.net' title='mapstore.org/my_portfolio/tazteam.net - главная страница'><img src='http://mapstore.org/my_portfolio/tazteam.net/images/MAILlogoTAZ.png' width='115' height='16' style='margin-top:3px;'></a></td>
+		<td height='25' align='left' width='110' valign='middle' style='background-color:#006bbc; padding-right:5px; border-right:1px solid #8194b2; border-top:1px solid #8194b2; border-bottom:1px solid #385194;'><a href='".GeneralGlobalVars::url."' title='mapstore.org/my_portfolio/tazteam.net - главная страница'><img src='".GeneralGlobalVars::url."/images/MAILlogoTAZ.png' width='115' height='16' style='margin-top:3px;'></a></td>
 		</tr>
 		</table>
 		<table cellpadding='5' cellspacing='0' width='400' style='border:1px solid #b6c3e5; background-color:#dce1ed; text-align: justify; word-spacing: 0.2ex;'>
 		<tr>
 		<td align='left'>
-			<font style='font-size:12px;'>Пройдите по <a href='http://mapstore.org/my_portfolio/tazteam.net/performing/confirm_user_by_mail.php/".$_POST['unreg_repassword_mail']."/".$key."' style='font-size:12px;'>ссылке</a>, чтобы восстановить пароль.</b></font>
+			<font style='font-size:12px;'>Пройдите по <a href='".GeneralGlobalVars::url."/performing/confirm_user_by_mail.php/".$_POST['unreg_repassword_mail']."/".$key."' style='font-size:12px;'>ссылке</a>, чтобы восстановить пароль.</b></font>
 		</td>
 		</tr>
 		</table>
 		<table cellpadding='0' cellspacing='0' width='100%'><tr><td height='10' align='left'></td></tr></table>
-		<font style='font-size:12px;'>С уважением, администрация <a href='http://mapstore.org/my_portfolio/tazteam.net/users/155'>mapstore.org/my_portfolio/tazteam.net</a></font>
+		<font style='font-size:12px;'>С уважением, администрация <a href='".GeneralGlobalVars::url."/users/155'>mapstore.org/my_portfolio/tazteam.net</a></font>
 		<table cellpadding='0' cellspacing='0' width='100%'><tr><td height='10' align='left'></td></tr></table>
-		<font style='font-size:12px;'><a href='http://mapstore.org/my_portfolio/tazteam.net/users/1'>Разработка сайта</a></font>
+		<font style='font-size:12px;'><a href='".GeneralGlobalVars::url."/users/1'>Разработка сайта</a></font>
 		</BODY>\r\n
 		</HTML>";
 

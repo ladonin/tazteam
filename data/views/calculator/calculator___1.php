@@ -11,18 +11,18 @@ class="boxShadow3"
     <ul class="dropdown-menu pull-left">
 
     <li>
-<a href="http://mapstore.org/my_portfolio/tazteam.net/calculator/1">Расчет мощности двигателя</a>
+<a href="<?php echo(GeneralGlobalVars::url);?>/calculator/1">Расчет мощности двигателя</a>
     </li>
 
     <li>
-<a href="http://mapstore.org/my_portfolio/tazteam.net/calculator/2">Расчет времени прохождения дистанции 402 м</a>
+<a href="<?php echo(GeneralGlobalVars::url);?>/calculator/2">Расчет времени прохождения дистанции 402 м</a>
     </li>  
     
     <li>
-<a href="http://mapstore.org/my_portfolio/tazteam.net/calculator/3">Расчет rs и степени сжатия мотора</a>
+<a href="<?php echo(GeneralGlobalVars::url);?>/calculator/3">Расчет rs и степени сжатия мотора</a>
     </li> 	    
     <li>
-<a href="http://mapstore.org/my_portfolio/tazteam.net/calculator/4">Расчет степени сжатия для турбо мотора</a>
+<a href="<?php echo(GeneralGlobalVars::url);?>/calculator/4">Расчет степени сжатия для турбо мотора</a>
     </li>
     </ul>
     </div>

@@ -28,7 +28,7 @@ while($row=GeneralMYSQL::fetch_array($res)) {
 	<tr>
 	<td valign="top" align="center">
     		<div style="width:420px; max-height:190px; overflow:hidden;">	
-			<a href="http://mapstore.org/my_portfolio/tazteam.net/garage/<?php echo($row['themepage']."/".$row['id']);?>" class="lead"><?php echo(GarageBase::return_parameters("mark", $row['mark'])." "); echo($row['model']);?></a>
+			<a href="<?php echo(GeneralGlobalVars::url);?>/garage/<?php echo($row['themepage']."/".$row['id']);?>" class="lead"><?php echo(GarageBase::return_parameters("mark", $row['mark'])." "); echo($row['model']);?></a>
 			</div><div class="v_i_s"></div>
             
             
@@ -37,13 +37,13 @@ while($row=GeneralMYSQL::fetch_array($res)) {
             
             
             
-		<a href="http://mapstore.org/my_portfolio/tazteam.net/garage/<?php echo($row['themepage']."/".$row['id']);?>"><?php
-        if ($row['img']==""){?><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/general___photo_none_300x200.png" width="300" height="200" class="refimage"/><?php }
+		<a href="<?php echo(GeneralGlobalVars::url);?>/garage/<?php echo($row['themepage']."/".$row['id']);?>"><?php
+        if ($row['img']==""){?><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/general___photo_none_300x200.png" width="300" height="200" class="refimage"/><?php }
 		else {?><img src="http://140706.selcdn.ru/tazteam/images/garage/<?php echo($row['id']);?>/<?php echo(GarageBase::return_size_to_photo(GarageBase::$img1_cur,5));/*width="434" height="300"*/?>" width="300" height="200" class="refimage"><?php } 		
         ?></a>
 <div class="v_i_s"></div>
 
-	<span class="grey">Владелец: </span> <a href="http://mapstore.org/my_portfolio/tazteam.net/users/<?php echo($row['id_user']);?>" class="link_lead "><?php echo(UsersMyData::return_name($row['t_login_user'],$row['t_mail_user'],$row['t_name_user'],$row['t_surname_user'],$row['t_login_status']));?></a>
+	<span class="grey">Владелец: </span> <a href="<?php echo(GeneralGlobalVars::url);?>/users/<?php echo($row['id_user']);?>" class="link_lead "><?php echo(UsersMyData::return_name($row['t_login_user'],$row['t_mail_user'],$row['t_name_user'],$row['t_surname_user'],$row['t_login_status']));?></a>
 
 				<?php if (GeneralSecurity::detect_administrator()==true) { ?>				
 				<div class="v_i_s"></div>

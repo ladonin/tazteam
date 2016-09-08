@@ -24,7 +24,7 @@
 	<div style="float:left;" class="padding_right_10"><input value="Отправить" type="submit" class="btn btn-success btn-small"></div>
 	
 	
-	<div style="float:left;"><a href="http://mapstore.org/my_portfolio/tazteam.net/<?php echo(GeneralGetVars::$var1."/".GeneralGetVars::$var2."/".GeneralGetVars::$var3."=".GeneralGetVars::$num_page);?>" class="btn btn-warning btn-small">отменить</a></div>
+	<div style="float:left;"><a href="<?php echo(GeneralGlobalVars::url);?>/<?php echo(GeneralGetVars::$var1."/".GeneralGetVars::$var2."/".GeneralGetVars::$var3."=".GeneralGetVars::$num_page);?>" class="btn btn-warning btn-small">отменить</a></div>
 	<div style="clear:both"></div>
 	<div class="v_i_b"></div>	
 	

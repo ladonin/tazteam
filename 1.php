@@ -9,7 +9,7 @@ $v=1;
 
 
 		$subject="Команда TAZTEAM поз33333333дравляет своих участников с Новым Годом!";
-		$header="From: mapstore.org/my_portfolio/tazteam.net <ladonin85@gmail.com>";
+		$header="From: instorage.org/portfolio/tazteam <ladonin85@gmail.com>";
 		$header.="\nContent-type: text/html; charset=\"UTF-8\"";
 		$text="<HTML>\r\n";
 		$text.="<HEAD>\r\n";
@@ -25,15 +25,15 @@ $text.="
 	<span style='font-size:13px; color:#333333;'>Новых успехов в Ваших делах!</span><br>
 	<span style='font-size:13px; color:#333333;'>И, конечно, ровных и безопасных дорог без гаишников!</span>
 <table cellpadding='0' cellspacing='0' width='100%'><tr><td height='10' align='left'></td></tr></table>
-<img src='http://mapstore.org/my_portfolio/tazteam.net/ng.png' width='460' height='346' style='border:0px;'>
+<img src='".GeneralGlobalVars::url."/ng.png' width='460' height='346' style='border:0px;'>
 <table cellpadding='0' cellspacing='0' width='100%'><tr><td height='10' align='left'></td></tr></table>
 <b style='font-size:13px; color:#333333;'>Ни гвоздя, ни жезла в Новом году!</b>
 <table cellpadding='0' cellspacing='0' width='100%'><tr><td height='10' align='left'></td></tr></table>
-<font style='font-size:12px;'>С уважением, команда <a href='http://mapstore.org/my_portfolio/tazteam.net'>tazteam</a></font>
+<font style='font-size:12px;'>С уважением, команда <a href='".GeneralGlobalVars::url."'>tazteam</a></font>
 </BODY>
 </HTML>";
-//mail('ladonin85@mail.ru', $subject, $text, $header, '-f administration@mapstore.org/my_portfolio/tazteam.net');
-//mail('alexander.ladonin@yandex.ru', $subject, $text, $header, '-f administration@mapstore.org/my_portfolio/tazteam.net');
+//mail('ladonin85@mail.ru', $subject, $text, $header, '-f administration@instorage.org/portfolio/tazteam');
+//mail('alexander.ladonin@yandex.ru', $subject, $text, $header, '-f administration@instorage.org/portfolio/tazteam');
 mail('ladonin85@mail.ru', $subject, $text, $header, '-f ladonin85@gmail.com');
 
 

@@ -17,7 +17,7 @@
 		Войти
 	</td>
 	<td align="right" style="padding-top:10px; padding-bottom:10px; cursor:pointer;">
-		<img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/general___arrow_left_grey_13x13.png" width="13" height="13" style="border:0px;">
+		<img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/general___arrow_left_grey_13x13.png" width="13" height="13" style="border:0px;">
 	</td>
 	</tr>
 	</tbody>
@@ -39,7 +39,7 @@
 
 	<div class="big_text_bold">Войти через</div>
 	<div class="v_i_b"></div>
-	<a href="<?php echo(GeneralGlobalVars::url_enter_across_vk."&response_type=code&v=5.0");?>"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/logos/general___logo_vk.png" width="46" height="46" style="border:0px;"></a>
+	<a href="<?php echo(GeneralGlobalVars::url_enter_across_vk."&response_type=code&v=5.0");?>"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/logos/general___logo_vk.png" width="46" height="46" style="border:0px;"></a>
 	<div class="v_i_b"></div>
 
 
@@ -209,7 +209,7 @@
 		Регистрация
 	</td>
 	<td align="right" style="padding-top:10px; padding-bottom:10px; cursor:pointer;">
-		<img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/general___arrow_left_grey_13x13.png" width="13" height="13" style="border:0px;">
+		<img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/general___arrow_left_grey_13x13.png" width="13" height="13" style="border:0px;">
 	</td>
 	</tr>
 	</tbody>
@@ -222,7 +222,7 @@
 
 		<div class="big_text_bold">Новый аккаунт за 1 сек</div>
 		<div class="v_i_b"></div>
-		<a href="<?php echo(GeneralGlobalVars::url_registration_across_vk."&response_type=code&v=5.0");?>"><img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/logos/general___logo_vk.png" width="46" height="46" style="border:0px;"></a>
+		<a href="<?php echo(GeneralGlobalVars::url_registration_across_vk."&response_type=code&v=5.0");?>"><img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/logos/general___logo_vk.png" width="46" height="46" style="border:0px;"></a>
 		<div class="v_i_b"></div>
 		<div class="big_text_bold">или</div>
 		<div class="v_i_b"></div>

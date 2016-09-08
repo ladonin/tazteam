@@ -15,7 +15,7 @@
 <div class="redact_photo_in_album_1_1">
 	<form method="post" action="<?php echo(GeneralGetVars::$urltosubmit);?>/delete">
 	<input name="submit" value="deletephotophoto" type="hidden">
-	<input value=" " class="submit_delete_text_11" type="submit">	
+	<input value=" " class="submit_delete_text_11" type="submit">
 	</form>
 </div>
 
@@ -24,7 +24,7 @@
 <div class="v_i_b"></div>
 
 <div class="redact_photo_in_album_1_1">
-	<img src="http://mapstore.org/my_portfolio/tazteam.net/images/_general/general___new_photo_photo_button.png" width="122" height="47"  class="refimage" onclick="general___swim_show_hide('redact_photo_in_album_1_new'); general___swim_hide('redact_photo_in_album_1_redact');">
+	<img src="<?php echo(GeneralGlobalVars::url);?>/images/_general/general___new_photo_photo_button.png" width="122" height="47"  class="refimage" onclick="general___swim_show_hide('redact_photo_in_album_1_new'); general___swim_hide('redact_photo_in_album_1_redact');">
 </div>
 <div id="redact_photo_in_album_1_new" class="redact_photo_in_album_1_2">
 	<div class="v_i_b"></div>
