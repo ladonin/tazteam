@@ -111,7 +111,7 @@ AutomarketBase::$model=$row['model'];
 		if (AutomarketBase::$img1){	?>
 			<img src="http://140706.selcdn.ru/tazteam/images/automarket/<?php echo($row['id']);?>/<?php echo(AutomarketBase::$img1);?>" width="<?php echo(AutomarketBase::$width1);?>" height="<?php echo(AutomarketBase::$height1);?>" id="automarket_img_photo_big" class="refimage automarket3_3" <?php /*onclick="swimwin('gallery','automarket'); automarket_img_to_gallery(); "*/?>>
 			<script type="text/javascript">
-				automarket_img_url="http:\/\/140706.selcdn.com\/tazteam\/_files\/images\/automarket\/<?php echo($row['id']);?>\/";
+				automarket_img_url="http:\/\/140706.selcdn.com\/tazteam\/images\/automarket\/<?php echo($row['id']);?>\/";
 				automarket_img_photo="<?php echo(AutomarketBase::$img1);?>";
 				automarket_full_url=automarket_img_url+automarket_img_photo;
 				automarket___podgon_po_razmeram_img('automarket_img_photo_big','<?php echo(AutomarketBase::$width1);?>','<?php echo(AutomarketBase::$height1);?>');
@@ -144,7 +144,7 @@ AutomarketBase::$model=$row['model'];
 		if (AutomarketBase::$$varimg){
 		$current_var1++;
 			?><script type="text/javascript">
-				automarket_img_url_cur<?php echo($i);?>="http:\/\/140706.selcdn.com\/tazteam\/_files\/images\/automarket\/<?php echo($row['id']);?>\/";
+				automarket_img_url_cur<?php echo($i);?>="http:\/\/140706.selcdn.com\/tazteam\/images\/automarket\/<?php echo($row['id']);?>\/";
 
 				automarket_img_photo_cur<?php echo($i);?>="<?php echo(AutomarketBase::$$varimg);?>";
 				automarket_img_photo_cur<?php echo($i);?> = automarket_img_photo_cur<?php echo($i);?>.replace("_3.","_2.");//задаем ключ размеров
