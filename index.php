@@ -801,23 +801,23 @@ document.write('<img src="http://tr.mixmarket.biz/t.php?id=3560756&uid=129494593
 
 
 
-         <!-- разместите на месте показа блока -->
-<div id="mixkt_4294910437"></div>
-<!-- разместите на месте показа блока -->
-<div id="mixkt_4294907498"></div>
+         <!-- разместите на месте показа блока
+<div id="mixkt_4294910437"></div>-->
+<!-- разместите на месте показа блока
+<div id="mixkt_4294907498"></div>-->
 
-<!-- разместите в самом конце страницы, перед тегом </body> -->
+<!-- разместите в самом конце страницы, перед тегом </body>
 <script>
 document.write('<scr' + 'ipt language="javascript" type="text/javascript" src="http://4294910437.kt.mixmarket.biz/show/4294910437/?div=mixkt_4294910437&r=' + escape(document.referrer) + '&rnd=' + Math.round(Math.random() * 100000) + '" charset="UTF-8"><' + '/scr' + 'ipt>');
 </script>
+-->
 
 
-
-<!-- разместите в самом конце страницы, перед тегом </body> -->
+<!-- разместите в самом конце страницы, перед тегом </body>
 <script>
 document.write('<scr' + 'ipt language="javascript" type="text/javascript" src="http://4294907498.kt.mixmarket.biz/show/4294907498/?div=mixkt_4294907498&r=' + escape(document.referrer) + '&rnd=' + Math.round(Math.random() * 100000) + '" charset="UTF-8"><' + '/scr' + 'ipt>');
 </script>
-
+-->
 
 
     </body>
