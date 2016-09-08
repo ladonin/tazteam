@@ -743,12 +743,11 @@ include("data/components/automarket/panels/new_announcement.php");?>
                                                 <div style="margin-right:5px; display:inline;">
                                                     <a href="http://mapstore.org/my_portfolio/tazteam.net/users/1" class="link_lead_topic white">Разработка</a>
                                                 </div>
+                                                
                                                 <div style="margin-right:5px; display:inline;">
                                                     <a href="http://mapstore.org/my_portfolio/tazteam.net/users/155" class="link_lead_topic white">Влас Прудов</a>
                                                 </div>
-                                                <div style="margin-right:5px; display:inline;">
-                                                    <a href="http://instorage.org" class="link_lead_topic white">instorage.org</a>
-                                                </div>
+
 
                                                 <div style="margin-top:5px; margin-bottom:5px;"  class="link_lead_topic white">
                                                     © TAZTEAM, 2012 - <?php echo(date('Y')); ?>
