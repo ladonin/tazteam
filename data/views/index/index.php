@@ -6,7 +6,7 @@
 
 
 
-<?php //if (!$cache->start("index_left_head1", 'Static')) {  ?> 
+<?php //if (!$cache->start("index_left_head1", 'Static')) {  ?>
 
 
 
@@ -15,7 +15,7 @@
      class="boxShadow3"
      >
     <div style="float: left; padding:10px 0;">
-    
+
      <p class="lead"><a href="http://mapstore.org/my_portfolio/tazteam.net/users" title="Топ участников">Топ участников</a></p>
 
         <div style="float: left; padding-top:1px;">
@@ -23,8 +23,8 @@
             $current_var1 = '0,3';
             $current_var2 = " gen_photo!=0 AND id_user NOT IN (155,2397) "; //AND gen_sex='2'
             include("data/components/index/index___top_users.php");
-            ?>  
-        </div>  
+            ?>
+        </div>
     </div>
 </div>
 
@@ -116,9 +116,9 @@
 
 <?php
 // Останавливаем буферизацию и пишем буфер в файл
-//$cache->end(); 
+//$cache->end();
 //}
-?>        
+?>
 
 
 
@@ -138,12 +138,12 @@
              GeneralDialogWindows::$idphoto = 0;
              GeneralDialogWindows::$type = 1; //2 -  открывающийся чат
              GeneralDialogWindows::$padding_right = 0;
-             GeneralDialogWindows::$id_dialog = "main_page_1"; //3 - вложенность страницы (а еще это её тип), 1 - номер диалога (у нас он первый) 
+             GeneralDialogWindows::$id_dialog = "main_page_1"; //3 - вложенность страницы (а еще это её тип), 1 - номер диалога (у нас он первый)
              GeneralDialogWindows::$database = "index___chat"; //база данных диалога
              GeneralDialogWindows::$textforpanel = "Написать";
              GeneralDialogWindows::$namedialog = "Чат";
              //GeneralDialogWindows::$condition1="user=1";//условие 1 для базы данных
-             GeneralDialogWindows::$valuesnumber = 4; //сколько value делаем	
+             GeneralDialogWindows::$valuesnumber = 4; //сколько value делаем
              GeneralDialogWindows::$idmessage = 1; //где будет номер сообщения
              GeneralDialogWindows::$autor = 2; //какую value делаем автором при вставке
              GeneralDialogWindows::$textvalue = 4; //где будет текст
@@ -172,7 +172,7 @@
     <div style="float: left; overflow:hidden; width:282px;  padding:10px 0;   height: 550px;">
         <p class="lead"><a href="http://mapstore.org/my_portfolio/tazteam.net/forum" title="форум">Форум</a></p>
         <?php
-        $current_var1 = 12;
+        $current_var1 = 13;
         include("data/components/index/index___forum_1.php");
         ?>
     </div>
