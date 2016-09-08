@@ -1,0 +1,5 @@
+<script type='text/javascript' src='http://instorage.org/portfolio/tazteam/js/functions/_general/general___date.js'></script>
+<script type='text/javascript' src='http://instorage.org/portfolio/tazteam/js/functions/_general/general___dialog_windows.js'></script>
+<script type='text/javascript' src='http://instorage.org/portfolio/tazteam/js/functions/_general/general___inputtext.js'></script>
+<script type='text/javascript' src='http://instorage.org/portfolio/tazteam/js/functions/_general/general___images.js'></script>
+<script type='text/javascript' src='http://instorage.org/portfolio/tazteam/js/functions/_general/general___sizes.js'></script>

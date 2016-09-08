@@ -1,0 +1,12 @@
+<?php
+$query="
+	SELECT
+		*
+	FROM 
+		registrated_users___my_messages
+	WHERE
+		id_user='".UsersMyData::$id."'
+	";
+//echo($query);
+$res=GeneralMYSQL::query($MSQLc,$query);
+?>

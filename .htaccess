@@ -1,0 +1,201 @@
+AddDefaultCharset UTF-8
+#ErrorDocument 404 http://quitec.org/map
+#ErrorDocument 403 http://quitec.org/map
+#ErrorDocument 500 http://quitec.org/map
+RewriteEngine On
+#? ?????? ????? ?? ????? Apache ???????, ?? ?????????, ????????? ?????, ? ??????? ?????????????, ????? ????? ? ????? ?????????. 
+#???? ?? ?? ?????? ?????? ?????????????? ??????? ??? ??????????????? ? ????????? ??????????????.
+Options -Indexes
+
+php_value error_reporting 1
+php_value max_execution_time    30000
+
+
+
+
+
+
+
+
+
+#????????? ????????? ?????, ?? ??????????? ? ?????????
+RewriteCond %{REQUEST_URI} !(_files/images|_reception)/.*\.(jpg|jpeg|gif|png)$
+RewriteRule (_files/images|_reception)/(.*)$  - [F]
+
+
+
+
+
+RewriteCond %{REQUEST_URI} tests/index$
+RewriteRule tests/index$ index.php?get_var1=tests [L]
+
+RewriteCond %{REQUEST_URI} cabinet/index$
+RewriteRule cabinet/index$ index.php?get_var1=users [L]
+
+RewriteCond %{REQUEST_URI} forum/index$
+RewriteRule forum/index$ index.php?get_var1=forum [L]
+
+RewriteCond %{REQUEST_URI} photo/index$
+RewriteRule photo/index$ index.php?get_var1=photo [L]
+
+RewriteCond %{REQUEST_URI} news/index$
+RewriteRule news/index$ index.php?get_var1=news [L]
+
+RewriteCond %{REQUEST_URI} video/index$
+RewriteRule video/index$ index.php?get_var1=video [L]
+
+RewriteCond %{REQUEST_URI} ^market/index$
+RewriteRule ^market/index$ index.php?get_var1=automarket [L]
+
+RewriteCond %{REQUEST_URI} calculator/index$
+RewriteRule calculator/index$ index.php?get_var1=calculator [L]
+
+
+
+
+
+RewriteCond %{REQUEST_URI} cabinet/([0-9]+)$
+RewriteRule cabinet/([^\/]*)$ index.php?get_var1=users&get_var2=$1 [L]
+
+RewriteCond %{REQUEST_URI} ^market/([0-9]+)$
+RewriteRule ^market/([^\/]*)$ index.php?get_var1=automarket&get_var2=1&get_var3=$1 [L]
+
+
+
+
+
+ 
+
+RewriteCond %{REQUEST_URI} performing/([^\/]*?)/([^\/]*?)/([^\/]*?)$
+RewriteRule performing/([^\/]*?)/([^\/]*?)/([^\/]*?)$ performing/$1?get_var1=$2&get_var2=$3 [L]
+
+RewriteCond %{REQUEST_URI} performing/((?!:else)[^\/]*?)/([^\/]*?)$
+RewriteRule performing/([^\/]*?)/([^\/]*?)$ performing/$1?get_var1=$2 [L]
+
+RewriteCond %{REQUEST_URI} performing/([^\/]*?)$
+RewriteRule performing/([^\/]*?)$ performing/$1 [L]
+
+
+
+
+
+
+RewriteCond %{REQUEST_URI} cron/([^\/]*?)$
+RewriteRule cron/([^\/]*?)$ cron/$1 [L]
+
+
+
+
+
+RewriteCond %{REQUEST_URI} compact_site/(_files|css|images|js|bootstrap)/(.*)$
+RewriteRule compact_site/(_files|css|images|js|bootstrap)/(.*)$ compact_site/$1/$2 [L]
+
+RewriteCond %{REQUEST_URI} (_files|css|images|js|bootstrap)/(.*)$
+RewriteRule (_files|css|images|js|bootstrap)/(.*)$ $1/$2 [L]
+
+
+
+
+
+
+
+
+RewriteCond %{REQUEST_URI} (automarket|garage|news|articles|users|video)=([0-9]+)$
+RewriteRule (automarket|garage|news|articles|users|video)=([0-9]+)$ index.php?get_var1=$1&num_page=$2 [L]
+
+RewriteCond %{REQUEST_URI} (automarket|garage|news|articles|tests)/([0-9]+)=([0-9]+)$
+RewriteRule (automarket|garage|news|articles|tests)/([0-9]+)=([0-9]+)$ index.php?get_var1=$1&get_var2=$2&num_page=$3 [L]
+
+RewriteCond %{REQUEST_URI} (forum|photo|automarket|garage|news|articles)/([0-9]+)/([0-9]+)=([0-9]+)$
+RewriteRule (forum|photo|automarket|garage|news|articles)/([0-9]+)/([0-9]+)=([0-9]+)$ index.php?get_var1=$1&get_var2=$2&get_var3=$3&num_page=$4 [L]
+
+RewriteCond %{REQUEST_URI} (photo)/([0-9]+)/([0-9]+)/allphotos=([0-9]+)$
+RewriteRule (photo)/([0-9]+)/([0-9]+)/allphotos=([0-9]+)$ index.php?get_var1=$1&get_var2=$2&get_var3=$3&get_var4=allphotos&num_page=$4 [L]
+
+
+
+
+
+RewriteCond %{REQUEST_URI} (forum|photo|news|articles)/([0-9]+)/([0-9]+)=([0-9]+)/r=([0-9]+)$
+RewriteRule (forum|photo|news|articles)/([0-9]+)/([0-9]+)=([0-9]+)/r=([0-9]+)$ index.php?get_var1=$1&get_var2=$2&get_var3=$3&num_page=$4&redact_message=$5 [L]
+
+
+
+
+RewriteCond %{REQUEST_URI} (forum|photo|news|articles)/([0-9]+)=([0-9]+)$
+RewriteRule (forum|photo|news|articles)/([^\/\=]*)=([^\/\=]*)$ index.php?get_var1=$1&get_var2=$2&num_page=$3 [L]
+
+
+
+
+
+
+
+RewriteCond %{REQUEST_URI} (vote)/([0-9a-z]+)=([0-9]+)$
+RewriteRule (vote)/([^\/\=]*)=([^\/\=]*)$ index.php?get_var1=$1&get_var2=$2&num_page=$3 [L]
+
+
+
+
+
+RewriteCond %{REQUEST_URI} (news|articles)/redact$
+RewriteRule (news|articles)/redact index.php?get_var1=$1&get_var2=redact [L]
+
+RewriteCond %{REQUEST_URI} (news|articles)/redact=([0-9]+)$
+RewriteRule (news|articles)/redact=([0-9]+) index.php?get_var1=$1&get_var2=redact&num_page=$2 [L]
+
+
+
+
+
+RewriteCond %{REQUEST_URI} map$
+RewriteRule map$ mapgeneral.php [L]
+
+RewriteCond %{REQUEST_URI} mapusers$
+RewriteRule mapusers$ mapusers.php [L]
+
+RewriteCond %{REQUEST_URI} mapnews$
+RewriteRule mapnews$ mapnews.php [L]
+
+RewriteCond %{REQUEST_URI} maparticles$
+RewriteRule maparticles$ maparticles.php [L]
+
+
+RewriteCond %{REQUEST_URI} (forum|photo|automarket|garage|news|articles|video|users|calculator|games|shop|chat)$
+RewriteRule (forum|photo|automarket|garage|news|articles|video|users|calculator|games|shop|chat) index.php?get_var1=$1 [L]
+
+RewriteCond %{REQUEST_URI} (forum|photo|automarket|garage|news|articles|video|users|shop|calculator)/([0-9]+)$
+RewriteRule (forum|photo|automarket|garage|news|articles|video|users|shop|calculator)/([^\/]*)$ index.php?get_var1=$1&get_var2=$2 [L]
+
+RewriteCond %{REQUEST_URI} (forum|photo|automarket|garage|news|articles|video)/([0-9]+)/([0-9]+)$
+RewriteRule (forum|photo|automarket|garage|news|articles|video)/([^\/]*)/([^\/]*)$ index.php?get_var1=$1&get_var2=$2&get_var3=$3 [L]
+
+
+
+RewriteCond %{REQUEST_URI} users/([0-9]+)/(redactavatar|dialogs|redactpassword)$
+RewriteRule users/([0-9]+)/(redactavatar|dialogs|redactpassword) index.php?get_var1=users&get_var2=$1&get_var3=$2 [L]
+
+RewriteCond %{REQUEST_URI} users/([0-9]+)/(photoalbums|friends|dialogs)=([0-9]+)$
+RewriteRule users/([0-9]+)/(photoalbums|friends|dialogs)=([0-9]+) index.php?get_var1=users&get_var2=$1&get_var3=$2&num_page=$3 [L]
+
+RewriteCond %{REQUEST_URI} users/([0-9]+)/(dialogs)/([0-9]+)$
+RewriteRule users/([0-9]+)/(dialogs)/([0-9]+) index.php?get_var1=users&get_var2=$1&get_var3=$2&get_var4=$3 [L]
+
+
+
+RewriteCond %{REQUEST_URI} users/([0-9]+)/(mythemes|mytalks|signatures)$
+RewriteRule users/([0-9]+)/(mythemes|mytalks|signatures) index.php?get_var1=users&get_var2=$1&get_var3=$2 [L]
+
+RewriteCond %{REQUEST_URI} users/([0-9]+)/(photoalbums||allphotosinalbum)/([0-9]+)=([0-9]+)$
+RewriteRule users/([0-9]+)/(photoalbums||allphotosinalbum)/([0-9]+)=([0-9]+) index.php?get_var1=users&get_var2=$1&get_var3=$2&get_var4=$3&num_page=$4 [L]
+
+
+
+
+
+
+
+
+
+
+

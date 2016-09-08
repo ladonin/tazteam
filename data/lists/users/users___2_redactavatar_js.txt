@@ -1,0 +1,7 @@
+<link rel="stylesheet" type="text/css" href="http://instorage.org/portfolio/tazteam/css/_general/imgareaselect-default.css">
+
+<script type='text/javascript' src='http://instorage.org/portfolio/tazteam/js/functions/_general/general___images.js'></script>
+<script type='text/javascript' src='http://instorage.org/portfolio/tazteam/js/functions/_general/general___sizes.js'></script>
+<script type='text/javascript' src='http://instorage.org/portfolio/tazteam/js/functions/users/users___photos.js'></script>
+<script type='text/javascript' src='http://instorage.org/portfolio/tazteam/js/functions/photo/photo___images.js'></script>
+<script type='text/javascript' src='http://instorage.org/portfolio/tazteam/js/functions/_general/jquery/jquery.imgareaselect.pack.js'></script>

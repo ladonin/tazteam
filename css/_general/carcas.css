@@ -1,0 +1,524 @@
+.v_i_b,.v_i_l{
+    overflow:hidden;}
+
+.swim_panel{
+display:none;}
+.v_i_b{
+    height:10px;
+}
+
+
+
+
+.grey_line_1{
+clear:both;
+border-bottom:1px solid #dddddd;}
+
+
+.v_i_l{
+     height:2px;
+}
+
+.refimage{
+    cursor:pointer;
+    border:0px;
+    
+}
+.white,.white:hover{
+    color:#ffffff;
+    
+}
+.padding_10{
+    padding:10px;
+}
+
+.padding_left_5{
+    padding-left:5px;
+}
+.padding_left_10{
+    padding-left:10px;
+}
+.padding_left_20{
+    padding-left:20px;
+}
+
+
+.padding_right_5{
+    padding-right:5px;
+}
+.padding_right_10{
+    padding-right:10px;
+}
+.padding_right_20{
+    padding-right:20px;
+}
+
+.inputtexttextarea{
+    width:100%;
+    height:150px;
+}
+
+
+.q_content_inputtext{
+    max-height:98px;
+    overflow:auto;
+}
+.q_content,.q_content_inputtext{
+    background-color:#ffffff;
+    padding:10px;
+    border-left:1px solid #ddd;
+    border-right:1px solid #ddd; 
+    border-bottom:1px solid #ddd;  
+}
+.q_content_inputtext img{
+    margin:5px;
+    cursor:pointer;  
+}
+
+
+.sub_menu_hat{
+    border-bottom:1px solid #111111;
+    display:none;
+    background-color: #222222;
+}
+
+.photo_item1{    
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.photo_item2{    
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin:0px;
+    padding: 5px 10px;
+
+    background: rgba(0, 0, 0, 0.75);
+}
+
+
+
+.photo_item3{    
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin:0px;
+    padding: 5px 10px;
+    background: rgba(255, 255, 255, 0.75);
+}
+
+
+
+
+
+.photo_item2 a,.photo_item2 a:hover{    
+    color: #cccccc;    font-size: 11px;
+}
+
+
+
+.v_i_s{
+    overflow: hidden;
+    height: 5px;
+
+}
+
+.link_lead{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1.05em;
+    letter-spacing: 0.00em;
+    word-spacing: 0.15em;
+    font-weight: bold;
+
+}
+
+
+
+
+.link_pagecounter{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1.2em;
+    letter-spacing: 0.00em;
+    word-spacing: 0.0em;
+    font-weight: bold;
+    text-decoration:underline;
+}
+
+.link_pagecounter_light{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1.2em;
+    letter-spacing: 0.00em;
+    word-spacing: 0.0em;
+}
+
+
+
+
+.link_lead_light{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1.05em;
+    letter-spacing: 0.0em;
+    word-spacing: 0.15em;
+}
+
+.text_normal{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1.10em;
+    letter-spacing: 0.05em;
+    word-spacing: 0.05em;
+}
+
+.text_normal b{
+    font-size: 1.20em;
+}
+
+
+
+
+.link_lead_small{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1em;
+    letter-spacing: 0.00em;
+    word-spacing: 0.15em;
+    font-weight: bold;
+}
+
+
+.link_lead_big{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size:1.4em;
+    letter-spacing: 0.00em;
+    word-spacing: 0.15em;
+}
+
+
+
+
+
+
+
+
+.lead_gros {
+  font-size: 19px;
+  font-weight: 200;
+}
+
+
+
+
+
+
+
+
+.link_lead_topic{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1em;
+    word-spacing: 0.1em;
+}
+
+.link-carcas{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1em;
+    word-spacing: 0.1em;
+}
+
+
+
+
+.grey{
+    color:#777777;
+
+}
+
+.blue{
+        color:#005580;
+    
+}
+
+
+.black{
+    color:#333333;
+}
+
+.red{
+color:#aa0000;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tovar_grup_mix_pict{
+    margin-right:10px;
+    margin-bottom:10px;
+}
+.tovar_grup_mix_name{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1em;
+    letter-spacing: 0.00em;
+    word-spacing: 0.15em;
+    font-weight: bold;
+}
+
+.tovar_grup_mix_desc{
+    color:#333333;
+    font-size: 12px;
+}
+.tovar_grup_mix_price{
+    color:#cc3333;
+    font-weight:bold;
+    font-size: 14px;
+}
+.tovar_grup_mix_merch,.tovar_grup_mix_merch:hover{
+    color:#aaaaaa;
+    font-size: 11px;
+    text-decoration:none;    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.PagesCounterOneLeft,.PagesCounterAllLeft,.PagesCounterOneRight,.PagesCounterAllRight,.PagesCounterOneLeftArrow,.PagesCounterOneRightArrow{
+height:23px;}
+
+
+
+.PagesCounterOneLeftArrow,.PagesCounterOneRightArrow,.PagesCounterOneLeft,.PagesCounterAllLeft,.PagesCounterOneRight,.PagesCounterAllRight{
+width:23px;}
+
+
+
+.PagesCounterCurPage,.PagesCounterPagesList,.PagesCounterFinishPage{
+padding-left:10px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.boxShadow4 {    background-color: #ffffff;
+   /* box-shadow: 0 1px 4px rgba(0, 0, 0, .3), 
+        -23px 0 20px -23px rgba(0, 0, 0, .8), 
+        23px 0 20px -23px rgba(0, 0, 0, .8), 
+        0 0 40px rgba(0, 0, 0, .1) inset;*/box-shadow: 19px 15px 45px -18px #000000;
+}
+
+.boxShadow2 { 
+
+    /* max-width: 550px; 
+     margin: 10px auto; */
+    background-color: #ffffff;
+    /*box-shadow: 0 1px 4px rgba(0, 0, 0, .3), 
+        -23px 0 20px -23px rgba(0, 0, 0, .8), 
+        23px 0 20px -23px rgba(0, 0, 0, .8), 
+        0 0 40px rgba(0, 0, 0, .1) inset; */box-shadow: 19px 15px 45px -18px #000000;
+}
+
+
+
+
+.boxShadow3 { 
+
+    /*max-width: 550px; 
+    margin: 10px auto; */
+    padding: 9px 19px 9px 19px; 
+    
+    /*background: linear-gradient(to top, #ffffff, #fefefe);
+    box-shadow:
+        1px 0px rgb(222,226,226), 1px 1px rgb(157,168,168);*/
+        
+        
+        
+    /*box-shadow: 19px 15px 45px -18px #000000;*/
+    border: 1px solid #999999;;
+
+    background-color: #ffffff;
+}
+
+
+.boxShadow8 {     background-color: #ffffff;
+    width: 80%; 
+    /*max-width: 550px; 
+    margin: 2em auto; */
+    padding: 1em; 
+    /*box-shadow: 0 0 5px 1px rgba(221, 221, 221, 1); */box-shadow: 19px 15px 45px -18px #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.PagesCounterOneRight:hover{
+background-image: url(http://instorage.org/portfolio/tazteam/images/_general/general___pages_counter_one_right_hover.png);
+background-repeat:repeat-x;}
+.PagesCounterOneRight{
+background-image: url(http://instorage.org/portfolio/tazteam/images/_general/general___pages_counter_one_right.png);
+background-repeat:repeat-x;}
+.PagesCounterOneLeft:hover{
+background-image: url(http://instorage.org/portfolio/tazteam/images/_general/general___pages_counter_one_left_hover.png);
+background-repeat:repeat-x;}
+.PagesCounterOneLeft{
+background-image: url(http://instorage.org/portfolio/tazteam/images/_general/general___pages_counter_one_left.png);
+background-repeat:repeat-x;}
+.PagesCounterAllLeft:hover{
+background-image: url(http://instorage.org/portfolio/tazteam/images/_general/general___pages_counter_all_left_hover.png);
+background-repeat:repeat-x;}
+.PagesCounterAllLeft{
+background-image: url(http://instorage.org/portfolio/tazteam/images/_general/general___pages_counter_all_left.png);
+background-repeat:repeat-x;}
+.PagesCounterAllRight:hover{
+background-image: url(http://instorage.org/portfolio/tazteam/images/_general/general___pages_counter_all_right_hover.png);
+background-repeat:repeat-x;}
+.PagesCounterAllRight{
+background-image: url(http://instorage.org/portfolio/tazteam/images/_general/general___pages_counter_all_right.png);
+background-repeat:repeat-x;}
+.PagesCounterOneRightArrow:hover{
+background-image: url(http://instorage.org/portfolio/tazteam/images/_general/general___pages_counter_one_right_big_hover.png);
+background-repeat:repeat-x;}
+.PagesCounterOneRightArrow{
+background-image: url(http://instorage.org/portfolio/tazteam/images/_general/general___pages_counter_one_right_big.png);
+background-repeat:repeat-x;}
+.PagesCounterOneLeftArrow:hover{
+background-image: url(http://instorage.org/portfolio/tazteam/images/_general/general___pages_counter_one_left_big_hover.png);
+background-repeat:repeat-x;}
+.PagesCounterOneLeftArrow{
+background-image: url(http://instorage.org/portfolio/tazteam/images/_general/general___pages_counter_one_left_big.png);
+background-repeat:repeat-x;}
+
+
+
+
+
+
+
+
+
+
+
+
+.vote_plus{
+cursor:pointer;
+height:31px;
+width:31px;
+background-image: url(http://instorage.org/portfolio/tazteam/images/_general/vote_finger.png);
+background-repeat:no-repeat;}
+.vote_plus:hover{
+background-image: url(http://instorage.org/portfolio/tazteam/images/_general/vote_plus.png);
+background-repeat:no-repeat;}
+
+.vote_minus{
+cursor:pointer;
+height:31px;
+width:31px;
+background-image: url(http://instorage.org/portfolio/tazteam/images/_general/vote_finger.png);
+background-repeat:no-repeat;}
+.vote_minus:hover{
+background-image: url(http://instorage.org/portfolio/tazteam/images/_general/vote_minus.png);
+background-repeat:no-repeat;}
+
+.vote_finger{
+height:31px;
+width:31px;
+background-image: url(http://instorage.org/portfolio/tazteam/images/_general/vote_finger.png);
+background-repeat:no-repeat;}

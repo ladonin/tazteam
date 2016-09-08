@@ -1,0 +1,16 @@
+<?php
+$query="
+	SELECT
+		id,
+		name,
+		themepage,
+		mark,
+		model
+	FROM 
+		automarket
+	WHERE
+		id_user='".UsersMyData::$id."'
+	";
+//echo($query);
+$res=GeneralMYSQL::query($MSQLc,$query);
+?>

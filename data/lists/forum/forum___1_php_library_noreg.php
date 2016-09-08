@@ -1,0 +1,1 @@
+<?php require("data/models/_general/Antibot.php");/* антибот, для незарегистрированных пользователей */  ?>

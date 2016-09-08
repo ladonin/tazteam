@@ -1,0 +1,3 @@
+require('js/functions/_general/general___date.txt');
+require('js/functions/_general/general___send_to_server.txt');
+require('js/functions/_general/general___inputtext.txt');
