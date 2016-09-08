@@ -455,8 +455,8 @@ if (UsersMyData::$id == 1) {
                     <h3 id="enterLabel">Вход</h3>
                 </div>
                 <div class="modal-body">
-    <?php //include("data/components/_general/form_enter.php"); ?>
-Вход временно недоступен
+    <?php include("data/components/_general/form_enter.php"); ?>
+
                 </div>
                 <div class="modal-footer">
                     <button class="btn" data-dismiss="modal" aria-hidden="true">Закрыть</button>
@@ -470,8 +470,7 @@ if (UsersMyData::$id == 1) {
                     <h3 id="registrationLabel">Регистрация</h3>
                 </div>
                 <div class="modal-body">
-    <?php //include("data/components/_general/form_registration.php"); ?>
-Регистрация временно недоступна
+    <?php include("data/components/_general/form_registration.php"); ?>
                 </div>
                 <div class="modal-footer">
                     <button class="btn" data-dismiss="modal" aria-hidden="true">Закрыть</button>
