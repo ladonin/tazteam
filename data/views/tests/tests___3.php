@@ -68,10 +68,10 @@ while($row=GeneralMYSQL::fetch_array($res)) {
         }*/
         ?>">
                 <?php if ($row['photo']==1) { ?>
-        		  <img src="http://140706.selcdn.com/tazteam/_files/images/tests/<?php echo(GeneralGetVars::$var2."/".GeneralGetVars::$num_page);?>.jpg" height="200" class="refimage"/>
+        		  <img src="http://140706.selcdn.ru/tazteam/images/tests/<?php echo(GeneralGetVars::$var2."/".GeneralGetVars::$num_page);?>.jpg" height="200" class="refimage"/>
                 <?php }
                 else { ?>
-        		  <img src="http://140706.selcdn.com/tazteam/_files/images/tests/none.jpg" height="200" class="refimage"/>
+        		  <img src="http://140706.selcdn.ru/tazteam/images/images/tests/none.jpg" height="200" class="refimage"/>
                 <?php } ?>
         </a>
 

@@ -12,7 +12,7 @@ const maxusersdataindbtable=5000;//от скольких пользовател�
 
 const url="http://mapstore.org/my_portfolio/tazteam.net";
 const pathtoreception="_reception";
-const pathtofiles="_files";
+const pathtofiles="http://140706.selcdn.ru/tazteam/images";
 
 const count_tests=60;//сколько у нас тестов (тесты - раздел сайта))
 
@@ -46,16 +46,16 @@ static public $urlself;
 
 static public function set(){
 	self::$timeunix=time();
-	
-	self::$day=date("j");	
-	self::$month=date("n");		
-	self::$year=date("Y");		
-	
-	
-	
-	
-	
-	
+
+	self::$day=date("j");
+	self::$month=date("n");
+	self::$year=date("Y");
+
+
+
+
+
+
 	self::$urlself=$_SERVER['PHP_SELF'];
 
 	if (GeneralGetVars::$var1=="users"){self::$critical_proportions_uploadimage=3;}//переопределяем разрешаемые пропорции
