@@ -40,7 +40,7 @@ UsersBase::set_points($MSQLc, AutomarketBase::$id_autor); //начисляем �
                         <td align="left" bgcolor="#35526a" style="color: #ffffff; padding-left:10px;">
                             Описание:
                         </td>
-                    </tr>	
+                    </tr>
                     <tr>
                         <td align="left" bgcolor="#f1f1f1" style="border-bottom:1px solid #dddddd; padding:10px;">
                             <div style="width: 388px; overflow: hidden;">
@@ -73,7 +73,7 @@ UsersBase::set_points($MSQLc, AutomarketBase::$id_autor); //начисляем �
               <tr>
               <td align="left" bgcolor="#f1f1f1" style="border-bottom:1px solid #dddddd;border-top:1px solid #dddddd; padding:10px 10px 5px 10px;">
              */ ?>
-            	
+
             <?php /*
               <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
               <!-- квадрат 2 200х90 -->
@@ -192,7 +192,7 @@ UsersBase::set_points($MSQLc, AutomarketBase::$id_autor); //начисляем �
 
                                 <table cellpadding="0" cellspacing="0" width="100%">
                                     <tr>
-                                        <td align="right">			
+                                        <td align="right">
 
                                             <b style="font-size:21px; color:#b40b03;" class="lead"><?php echo($row['price']); ?> руб.</b>
 
@@ -269,7 +269,7 @@ UsersBase::set_points($MSQLc, AutomarketBase::$id_autor); //начисляем �
                                             ?><script type="text/javascript">
 
 
-                                                automarket_img_url_cur<?php echo($i); ?> = "http:\/\/140706.selcdn.com\/tazteam\/_files\/images\/automarket\/<?php echo($row['id']); ?>\/";
+                                                automarket_img_url_cur<?php echo($i); ?> = "http:\/\/140706.selcdn.com\/tazteam\/images\/automarket\/<?php echo($row['id']); ?>\/";
 
                                                 automarket_img_photo_cur<?php echo($i); ?> = "<?php echo(AutomarketBase::$$varimg); ?>";
                                                 automarket_img_photo_cur<?php echo($i); ?> = automarket_img_photo_cur<?php echo($i); ?>.replace("_3.", "_2.");//задаем ключ размеров
@@ -303,10 +303,10 @@ UsersBase::set_points($MSQLc, AutomarketBase::$id_autor); //начисляем �
                                     if (automarket_array_photos[2]) {
                                         general___preload_one_image(automarket_array_photos[2]);
                                     }
-                                </script> 
+                                </script>
                             </div>
 <?php } ?>
-                        <div class="padding_left_10">            
+                        <div class="padding_left_10">
 
 
 
@@ -342,14 +342,14 @@ UsersBase::set_points($MSQLc, AutomarketBase::$id_autor); //начисляем �
                             GeneralDialogWindows::$signaturing = "am";
                             GeneralDialogWindows::$type = 1; //2 -  открывающийся чат
                             GeneralDialogWindows::$padding_right = 0;
-                            GeneralDialogWindows::$id_dialog = "automarket_3_1"; //3 - вложенность страницы (а еще это её тип), 1 - номер диалога (у нас он первый) 
+                            GeneralDialogWindows::$id_dialog = "automarket_3_1"; //3 - вложенность страницы (а еще это её тип), 1 - номер диалога (у нас он первый)
                             GeneralDialogWindows::$database = "automarket___messages"; //база данных диалога
                             GeneralDialogWindows::$textforpanel = "Написать комментарий";
                             GeneralDialogWindows::$namedialog = "Комментарии";
                             GeneralDialogWindows::$condition1 = "id_automarket=" . GeneralGetVars::$var3; //условие 1 для базы данных
                             //GeneralDialogWindows::$condition2="id_photo=".$row['id_photo'];	//условие 2 для базы данных
-                            GeneralDialogWindows::$idmessage = 2; //где будет номер сообщения	
-                            GeneralDialogWindows::$valuesnumber = 5; //сколько value делаем	
+                            GeneralDialogWindows::$idmessage = 2; //где будет номер сообщения
+                            GeneralDialogWindows::$valuesnumber = 5; //сколько value делаем
                             GeneralDialogWindows::$autor = 3; //какую value делаем автором при вставке
                             GeneralDialogWindows::$textvalue = 4; //где будет текст
                             GeneralDialogWindows::$time = 5; //какую value делаем временем создания сообщения	при вставке
@@ -378,7 +378,7 @@ UsersBase::set_points($MSQLc, AutomarketBase::$id_autor); //начисляем �
 
                     </td>
                 </tr>
-            </table>					
+            </table>
 
 
 

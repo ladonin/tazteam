@@ -259,7 +259,7 @@ $pointsatuser=$rowuser['site_points'];
 		if (UsersMyData::$id) {?><img src="<?php echo(UsersBase::return_url_photo($rowusers['gen_photo'],$rowusers['dir_user']."/".$rowusers['id_user']."_5.".$rowusers['site_photo_format'],$rowusers['sn_photo_url_from_small'],$rowusers['sn_photo_url_from_huge'],0));?>" width="75" height="75" style="border:1px solid #ffffff;"><?php
 		}
 		else
-		{?><img src="http://140706.selcdn.com/tazteam/_files/images/users/avas/nophoto_2.png" width="75" height="75" style="border:1px solid #ffffff;"><?php
+		{?><img src="http://140706.selcdn.com/tazteam/images/users/avas/nophoto_2.png" width="75" height="75" style="border:1px solid #ffffff;"><?php
 		}  ?></a>
 
 	</td>
